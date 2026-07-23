@@ -1,0 +1,33 @@
+{
+    "culture": "Ficus carica",
+    "exigences_sol": "Le figuier a besoin de sol bien drainé, en pH neutre (7,0-8,5), avec une teneur de calcium et de potassium élevée.",
+    "besoins_hydriques": "La culture du figuier nécessite une irrigation régulière, surtout pendant la période de floraison et de production. Il faut éviter les excès d'eau qui peuvent entraîner des problèmes de santé de l'arbre.",
+    "temp_optimale": {
+        "temp_min": "10°C",
+        "temp_max": "35°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "La rouxolle du figuier",
+            "causes": [
+                "Oidium solani",
+                "Pseudomonas syringae"
+            ],
+            "traitements_specifiques": [
+                "Fumigation, application de cuivres"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Les cultures du figuier devraient être contrôlées régulièrement pour éviter les ravageurs tels que les blattes et les coléoptères.",
+            "status": "en cours",
+            "categorie": "important"
+        },
+        {
+            "description": "Les feuilles du figuier devraient être traitées régulièrement pour prévenir la maladie de la rouxolle.",
+            "status": "en cours",
+            "categorie": "important"
+        }
+    ]
+}

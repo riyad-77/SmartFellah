@@ -1,0 +1,37 @@
+{
+    "culture": "Arabe",
+    "exigences_sol": "argilo-limoneux bien drainants",
+    "besoins_hydriques": "très groupés dans le temps",
+    "temp_optimale": {
+        "temp_min": 7.2,
+        "temp_max": -16
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Enroulement chlorotique",
+            "causes": [
+                "Mycoplasmes"
+            ],
+            "traitements_specifiques": [
+                "traitement antimycoplasmique"
+            ]
+        },
+        {
+            "nom_maladie": "Stem pitting",
+            "causes": [],
+            "traitements_specifiques": []
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Renouveler le bois fruitier sur 3 et 4 ans",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Éviter les grosses plaies de taille",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

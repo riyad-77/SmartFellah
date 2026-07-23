@@ -1,0 +1,29 @@
+{
+    "culture": "Poisson",
+    "exigences_sol": "Sol est aride, avec une teneur en eau faible",
+    "besoins_hydriques": "Besoin de 500 mm d'eau par an",
+    "temp_optimale": {
+        "temp_min": 15,
+        "temp_max": 25
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Rongeurs",
+            "causes": [
+                "Mauvaise gestion des déchets",
+                "Manque de biodiversité"
+            ],
+            "traitements_specifiques": [
+                "Utilisation de pièges",
+                "Création d'habitats"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Fertiliser régulièrement pour améliorer la productivité",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

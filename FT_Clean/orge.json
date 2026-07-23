@@ -1,0 +1,94 @@
+{
+    "culture": "Orge",
+    "exigences_sol": "Sol bien drainé et à bonne structure, avec un pH compris entre 6,0 et 7,0.",
+    "besoins_hydriques": "Les sols ont un pH très bas, ce qui nécessite une irrigation régulière.",
+    "temp_optimale": {
+        "temp_min": 20,
+        "temp_max": 30
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "La rouille",
+            "causes": [
+                "manque d'azote",
+                "sol basique"
+            ],
+            "traitements_specifiques": [
+                "fertilisation azotée",
+                "traitement contre la rouille"
+            ]
+        },
+        {
+            "nom_maladie": "Rouge de la semoule",
+            "causes": [
+                "Infection par des micro-organismes"
+            ],
+            "traitements_specifiques": [
+                "Traitement avec des fungicides"
+            ]
+        },
+        {
+            "nom_maladie": "La rouxette",
+            "causes": [
+                "Aperçu du climat",
+                "Présence de graines"
+            ],
+            "traitements_specifiques": [
+                "Traitement par insecticide"
+            ]
+        },
+        {
+            "nom_maladie": "Rougeur des feuilles",
+            "causes": [
+                "Humidité excessive",
+                "Maladie fongique"
+            ],
+            "traitements_specifiques": [
+                "Applications de fungicides",
+                "Mise en place d'un régime d'irrigation réduite"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "L'irrigation régulière est essentielle pour les orges. Il est recommandé d'appliquer environ 20 cm3/m² de eau par jour.",
+            "status": null,
+            "categorie": null
+        },
+        {
+            "description": "Fertiliser les plants à l'arrivée de la floraison pour augmenter la productivité.",
+            "status": null,
+            "categorie": null
+        },
+        {
+            "description": "Assurer une bonne drainage du sol pour prévenir les problèmes de ténèbre et d'infection par des micro-organismes.",
+            "status": null,
+            "categorie": null
+        },
+        {
+            "description": "Semer l'orge à une épaisseur de 5-7 cm et espacée à environ 10-15 cm. L'Aide à la culture peut être utile pour éviter les erreurs.",
+            "status": "en cours",
+            "categorie": "urgence"
+        },
+        {
+            "description": "L'application de fungicides est recommandée pour prévenir la rougeur des feuilles.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Il est important de maintenir un régime d'irrigation réduit pour éviter les problèmes de santé du sol et des plants.",
+            "status": "en cours",
+            "categorie": "pas urgent"
+        },
+        {
+            "description": "Fertiliser les plants à regularité",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Irriger soigneusement",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "culture": "Tournesol",
+    "exigences_sol": "La culture du tournesol nécessite un sol bien drainé et fertile, avec une pH entre 6,5 et 7,5.",
+    "besoins_hydriques": "Le tournesol a besoin d'une irrigation régulière, en particulier pendant la période de germination et de floraison.",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Moustiques rouges",
+            "causes": [
+                "Présence de moustiques rouges",
+                "Contamination des graines"
+            ],
+            "traitements_specifiques": [
+                "Traitement des graines avec des insecticides"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "L'irrigation régulière est essentielle pour le tournesol.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Le contrôle des moustiques rouges est crucial pour prévenir les maladies.",
+            "status": "en cours",
+            "categorie": "prioritaire"
+        }
+    ]
+}

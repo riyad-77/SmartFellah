@@ -1,0 +1,30 @@
+{
+    "culture": "LE MELON",
+    "exigences_sol": "La culture est très exigeante en chaleur et lumière.",
+    "besoins_hydriques": "Les besoins en eau s’élèvent à 300-400 mm selon les régions. L’irrigation commence juste après la plantation et se fait généralement par un système de goutte-à-goutte.",
+    "temp_optimale": {
+        "temp_min": "30-35˚C",
+        "temp_max": "35-40˚C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Fusariose",
+            "causes": [
+                "atteinte par des chaux de sol"
+            ],
+            "traitements_specifiques": []
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Effectuer régulièrement les traitements phytosanitaires contre les champignons du sol et les parasites",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Assurer une fertilisation bien équilibrée, en particulier avec des engrais potassiques",
+            "status": "en cours",
+            "categorie": "urgence moyenne"
+        }
+    ]
+}

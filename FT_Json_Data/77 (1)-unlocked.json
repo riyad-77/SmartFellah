@@ -1,0 +1,46 @@
+{
+    "culture": "blé",
+    "exigences_sol": null,
+    "besoins_hydriques": null,
+    "temp_optimale": {
+        "temp_min": 16,
+        "temp_max": 22
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "charbon nu",
+            "causes": [
+                "semence",
+                "débris",
+                "sol"
+            ],
+            "traitements_specifiques": [
+                "traitement chimique",
+                "traitement biologique"
+            ]
+        },
+        {
+            "nom_maladie": "charbon foliaire",
+            "causes": [
+                "sol",
+                "semence"
+            ],
+            "traitements_specifiques": [
+                "traitement chimique",
+                "traitement biologique"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "effectuer des pratiques de lutte contre les maladies cryptogamiques",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "realiser des semis réguliers pour éviter les attaques sporadiques",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

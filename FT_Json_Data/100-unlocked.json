@@ -1,0 +1,27 @@
+{
+    "culture": "Tomate",
+    "exigences_sol": null,
+    "besoins_hydriques": null,
+    "temp_optimale": {
+        "temp_min": 12,
+        "temp_max": 25
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [
+                "Inconnues"
+            ],
+            "traitements_specifiques": [
+                "Inconnus"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": null,
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

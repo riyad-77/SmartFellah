@@ -1,0 +1,29 @@
+{
+    "culture": "Riz",
+    "exigences_sol": "Le riz nécessite un sol bien drainé et avec une bonne structure pour éviter les problèmes de drainage. Le pH du sol doit être compris entre 5,5 et 6,5.",
+    "besoins_hydriques": "Le riz a besoin d'une irrigation régulière, mais pas trop abondante. L'irrigation idéale est de 10-15 cm de eau par semaine.",
+    "temp_optimale": {
+        "temp_min": 20,
+        "temp_max": 35
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Riz noir",
+            "causes": [
+                "Bactérie Rhi",
+                "Fungus Rhizoctonia"
+            ],
+            "traitements_specifiques": [
+                "Avec antibiotics",
+                "Enfouir les tiges"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Éviter l'over-tillage pour ne pas perturber la croissance des racines.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

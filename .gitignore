@@ -1,0 +1,30 @@
+# Environnements virtuels Python
+venv/
+env/
+.venv/
+
+# Fichiers compilés Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Fichiers de configuration et de sécurité
+.env
+
+# Volumes de la base de données PostgreSQL (à ne jamais push)
+pgdata/
+postgres_data/
+db_data/
+data/
+
+# Apache Airflow (fichiers générés localement)
+logs/
+airflow.db
+airflow.cfg
+airflow-webserver.pid
+webserver_config.py
+
+# Fichiers liés au système d'exploitation et aux éditeurs de code
+.vscode/
+.idea/
+.DS_Store

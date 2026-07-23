@@ -1,0 +1,33 @@
+{
+    "culture": "Blé dur et Blé tendre",
+    "exigences_sol": "Sol de type Dehss et Tirs",
+    "besoins_hydriques": "Irrigation, 180 unités/ha d'azote au semis, 3 irrigations en 1999 et une irrigation en 2000",
+    "temp_optimale": {
+        "temp_min": "Environ 10°C",
+        "temp_max": "Avec températures optimales entre 15°C et 25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Maladie cryptogamique",
+            "causes": [
+                "Proximité du littoral atlantique",
+                "Pluviométrie"
+            ],
+            "traitements_specifiques": [
+                "Traitement antifongique"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Semis en ligne manuellement les 12 et 13 novembre 1998",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Densité de semis à 145 Kg/ha",
+            "status": "En cours",
+            "categorie": "Urgent"
+        }
+    ]
+}

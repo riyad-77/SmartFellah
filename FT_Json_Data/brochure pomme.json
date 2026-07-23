@@ -1,0 +1,33 @@
+{
+    "culture": "Céréales",
+    "exigences_sol": null,
+    "besoins_hydriques": null,
+    "temp_optimale": {
+        "temp_min": "20°C",
+        "temp_max": "30°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "La roue blanche",
+            "causes": [
+                "fumée",
+                "saignement"
+            ],
+            "traitements_specifiques": [
+                "traitement chimique"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Fertiliser les plants à régulièrement",
+            "status": null,
+            "categorie": "non urgente"
+        },
+        {
+            "description": "Appliquer des pesticides pour prévenir la roue blanche",
+            "status": "en cours",
+            "categorie": "urgente"
+        }
+    ]
+}

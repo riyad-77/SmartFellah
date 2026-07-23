@@ -1,0 +1,34 @@
+{
+    "culture": "Orge",
+    "exigences_sol": "sol à forte concentration de nutriments",
+    "besoins_hydriques": "40 mm/mois",
+    "temp_optimale": {
+        "temp_min": 15,
+        "temp_max": 30
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Rougeur des feuilles",
+            "causes": [
+                "manque de lumière",
+                "trop d'eau"
+            ],
+            "traitements_specifiques": [
+                "fertilisation régulière",
+                "irrigation soigneuse"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Fertiliser les plants à regularité",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Irriger soigneusement",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

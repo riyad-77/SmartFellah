@@ -1,0 +1,29 @@
+{
+    "culture": "Pente Cerisé",
+    "exigences_sol": "Sol exposé au soleil pendant 6-8 heures, avec une température moyenne de 15°C à 25°C. Le sol doit être bien aéré et avoir un pH neutre.",
+    "besoins_hydriques": "Arrosage régulier, mais pas trop exigeant. Il est préférable d'arroser tous les jours pendant la première année après plantation.",
+    "temp_optimale": {
+        "temp_min": 15,
+        "temp_max": 25
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Pente Cerisé",
+            "causes": [
+                "Déshydration",
+                "Fumée de feu"
+            ],
+            "traitements_specifiques": [
+                "Arrosage régulier",
+                "Fumigation"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Arrosez régulièrement, mais assurez-vous que le sol ne soit jamais trop mou. Cela aidera à prévenir la déshydration.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

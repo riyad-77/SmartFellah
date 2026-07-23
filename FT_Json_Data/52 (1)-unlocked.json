@@ -1,0 +1,23 @@
+{
+    "culture": "Pomme de terre",
+    "exigences_sol": null,
+    "besoins_hydriques": "La pomme de terre est relativement tolérante à la salinité par rapport aux autres cultures maraîchères.",
+    "temp_optimale": {
+        "temp_min": 6,
+        "temp_max": 25
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [],
+            "traitements_specifiques": []
+        }
+    ],
+    "recommandations": [
+        {
+            "description": null,
+            "status": null,
+            "categorie": null
+        }
+    ]
+}

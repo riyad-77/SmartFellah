@@ -1,0 +1,43 @@
+{
+    "culture": "Cerisier",
+    "exigences_sol": "Exigeant en lumière, préfère des sols profonds, légers et perméables.",
+    "besoins_hydriques": "3000 à 5000 m3",
+    "temp_optimale": {
+        "temp_min": "-1.7 °C",
+        "temp_max": "8.2 °C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Dépérissement bactérien",
+            "causes": [
+                "Dépôts de fumier",
+                "Arrosage sur les racines"
+            ],
+            "traitements_specifiques": [
+                "Traitements cupriques"
+            ]
+        },
+        {
+            "nom_maladie": "Capnode",
+            "causes": [
+                "Manque d'eau",
+                "Températures critiques"
+            ],
+            "traitements_specifiques": [
+                "Appliques de traitements spécifiques"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Appliquer des traitements cupriques pour lutter contre le dépérissement bactérien.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Assurer une bonne irrigation, en particulier après la récolte, pour éviter les stress hydriques.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        }
+    ]
+}

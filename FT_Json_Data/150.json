@@ -1,0 +1,11 @@
+{
+    "culture": "framboisier",
+    "exigences_sol": null,
+    "besoins_hydriques": null,
+    "temp_optimale": {
+        "temp_min": "15",
+        "temp_max": "25"
+    },
+    "maladies_details": [],
+    "recommandations": []
+}

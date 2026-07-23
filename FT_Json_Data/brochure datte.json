@@ -1,0 +1,29 @@
+{
+    "culture": "Citron",
+    "exigences_sol": "Le sol doit être bien drainé et avoir une bonne structure pour permettre aux racines de s'écarter et d'absorber les nutriments et l'eau.",
+    "besoins_hydriques": "Les cultures de citron nécessitent une quantité importante d'eau, en particulier pendant la période de croissance. Il est recommandé d'aplanir le sol, d'améliorer son drainage et d'ajouter des matériaux organiques pour réduire l'érosion.",
+    "temp_optimale": {
+        "temp_min": 10,
+        "temp_max": 25
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Mouche",
+            "causes": [
+                "Insectes",
+                "Plantes"
+            ],
+            "traitements_specifiques": [
+                "Aérosols",
+                "Pesticides"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Il est essentiel de régler l'arrosage en fonction des besoins du sol et de la plante. Il est également recommandé d'utiliser des matériaux organiques pour améliorer le drainage et réduire l'érosion.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        }
+    ]
+}

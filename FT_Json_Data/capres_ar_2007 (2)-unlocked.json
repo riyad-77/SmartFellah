@@ -1,0 +1,32 @@
+{
+    "culture": "Pêche",
+    "exigences_sol": null,
+    "besoins_hydriques": "Aucun besoin spécifique",
+    "temp_optimale": {
+        "temp_min": 15,
+        "temp_max": 25
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Rougeur des yeux",
+            "causes": [
+                "Exposition prolongée au soleil"
+            ],
+            "traitements_specifiques": [
+                "Protéger les yeux avec un masque de soleil"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Vérifier régulièrement l'état du filtre anti-UV pour garantir une protection adéquate",
+            "status": "en cours",
+            "Categorie": "urgent"
+        },
+        {
+            "description": " effectuer des examens réguliers pour détecter les problèmes oculaires précocement",
+            "status": "en cours",
+            "Categorie": "urgent"
+        }
+    ]
+}

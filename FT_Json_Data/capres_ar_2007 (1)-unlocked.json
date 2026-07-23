@@ -1,0 +1,34 @@
+{
+    "culture": "Arbre à feuilles persistantes",
+    "exigences_sol": "Sol bien drainé, pH 6-7",
+    "besoins_hydriques": "Aration régulière, 800 mm/an",
+    "temp_optimale": {
+        "temp_min": 15,
+        "temp_max": 30
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Pestes de feuilles",
+            "causes": [
+                "Insectes",
+                "Fongiques"
+            ],
+            "traitements_specifiques": [
+                "Insecticides",
+                "Fungicides"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Fertiliser régulièrement avec du compost.",
+            "status": "en cours",
+            "Categorie": "urgent"
+        },
+        {
+            "description": "Couper les tiges en hiver pour prévenir la propagation des maladies.",
+            "status": "en cours",
+            "Categorie": "urgent"
+        }
+    ]
+}

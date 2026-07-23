@@ -1,0 +1,32 @@
+{
+    "culture": "Pomme",
+    "exigences_sol": "Sol aride, sol chaud et sol sec",
+    "besoins_hydriques": "Régime hydrique modéré, 30 cm par an",
+    "temp_optimale": {
+        "temp_min": "-5°C",
+        "temp_max": "+25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Vert de pourriture",
+            "causes": [
+                "fumigation, surpâtage, mauvaise gestion des excédents"
+            ],
+            "traitements_specifiques": [
+                "traitement avec des produits biologiques"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Fertilisation régulière pour maintenir la productivité",
+            "status": "en cours",
+            "categorie": "urgence"
+        },
+        {
+            "description": "Sélection de variétés résistantes aux maladies",
+            "status": "en cours",
+            "categorie": "prioritaire"
+        }
+    ]
+}

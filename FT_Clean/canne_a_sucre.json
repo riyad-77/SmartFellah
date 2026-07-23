@@ -1,0 +1,56 @@
+{
+    "culture": "Canne a sucre",
+    "exigences_sol": "Les sols sableux sont très favorables à la culture de betterave, mais il faut prendre en compte les conditions climatiques et les facteurs de drainage. La charrue à socs ou le chisel sont les principaux outils de préparation du sol.",
+    "besoins_hydriques": "La betterave nécessite une irrigation régulière, mais pas excessive. Le goutte à goutte est un système d'irrigation adapté aux sols sableux et qui a permis des résultats prometteurs.",
+    "temp_optimale": {
+        "temp_min": 16,
+        "temp_max": 26
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Cassidy",
+            "causes": [
+                "Insectes du sol",
+                "Herbes vivaces"
+            ],
+            "traitements_specifiques": [
+                "Désherbage, Herbicides"
+            ]
+        },
+        {
+            "nom_maladie": "Nématodes",
+            "causes": [
+                "Insectes du sol"
+            ],
+            "traitements_specifiques": [
+                "Tratements de nématodes"
+            ]
+        },
+        {
+            "nom_maladie": "Pourriture molle des racines",
+            "causes": [
+                "Phénomène de pourriture des racines à la récolte"
+            ],
+            "traitements_specifiques": [
+                "Traitement spécifique contre la pourriture molle"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "L'entretien régulier est essentiel pour prévenir les maladies et les insectes. Le désherbage doit être fait à la fin de chaque cycle de culture.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "L'irrigation régulière est nécessaire, notamment pendant la période chaude de début d'été.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Le désherbage est nécessaire pour contrôler les populations hivernales et printanières.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "culture": "Blé",
+    "exigences_sol": null,
+    "besoins_hydriques": null,
+    "temp_optimale": {
+        "temp_min": "15˚C",
+        "temp_max": "25˚C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Charbon nu",
+            "causes": [
+                "semence"
+            ],
+            "traitements_specifiques": [
+                null
+            ]
+        },
+        {
+            "nom_maladie": "Charbon foliaire",
+            "causes": [
+                "sol",
+                "semence"
+            ],
+            "traitements_specifiques": [
+                null
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Effectuer des tournages réguliers pour réduire la surface de contamination",
+            "status": null,
+            "categorie": null
+        },
+        {
+            "description": "Utiliser des semences traitées et faire des programmes de lutte préventive",
+            "status": null,
+            "categorie": null
+        }
+    ]
+}

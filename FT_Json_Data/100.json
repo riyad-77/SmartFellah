@@ -1,0 +1,23 @@
+{
+    "culture": "Tomate",
+    "exigences_sol": "Le sol doit être bien aéré et drainant. La teneur en matière organique du sol doit être assez élevée (2-3 %) pour obtenir de bons rendements.",
+    "besoins_hydriques": "Les besoins en eau de la culture peuvent être couverts par des apports de 25 % des besoins globaux durant la phase végétative, 50 % durant le pic des cueillettes et 25 % à la dernière phase de la culture.",
+    "temp_optimale": {
+        "temp_min": 12,
+        "temp_max": 28
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [],
+            "traitements_specifiques": []
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Il est conseillé d'utiliser le goutte-à-goutte pour l'irrigation, en évitant les à-coups d'apports d'eau.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

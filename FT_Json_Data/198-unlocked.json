@@ -1,0 +1,25 @@
+{
+    "culture": "Piment rouge (Niora)",
+    "exigences_sol": "Le sol doit être nettoyé de tout débris ou restes de la culture précédente et d'herbes. Il doit être travaillé jusqu'à une profondeur de 30 à 40 cm.",
+    "besoins_hydriques": "La Niora est très exigeante en rotation des cultures et fait fatigue rapidement le sol. Les meilleurs rendements sont obtenus dans les terrains vierges ou nouvellement acquis, n'ayant pas été occupés par une autre sola-nacée pendant les 4 ou 5 dernières années.",
+    "temp_optimale": {
+        "temp_min": "20 à 30°C",
+        "temp_max": "35 à 40°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [
+                "Parasitaire"
+            ],
+            "traitements_specifiques": []
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "La rotation avec les céréales est égale-ment recommandée pour la culture de la Niora.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

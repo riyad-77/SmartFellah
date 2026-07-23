@@ -1,0 +1,43 @@
+{
+    "culture": "Cerisier",
+    "exigences_sol": "Le cerisier préfère des sols profonds, légers et perméables.",
+    "besoins_hydriques": "Le cerisier exige des quantités importantes en eau (3000 à 5000 m3) pour une croissance et un développement réguliers.",
+    "temp_optimale": {
+        "temp_min": "-1.7 °C",
+        "temp_max": "-1.1 °C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Dépérissement bactérien",
+            "causes": [
+                "Manque de nourriture",
+                "Environnement défavorable"
+            ],
+            "traitements_specifiques": [
+                "Application de traitements cupriques"
+            ]
+        },
+        {
+            "nom_maladie": "Capnode",
+            "causes": [
+                "Manque d'eau",
+                "Environnement défavorable"
+            ],
+            "traitements_specifiques": [
+                "Traitement chimique"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Appliquer des traitements cupriques pour prévenir le dépérissement bactérien.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Assurer une bonne irrigation pour éviter les problèmes de capnode.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        }
+    ]
+}

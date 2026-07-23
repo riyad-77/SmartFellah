@@ -1,0 +1,27 @@
+{
+    "culture": "épinard",
+    "exigences_sol": "Le sol doit avoir un pH supérieur à 6,5.",
+    "besoins_hydriques": "La culture est très exigeante en eau. Un à deux sarclages sont nécessaires pour aérer le sol et enfouir la fumure de couverture.",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [
+                "inconnues"
+            ],
+            "traitements_specifiques": [
+                "inconnus"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Fertiliser au fond, avant la récolte.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

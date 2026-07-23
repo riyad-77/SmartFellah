@@ -1,0 +1,75 @@
+{
+    "culture": "Tournesol",
+    "exigences_sol": "Le tournesol nécessite un sol bien drainé et fertile, avec un pH entre 6.0 et 7.0.",
+    "besoins_hydriques": "Le tournesol a besoin d'une irrigation régulière, mais il est sensible aux excessives eaux qui peuvent entraîner la pourriture des racines.",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Mouche de tournesol",
+            "causes": [
+                "Attaque de moineaux",
+                "Infestation de fourmis"
+            ],
+            "traitements_specifiques": [
+                "Utilisation de pesticides spécifiques",
+                "Remplacement des fleurs en fleur"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie des feuilles",
+            "causes": [
+                "Infection par un virus",
+                "Ataque de moineaux"
+            ],
+            "traitements_specifiques": [
+                "Treatment spécifique",
+                "Prévention"
+            ]
+        },
+        {
+            "nom_maladie": "Moustiques rouges",
+            "causes": [
+                "Présence de moustiques rouges",
+                "Contamination des graines"
+            ],
+            "traitements_specifiques": [
+                "Traitement des graines avec des insecticides"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Appliquer un traitement insecticide régulièrement pour contrôler les attaques de moineaux.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Assurer une irrigation régulière, mais éviter les excessives eaux qui peuvent entraîner la pourriture des racines.",
+            "status": "En cours",
+            "categorie": "Prioritaire"
+        },
+        {
+            "description": "Fertiliser régulièrement pour promouvoir la croissance du tournesol.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Assurer une irrigation régulière et suffisante pour les plantes.",
+            "status": "en cours",
+            "categorie": "prioritaire"
+        },
+        {
+            "description": "L'irrigation régulière est essentielle pour le tournesol.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Le contrôle des moustiques rouges est crucial pour prévenir les maladies.",
+            "status": "en cours",
+            "categorie": "prioritaire"
+        }
+    ]
+}

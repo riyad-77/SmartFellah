@@ -1,0 +1,53 @@
+{
+    "culture": "Riz",
+    "exigences_sol": "Sol à l'ombre, pH 5,0-6,5",
+    "besoins_hydriques": "Séchage lent, nécessite une humeur moyenne",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "30°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Rougeur foliaire",
+            "causes": [
+                "Maladie fongique",
+                "Déshydration"
+            ],
+            "traitements_specifiques": [
+                "Fumage, irrigation régulière"
+            ]
+        },
+        {
+            "nom_maladie": "Perte de teneurs en azote",
+            "causes": [
+                "Déshydration, sol trop calé ], "
+            ]
+        },
+        {
+            "nom_maladie": "Puteur des feuilles",
+            "causes": [
+                "Maladie fongique, exposition à la lumière excessive"
+            ],
+            "traitements_specifiques": [
+                "Fumage, gestion de l'exposition à la lumière"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Irrigation régulière",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Fumage et gestion de l'exposition à la lumière",
+            "status": "en cours",
+            "categorie": "urgence"
+        },
+        {
+            "description": "Suppression des maladies fongiques",
+            "status": "en cours",
+            "categorie": "urgence"
+        }
+    ]
+}

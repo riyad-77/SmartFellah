@@ -1,0 +1,33 @@
+{
+    "culture": "Pomme (Malus domestica)",
+    "exigences_sol": "Terroirs bien drainés et sols riches en matières organiques.",
+    "besoins_hydriques": "Une irrigation régulière, en fonction de la période de croissance. L'irrigation est essentielle pendant l'hiver pour garantir une bonne dormance des bourgeons.",
+    "temp_optimale": {
+        "temp_min": "-5°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Maladie des feuilles de pomme",
+            "causes": [
+                "Moisi, vent",
+                "Mauvaises pratiques agricoles"
+            ],
+            "traitements_specifiques": [
+                "Fumigation, traitement de surface"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Conseil : effectuer une analyse des sols pour déterminer les meilleures variétés de pomme en fonction du terroir.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Conseil : utiliser un système d'irrigation automatique pour réduire les risques de sur-ou sous-irrigation.",
+            "status": "en cours",
+            "categorie": "urgence"
+        }
+    ]
+}

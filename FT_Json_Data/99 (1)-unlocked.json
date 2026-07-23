@@ -1,0 +1,43 @@
+{
+    "culture": "Melon",
+    "exigences_sol": "Très exigeante en chaleur et lumière.",
+    "besoins_hydriques": "300-400 mm selon les régions, système de goutte-à-goutte.",
+    "temp_optimale": {
+        "temp_min": "20˚C",
+        "temp_max": "25˚C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Fusariose",
+            "causes": [
+                "Environnement humide",
+                "Fumier non approprié"
+            ],
+            "traitements_specifiques": [
+                "Fungicide systémique à base de propamocarbe"
+            ]
+        },
+        {
+            "nom_maladie": "Oïdium",
+            "causes": [
+                "Température excessive",
+                "Sécheresse"
+            ],
+            "traitements_specifiques": [
+                "Pompage régulier, application de cuivres chimiques"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Labour profond, deux cover-cropages croisés, deux passages d’herse rotative ; enfouissement de fumier de bovin et de la fumure minérale.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Apport de 30-50 tonnes à l’hectare de fumier de fond, 20 unités d’azote, 100 unités de P205 et 50 unités de K20.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        }
+    ]
+}

@@ -1,0 +1,102 @@
+{
+    "culture": "Pommier",
+    "exigences_sol": "Terroirs bien drainés et sols riches en matières organiques.",
+    "besoins_hydriques": "La pomme a besoin de bienveillante climatique, en particulier un hiver froid pour la dormance et une température optimale entre 10°C et 25°C.",
+    "temp_optimale": {
+        "temp_min": "5°C",
+        "temp_max": "30°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Vert de pourpre (Erysiphe paeoniae-heracliotis)",
+            "causes": [
+                "Humidité excessive",
+                "Vent chaud"
+            ],
+            "traitements_specifiques": [
+                "Décalcomanie",
+                "Fumigation"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie des feuilles de pomme",
+            "causes": [
+                "Moisi, vent",
+                "Mauvaises pratiques agricoles"
+            ],
+            "traitements_specifiques": [
+                "Fumigation, traitement de surface"
+            ]
+        },
+        {
+            "nom_maladie": "Rougeur des feuilles (Powdery mildew)",
+            "causes": [
+                "Humidité excessive",
+                "Vent froid"
+            ],
+            "traitements_specifiques": [
+                "Fumigation, application de fongicides"
+            ]
+        },
+        {
+            "nom_maladie": "Vert de pourriture",
+            "causes": [
+                "fumigation, surpâtage, mauvaise gestion des excédents"
+            ],
+            "traitements_specifiques": [
+                "traitement avec des produits biologiques"
+            ]
+        },
+        {
+            "nom_maladie": "Powdèrie blanche",
+            "causes": [
+                "Pluie excessive"
+            ],
+            "traitements_specifiques": [
+                "Enfouillage"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Le pommeire doit être traité régulièrement pour contrôler les maladies et les insectes",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Conseil : effectuer une analyse des sols pour déterminer les meilleures variétés de pomme en fonction du terroir.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Conseil : utiliser un système d'irrigation automatique pour réduire les risques de sur-ou sous-irrigation.",
+            "status": "en cours",
+            "categorie": "urgence"
+        },
+        {
+            "description": "Assurez-vous d'avoir un sol bien drainé et un pH neutre.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "L'irrigation régulière est essentielle pendant la phase de floraison.",
+            "status": "En cours",
+            "categorie": "Niveau 2"
+        },
+        {
+            "description": "Fertilisation régulière pour maintenir la productivité",
+            "status": "en cours",
+            "categorie": "urgence"
+        },
+        {
+            "description": "Sélection de variétés résistantes aux maladies",
+            "status": "en cours",
+            "categorie": "prioritaire"
+        },
+        {
+            "description": "Fertiliser avant la germination",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

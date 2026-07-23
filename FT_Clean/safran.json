@@ -1,0 +1,80 @@
+{
+    "culture": "Safran",
+    "exigences_sol": "Un sol profond, drainant et riche en matière organique, avec une pH neutre.",
+    "besoins_hydriques": "Les besoins en eau sont relativement moyens (600 à 700 mm/an), mais les apports en eau doivent être bien répartis le long du cycle de la plante.",
+    "temp_optimale": {
+        "temp_min": "-10°C",
+        "temp_max": "+40°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [
+                "Inconnues"
+            ],
+            "traitements_specifiques": [
+                "Inconnus"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie des racines",
+            "causes": [
+                "Enfouissement de mauvaises herbes",
+                "Surpopulation"
+            ],
+            "traitements_specifiques": [
+                "Déforestation",
+                "Réduction de la dose d'engrais"
+            ]
+        },
+        {
+            "nom_maladie": "La maladie des feuilles jaunes",
+            "causes": [
+                "Infection par des champignons",
+                "Dégâts causés par les insectes"
+            ],
+            "traitements_specifiques": [
+                "Appliquer des fungicides",
+                "Utiliser des insecticides"
+            ]
+        },
+        {
+            "nom_maladie": "La maladie du bulbe",
+            "causes": [
+                "Infection par des champignons",
+                "Dégâts causés par les insectes"
+            ],
+            "traitements_specifiques": [
+                "Appliquer des fungicides",
+                "Utiliser des insecticides"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Choisir un site avec des conditions climatiques et édaphiques optimales.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Faire des labourages profonds pour faciliter la préparation du terrain.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Le suivi régulier des techniques culturales et les interventions correctives sont essentielles pour éviter les pertes en production.",
+            "status": "en cours",
+            "categorie": "urgence"
+        },
+        {
+            "description": "L'épierrage et la construction de terrasses sont des opérations obligatoires dans plusieurs régions productrices du safran.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Un labour croisé et profond de 30 à 40 cm est nécessaire pour faciliter la préparation du terrain pour la nouvelle plantation.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

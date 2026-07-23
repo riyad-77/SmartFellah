@@ -1,0 +1,23 @@
+{
+    "culture": "Céréaliculture",
+    "exigences_sol": null,
+    "besoins_hydriques": null,
+    "temp_optimale": {
+        "temp_min": null,
+        "temp_max": null
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [],
+            "traitements_specifiques": []
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "L'amélioration de l'itinéraire technique constitue la clé de la réussite. Il s'agit de raisonner les techniques en fonction des objectifs de rendement à atteindre, en le décomposant en plusieurs étapes, par le biais des composantes de rendement et en tenant compte des interactions entre techniques et des compensations entre composantes.",
+            "status": null,
+            "categorie": null
+        }
+    ]
+}

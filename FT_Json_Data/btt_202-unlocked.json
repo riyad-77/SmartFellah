@@ -1,0 +1,29 @@
+{
+    "culture": "céréaliculture",
+    "exigences_sol": null,
+    "besoins_hydriques": "la céréaliculture a besoin d'une irrigation régulière pour être productive",
+    "temp_optimale": {
+        "temp_min": "-6°C",
+        "temp_max": "40°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Maladie du blé",
+            "causes": [
+                "sécheresse",
+                "chergui"
+            ],
+            "traitements_specifiques": [
+                "irrigation accrue",
+                "fumigation"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "La ferme Louata doit mettre en place un système d'irrigation plus efficace pour atténuer les effets de la sécheresse.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

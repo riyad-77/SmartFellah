@@ -1,0 +1,23 @@
+{
+    "culture": "Arganier",
+    "exigences_sol": "Conditions de culture précisées dans le document",
+    "besoins_hydriques": "L'arboriculture nécessite un certain niveau de humidité relative de l'air ambiant (65-75%)",
+    "temp_optimale": {
+        "temp_min": "23°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [],
+            "traitements_specifiques": []
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Acclimatation des plantules avant de les placer sous conditions naturelles du champ",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

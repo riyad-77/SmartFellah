@@ -1,0 +1,33 @@
+{
+    "culture": "Betterave à sucre monogermes",
+    "exigences_sol": "La structure superficielle doit être fine, avec une structure profonde de 30 cm en profondeur, tout en conservant la structure profonde réalisée par le labour.",
+    "besoins_hydriques": "Des irrigations rapprochées dans les temps pour assurer la germination et une levée homogène.",
+    "temp_optimale": {
+        "temp_min": "-1°C",
+        "temp_max": "35°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Maladie des racines",
+            "causes": [
+                "Insectes",
+                "Fongiques"
+            ],
+            "traitements_specifiques": [
+                "Herbicides, Fumigats"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Choisir des semoirs de précision capables de semer sur des billons préalablement confectionnés.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Réaliser un labour précis et une préparation du sol soignée pour permettre un enracinement profond.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        }
+    ]
+}

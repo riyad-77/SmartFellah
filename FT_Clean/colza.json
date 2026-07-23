@@ -1,0 +1,34 @@
+{
+    "culture": "Colza",
+    "exigences_sol": "Le sol doit être bien drainé et avoir un pH compris entre 6,0 et 7,5.",
+    "besoins_hydriques": "Approvisionnement en eau adéquat, avec un minimum de 25 cm par saison de croissance.",
+    "temp_optimale": {
+        "temp_min": "-10°C",
+        "temp_max": "+25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Clubroot",
+            "causes": [
+                "Infection par la maladie de la hernie",
+                "Mauvaise préparation du sol"
+            ],
+            "traitements_specifiques": [
+                "Cultivez le sol régulièrement",
+                "Utiliser des fongicides"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Faites alterner la culture avec une autre culture autre que Brassica pour éviter les maladies transmises par le sol.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Utiliser des techniques de lutte intégrée contre les ravageurs, y compris la lutte biologique et la lutte culturelle.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        }
+    ]
+}

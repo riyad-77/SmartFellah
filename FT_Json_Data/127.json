@@ -1,0 +1,29 @@
+{
+    "culture": "Agrume",
+    "exigences_sol": null,
+    "besoins_hydriques": "Les agrumes ont besoin d'un sol bien drainé et fertile, avec un pH neutre.",
+    "temp_optimale": {
+        "temp_min": "-5 °C",
+        "temp_max": "20 °C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Gelée",
+            "causes": [
+                "Températures inférieures à -2 °C",
+                "Perte d'énergie par convection"
+            ],
+            "traitements_specifiques": [
+                "Acclimatation des arbres au froid",
+                "Utilisation de matériaux isolants"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Acclimater les arbres aux températures froides avant l'installation du froid.",
+            "status": null,
+            "categorie": null
+        }
+    ]
+}

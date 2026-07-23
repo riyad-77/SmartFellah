@@ -1,0 +1,77 @@
+{
+    "culture": "Mais",
+    "exigences_sol": "Sol sableux, non calcaire, pH neutre à alcalin (6,8 à 8,4)",
+    "besoins_hydriques": "Avec un besoin annuel au régime de croisière (non compris celui des veaux et vêles) d'environ 22.000 t.",
+    "temp_optimale": {
+        "temp_min": "18,5 - 29 °C",
+        "temp_max": "27°C en septembre/octobre"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Maladie du maïs",
+            "causes": [
+                "Pucerons",
+                "Pierres filantes"
+            ],
+            "traitements_specifiques": [
+                "Insecticides, Fumigatifs"
+            ]
+        },
+        {
+            "nom_maladie": "dormir",
+            "causes": [
+                "Manque d'irrigation",
+                "Sol trop sec"
+            ],
+            "traitements_specifiques": [
+                "Irrigation régulière"
+            ]
+        },
+        {
+            "nom_maladie": "Moteur de la rouille",
+            "causes": [
+                "infection par le fungus vert"
+            ],
+            "traitements_specifiques": [
+                "application de fungicides"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Semer en lignes jumelées avec un semoir de précision Gaspardo",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Fertiliser avant la germination et à la maturité des fruits",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Sélectionner des variétés de maïs adaptées au climat côtière du Maroc, telles que Cecilia ou Samsara.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Effectuer un semis en lignes jumelées avec un semoir de précision Gaspardo pour améliorer la densité théorique et réduire les pertes en grain.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Appliquer une irrigation régulière, en particulier pendant les périodes de croissance rapide, pour prévenir les maladies dues à la sécheresse.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "L'application régulière d'un fertilisant pour les sols sables est nécessaire.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "La gestion de l'eau devrait être ciblée sur la période de croissance du maïs.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

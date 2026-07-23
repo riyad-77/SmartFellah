@@ -1,0 +1,34 @@
+{
+    "culture": "Rapeseed",
+    "exigences_sol": "The soil must be well-drained and have a pH between 6.0 and 7.5.",
+    "besoins_hydriques": "Adequate water supply, with a minimum of 25 cm per growing season.",
+    "temp_optimale": {
+        "temp_min": "-10°C",
+        "temp_max": "+25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Clubroot",
+            "causes": [
+                "Infection by Clubroot disease",
+                "Poor soil preparation"
+            ],
+            "traitements_specifiques": [
+                "Cultivate the soil regularly",
+                "Use fungicides"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Rotate the crop with another non-brassica crop to avoid soil-borne diseases.",
+            "status": "Ongoing",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Use integrated pest management techniques, including biological control and cultural controls.",
+            "status": "On-going",
+            "categorie": "Urgent"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "culture": "Arganier",
+    "exigences_sol": "Terreau d'arganier mélangé avec du sable aux proportions égales",
+    "besoins_hydriques": "Arrosages quotidiens, maintien de l'humidité relative entre 65 et 75%",
+    "temp_optimale": {
+        "temp_min": "23˚C",
+        "temp_max": "25˚C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [],
+            "traitements_specifiques": []
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Acclimatation des plantules dans une chambre de culture avec un abris-tunnel en plastique, puis mise en pot et transposition sous conditions naturelles",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Acclimatation des plantules avant de les placer sous conditions naturelles du champ",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "culture": "Arabie",
+    "exigences_sol": null,
+    "besoins_hydriques": "L'arbre nécessite une quantité importante de l'eau pour s'enraciner et se développer. La quantité d'eau requise dépend des conditions climatiques.",
+    "temp_optimale": {
+        "temp_min": 2800,
+        "temp_max": 2400
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Fungal diseases",
+            "causes": [
+                "Fungal infections",
+                "Bacterial infections"
+            ],
+            "traitements_specifiques": [
+                "Antifungal treatments"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Il est essentiel de fournir une quantité suffisante d'eau à l'arbre pour le soutenir pendant la période de germination et de croissance.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

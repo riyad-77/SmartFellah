@@ -1,0 +1,32 @@
+{
+    "culture": "Amandier",
+    "exigences_sol": "Sols chlorosants avec densités moyennes de 400 à 600 arbres/ha",
+    "besoins_hydriques": "Fruits intermédiaire entre la pêche et l'a Mande, Il ne peut pas être utilisé comme porte-greffe à multiplication par semis en raison de la disjonction des caractères et de la grande hétérogénéité de la descendance",
+    "temp_optimale": {
+        "temp_min": 20,
+        "temp_max": 30
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Capnodis tenebrionis (capnode noire)",
+            "causes": [
+                "Attaques de capnode"
+            ],
+            "traitements_specifiques": [
+                "Traitement par des produits phytosanitaires"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Conduite appropriée avec des interventions en vert pour permettre à l'arbre d'être formé rapidement en période juvénile",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Sélection de porte-greffe à multipli-ration générative pour garantir la production et assurer son développement dans plusieurs régions fragilisées par l'aridité climatique",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

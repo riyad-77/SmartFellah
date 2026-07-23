@@ -1,0 +1,34 @@
+{
+    "culture": "Céréales",
+    "exigences_sol": "Sol bien drainé, avec un pH neutre à légèrement acide.",
+    "besoins_hydriques": "Avec une irrigation régulière, mais pas démesurée. Les cultures doivent être soumises à des périodes de sécheresse pour s'adapter aux conditions climatiques du sud-ouest marocain.",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "La maladie des feuilles",
+            "causes": [
+                "Présence de virus",
+                "Trop de l'eau"
+            ],
+            "traitements_specifiques": [
+                "Traitement avec des insecticides",
+                "Remplacement de la plante affectée"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Apliquer un régime d'irrigation régulier, mais pas démesuré.",
+            "status": "en cours",
+            "Categorie": "normal"
+        },
+        {
+            "description": "Faire des cultures de sécurité pour éviter les pertes en cas de sécheresse.",
+            "status": "en cours",
+            "Categorie": "urgent"
+        }
+    ]
+}

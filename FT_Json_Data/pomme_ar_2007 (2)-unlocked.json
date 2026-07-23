@@ -1,0 +1,28 @@
+{
+    "culture": "Orage",
+    "exigences_sol": "Sol aride, requiert des sols bien drainés et bien aérisés.",
+    "besoins_hydriques": "Requiert une irrigation régulière, en particulier pendant la période de floraison.",
+    "temp_optimale": {
+        "temp_min": 15,
+        "temp_max": 25
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "La rouille",
+            "causes": [
+                "Frost",
+                "Humidité excessive"
+            ],
+            "traitements_specifiques": [
+                "Application de fungicides"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Mettre des fertilisants pour améliorer la fertilité du sol et prévenir les ravageurs",
+            "status": "en cours",
+            "categorie": "urgence"
+        }
+    ]
+}

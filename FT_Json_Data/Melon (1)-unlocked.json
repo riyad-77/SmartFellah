@@ -1,0 +1,34 @@
+{
+    "culture": "Riz",
+    "exigences_sol": "Le sol doit avoir un pH neutre, entre 6,5 et 7,5.",
+    "besoins_hydriques": "Il est recommandé d'apporter environ 20 cm d'eau sur la surface du sol en période de croissance.",
+    "temp_optimale": {
+        "temp_min": 15,
+        "temp_max": 25
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Dourade",
+            "causes": [
+                "Enfertillisation insuffisante",
+                "Trop de nitrogenne"
+            ],
+            "traitements_specifiques": [
+                "Appliquer des engrais organiques",
+                "Réduire l'utilisation de nitrate"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Fertiliser le sol avant la culture du riz",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Assurer une bonne drainage pour éviter les problèmes de moïssure",
+            "status": "déjà effectué",
+            "categorie": ""
+        }
+    ]
+}

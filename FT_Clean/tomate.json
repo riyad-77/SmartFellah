@@ -1,0 +1,88 @@
+{
+    "culture": "Tomate",
+    "exigences_sol": "Le sol doit être bien aéré et drainant. La teneur en matière organique du sol doit être assez élevée (2-3 %) pour obtenir de bons rendements.",
+    "besoins_hydriques": "La culture est très sensible à la sécheresse, il est donc recommandé d'apporter des apports d'eau réguliers. La teneur en matière organique du sol doit être assez élevée (2-3 %) pour obtenir de bons rendements.",
+    "temp_optimale": {
+        "temp_min": "12°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [
+                "Fongicide",
+                "Insecticide"
+            ],
+            "traitements_specifiques": []
+        },
+        {
+            "nom_maladie": "Virus de l'enroulement des feuilles jaunes de la tomate (TYLCV)",
+            "causes": [
+                "Bemisia tabaci",
+                "insecte Homoptère de la famille des Aleurodidae"
+            ],
+            "traitements_specifiques": [
+                "insecticides spécifiques contre Bemisia tabaci"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie des feuilles jaunes",
+            "causes": [
+                "Virus TYLCV",
+                "Insectes Bemisia tabaci"
+            ],
+            "traitements_specifiques": [
+                "Traitement chimique",
+                "Traitement biologique"
+            ]
+        },
+        {
+            "nom_maladie": "SILENCE",
+            "causes": [
+                "Bemisia tabaci",
+                "insecte Homoptère de la famille des Aleurodidae"
+            ],
+            "traitements_specifiques": [
+                "insecticides",
+                "culture biologique"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Avec un équipement supplémentaire (pompe doseuse et bacs), il est facile d'introduire la fertigation dans l'exploitation.",
+            "status": null,
+            "categorie": "Inconnue"
+        },
+        {
+            "description": "Il est conseillé d'utiliser le goutte-à-goutte pour l'irrigation, en évitant les à-coups d'apports d'eau.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Lutter contre le TYLCV en utilisant des méthodes de lutte intégrées telles que la suppression des insectes, l'utilisation d'insecticides spécifiques et les pratiques agricoles durables.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "L'approvisionnement en plants sains est essentiel pour éviter les pertes dues à la maladie des feuilles jaunes.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "La protection des pépinières par des filets et serres canariennes en bois est recommandée pour prévenir l'infestation des insectes.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Faire des semis précoce pour éviter les maladies et les insectes.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Utiliser des filets pour protéger les plants contre les insectes et les maladies.",
+            "status": "en cours",
+            "categorie": "pas urgent"
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "culture": "maïs",
+    "exigences_sol": "Sol sableux, non calcaire, pH neutre à alcalin (6,8 à 8,4)",
+    "besoins_hydriques": "Avec un besoin annuel au régime de croisière (non compris celui des veaux et vêles) d'environ 22.000 t.",
+    "temp_optimale": {
+        "temp_min": "18,5 - 29 °C",
+        "temp_max": "27°C en septembre/octobre"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Maladie du maïs",
+            "causes": [
+                "Aphides",
+                "Pierres filantes"
+            ],
+            "traitements_specifiques": [
+                "Insecticide, Fumigatifs"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Semer en lignes jumelées avec un semoir de précision Gaspardo",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Fertiliser avant la germination et à la maturité des fruits",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

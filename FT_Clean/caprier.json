@@ -1,0 +1,34 @@
+{
+    "culture": "Caprier",
+    "exigences_sol": "nécessite un sol bien drainé, avec une exposition au soleil direct, mais protégée de vents violents",
+    "besoins_hydriques": "Il a besoin d'une irrigation régulière, mais pas trop élevée, car il peut être sensibilité aux excesses d'eau",
+    "temp_optimale": {
+        "temp_min": 47.0,
+        "temp_max": 80.0
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Vertu de l'humidité",
+            "causes": [
+                "Trop d'eau",
+                "Trop peu d'eau"
+            ],
+            "traitements_specifiques": [
+                "Réduire l'irrigation",
+                "Augmenter la drainage"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Fertiliser les racines régulièrement pour maintenir une bonne santé",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Payer attention à la quantité d'eau qu'on lui donne, car il peut être sensibilité aux excesses d'eau",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

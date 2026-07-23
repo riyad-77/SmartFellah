@@ -1,0 +1,34 @@
+{
+    "culture": "Pomme de Terre",
+    "exigences_sol": "La plupart des sols conviennent à la culture de la pomme de terre à condition qu'ils soient bien drainés et pas trop pierreux. Les sols préférés sont ceux qui sont profonds, fertiles et meubles.",
+    "besoins_hydriques": "La pomme de terre est relativement tolérante à la salinité par rapport aux autres cultures maraîchères. Cependant, un taux de salinité élevé peut bloquer l'absorption de l'eau par le système racinaire.",
+    "temp_optimale": {
+        "temp_min": "6-8°C",
+        "temp_max": "18°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Galle commune sur tubercule",
+            "causes": [
+                "alcalinité excessive du sol",
+                "manque de drainage"
+            ],
+            "traitements_specifiques": [
+                "amendement du sol",
+                "irrigation régulière"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "L'irrigation régulière est essentielle pour éviter les problèmes de salinité et assurer un bon rendement.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "La préparation du sol est cruciale pour garantir un bon contact entre le plant et le sol. Il faut assurer un drainage optimal et éviter les sols trop pierreux ou argileux.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

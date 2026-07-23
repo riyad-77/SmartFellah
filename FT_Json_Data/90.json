@@ -1,0 +1,33 @@
+{
+    "culture": "Viticulture",
+    "exigences_sol": "Sol bien drainé et avec une pH comprise entre 6,0 et 7,0.",
+    "besoins_hydriques": "Aire d'écoulement régulière pour l'évacuation des eaux de ruissellement et la réduction du risque de teneur en eau.",
+    "temp_optimale": {
+        "temp_min": 10,
+        "temp_max": 35
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Coublage",
+            "causes": [
+                "Vent",
+                "Rafle"
+            ],
+            "traitements_specifiques": [
+                "Fumigation, désherbage"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "L'incision annulaire doit être pratiquée juste après la nouaison pour améliorer le poids moyen des baies.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "L'éclaircissage des grappes entières peut se réaliser avant la floraison pour améliorer le pourcentage de fécondation des fleurs des grappes conservées.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        }
+    ]
+}

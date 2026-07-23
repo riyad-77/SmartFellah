@@ -1,0 +1,33 @@
+{
+    "culture": "Grenadier",
+    "exigences_sol": "Les sols argilo-limoneux irrigués conviennent aussi à la culture du grenadier.",
+    "besoins_hydriques": "La tolérance à la sécheresse est relative et se fait au détriment de sa croissance végétative et de sa fructification. Les meilleurs résultats d’installation de plantations sont obtenus en sols d'alluvions profond avec des disponibilités satisfaisantes en eau (bords des courants d'eau).",
+    "temp_optimale": {
+        "temp_min": "-10°C",
+        "temp_max": "+40°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [],
+            "traitements_specifiques": []
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Conduire la culture du grenadier en plantation régulière, seule ou associée à d'autres arbres fruitiers.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Le grenadier exige une petite dose de froid en période hivernale pour son évocation florale.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "L'agriculteur doit choisir des variétés de grenadier performantes et adapter les pratiques agricoles en fonction des conditions locales.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

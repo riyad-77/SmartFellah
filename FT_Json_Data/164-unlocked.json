@@ -1,0 +1,50 @@
+{
+    "culture": "Canne à sucre",
+    "exigences_sol": "Les sables sables sont très riches en humus, mais d'importance limitée.",
+    "besoins_hydriques": "Une irrigation régulière est nécessaire, notamment pendant la période chaude de début d'été.",
+    "temp_optimale": {
+        "temp_min": "18-22°C",
+        "temp_max": "29°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Nématodes",
+            "causes": [
+                "Infestation de nématodes dans la culture"
+            ],
+            "traitements_specifiques": [
+                "Application d'herbicides et/ou des traitements spécifiques contre les nématodes"
+            ]
+        },
+        {
+            "nom_maladie": "Casside",
+            "causes": [
+                "Infestation de cassides dans la culture"
+            ],
+            "traitements_specifiques": [
+                "Désherbage et/ou application d'herbicides"
+            ]
+        },
+        {
+            "nom_maladie": "Pourriture molle des racines",
+            "causes": [
+                "Phénomène de pourriture des racines à la récolte"
+            ],
+            "traitements_specifiques": [
+                "Traitement spécifique contre la pourriture molle"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "L'irrigation régulière est nécessaire, notamment pendant la période chaude de début d'été.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Le désherbage est nécessaire pour contrôler les populations hivernales et printanières.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "culture": "Pomme",
+    "exigences_sol": "Terre bien drainée et sol fertile",
+    "besoins_hydriques": "50 cm d'humidité par an",
+    "temp_optimale": {
+        "temp_min": 10,
+        "temp_max": 25
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Powdèrie blanche",
+            "causes": [
+                "Pluie excessive"
+            ],
+            "traitements_specifiques": [
+                "Enfouillage"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Fertiliser avant la germination",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

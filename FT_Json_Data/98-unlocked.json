@@ -1,0 +1,27 @@
+{
+    "culture": "Pomme de Terre",
+    "exigences_sol": "La culture préfère des sols silico-argileux, riches en humus et légèrement acides. Le sol doit être bien drainant et sans obstacles afin de permettre un bon développement des tubercules.",
+    "besoins_hydriques": "La culture préfère un régime continu d’apport d’eau (80 à 100 % de l’évapotranspiration maximale). Dans le cas d’une sécheresse imposée, il est recommandé de faire au moins trois irrigations d’appoint...",
+    "temp_optimale": {
+        "temp_min": "12-15˚C",
+        "temp_max": "16-20˚C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Mildiou",
+            "causes": [
+                "irrigation par aspersion ou de pluies abondantes"
+            ],
+            "traitements_specifiques": [
+                "productifs anti mildiou"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Procéder à un travail profond du sol avant la plantation, et faire 2-3 binages lors de la période végétative pour empêcher le verdissage des tubercules.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

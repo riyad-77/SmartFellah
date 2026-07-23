@@ -1,0 +1,34 @@
+{
+    "culture": "Tournesol",
+    "exigences_sol": "La culture du tournesol nécessite un sol bien drainé et fertile, avec un pH neutre.",
+    "besoins_hydriques": "Le tournesol a besoin d'une irrigation régulière, en particulier pendant les périodes de croissance.",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Maladie des feuilles",
+            "causes": [
+                "Infection par un virus",
+                "Ataque de moineaux"
+            ],
+            "traitements_specifiques": [
+                "Treatment spécifique",
+                "Prévention"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Fertiliser régulièrement pour promouvoir la croissance du tournesol.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Assurer une irrigation régulière et suffisante pour les plantes.",
+            "status": "en cours",
+            "categorie": "prioritaire"
+        }
+    ]
+}

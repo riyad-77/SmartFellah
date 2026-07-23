@@ -1,0 +1,32 @@
+{
+    "culture": "maïs ensilage",
+    "exigences_sol": "Le maïs nécessite un sol bien drainé et avec une texture sableuse. Les sables de Larache sont adaptés à la culture du maïs.",
+    "besoins_hydriques": "Le maïs nécessite une irrigation régulière, en particulier pendant les premiers mois de croissance.",
+    "temp_optimale": {
+        "temp_min": "18.5°C",
+        "temp_max": "29°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Moteur de la rouille",
+            "causes": [
+                "infection par le fungus vert"
+            ],
+            "traitements_specifiques": [
+                "application de fungicides"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "L'application régulière d'un fertilisant pour les sols sables est nécessaire.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "La gestion de l'eau devrait être ciblée sur la période de croissance du maïs.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

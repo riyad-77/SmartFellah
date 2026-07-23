@@ -1,0 +1,123 @@
+{
+    "culture": "Arabica",
+    "exigences_sol": "argilo-limoneux bien drainants",
+    "besoins_hydriques": "très groupés dans le temps",
+    "temp_optimale": {
+        "temp_min": 7.2,
+        "temp_max": -16
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Enroulement chlorotique",
+            "causes": [
+                "Mycoplasmes"
+            ],
+            "traitements_specifiques": [
+                "traitement antimycoplasmique"
+            ]
+        },
+        {
+            "nom_maladie": "Piqûres de tige",
+            "causes": [],
+            "traitements_specifiques": []
+        },
+        {
+            "nom_maladie": "Malfet",
+            "causes": [
+                "froid, humidité"
+            ],
+            "traitements_specifiques": [
+                "corticostéroïdes"
+            ]
+        },
+        {
+            "nom_maladie": "Rougeur des feuilles",
+            "causes": [
+                "Manque de lumière",
+                "Trop de température"
+            ],
+            "traitements_specifiques": [
+                "Arrosage régulier",
+                "Traitement chimique"
+            ]
+        },
+        {
+            "nom_maladie": "La blaine",
+            "causes": [
+                "Les températures extrêmes",
+                "Le manque de humidité"
+            ],
+            "traitements_specifiques": [
+                "L'irrigation régulière",
+                "Le contrôle des insectes"
+            ]
+        },
+        {
+            "nom_maladie": "La pourriture des feuilles",
+            "causes": [
+                "Manque de lumière",
+                "Trop d'eau"
+            ],
+            "traitements_specifiques": [
+                "Désherbage, application de fungicides"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Renouveler le bois fruitier sur 3 et 4 ans",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Éviter les grosses plaies de taille",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Faire des rotations de culture pour éviter la maladie",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Laver les cultures régulièrement pour éviter l'accumulation de maladies",
+            "status": "en cours",
+            "categorie": "non urgent"
+        },
+        {
+            "description": "L'arrosage doit être réalisé à la matinée et au soir pour éviter les rayons du soleil direct.",
+            "status": null,
+            "categorie": "optionnel"
+        },
+        {
+            "description": "Il faut régler l'eau régulièrement pour éviter les surchauffures.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Il est important de contrôler les insectes pour empêcher la propagation des maladies.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Fertiliser les plantes avec un engrais azoté",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Lutter contre les ravageurs avec des insecticides",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "La fertilisation doit être effectuée à la fin de la saison sèche pour favoriser la croissance des racines.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Il est essentiel de surveiller régulièrement les niveaux d'humidité du sol pour éviter les problèmes de dessication ou d'écoulement excessif.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

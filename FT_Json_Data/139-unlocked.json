@@ -1,0 +1,40 @@
+{
+    "culture": "Noyer commun (Juglans regia)",
+    "exigences_sol": "Le noyer est planté principalement au bord des courants d'eau et à la limite des parcelles, en îlots et/ou en arbres isolés. Il préfère les sols bien drainés et les altitudes situées entre 1200 m et 1700 m.",
+    "besoins_hydriques": "Le noyer a une demande de water importante pour sa croissance, il faut donc assurer une irrigation régulière.",
+    "temp_optimale": {
+        "temp_min": "10°C",
+        "temp_max": "30°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Rougeur des feuilles",
+            "causes": [
+                "manque de lumière",
+                "trop d'eau"
+            ],
+            "traitements_specifiques": [
+                "irrigation contrôlée",
+                "application de pesticides"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie à la noix",
+            "causes": [
+                "attaque des insectes",
+                "infection bactérienne"
+            ],
+            "traitements_specifiques": [
+                "traitement avec des insecticides",
+                "application de produits chimiques anti-bactériens"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "L'arrosage doit être effectué à l'aide d'un système de rotation de couvertures pour minimiser les pertes d'eau. Il est recommandé d'utiliser des nozzles qui délivrent une quantité d'eau variable selon la température et la durée du cycle.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

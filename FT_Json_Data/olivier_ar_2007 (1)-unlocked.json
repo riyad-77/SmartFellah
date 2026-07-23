@@ -1,0 +1,34 @@
+{
+    "culture": "Arabique",
+    "exigences_sol": "Il faut avoir un sol bien drainé et bien aéré pour cette culture.",
+    "besoins_hydriques": "La culture nécessite une irrigation régulière, en particulier pendant la période de floraison.",
+    "temp_optimale": {
+        "temp_min": 15,
+        "temp_max": 25
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "La blaine",
+            "causes": [
+                "Les températures extrêmes",
+                "Le manque de humidité"
+            ],
+            "traitements_specifiques": [
+                "L'irrigation régulière",
+                "Le contrôle des insectes"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Il faut régler l'eau régulièrement pour éviter les surchauffures.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Il est important de contrôler les insectes pour empêcher la propagation des maladies.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

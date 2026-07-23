@@ -1,0 +1,34 @@
+{
+    "culture": "Riz",
+    "exigences_sol": "Le sol doit être bien drainé et avoir une bonne structure de porosité pour permettre une bonne absorption d'eau.",
+    "besoins_hydriques": "Le riz a besoin d'une irrigation régulière, mais pas trop abondante. La surface de l'eau doit être suffisamment haute pour que les racines puissent s'étendre, mais pas si haute qu'elle ne submerge le sol.",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "30°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Rougeur des feuilles",
+            "causes": [
+                "Trop d'eau",
+                "Manque d'air"
+            ],
+            "traitements_specifiques": [
+                "Amendement du sol",
+                "Prévention de la surirrigation"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Fertiliser régulièrement le riz pour maintenir une production maximale.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Éviter de trop arroser le riz, car cela peut entraîner des problèmes de mauvaise santé et de réduction de la productivité.",
+            "status": "En cours",
+            "categorie": "Important"
+        }
+    ]
+}

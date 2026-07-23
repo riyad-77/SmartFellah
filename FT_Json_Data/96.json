@@ -1,0 +1,32 @@
+{
+    "culture": "Absinthe",
+    "exigences_sol": null,
+    "besoins_hydriques": null,
+    "temp_optimale": {
+        "temp_min": "-10°C",
+        "temp_max": "30°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Rouille",
+            "causes": [
+                "Plantes infestées par des spores brunes"
+            ],
+            "traitements_specifiques": [
+                "Application de traitements anti-microbiens"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Entretien régulier, irrigation et fertilisation appropriée",
+            "status": null,
+            "categorie": null
+        },
+        {
+            "description": "Désherbage et binage réguliers pour prévenir la concurrence avec les mauvaises herbes",
+            "status": null,
+            "categorie": null
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "culture": "quinoa",
+    "exigences_sol": null,
+    "besoins_hydriques": null,
+    "temp_optimale": {
+        "temp_min": "-5ºC",
+        "temp_max": "30ºC"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [],
+            "traitements_specifiques": []
+        }
+    ],
+    "recommandations": [
+        {
+            "description": null,
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "culture": "arabica",
+    "exigences_sol": "Les sols doivent être bien drainés pour permettre une bonne aération des racines.",
+    "besoins_hydriques": "La culture demande 800 mm d'eau par an, en fonction de la température et du niveau de pH du sol.",
+    "temp_optimale": {
+        "temp_min": "10°C",
+        "temp_max": "30°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "La pourriture des feuilles",
+            "causes": [
+                "Trop d'eau",
+                "Manque de lumière"
+            ],
+            "traitements_specifiques": [
+                "Désherbage, application de fungicides"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "La fertilisation doit être effectuée à la fin de la saison sèche pour favoriser la croissance des racines.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Il est essentiel de surveiller régulièrement les niveaux d'humidité du sol pour éviter les problèmes de dessication ou d'écoulement excessif.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

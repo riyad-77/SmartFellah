@@ -1,0 +1,33 @@
+{
+    "culture": "Prunier",
+    "exigences_sol": "sol bien drainé avec un pH neutre à légèrement acide",
+    "besoins_hydriques": "irrigation régulière, mais pas excessives",
+    "temp_optimale": {
+        "temp_min": 10,
+        "temp_max": 25
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Maladie de la rouille verte",
+            "causes": [
+                "fumure excessive",
+                "inondation"
+            ],
+            "traitements_specifiques": [
+                " application de fungicide"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Fertilisation régulière avec un mélange de 10-10-10",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Irrigation régulière, mais pas excessives",
+            "status": "en cours",
+            "categorie": "normale"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "culture": "Orge",
+    "exigences_sol": null,
+    "besoins_hydriques": "Les sols ont un pH très bas, ce qui nécessite une irrigation régulière.",
+    "temp_optimale": {
+        "temp_min": 20,
+        "temp_max": 30
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "La rouille",
+            "causes": [
+                "manque d'azote",
+                "sol basique"
+            ],
+            "traitements_specifiques": [
+                "fertilisation azotée",
+                "traitement contre la rouille"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "L'irrigation régulière est essentielle pour les orges. Il est recommandé d'appliquer environ 20 cm3/m² de eau par jour.",
+            "status": null,
+            "categorie": null
+        }
+    ]
+}

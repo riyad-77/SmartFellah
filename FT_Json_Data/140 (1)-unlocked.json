@@ -1,0 +1,31 @@
+{
+    "culture": "blé tendre",
+    "exigences_sol": "Le sol doit être bien drainé, avec un pH neutre à légèrement acide.",
+    "besoins_hydriques": "Les blés nécessitent au moins 500 mm de précipitations annuelles. Le sol doit être well-drained et avoir un pH neutre à légèrement acide. Les blés sont des plantes hygrophiles, mais ils peuvent tolérer une certaine sécheresse.",
+    "temp_optimale": {
+        "temp_min": "-1°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Cécidomyie",
+            "causes": [
+                "Sécheresse",
+                "Attentes pluviales tardives",
+                "Zones semi-arides"
+            ],
+            "traitements_specifiques": [
+                "Réduire les attentes pluviales",
+                "Améliorer l'irrigation",
+                "Utiliser des variétés résistantes à la cécidomyie"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Vérifier les conditions climatiques et irriguer régulièrement. Utiliser des variétés résistantes à la cécidomyie.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

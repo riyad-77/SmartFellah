@@ -1,0 +1,219 @@
+{
+    "culture": "Amandier",
+    "exigences_sol": "sol profond, fertile, bien drainant, léger et humifère",
+    "besoins_hydriques": "800 à 850 mm/an avec des apports en mai-juin-juillet",
+    "temp_optimale": {
+        "temp_min": 7.2,
+        "temp_max": "200 à 400 heures en dessous de 7,2˚C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Anneau nécrotique",
+            "causes": [
+                "virus"
+            ],
+            "traitements_specifiques": []
+        },
+        {
+            "nom_maladie": "Necrotic ring Spot (maladie à virus)",
+            "causes": [
+                "Virus"
+            ],
+            "traitements_specifiques": [
+                "Réduction des apports en eau et en nutriments",
+                "Traitement avec des produits phyto-synthétiques"
+            ]
+        },
+        {
+            "nom_maladie": "Anthracnose",
+            "causes": [
+                "Humidité et chaleur"
+            ],
+            "traitements_specifiques": [
+                "Réduction de la humidité et du froid",
+                "Traitement avec des produits phyto-synthétiques"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie de la fleur",
+            "causes": [
+                "Manque d'entretien",
+                "Pollinisation insuffisante"
+            ],
+            "traitements_specifiques": [
+                "Appliquer des produits phytosanitaires"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie du tronc",
+            "causes": [
+                "Dégâts causés par les insectes",
+                "Manque d'eau"
+            ],
+            "traitements_specifiques": [
+                "Appliquer des produits phytosanitaires"
+            ]
+        },
+        {
+            "nom_maladie": "Peste des arbres",
+            "causes": [
+                "Infection par le virus du peste des arbres",
+                "Transmission par les insectes"
+            ],
+            "traitements_specifiques": [
+                "Traitement avec des pesticides spécifiques",
+                "Réduction de la consommation d'eau"
+            ]
+        },
+        {
+            "nom_maladie": "Rougeur des feuilles",
+            "causes": [
+                "Manque d'azote",
+                "Trop de température"
+            ],
+            "traitements_specifiques": [
+                "Ajustement du régime fertilisé",
+                "Prévention de la sur-irrigation"
+            ]
+        },
+        {
+            "nom_maladie": "Mauvaise pollinisation",
+            "causes": [
+                "Faible quantité de fleurs",
+                "Qualité des fleurs"
+            ],
+            "traitements_specifiques": []
+        },
+        {
+            "nom_maladie": "Résistance à certaines maladies",
+            "causes": [
+                "Bacillus subtilis",
+                "Fusarium oxysporum"
+            ],
+            "traitements_specifiques": [
+                "Applications de pesticides"
+            ]
+        },
+        {
+            "nom_maladie": "Rusticité",
+            "causes": [
+                "Sols pauvres, riches en calcaire avec de faibles disponibilités en eau"
+            ],
+            "traitements_specifiques": [
+                "Agriculture conventionnelle"
+            ]
+        },
+        {
+            "nom_maladie": "Capnode noire",
+            "causes": [
+                "Attaques de capnode"
+            ],
+            "traitements_specifiques": [
+                "Traitement par des produits phytosanitaires"
+            ]
+        },
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [],
+            "traitements_specifiques": []
+        },
+        {
+            "nom_maladie": "Mouche",
+            "causes": [
+                "Insectes",
+                "Humidité"
+            ],
+            "traitements_specifiques": [
+                "Épandage de insecticides",
+                "Réduction de la humidité"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Multipliez les amandes en Juillet-Août et greffez les plants en Décembre-Janvier pour la plantation.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Désherbage du sol en défoncement d'une profondeur de 40-60 cm ou sous-solage sans retourne-miento du sol.",
+            "status": "en cours",
+            "categorie": "urgence"
+        },
+        {
+            "description": "Fumure avec le mélange N-P-K approprié, irrigation localisée au goutte à goutte",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "La plantation d'amandiers doit être effectuée sur des sols profonds, fertiles et bien drainants.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Les apports en eau doivent être effectués pendant les mois de Mai-Juin-Juillet pour maximiser la production.",
+            "status": "En cours",
+            "categorie": "Prioritaire"
+        },
+        {
+            "description": "Faire régulièrement une taille de formation et de fructification pour assurer la production optimale.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Utiliser des variétés de amandier résistantes à la sécheresse et pollinisées pour améliorer les rendements.",
+            "status": "en cours",
+            "categorie": "urgence"
+        },
+        {
+            "description": "Effectuer une taille de formation et de fructification dans les vergers jeunes pour améliorer les rendements.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Diffuser des nouvelles variétés d'amandier pour pallier à la contrainte locale (gelée,...).",
+            "status": "En cours",
+            "categorie": "Important"
+        },
+        {
+            "description": "Sur-graftage des arbres avec des variétés commerciales performantes",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Travail du sol sous la frondaison des arbres pour collecter l'eau de pluie et faciliter son infiltrations",
+            "status": "planifié",
+            "categorie": "prioritaire"
+        },
+        {
+            "description": "Choisir une variété d'amandier résistante aux nématodes, au crown gall et aux attaques du capnode.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Utiliser un porte-greffe de bonne qualité pour garantir la production et l'assurance du développement des arbres.",
+            "status": "en cours",
+            "categorie": "prioritaire"
+        },
+        {
+            "description": "Choisir un porte-greffe résistant à la pénétration des larves du capnode noire (Capnodis tenebrionis)",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Conduite appropriée avec des interventions en vert pour permettre à l'arbre d'être formé rapidement en période juvénile",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Sélection de porte-greffe à multipli-ration générative pour garantir la production et assurer son développement dans plusieurs régions fragilisées par l'aridité climatique",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "L'arrosage doit être effectué régulièrement, mais sans inondation.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

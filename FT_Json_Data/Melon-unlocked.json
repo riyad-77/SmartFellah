@@ -1,0 +1,29 @@
+{
+    "culture": "Riz",
+    "exigences_sol": "Le sol doit être bien drainé et avoir une bonne structure pour permettre une bonne aération des racines.",
+    "besoins_hydriques": "Les rizières doivent être irriguées régulièrement, en particulier pendant la floraison et la grainification. La quantité d'eau nécessaire varie selon les conditions climatiques.",
+    "temp_optimale": {
+        "temp_min": 15,
+        "temp_max": 30
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Rougeur des feuilles",
+            "causes": [
+                "Trop de chaleur",
+                "Trop d'humidité"
+            ],
+            "traitements_specifiques": [
+                "Réduction de l'eau",
+                "Amélioration de la ventilation"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Fertiliser les rizières régulièrement pour favoriser la croissance des plants.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

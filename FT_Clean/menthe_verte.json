@@ -1,0 +1,52 @@
+{
+    "culture": "Menthe verte",
+    "exigences_sol": "Le sol argileux, fertile, à forte réten- tion en eau, dépourvu de cailloux et les terrains sont plats.",
+    "besoins_hydriques": "L'eau est douce, abondante et accessible grâce à des puits qui ont en général 20 à 30 mètres de profon- deur.",
+    "temp_optimale": {
+        "temp_min": "20°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": null,
+            "traitements_specifiques": null
+        },
+        {
+            "nom_maladie": "Périssement des feuilles",
+            "causes": [
+                "infections bactériennes"
+            ],
+            "traitements_specifiques": [
+                "traitement chimique avec des produits phytosanitaires"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Labourer et épierrager le sol avant d'installer la menthe.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Assurer une irrigation régulière et adaptée aux besoins de la plante.",
+            "status": "en cours",
+            "categorie": "pas urgent"
+        },
+        {
+            "description": "Il est important de faire l’épierrage avant l’installation de la menthe pour améliorer la fertilité du sol.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "L'application régulière d'un engrais organique peut aider à prévenir les maladies",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Il est recommandé de récolter la menthe à la fin de la journée pour éviter les attaques de grillons",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

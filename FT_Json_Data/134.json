@@ -1,0 +1,28 @@
+{
+    "culture": "Abricotier",
+    "exigences_sol": "L'abricotier n'est pas très exigeant en matière de sol, pourvu qu'il ne soit pas trop lourd et humide.",
+    "besoins_hydriques": "Les besoins en eau de l'abricotier sont élevés au moment de la croissance du fruit, particulièrement pendant le durcissement du noyau.",
+    "temp_optimale": {
+        "temp_min": "-10°C",
+        "temp_max": "+7.2°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Insuffisance en froid",
+            "causes": [
+                "Température inférieure à -5°C",
+                "Fleurs ouvertes"
+            ],
+            "traitements_specifiques": [
+                "Protection de la fleur, irrigation régulière"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "La protection de la fleur et l'irrigation régulière sont essentielles pour éviter les maladies liées à l'insuffisance en froid.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

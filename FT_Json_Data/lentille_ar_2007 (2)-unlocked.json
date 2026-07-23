@@ -1,0 +1,45 @@
+{
+    "culture": "Arachis hypogaea",
+    "exigences_sol": "sol avec un pH acide à 5,5-6,5",
+    "besoins_hydriques": "apport d'eau de 1 000 à 2 000 mm/an",
+    "temp_optimale": {
+        "temp_min": 15,
+        "temp_max": 35
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Mauvaise vache",
+            "causes": [
+                "infections bactériennes",
+                "insectes"
+            ],
+            "traitements_specifiques": [
+                "traitement antibiotique",
+                "éradication des insectes"
+            ]
+        },
+        {
+            "nom_maladie": "Ratéfiération de la tige",
+            "causes": [
+                "manque d'eau",
+                "sol salin"
+            ],
+            "traitements_specifiques": [
+                "traitement hydrique",
+                "amendement du sol"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Apport d'engrais organique pour améliorer la fertilité du sol",
+            "status": "en cours",
+            "Categorie": "urgent"
+        },
+        {
+            "description": "Élimination des insectes nuisibles",
+            "status": "en cours",
+            "Categorie": "important"
+        }
+    ]
+}

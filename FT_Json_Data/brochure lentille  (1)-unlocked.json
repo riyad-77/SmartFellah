@@ -1,0 +1,27 @@
+{
+    "culture": "Ziza",
+    "exigences_sol": "Sol avec pH neutre à légèrement acide (5,5-6,5)",
+    "besoins_hydriques": "Aucun besoin de précipitation extrême mais un sol bien drainé est recommandé.",
+    "temp_optimale": {
+        "temp_min": 10,
+        "temp_max": 25
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Ver Blanc",
+            "causes": [
+                "Insectes comme le ver blanc"
+            ],
+            "traitements_specifiques": [
+                "Utiliser des pesticides appropriés"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Agréoler à la bonne épaisseur pour favoriser l'absorption de nutriments",
+            "status": "en cours",
+            "categorie": "urgente"
+        }
+    ]
+}

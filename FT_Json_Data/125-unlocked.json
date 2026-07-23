@@ -1,0 +1,43 @@
+{
+    "culture": "Pistachier",
+    "exigences_sol": "Le sol doit être bien drainé et avoir une pH entre 7,5 et 8,5.",
+    "besoins_hydriques": "La pistache est une culture hygromique et nécessite régulièrement l'irrigation.",
+    "temp_optimale": {
+        "temp_min": "-10 °C",
+        "temp_max": "40 °C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Folie verte",
+            "causes": [
+                "Étapes de croissance trop rapides",
+                "Manque d'irrigation"
+            ],
+            "traitements_specifiques": [
+                "Appliquer des pesticides, assurer une bonne irrigation"
+            ]
+        },
+        {
+            "nom_maladie": "Mort grise",
+            "causes": [
+                "Taux d'humidité trop élevé",
+                "Maladies fongiques"
+            ],
+            "traitements_specifiques": [
+                "Réduire les taux d'humidité, appliquer des fungicides"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Effectuer régulièrement des inspections pour détecter les maladies et les ravageurs.",
+            "status": "en cours",
+            "categorie": "urgence"
+        },
+        {
+            "description": "Assurer une bonne irrigation régulière, mais sans submerger le sol.",
+            "status": "en cours",
+            "categorie": ""
+        }
+    ]
+}

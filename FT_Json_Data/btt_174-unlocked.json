@@ -1,0 +1,33 @@
+{
+    "culture": "Stevia rebaudiana",
+    "exigences_sol": "Sols fertiles, température optimale entre 15°C et 25°C, et exposition à la lumière directe.",
+    "besoins_hydriques": "Aire humide avec un taux d'humidité de 60% à 80% pour une croissance optimale.",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Maladie des feuilles",
+            "causes": [
+                "Fumée, excès d'humidité",
+                "Pests"
+            ],
+            "traitements_specifiques": [
+                "Agronomes, pesticides, traitement antimicrobienne"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Le système racinaire est fibreux et nécessite une irrigation régulière pour éviter les carences en eau.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Les insectes sont nécessaires pour la pollinisation croisée et la production de graines viables.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

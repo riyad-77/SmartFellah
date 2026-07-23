@@ -1,0 +1,23 @@
+{
+    "culture": "grenadier",
+    "exigences_sol": "sols d'alluvions profond avec disponibilités satisfaisantes en eau",
+    "besoins_hydriques": "bords des courants d'eau ou sols argilo-limoneux irrigués",
+    "temp_optimale": {
+        "temp_min": "-10°C",
+        "temp_max": "+40°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [],
+            "traitements_specifiques": []
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "L'agriculteur doit choisir des variétés de grenadier performantes et adapter les pratiques agricoles en fonction des conditions locales.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

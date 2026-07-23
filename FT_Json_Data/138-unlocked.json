@@ -1,0 +1,45 @@
+{
+    "culture": "Pêcher (Prunus persica)",
+    "exigences_sol": "La culture de pêcher nécessite un sol bien drainé et fertile.",
+    "besoins_hydriques": "Les variétés à faibles besoins en froid ont besoin d'une irrigation modérée, tandis que les variétés plus exigeantes ont besoin d'une irrigation plus abondante.",
+    "temp_optimale": {
+        "temp_min": "-2°C",
+        "temp_max": "22°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Maladie du feu",
+            "causes": [
+                "Chauds, sec",
+                "Exposition au vent"
+            ],
+            "traitements_specifiques": [
+                "Écran de fumée",
+                "Traitement chimique"
+            ]
+        },
+        {
+            "nom_maladie": "Pucération",
+            "causes": [
+                "Moissons premières",
+                "Inondations"
+            ],
+            "traitements_specifiques": [
+                "Élimination des feuilles",
+                "Application de fungicides"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Assurer une irrigation régulière et abondante, en particulier pendant la floraison.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Effectuer un écran de fumée chaque nuit à risque de gel pour protéger le verger.",
+            "status": "en cours",
+            "categorie": "prioritaire"
+        }
+    ]
+}

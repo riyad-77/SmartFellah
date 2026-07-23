@@ -1,0 +1,43 @@
+{
+    "culture": "Amandier",
+    "exigences_sol": "Les sols calcaires et les terres argileuses asphyxiantes sont à éviter.",
+    "besoins_hydriques": "Les besoins en eau de l'amandier sont de 800 à 850 mm/an, avec des apports recommandés durant Mai-Juin-Juillet.",
+    "temp_optimale": {
+        "temp_min": "200 à 400 heures en dessous de 7,2˚C",
+        "temp_max": "Le froid est toléré, mais la température doit être supérieure à 0°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Necrotic ring Spot (maladie à virus)",
+            "causes": [
+                "Virus"
+            ],
+            "traitements_specifiques": [
+                "Réduction des apports en eau et en nutriments",
+                "Traitement avec des produits phyto-synthétiques"
+            ]
+        },
+        {
+            "nom_maladie": "Anthracnose",
+            "causes": [
+                "Humidité et chaleur"
+            ],
+            "traitements_specifiques": [
+                "Réduction de la humidité et du froid",
+                "Traitement avec des produits phyto-synthétiques"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "La plantation d'amandiers doit être effectuée sur des sols profonds, fertiles et bien drainants.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Les apports en eau doivent être effectués pendant les mois de Mai-Juin-Juillet pour maximiser la production.",
+            "status": "En cours",
+            "categorie": "Prioritaire"
+        }
+    ]
+}

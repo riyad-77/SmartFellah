@@ -1,0 +1,105 @@
+{
+    "culture": "Betterave a sucre",
+    "exigences_sol": "La meilleure qualité du sol pour semer les graines de betterave à sucre est un sol alluvial avec une texture fine et une structure homogène.",
+    "besoins_hydriques": "goutte à goutte",
+    "temp_optimale": {
+        "temp_min": "16-26 °C",
+        "temp_max": "10-20 °C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "nématodes",
+            "causes": [
+                "en début de culture"
+            ],
+            "traitements_specifiques": [
+                "inconnu"
+            ]
+        },
+        {
+            "nom_maladie": "cassid",
+            "causes": [
+                "de mai/juin"
+            ],
+            "traitements_specifiques": [
+                "inconnu"
+            ]
+        },
+        {
+            "nom_maladie": "pourriture molle des racines",
+            "causes": [
+                "au moment de la récolte"
+            ],
+            "traitements_specifiques": [
+                "inconnu"
+            ]
+        },
+        {
+            "nom_maladie": "Pestes des feuilles",
+            "causes": [
+                "Pollination non appropriée",
+                "Utilisation de semences anciennes"
+            ],
+            "traitements_specifiques": [
+                "Fumigation",
+                "Traitement avec des huiles essentielles"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie des feuilles",
+            "causes": [
+                "Infection par les espèces Mycosportheae"
+            ],
+            "traitements_specifiques": [
+                "Application de fumigants"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie des racines",
+            "causes": [
+                "Insectes",
+                "Fongiques"
+            ],
+            "traitements_specifiques": [
+                "Herbicides, Fumigations"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Utiliser un système d'irrigation favorable à la croissance de la plante.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Effectuer un désherbage régulier pour contrôler les populations de plantes adventices et prévenir les phénomènes de pourriture de la racine à la récolte.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Le labour doit être fait à la fin de la saison sèche pour éviter les pertes de matière.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Il est important d'assurer une bonne préparation du sol et un semis précis pour obtenir une levée homogène des graines.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Effectuer une préparation du sol soigneuse avant le semis, en choisissant des outils adaptés à la culture monogermes.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Choisir des semoirs de précision capables de semer sur des billons préalablement confectionnés.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Réaliser un labour précis et une préparation du sol soignée pour permettre un enracinement profond.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        }
+    ]
+}

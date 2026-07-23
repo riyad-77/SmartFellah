@@ -1,0 +1,29 @@
+{
+    "culture": "Amygdalus communis",
+    "exigences_sol": "Culture de noyau sur sol humus frais, avec fertilisation azotée en mars et septembre",
+    "besoins_hydriques": "Le drainage est important. L'arrosage doit être effectué régulièrement, mais sans inondation.",
+    "temp_optimale": {
+        "temp_min": 10,
+        "temp_max": 25
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Mouche",
+            "causes": [
+                "Insectes",
+                "Humidité"
+            ],
+            "traitements_specifiques": [
+                "Épandage de insecticides",
+                "Réduction de la humidité"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "L'arrosage doit être effectué régulièrement, mais sans inondation.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

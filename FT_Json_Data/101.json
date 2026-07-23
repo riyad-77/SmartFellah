@@ -1,0 +1,23 @@
+{
+    "culture": "LA PATATE DOUCE",
+    "exigences_sol": null,
+    "besoins_hydriques": "Il faut irriguer jusqu&#39;à pleine couverture du sol par la végétation.",
+    "temp_optimale": {
+        "temp_min": "4-5^°C",
+        "temp_max": "95 % HR"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": null,
+            "causes": null,
+            "traitements_specifiques": null
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Il faut choisir un matériel végétal sain, indemne de virus.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

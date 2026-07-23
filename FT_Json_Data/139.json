@@ -1,0 +1,23 @@
+{
+    "culture": "Noyer commun (Juglans regia)",
+    "exigences_sol": null,
+    "besoins_hydriques": "Le noyer est planté principalement au bord des courants d'eau et à la limite des parcelles, en îlots et/ou en arbres isolés.",
+    "temp_optimale": {
+        "temp_min": "1200 m",
+        "temp_max": "1700 m"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": null,
+            "traitements_specifiques": null
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Considérer le mode de multiplication par greffage pour améliorer la production et la qualité des noix.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

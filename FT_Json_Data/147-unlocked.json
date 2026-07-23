@@ -1,0 +1,34 @@
+{
+    "culture": "Tomate",
+    "exigences_sol": null,
+    "besoins_hydriques": "La tomate nécessite un sol bien drainé et riche en nutriments.",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Maladie des feuilles jaunes",
+            "causes": [
+                "Virus TYLCV",
+                "Insecte Bemisia tabaci"
+            ],
+            "traitements_specifiques": [
+                "Traitement chimique",
+                "Traitement biologique"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "L'approvisionnement en plants sains est essentiel pour éviter les pertes dues à la maladie des feuilles jaunes.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "La protection des pépinières par des filets et serres canariennes en bois est recommandée pour prévenir l'infestation des insectes.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

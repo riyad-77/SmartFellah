@@ -1,0 +1,34 @@
+{
+    "culture": "Stevia rebaudiana",
+    "exigences_sol": "La stévia nécessite un sol fertile et bien drainé, avec une pH entre 6 et 7.",
+    "besoins_hydriques": "Elle nécessite une irrigation régulière, mais pas excessive. La plante est sensible à l'excès d'eau.",
+    "temp_optimale": {
+        "temp_min": "-5°C",
+        "temp_max": "30°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Maladie des feuilles",
+            "causes": [
+                "Manque de lumière",
+                "Surcharge d'eau"
+            ],
+            "traitements_specifiques": [
+                "Réduction de l'irrigation",
+                "Traitement antibiotique"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Il est recommandé de planter la stévia ensoleillée, avec au moins 6 heures de lumière directe par jour.",
+            "status": "en cours",
+            "categorie": "urgence"
+        },
+        {
+            "description": "La stévia doit être arrosée régulièrement, mais pas trop. Il est recommandé d'irriguer la plante 2-3 fois par semaine.",
+            "status": "en cours",
+            "categorie": "urgence"
+        }
+    ]
+}

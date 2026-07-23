@@ -1,0 +1,32 @@
+{
+    "culture": "Myrtille",
+    "exigences_sol": null,
+    "besoins_hydriques": "Les myrtilles nécessitent une irrigation régulière pour favoriser leur croissance et productivité. Il est recommandé d'apporter environ 10 à 15 cm de couche de mulch ou de tapis de drainage pour réduire la perte d'eau et améliorer la qualité du sol.",
+    "temp_optimale": {
+        "temp_min": null,
+        "temp_max": "12°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Maladie de l'asparague",
+            "causes": [
+                "infection par Ascochyta"
+            ],
+            "traitements_specifiques": [
+                "traitement avec des produits chimiques, application de solides en couches fines"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Les myrtilles nécessitent une exposition à la lumière directe pour se développer correctement.",
+            "status": null,
+            "categorie": "important"
+        },
+        {
+            "description": "Il est recommandé d'apporter régulièrement des nutriments et de limiter les fertilisants dans les sols",
+            "status": null,
+            "categorie": "normal"
+        }
+    ]
+}

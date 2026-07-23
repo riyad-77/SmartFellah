@@ -1,0 +1,62 @@
+{
+    "culture": "Luzerne",
+    "exigences_sol": "Le sol doit être bien drainé et avoir une pH entre 6,5 et 7,5.",
+    "besoins_hydriques": "La luzerne a besoin d'une irrigation régulière, en particulier pendant la floraison. Il est recommandé d'irriguer les plantes à raison de 2-3 litres par mètre linéaire par jour",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "La Cuscute",
+            "causes": [
+                "Influence des conditions climatiques",
+                "Atteinte à la racine du plant",
+                "Dégâts causés par les insectes"
+            ],
+            "traitements_specifiques": [
+                "Traitement phytosanitaire",
+                "Utilisation de semences résistantes"
+            ]
+        },
+        {
+            "nom_maladie": "Les maladies cryptogamiques",
+            "causes": [
+                "Infection des tiges et des feuilles",
+                "Développement de champignons"
+            ],
+            "traitements_specifiques": [
+                "Traitements chimiques",
+                "Utilisation de semences résistantes"
+            ]
+        },
+        {
+            "nom_maladie": "Cercosse des feuilles",
+            "causes": [
+                "Infection par le virus du cercosse",
+                "Attente de la pluie"
+            ],
+            "traitements_specifiques": [
+                "Traitement anti-viral",
+                "Prévention avec un traitements phytovirus"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Il est important de choisir une variété de luzerne adaptée à la région et aux conditions climatiques.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "La pollinisation est essentielle pour la production de graines. Utiliser des colonies d'abeilles domestiques peut améliorer le rendement.",
+            "status": "en cours",
+            "categorie": "urgence"
+        },
+        {
+            "description": "Il est recommandé d'installer sept à huit colonies d'abeilles par hectare dès l'apparition des premières fleurs au milieu du champ pour accroître considérablement le rendement.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

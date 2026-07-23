@@ -1,0 +1,41 @@
+{
+    "culture": "Blé dur et Blé tendre",
+    "exigences_sol": "Sol de type Dehss dans une zone plaine avec un climat partiellement sous influence océanique, Sol de type Tirs sur le plateau avec un climat continental",
+    "besoins_hydriques": "Irrigation régulière, en particulier pour les essais de la station Mrissa",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Mauvaises herbes",
+            "causes": [
+                "Infestation de mauvaises herbes"
+            ],
+            "traitements_specifiques": [
+                "Utilisation d'un anti-dicotylédone (Printazol 75)"
+            ]
+        },
+        {
+            "nom_maladie": "Maladies cryptogamiques",
+            "causes": [
+                "Présence du littoral atlantique et de la pluviométrie"
+            ],
+            "traitements_specifiques": [
+                "Traitement antifongique (Impact RM, 1 litre/ha)"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Application régulière d'un semi-soir pour réduire les pertes de qualité du grain",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Utilisation d'une densité de semis de 145 Kg/ha pour optimiser le rendement",
+            "status": "En cours",
+            "categorie": "Prioritaire"
+        }
+    ]
+}

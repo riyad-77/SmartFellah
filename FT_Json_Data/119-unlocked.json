@@ -1,0 +1,45 @@
+{
+    "culture": "Amandier",
+    "exigences_sol": "Les sols doivent avoir une structure bien drainée et un pH entre 6.0 et 7.0.",
+    "besoins_hydriques": "L'amandier nécessite une irrigation régulière, en particulier pendant la période de floraison.",
+    "temp_optimale": {
+        "temp_min": "10°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Peste des arbres",
+            "causes": [
+                "Infection par le virus du peste des arbres",
+                "Transmission par les insectes"
+            ],
+            "traitements_specifiques": [
+                "Traitement avec des pesticides spécifiques",
+                "Réduction de la consommation d'eau"
+            ]
+        },
+        {
+            "nom_maladie": "Rougeur des feuilles",
+            "causes": [
+                "Manque d'azote",
+                "Trop de température"
+            ],
+            "traitements_specifiques": [
+                "Ajustement du régime fertilisé",
+                "Prévention de la sur-irrigation"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Effectuer une taille de formation et de fructification dans les vergers jeunes pour améliorer les rendements.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Diffuser des nouvelles variétés d'amandier pour pallier à la contrainte locale (gelée,...).",
+            "status": "En cours",
+            "categorie": "Importante"
+        }
+    ]
+}

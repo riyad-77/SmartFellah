@@ -1,0 +1,29 @@
+{
+    "culture": "Pois",
+    "exigences_sol": "Le sol devrait être bien exposé pour cette culture.",
+    "besoins_hydriques": "La culture doit être arrosée régulièrement.",
+    "temp_optimale": {
+        "temp_min": 15,
+        "temp_max": 25
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Mauvaise végétation",
+            "causes": [
+                "Manque de lumière",
+                "Manque d'eau"
+            ],
+            "traitements_specifiques": [
+                "Ajuster l'exposition au soleil",
+                "Ajuster la quantité d'eau"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Rallier les feuilles régulièrement.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "culture": "Menthe verte",
+    "exigences_sol": "sol argileux, fertile, à forte réten- tion en eau, dépourvu de cailloux et les terrains sont plats",
+    "besoins_hydriques": "eau douce, abondante et accessible",
+    "temp_optimale": {
+        "temp_min": "20°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Périssement des feuilles",
+            "causes": [
+                "infections bactériennes"
+            ],
+            "traitements_specifiques": [
+                "traitement chimique avec des produits phytosanitaires"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "L'application régulière d'un engrais organique peut aider à prévenir les maladies",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Il est recommandé de récolter la menthe à la fin de la journée pour éviter les attaques de grillons",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

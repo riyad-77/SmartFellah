@@ -1,0 +1,29 @@
+{
+    "culture": "Culture de blé",
+    "exigences_sol": "Sol solaire",
+    "besoins_hydriques": "Hydrounitre",
+    "temp_optimale": {
+        "temp_min": 15,
+        "temp_max": 25
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "La rouille",
+            "causes": [
+                "Étiologie 1",
+                "Étiologie 2"
+            ],
+            "traitements_specifiques": [
+                "Traitement 1",
+                "Traitement 2"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Fertiliser avant la germination",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

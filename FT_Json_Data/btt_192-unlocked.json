@@ -1,0 +1,32 @@
+{
+    "culture": "Arachide",
+    "exigences_sol": "Sol sableux 'R'mel' apte à plusieurs cultures en particulier à l&#39;arachide, la pomme de terre et la canne à sucre.",
+    "besoins_hydriques": "Irrigation par aspersion et disponibilité d'eau douce à tour de rôle",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "30°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [
+                "Inconnues"
+            ],
+            "traitements_specifiques": [
+                "Inconus"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "La récolte doit avoir lieu dès septembre pour éviter les pertes de grains en raison des pluies.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Il est recommandé d'appliquer un régime irrigateur plus précis pour optimiser l'utilisation de l'eau.",
+            "status": "En cours",
+            "categorie": "Prioritaire"
+        }
+    ]
+}

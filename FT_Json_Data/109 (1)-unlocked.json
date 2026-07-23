@@ -1,0 +1,32 @@
+{
+    "culture": "bananier",
+    "exigences_sol": "Le bananier nécessite un sol profond, fertile et léger.",
+    "besoins_hydriques": "Le bananier est très sensible au déficit hydrique. Il demande une quantité importante d'eau, notamment pendant la floraison et la fructification.",
+    "temp_optimale": {
+        "temp_min": "20°C",
+        "temp_max": "30°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Nématodose",
+            "causes": [
+                "Présence de nématodes dans le sol"
+            ],
+            "traitements_specifiques": [
+                " Traitement avec des nématicides"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "L'irrigation régulière est indispensable, en particulier pendant la floraison et la fructification.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "La sélection des pieds-mères est importante pour une production optimale. Il faut éviter les maladies transmissibles par les plants.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

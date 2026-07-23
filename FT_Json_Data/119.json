@@ -1,0 +1,41 @@
+{
+    "culture": "Amandier",
+    "exigences_sol": "Sol calcaire ou argileux avec une bonne drainage",
+    "besoins_hydriques": "Besoins modérés à faibles (50-100 mm/an)",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Mauvaise pollinisation",
+            "causes": [
+                "Faible quantité de fleurs",
+                "Qualité des fleurs"
+            ],
+            "traitements_specifiques": []
+        },
+        {
+            "nom_maladie": "Résistance à certaines maladies",
+            "causes": [
+                "Bacillus subtilis",
+                "Fusarium oxysporum"
+            ],
+            "traitements_specifiques": [
+                "Applications de pesticides"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Sur-graftage des arbres avec des variétés commerciales performantes",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Travail du sol sous la frondaison des arbres pour collecter l'eau de pluie et faciliter son infiltrations",
+            "status": "planifié",
+            "categorie": "prioritaire"
+        }
+    ]
+}

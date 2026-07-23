@@ -1,0 +1,45 @@
+{
+    "culture": "Pistachier",
+    "exigences_sol": "La culture du pistachier nécessite un sol bien drainé et avec une bonne structure, pour permettre à l'arbre d'établir ses racines profondes.",
+    "besoins_hydriques": "Le pistachier a besoin d'un sol bien drainé et avec une bonne structure, mais également de bons apports en eau. Il est sensible aux sécheresses et aux conditions climatiques extrêmes.",
+    "temp_optimale": {
+        "temp_min": "7.2°C",
+        "temp_max": "22°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Maladie de la transpiration excessive",
+            "causes": [
+                "Sécheresse",
+                "Soil salin"
+            ],
+            "traitements_specifiques": [
+                "Irrigation régulière",
+                "Apport en fertilisants"
+            ]
+        },
+        {
+            "nom_maladie": "Rougeur des feuilles",
+            "causes": [
+                "Manque de lumière",
+                "Malnutrition du sol"
+            ],
+            "traitements_specifiques": [
+                "Ajout de luminance",
+                "Apport en nutriments"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Fertilisation régulière pour améliorer la croissance et les rendements",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Irrigation régulière pour prévenir la sécheresse et les maladies",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

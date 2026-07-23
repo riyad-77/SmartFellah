@@ -1,0 +1,33 @@
+{
+    "culture": "Absinthe",
+    "exigences_sol": "Plante xérophyte, pousse dans des régions à faible pluviosité, nécessite des endroits bien ensoleillés.",
+    "besoins_hydriques": "Nécessite une irrigation régulière, mais la quantité de eau nécessaire n'est pas déterminée.",
+    "temp_optimale": {
+        "temp_min": null,
+        "temp_max": "des températures allant d’un extrême à l’autre"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Rouille",
+            "causes": [
+                "perte de turgescence",
+                "perte de chlorophylle"
+            ],
+            "traitements_specifiques": [
+                "irrigation régulière"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Fertilisation régulière, apport de matière organique et soins culturaux adaptés.",
+            "status": null,
+            "categorie": "urgente"
+        },
+        {
+            "description": "Désherbage régulier pour supprimer les mauvaises herbes et promouvoir la croissance de l’absinthe.",
+            "status": null,
+            "categorie": "non urgente"
+        }
+    ]
+}

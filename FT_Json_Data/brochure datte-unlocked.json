@@ -1,0 +1,34 @@
+{
+    "culture": "Riz du figue",
+    "exigences_sol": "Sol avec un pH neutre à légèrement acide (6,5-7,0)",
+    "besoins_hydriques": "Le riz demande une quantité importante de pluie pour s'épanouir. Il faut donc choisir des zones avec un régime pluvial suffisant.",
+    "temp_optimale": {
+        "temp_min": "-10°C",
+        "temp_max": "35°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Maladie blanche des feuilles",
+            "causes": [
+                "Fongique",
+                "Virus"
+            ],
+            "traitements_specifiques": [
+                "Des infections en surface",
+                "Des traitements chimiques"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Il est important de choisir un climat sec et bien ventilé pour éviter les maladies.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "La fertilisation régulière est essentielle pour maintenir la santé du riz.",
+            "status": "en cours",
+            "categorie": "non urgente"
+        }
+    ]
+}

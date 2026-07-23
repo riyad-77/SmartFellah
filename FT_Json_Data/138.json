@@ -1,0 +1,34 @@
+{
+    "culture": "Pêcher",
+    "exigences_sol": null,
+    "besoins_hydriques": "Le pêcher est classé sous-alimentaire en termes de besoins en eau. Il nécessite une irrigation régulière, surtout pendant la période de floraison.",
+    "temp_optimale": {
+        "temp_min": "-2°C",
+        "temp_max": "+25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Maladie des feuilles rouges",
+            "causes": [
+                "Concentrations élevées de azote",
+                "Pauvreté en phosphore"
+            ],
+            "traitements_specifiques": [
+                "Application de fumure de phosphore",
+                "Utilisation de pesticides spéciaux"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "L'association de variétés pollinisatrices est recommandée pour les cultures en sol léger.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "La protection phytosanitaire est essentielle pour prévenir les ravageurs et les maladies.",
+            "status": "en cours",
+            "categorie": "non urgente"
+        }
+    ]
+}

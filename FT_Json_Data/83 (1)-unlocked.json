@@ -1,0 +1,32 @@
+{
+    "culture": "Orge",
+    "exigences_sol": null,
+    "besoins_hydriques": "Faible, la variété est adaptée aux sols argileux.",
+    "temp_optimale": {
+        "temp_min": "10°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Rouge de la semoule",
+            "causes": [
+                "Infection par des micro-organismes"
+            ],
+            "traitements_specifiques": [
+                "Traitement avec des fungicides"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Fertiliser les plants à l'arrivée de la floraison pour augmenter la productivité.",
+            "status": null,
+            "categorie": null
+        },
+        {
+            "description": "Assurer une bonne drainage du sol pour prévenir les problèmes de ténèbre et d'infection par des micro-organismes.",
+            "status": null,
+            "categorie": null
+        }
+    ]
+}

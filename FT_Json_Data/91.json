@@ -1,0 +1,45 @@
+{
+    "culture": "Safran",
+    "exigences_sol": "Les sols à teneurs relativement élevées en calcaire (parfois supérieures à 20%) conviennent au safran.",
+    "besoins_hydriques": "Le safran peut tolérer des sols à teneurs relativement élevées en argile, mais il est préférablement adapté aux sols bien drainants.",
+    "temp_optimale": {
+        "temp_min": "-15°C",
+        "temp_max": "+40°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "La maladie des feuilles jaunes",
+            "causes": [
+                "Infection par des champignons",
+                "Dégâts causés par les insectes"
+            ],
+            "traitements_specifiques": [
+                "Appliquer des fungicides",
+                "Utiliser des insecticides"
+            ]
+        },
+        {
+            "nom_maladie": "La maladie du bulbe",
+            "causes": [
+                "Infection par des champignons",
+                "Dégâts causés par les insectes"
+            ],
+            "traitements_specifiques": [
+                "Appliquer des fungicides",
+                "Utiliser des insecticides"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "L'épierrage et la construction de terrasses sont des opérations obligatoires dans plusieurs régions productrices du safran.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Un labour croisé et profond de 30 à 40 cm est nécessaire pour faciliter la préparation du terrain pour la nouvelle plantation.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "culture": "Agrumes",
+    "exigences_sol": null,
+    "besoins_hydriques": "Les agrumes nécessitent une irrigation régulière, en particulier pendant la période de floraison et de fruits mûrs.",
+    "temp_optimale": {
+        "temp_min": "-7°C",
+        "temp_max": "20°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Dégâts causés par le froid",
+            "causes": [
+                "Pertes d'énergie par convection",
+                "Vent froid qui intensifie les pertes de chaleur"
+            ],
+            "traitements_specifiques": [
+                "Acclimatation des arbres au froid avant l'installation du froid",
+                "Utilisation de couvert végétal pour protéger les fruits et les feuilles"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "L'acclimatation des arbres aux températures froides est essentielle avant l'installation du froid.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Il est important de surveiller les conditions météorologiques pour prévenir les gelées sévères.",
+            "status": null,
+            "categorie": "non urgent"
+        }
+    ]
+}

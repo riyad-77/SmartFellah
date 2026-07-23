@@ -1,0 +1,32 @@
+{
+    "culture": "Blé",
+    "exigences_sol": "sol bien drainé avec un pH optimal entre 6,0 et 7,0",
+    "besoins_hydriques": "régime d'irrigation régulier, en fonction de la période du cycle de croissance",
+    "temp_optimale": {
+        "temp_min": "10°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Cécidomyie",
+            "causes": [
+                "attaque par la cécidomyie"
+            ],
+            "traitements_specifiques": [
+                "traitement avec des insecticides"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Utiliser des variétés de blé résistantes à la cécidomyie",
+            "status": "en cours",
+            "categorie": "urgence"
+        },
+        {
+            "description": "Lever les mesures d'irrigation pour éviter les sécheresses et les attaques par la cécidomyie",
+            "status": "en cours",
+            "categorie": "important"
+        }
+    ]
+}

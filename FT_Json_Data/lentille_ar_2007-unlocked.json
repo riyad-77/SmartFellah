@@ -1,0 +1,29 @@
+{
+    "culture": "Culture Marocaine",
+    "exigences_sol": "La culture nécessite un sol bien drainé et meuble pour s'implanter correctement.",
+    "besoins_hydriques": "La culture a besoin d'une irrigation régulière, en particulier pendant la période de croissance active.",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Pests",
+            "causes": [
+                "Insectes ravageurs",
+                "Maladies fongiques"
+            ],
+            "traitements_specifiques": [
+                "Traitements chimiques",
+                "Pratiques culturelles alternatives"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Fertiliser régulièrement pour promouvoir la croissance et la santé de la culture.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

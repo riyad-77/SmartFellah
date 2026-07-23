@@ -1,0 +1,34 @@
+{
+    "culture": "Riz",
+    "exigences_sol": "Sol à 20-25°C, solaire avec protection contre la sécheresse.",
+    "besoins_hydriques": "Irrigation régulière, 3-4 fois par mois.",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "30°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Maladie de la plante",
+            "causes": [
+                "Trop de soleil",
+                "Sécheresse"
+            ],
+            "traitements_specifiques": [
+                "Arrosage régulier",
+                "Protection contre les insectes"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Arrosez régulièrement, en particulier pendant les périodes de sécheresse.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Faites des couches de mulch pour protéger la plante contre la sécheresse et les insectes.",
+            "status": "en cours",
+            "categorie": "non urgent"
+        }
+    ]
+}

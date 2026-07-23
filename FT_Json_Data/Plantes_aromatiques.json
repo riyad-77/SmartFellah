@@ -1,0 +1,25 @@
+{
+    "culture": "Inconnue",
+    "exigences_sol": null,
+    "besoins_hydriques": null,
+    "temp_optimale": {
+        "temp_min": null,
+        "temp_max": null
+    },
+    "precautions": [
+        {
+            "type": "pesticide",
+            "name": "insecticide"
+        }
+    ],
+    "dose": {
+        "units": "g/L",
+        "value": null
+    },
+    "symptoms": [
+        {
+            "type": "allergic reaction",
+            "name": "hives"
+        }
+    ]
+}

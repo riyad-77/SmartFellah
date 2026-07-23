@@ -1,0 +1,213 @@
+{
+    "culture": "Riz",
+    "exigences_sol": "Le riz nécessite un sol bien drainé et avec une bonne structure pour éviter les problèmes de drainage. Le pH du sol doit être compris entre 5,5 et 6,5.",
+    "besoins_hydriques": "Le riz a besoin d'une irrigation régulière, mais pas trop abondante. L'irrigation idéale est de 10-15 cm de eau par semaine.",
+    "temp_optimale": {
+        "temp_min": 20,
+        "temp_max": 35
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Riz noir",
+            "causes": [
+                "Bactérie Rhi",
+                "Champignon Rhizoctonia"
+            ],
+            "traitements_specifiques": [
+                "Avec antibiotics",
+                "Enfouir les tiges"
+            ]
+        },
+        {
+            "nom_maladie": "Rougeur des feuilles",
+            "causes": [
+                "Trop de soleil",
+                "Faut de fertilisants"
+            ],
+            "traitements_specifiques": [
+                "Réduction de l'irrigation",
+                "Application d'un fumant"
+            ]
+        },
+        {
+            "nom_maladie": "Ravageurs",
+            "causes": [
+                "Insectes",
+                "Maladies"
+            ],
+            "traitements_specifiques": [
+                "Application d'insecticides",
+                "Traitement antibiotique"
+            ]
+        },
+        {
+            "nom_maladie": "Mouche",
+            "causes": [
+                "insectes"
+            ],
+            "traitements_specifiques": [
+                "insecticides"
+            ]
+        },
+        {
+            "nom_maladie": "Rougeur foliaire",
+            "causes": [
+                "Maladie fongique",
+                "Déshydration"
+            ],
+            "traitements_specifiques": [
+                "Fumage, irrigation régulière"
+            ]
+        },
+        {
+            "nom_maladie": "Perte de teneurs en azote",
+            "causes": [
+                "Déshydration, sol trop calé ],"
+            ],
+            "traitements_specifiques": []
+        },
+        {
+            "nom_maladie": "Puteur des feuilles",
+            "causes": [
+                "Maladie fongique, exposition à la lumière excessive"
+            ],
+            "traitements_specifiques": [
+                "Fumage, gestion de l'exposition à la lumière"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie de la plante",
+            "causes": [
+                "Trop de soleil",
+                "Sécheresse"
+            ],
+            "traitements_specifiques": [
+                "Arrosage régulier",
+                "Protection contre les insectes"
+            ]
+        },
+        {
+            "nom_maladie": "Doré",
+            "causes": [
+                "Enfertillisation insuffisante",
+                "Trop de nitrogenne"
+            ],
+            "traitements_specifiques": [
+                "Appliquer des engrais organiques",
+                "Réduire l'utilisation de nitrate"
+            ]
+        },
+        {
+            "nom_maladie": "Morte due au froid",
+            "causes": [
+                "froid extrême",
+                "évacuer la violence"
+            ],
+            "traitements_specifiques": [
+                "irrigation supplémentaire",
+                "remplacement du sol"
+            ]
+        },
+        {
+            "nom_maladie": "Riz vert",
+            "causes": [
+                "fumigation, mauvaise sècheresse"
+            ],
+            "traitements_specifiques": [
+                "traitement avec du chlorpyrifos"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Éviter l'over-tillage pour ne pas perturber la croissance des racines.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Arrosage régulier pour prévenir la sécheresse",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Appliquer une couche fine de mulch pour réguler la température du sol et prévenir les érosions.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Fertiliser régulièrement le riz pour favoriser sa croissance et résistance aux maladies.",
+            "status": "en cours",
+            "categorie": "normale"
+        },
+        {
+            "description": "Fertiliser régulièrement pour maintenir une productivité élevée",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Irrigation régulière",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Fumage et gestion de l'exposition à la lumière",
+            "status": "en cours",
+            "categorie": "urgence"
+        },
+        {
+            "description": "Suppression des maladies fongiques",
+            "status": "en cours",
+            "categorie": "urgence"
+        },
+        {
+            "description": "Arrosez régulièrement, en particulier pendant les périodes de sécheresse.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Faites des couches de mulch pour protéger la plante contre la sécheresse et les insectes.",
+            "status": "en cours",
+            "categorie": "non urgent"
+        },
+        {
+            "description": "Fertiliser régulièrement le riz pour maintenir une production maximale.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Éviter de trop arroser le riz, car cela peut entraîner des problèmes de mauvaise santé et de réduction de la productivité.",
+            "status": "En cours",
+            "categorie": "Important"
+        },
+        {
+            "description": "Fertiliser le sol avant la culture du riz",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Assurer une bonne drainage pour éviter les problèmes de moïssure",
+            "status": "déjà effectué",
+            "categorie": ""
+        },
+        {
+            "description": "Fertiliser les rizières régulièrement pour favoriser la croissance des plants.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Appliquer un régime de fertilisation régulier pour maintenir la santé des plants.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Faire régulièrement des fouilles du sol pour éviter les parasites et les maladies.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Récolte des grains lorsqu'ils sont matures et durs",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

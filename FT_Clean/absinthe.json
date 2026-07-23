@@ -1,0 +1,53 @@
+{
+    "culture": "Absinthe",
+    "exigences_sol": "Plante xérophyte, pousse dans des régions à faible pluviosité, nécessite des endroits bien ensoleillés.",
+    "besoins_hydriques": "Nécessite une irrigation régulière, mais la quantité de eau nécessaire n'est pas déterminée.",
+    "temp_optimale": {
+        "temp_min": "10°C",
+        "temp_max": "des températures allant d’un extrême à l’autre"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Rouille",
+            "causes": [
+                "perte de turgescence",
+                "perte de chlorophylle"
+            ],
+            "traitements_specifiques": [
+                "irrigation régulière"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Fertilisation régulière, apport de matière organique et soins culturaux adaptés.",
+            "status": null,
+            "categorie": "urgent"
+        },
+        {
+            "description": "Désherbage régulier pour supprimer les mauvaises herbes et promouvoir la croissance de l’absinthe.",
+            "status": null,
+            "categorie": "pas urgent"
+        },
+        {
+            "description": "Assurez-vous d'apporter suffisamment de fumier pour maintenir la richesse du sol en matière organique.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Faites des irrigations régulières et assurez-vous que le sol est bien aéré pour éviter les problèmes de drainage.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Entretien régulier, irrigation et fertilisation appropriée",
+            "status": null,
+            "categorie": null
+        },
+        {
+            "description": "Désherbage et binage réguliers pour prévenir la concurrence avec les mauvaises herbes",
+            "status": null,
+            "categorie": null
+        }
+    ]
+}

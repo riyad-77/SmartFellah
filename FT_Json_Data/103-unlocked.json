@@ -1,0 +1,36 @@
+{
+    "culture": "Laitue",
+    "exigences_sol": "Les exigences en sol sont faibles; on rencontre les salades sur tous les types de sols.",
+    "besoins_hydriques": "La plupart des producteurs utilisent l'aspersion pour le démarrage de la culture (germination-levée) et le gravitaire par la suite. Plus de 80% des apports d’eau sont fournis durant le dernier mois de culture.",
+    "temp_optimale": {
+        "temp_min": "7˚C",
+        "temp_max": "24˚C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Pourriture basale (Rhizoctonia solani)",
+            "causes": [
+                "Exposition aux températures trop élevées"
+            ],
+            "traitements_specifiques": [
+                "Fungicides efficaces"
+            ]
+        },
+        {
+            "nom_maladie": "Mildeiou (Bremia lactucae)",
+            "causes": [
+                "Variabilité génétique de l'agent pathogène"
+            ],
+            "traitements_specifiques": [
+                "Rotation culturale et fongicides"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "La culture doit avoir lieu en période fraîche (automne, hiver et printemps). La pépinière doit être bien ensoleillée afin d'exposer les graines à la lumière.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

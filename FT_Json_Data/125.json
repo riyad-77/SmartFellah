@@ -1,0 +1,36 @@
+{
+    "culture": "Pistachier",
+    "exigences_sol": null,
+    "besoins_hydriques": "L'espèce doit être multipliée sur place (semis et greffage dans le verger) pour éviter ces échecs, sinon la multiplication en sachet devient indispensable.",
+    "temp_optimale": {
+        "temp_min": null,
+        "temp_max": 7.2
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Disparition du cultivar",
+            "causes": [
+                "émergence des rejets issus du porte-greffe",
+                "développement très rapide"
+            ],
+            "traitements_specifiques": []
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "L'élimination systématiquement des rejets contribue à favoriser la croissance du cultivar.",
+            "status": null,
+            "categorie": null
+        },
+        {
+            "description": "Les taux de production de fruits vides sont élevés et sont le résultat d'une mauvaise pollinisation liée soit à l'absence d'arbres mâles issus de pollinisateurs spécifiques soit à un dispositif inadéquat de répartition des pollinisateurs.",
+            "status": null,
+            "categorie": null
+        },
+        {
+            "description": "Les variétés femelles performantes et leurs pollinisateurs spécifiques, leurs besoins en froid, les techniques de multiplication et de conduite de la culture ne constituent pas aujourd'hui des contraintes comme auparavant.",
+            "status": null,
+            "categorie": null
+        }
+    ]
+}

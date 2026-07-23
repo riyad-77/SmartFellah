@@ -1,0 +1,27 @@
+{
+    "culture": "Riz vert",
+    "exigences_sol": "La zone doit être sèche et bien drainée",
+    "besoins_hydriques": "Une teneur d'humidité de 20 à 25%",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Mouche",
+            "causes": [
+                "insectes"
+            ],
+            "traitements_specifiques": [
+                "insecticides"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Fertiliser régulièrement pour maintenir une productivité élevée",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

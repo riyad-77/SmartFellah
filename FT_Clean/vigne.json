@@ -1,0 +1,28 @@
+{
+    "culture": "Vigne",
+    "exigences_sol": "",
+    "besoins_hydriques": "",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [],
+            "traitements_specifiques": []
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "L'incision annulaire peut être réalisée juste après la nouaison pour améliorer la qualité des raisins de table.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "L'éclaircissage des grappes entières peut se réaliser avant la floraison pour améliorer le pourcentage de fécondation des fleurs des grappes conservées.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

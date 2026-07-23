@@ -1,0 +1,43 @@
+{
+    "culture": "Ficus carica",
+    "exigences_sol": "Le sol doit être bien drainé et avoir un pH neutre, entre 6,0 et 7,0.",
+    "besoins_hydriques": "La figue nécessite une humidité moyenne, avec environ 600 mm d'eau par an.",
+    "temp_optimale": {
+        "temp_min": 10,
+        "temp_max": 35
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Maladie des feuilles",
+            "causes": [
+                "Oxycelinum strophanthus",
+                "Phytophthora cactorum"
+            ],
+            "traitements_specifiques": [
+                "traitement avec des herbicides, application de protecteurs contre les maladies"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie de la racine",
+            "causes": [
+                "Fusarium oxysporum",
+                "Phytophthora cactorum"
+            ],
+            "traitements_specifiques": [
+                "traitement avec des herbicides, application de protecteurs contre les maladies"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Appliquer un régime de fertilisation équilibré, composé d'azote, phosphore et potassium.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Assurer une irrigation adéquate, en fonction des conditions climatiques.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

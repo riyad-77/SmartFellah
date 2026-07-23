@@ -1,0 +1,28 @@
+{
+    "culture": "Arabie",
+    "exigences_sol": "La culture nécessite un sol bien drainé pour éviter les problèmes de ténèbres et d'assèchement.",
+    "besoins_hydriques": "La culture a besoin d'eau régulière, mais pas excessive. Il est recommandé d'éviter l'eutrophication des sols.",
+    "temp_optimale": {
+        "temp_min": 15,
+        "temp_max": 30
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Maladie des feuilles vertes",
+            "causes": [
+                "manque d'eau",
+                "trop d'eau"
+            ],
+            "traitements_specifiques": [
+                "irrigation régulière"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Irriger régulièrement, mais évitez l'eutrophication des sols.",
+            "status": "en cours",
+            "categorie": "urgence"
+        }
+    ]
+}

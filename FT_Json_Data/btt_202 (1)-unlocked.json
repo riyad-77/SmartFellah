@@ -1,0 +1,32 @@
+{
+    "culture": "blé tendre",
+    "exigences_sol": null,
+    "besoins_hydriques": "faibles prix de vente sur le marché",
+    "temp_optimale": {
+        "temp_min": "-6°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Chergui",
+            "causes": [
+                "sécheresse et Chergui de fin de cycle"
+            ],
+            "traitements_specifiques": [
+                "irrigation et fertilisation"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "choix variétal adapté aux conditions climatiques",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "préparation du sol et semis en fonction des conditions climatiques",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

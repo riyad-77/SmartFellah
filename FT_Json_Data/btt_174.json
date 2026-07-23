@@ -1,0 +1,34 @@
+{
+    "culture": "Stévia rebaudiana",
+    "exigences_sol": null,
+    "besoins_hydriques": null,
+    "temp_optimale": {
+        "temp_min": "10°C à 30°C",
+        "temp_max": "15°C à 35°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Pestes",
+            "causes": [
+                "Insectes",
+                "Fongicides"
+            ],
+            "traitements_specifiques": [
+                "Insecticide",
+                "Fungicide"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "L'arrosage doit être effectué régulièrement, mais sans trop de quantité pour éviter les taches.",
+            "status": null,
+            "categorie": null
+        },
+        {
+            "description": "Le sol doit être bien drainé et avoir une pH neutre pour favoriser la croissance de la plante.",
+            "status": null,
+            "categorie": null
+        }
+    ]
+}

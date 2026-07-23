@@ -1,0 +1,27 @@
+{
+    "culture": "Arachide",
+    "exigences_sol": "Sols sableux",
+    "besoins_hydriques": "Apport régulier d'eau",
+    "temp_optimale": {
+        "temp_min": 15,
+        "temp_max": 30
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [
+                "Inconnues"
+            ],
+            "traitements_specifiques": [
+                "Traitement non spécifique"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "L'arachide est une culture sensible aux adventices. Il est recommandé de réaliser des relevés floristiques réguliers pour identifier les espèces adventices présentes et prendre des mesures pour les contrôler.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

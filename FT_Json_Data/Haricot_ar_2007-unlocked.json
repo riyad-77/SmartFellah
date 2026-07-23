@@ -1,0 +1,29 @@
+{
+    "culture": "Arabica",
+    "exigences_sol": null,
+    "besoins_hydriques": "Basse consommation d'eau",
+    "temp_optimale": {
+        "temp_min": 15,
+        "temp_max": 25
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Rougeur des feuilles",
+            "causes": [
+                "Manque de lumière",
+                "Trop de température"
+            ],
+            "traitements_specifiques": [
+                "Arrosage régulier",
+                "Traitement chimique"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "L'arrosage doit être réalisé à la matinée et au soir pour éviter les rayons du soleil direct.",
+            "status": null,
+            "Categorie": "normale"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "culture": "luzerne",
+    "exigences_sol": "Le sol doit être bien drainé et avoir un pH compris entre 6,0 et 7,0.",
+    "besoins_hydriques": "La luzerne nécessite une irrigation régulière, en particulier pendant la période de floraison.",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Cercosse des feuilles",
+            "causes": [
+                "Infection par le virus du cercosse",
+                "Attente de la pluie"
+            ],
+            "traitements_specifiques": [
+                "Traitement anti-viral",
+                "Prévention avec un traitements phytovirus"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "La pollinisation est essentielle pour la production de graines. Utiliser des colonies d'abeilles domestiques peut améliorer le rendement.",
+            "status": "en cours",
+            "categorie": "urgence"
+        }
+    ]
+}

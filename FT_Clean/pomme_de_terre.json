@@ -1,0 +1,83 @@
+{
+    "culture": "Pomme de terre",
+    "exigences_sol": "La plupart des sols conviennent à la culture de la pomme de terre à condition qu'ils soient bien drainés et pas trop pierreux. Les sols préférés sont ceux qui sont profonds, fertiles et meubles.",
+    "besoins_hydriques": "La pomme de terre est relativement tolérante à la salinité par rapport aux autres cultures maraîchères.",
+    "temp_optimale": {
+        "temp_min": 6,
+        "temp_max": 25
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [],
+            "traitements_specifiques": []
+        },
+        {
+            "nom_maladie": "Galle commune sur tubercule",
+            "causes": [
+                "alcalinité excessive du sol",
+                "manque de drainage"
+            ],
+            "traitements_specifiques": [
+                "amendement du sol",
+                "irrigation régulière"
+            ]
+        },
+        {
+            "nom_maladie": "mildiou",
+            "causes": [
+                "irrigation par aspersion ou de pluies abondantes mouillant le feuillage sur une longue période"
+            ],
+            "traitements_specifiques": [
+                "traitement au Thirame",
+                "utilisation de produits anti-mildiou"
+            ]
+        },
+        {
+            "nom_maladie": "pucerons",
+            "causes": [
+                "virus"
+            ],
+            "traitements_specifiques": [
+                "traite par le pirimor"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "L'irrigation régulière est essentielle pour éviter les problèmes de salinité et assurer un bon rendement.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "La préparation du sol est cruciale pour garantir un bon contact entre le plant et le sol. Il faut assurer un drainage optimal et éviter les sols trop pierreux ou argileux.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Faire un travail profond du sol avant la plantation et enfouir de fumure de fond",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Effectuer 2-3 binages lors de la période végétative pour empêcher le verdissement des tubercules",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Procéder à un travail profond du sol avant la plantation, et faire 2-3 binages lors de la période végétative pour empêcher le verdissage des tubercules.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Faire au moins trois irrigations d'appoint dans le cas d'une sécheresse imposée.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Procéder à un travail profond du sol et enfouir la fumure de fond avant la plantation.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

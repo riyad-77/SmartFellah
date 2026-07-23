@@ -1,0 +1,28 @@
+{
+    "culture": "blé",
+    "exigences_sol": "sol aride",
+    "besoins_hydriques": "beaucoup d'humidité",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "mouche",
+            "causes": [
+                "vent",
+                "sols sec"
+            ],
+            "traitements_specifiques": [
+                "insecticide"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "cultiver dans des trous creusés pour améliorer drainage",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

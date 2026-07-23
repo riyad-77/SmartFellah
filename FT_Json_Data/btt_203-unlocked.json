@@ -1,0 +1,29 @@
+{
+    "culture": "Myrtille",
+    "exigences_sol": "La myrtille est une plante qui nécessite un sol bien drainé et fertile, avec un pH entre 5.5 et 6.5.",
+    "besoins_hydriques": "La myrtille a besoin d'un certain niveau d'humidité, mais elle peut tolérer des périodes de sécheresse. Il est recommandé d'irriger régulièrement pendant la première année après l'installation.",
+    "temp_optimale": {
+        "temp_min": "-10°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Maladie des feuilles vertes",
+            "causes": [
+                "Aphides",
+                "Pierres filantes"
+            ],
+            "traitements_specifiques": [
+                "Insecticide",
+                "Traitement à base d'huile"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Il est recommandé de planter les myrtilles dans des zones bien aéré et ensoleillées.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

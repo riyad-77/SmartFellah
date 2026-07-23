@@ -1,0 +1,50 @@
+{
+    "culture": "Légumineuses alimentaires",
+    "exigences_sol": "Le sol doit être bien drainé et avoir un pH entre 5,5 et 9.",
+    "Besoins_hydriques": "La légumineuse nécessite une irrigation régulière pour éviter la sécheresse.",
+    "temp_optimale": {
+        "temp_min": 25,
+        "temp_max": 40
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Ascochyta fabae",
+            "causes": [
+                "infection par Ascochytalus fabae"
+            ],
+            "traitements_specifiques": [
+                "application de Talstar"
+            ]
+        },
+        {
+            "nom_maladie": "Botrytis cinerea",
+            "causes": [
+                "infection par Botrytis cinerea"
+            ],
+            "traitements_specifiques": [
+                "application de fungicides"
+            ]
+        },
+        {
+            "nom_maladie": "Fusarium sp.",
+            "causes": [
+                "infection par Fusarium sp."
+            ],
+            "traitements_specifiques": [
+                "application de fungicides"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "L'application régulière d'un fumage en hiver et du désherbage à la fin de la saison est recommandé.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "La mise en place d'un système d'irrigation automatique est suggérée pour éviter la sécheresse.",
+            "status": "en cours",
+            "categorie": "prioritaire"
+        }
+    ]
+}

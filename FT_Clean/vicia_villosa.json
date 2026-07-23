@@ -1,0 +1,29 @@
+{
+    "culture": "Vicia villosa",
+    "exigences_sol": "Les Vicias sont des plantes annuelles qui nécessitent un sol bien drainé et avec une bonne aération.",
+    "besoins_hydriques": "Les Vicias ont besoin d'une irrigation régulière, mais pas trop abondante. Il faut éviter de les plonger dans l'eau pour éviter les maladies.",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Maladie des feuilles",
+            "causes": [
+                "Manque d'irrigation",
+                "Exposition directe au soleil"
+            ],
+            "traitements_specifiques": [
+                "Irrigation régulière",
+                "Pruning des feuilles"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Il faut irriguer les Vicias régulièrement, mais pas trop abondamment. Il faut également protéger les feuilles contre le soleil direct en les couvrant avec un tissu.",
+            "status": "à faire",
+            "categorie": "optionnel"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "culture": "Tomate",
+    "exigences_sol": null,
+    "besoins_hydriques": "La culture est très sensible à la sécheresse, il est donc recommandé d'apporter des apports d'eau réguliers. La teneur en matière organique du sol doit être assez élevée (2-3 %) pour obtenir de bons rendements.",
+    "temp_optimale": {
+        "temp_min": "12°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [
+                "Fongicide",
+                "Insecticide"
+            ],
+            "traitements_specifiques": []
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Avec un équipement supplémentaire (pompe doseuse et bacs), il est facile d'introduire la fertigation dans l'exploitation.",
+            "status": null,
+            "categorie": "Inconnue"
+        }
+    ]
+}

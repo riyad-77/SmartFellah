@@ -1,0 +1,32 @@
+{
+    "culture": "Amandier",
+    "exigences_sol": "Sols chlorosants avec des densités moyennes de 400 à 600 arbres/ha.",
+    "besoins_hydriques": "Sols pauvres, riches en calcaire avec de faibles disponibilités en eau.",
+    "temp_optimale": {
+        "temp_min": "-10°C",
+        "temp_max": "35°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Rusticité",
+            "causes": [
+                "Sols pauvres, riches en calcaire avec de faibles disponibilités en eau"
+            ],
+            "traitements_specifiques": [
+                "Agriculture conventionnelle"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Choisir une variété d'amandier résistante aux nématodes, au crown gall et aux attaques du capnode.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Utiliser un porte-greffe de bonne qualité pour garantir la production et l'assurance du développement des arbres.",
+            "status": "en cours",
+            "categorie": "prioritaire"
+        }
+    ]
+}

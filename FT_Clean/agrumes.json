@@ -1,0 +1,84 @@
+{
+    "culture": "Agrumes",
+    "exigences_sol": "Le sol doit être bien drainé et avoir une bonne structure pour permettre aux racines de s'écarter et d'absorber les nutriments et l'eau.",
+    "besoins_hydriques": "Les agrumes nécessitent une irrigation régulière, en particulier pendant la période de floraison et de fruits mûrs.",
+    "temp_optimale": {
+        "temp_min": "-5°C",
+        "temp_max": "+10°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Congélation",
+            "causes": [
+                "Perte d'énergie par le couvert végétal et par le sol",
+                "Convection lorsque les régions plus froides déplacent de l'air vers des zones moins froides"
+            ],
+            "traitements_specifiques": null
+        },
+        {
+            "nom_maladie": "Dégâts causés par le froid",
+            "causes": [
+                "Pertes d'énergie par convection",
+                "Vent froid qui intensifie les pertes de chaleur"
+            ],
+            "traitements_specifiques": [
+                "Acclimatation des arbres au froid avant l'installation du froid",
+                "Utilisation de couvert végétal pour protéger les fruits et les feuilles"
+            ]
+        },
+        {
+            "nom_maladie": "Gelée",
+            "causes": [
+                "Températures inférieures à -2 °C",
+                "Perte d'énergie par convection"
+            ],
+            "traitements_specifiques": [
+                "Acclimatation des arbres au froid",
+                "Utilisation de matériaux isolants"
+            ]
+        },
+        {
+            "nom_maladie": "Mouche",
+            "causes": [
+                "Insectes",
+                "Plantes"
+            ],
+            "traitements_specifiques": [
+                "Aérosols",
+                "Pesticides"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Acclimater les arbres aux températures froides avant l'installation du froid",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Vigiler les tissus végétaux et éviter le gelage de la feuille lorsqu'elle est humide",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "L'acclimatation des arbres aux températures froides est essentielle avant l'installation du froid.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Il est important de surveiller les conditions météorologiques pour prévenir les gelées sévères.",
+            "status": null,
+            "categorie": "non urgent"
+        },
+        {
+            "description": "Acclimater les arbres aux températures froides avant l'installation du froid.",
+            "status": null,
+            "categorie": null
+        },
+        {
+            "description": "Il est essentiel de régler l'arrosage en fonction des besoins du sol et de la plante. Il est également recommandé d'utiliser des matériaux organiques pour améliorer le drainage et réduire l'érosion.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        }
+    ]
+}

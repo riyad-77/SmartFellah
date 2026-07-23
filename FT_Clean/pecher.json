@@ -1,0 +1,90 @@
+{
+    "culture": "Pecher",
+    "exigences_sol": "La culture de pêcher nécessite un sol bien drainé et fertile.",
+    "besoins_hydriques": "Le pêcher est classé comme une culture de faible besoin en eau.",
+    "temp_optimale": {
+        "temp_min": "-2°C",
+        "temp_max": "-5°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [],
+            "traitements_specifiques": []
+        },
+        {
+            "nom_maladie": "Maladie du feu",
+            "causes": [
+                "Chauds, sec",
+                "Exposition au vent"
+            ],
+            "traitements_specifiques": [
+                "Écran de fumée",
+                "Traitement chimique"
+            ]
+        },
+        {
+            "nom_maladie": "Puceration",
+            "causes": [
+                "Moissons premières",
+                "Inondations"
+            ],
+            "traitements_specifiques": [
+                "Élimination des feuilles",
+                "Application de fungicides"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie des feuilles rouges",
+            "causes": [
+                "Concentrations élevées de azote",
+                "Pauvreté en phosphore"
+            ],
+            "traitements_specifiques": [
+                "Application de fumure de phosphore",
+                "Utilisation de pesticides spéciaux"
+            ]
+        },
+        {
+            "nom_maladie": "Rougeur des yeux",
+            "causes": [
+                "Exposition prolongée au soleil"
+            ],
+            "traitements_specifiques": [
+                "Protéger les yeux avec un masque de soleil"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Assurer une irrigation régulière et abondante, en particulier pendant la floraison.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Effectuer un écran de fumée chaque nuit à risque de gel pour protéger le verger.",
+            "status": "en cours",
+            "categorie": "prioritaire"
+        },
+        {
+            "description": "L'association de variétés pollinisatrices est recommandée pour les cultures en sol léger.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "La protection phytosanitaire est essentielle pour prévenir les ravageurs et les maladies.",
+            "status": "en cours",
+            "categorie": "pas urgent"
+        },
+        {
+            "description": "Vérifier régulièrement l'état du filtre anti-UV pour garantir une protection adéquate",
+            "status": "en cours",
+            "categorie": "optionnel"
+        },
+        {
+            "description": "effectuer des examens réguliers pour détecter les problèmes oculaires précocement",
+            "status": "en cours",
+            "categorie": "optionnel"
+        }
+    ]
+}

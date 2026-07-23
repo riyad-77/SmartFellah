@@ -1,0 +1,23 @@
+{
+    "culture": "Amygdalus communis",
+    "exigences_sol": null,
+    "besoins_hydriques": null,
+    "temp_optimale": {
+        "temp_min": 132.0,
+        "temp_max": 40.0
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [],
+            "traitements_specifiques": []
+        }
+    ],
+    "recommandations": [
+        {
+            "description": null,
+            "status": null,
+            "categorie": "urgent"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "culture": "Mentha spicata var. viridis",
+    "exigences_sol": "Le sol argileux, fertile, à forte réten- tion en eau, dépourvu de cailloux et les terrains sont plats.",
+    "besoins_hydriques": "L'eau est douce, abondante et accessible grâce à des puits qui ont en général 20 à 30 mètres de profon- deur.",
+    "temp_optimale": {
+        "temp_min": null,
+        "temp_max": null
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": null,
+            "traitements_specifiques": null
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Labourer et épierrager le sol avant d'installer la menthe.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Assurer une irrigation régulière et adaptée aux besoins de la plante.",
+            "status": "en cours",
+            "categorie": "non urgente"
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "culture": "Abricotier",
+    "exigences_sol": "argilo-limoneux bien drainants",
+    "besoins_hydriques": "froid hivernal, moyens à forts hydroréflexions et éviter les printemps pluvieux et humides",
+    "temp_optimale": {
+        "temp_min": "-16˚C à -24˚C (dormants)",
+        "temp_max": "700 à 1000 heures de température froide en dessous de 7,2˚ C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Enroulement chlorotique",
+            "causes": [
+                "mycoplasmes"
+            ],
+            "traitements_specifiques": []
+        },
+        {
+            "nom_maladie": "Insuffisance en froid",
+            "causes": [
+                "Température inférieure à -5°C",
+                "Fleurs ouvertes"
+            ],
+            "traitements_specifiques": [
+                "Protection de la fleur, irrigation régulière"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Renouveler le bois fruitier sur 3 et 4 ans, maintenir la coursonne assez courte pour faire sortir les bouquets de Mai à proximité de la charpentière.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "La protection de la fleur et l'irrigation régulière sont essentielles pour éviter les maladies liées à l'insuffisance en froid.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "culture": "Arabica",
+    "exigences_sol": "Sol très chaud avec des vents violents",
+    "besoins_hydriques": "Hydrication constante, 40-50 cm d'eau par mois",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Malfet",
+            "causes": [
+                "froid, humidité"
+            ],
+            "traitements_specifiques": [
+                "corticostéroïdes"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Faire des rotations de culture pour éviter la maladie",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Laver les cultures régulièrement pour éviter l'accumulation de maladies",
+            "status": "en cours",
+            "categorie": "non urgent"
+        }
+    ]
+}

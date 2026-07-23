@@ -1,0 +1,32 @@
+{
+    "culture": "Safran",
+    "exigences_sol": "Un sol profond, drainant et riche en matière organique, avec une pH neutre.",
+    "besoins_hydriques": "Les besoins en eau sont relativement moyens (600 à 700 mm/an), mais les apports en eau doivent être bien répartis le long du cycle de la plante.",
+    "temp_optimale": {
+        "temp_min": "-10°C",
+        "temp_max": "+40°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [
+                "Inconnues"
+            ],
+            "traitements_specifiques": [
+                "Inconnus"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Choisir un site avec des conditions climatiques et édaphiques optimales.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Faire des labourages profonds pour faciliter la préparation du terrain.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

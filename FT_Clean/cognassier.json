@@ -1,0 +1,40 @@
+{
+    "culture": "Cognassier",
+    "exigences_sol": "Le sol doit être maintenu propre par un cover-cropage en automne et deux à trois binages au printemps-été.",
+    "besoins_hydriques": {
+        "temp_min": "-26˚C",
+        "temp_max": "null"
+    },
+    "temp_optimale": {
+        "temp_min": "-26˚C",
+        "temp_max": "25"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [
+                "Inconnues"
+            ],
+            "traitements_specifiques": [
+                "Inconnus"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Maintenir un sol propre par un cover-cropage en automne et deux à trois binages au printemps-été.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Le cognassier est une espèce adaptée à une large gamme de climats et de sols. Il supporte des températures froides jusqu'à -26˚C à l’état dormant.",
+            "status": null,
+            "categorie": null
+        },
+        {
+            "description": "Maintenir le sol propre avec un cover-cropage en automne et deux à trois binages au printemps-été.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        }
+    ]
+}

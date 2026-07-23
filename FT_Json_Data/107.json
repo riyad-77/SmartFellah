@@ -1,0 +1,25 @@
+{
+    "culture": "abricot (Prunus armeniaca)",
+    "exigences_sol": "argilo-limoneux bien drainants",
+    "besoins_hydriques": "froid hivernal, moyens à forts hydroréflexions et éviter les printemps pluvieux et humides",
+    "temp_optimale": {
+        "temp_min": "-16˚C à -24˚C (dormants)",
+        "temp_max": "700 à 1000 heures de température froide en dessous de 7,2˚ C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Enroulement chlorotique",
+            "causes": [
+                "mycoplasmes"
+            ],
+            "traitements_specifiques": []
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Renouveler le bois fruitier sur 3 et 4 ans, maintenir la coursonne assez courte pour faire sortir les bouquets de Mai à proximité de la charpentière.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

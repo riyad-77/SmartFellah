@@ -1,0 +1,45 @@
+{
+    "culture": "Riz",
+    "exigences_sol": "Le sol doit être bien réparti pour favoriser la croissance du riz.",
+    "besoins_hydriques": "La culture nécessite une irrigation régulière pour éviter les surcharges de humidité et promouvoir une croissance saine.",
+    "temp_optimale": {
+        "temp_min": "20°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Rougeur des feuilles",
+            "causes": [
+                "Trop de soleil",
+                "Faut de fertilisants"
+            ],
+            "traitements_specifiques": [
+                "Réduction de l'irrigation",
+                "Application d'un fumant"
+            ]
+        },
+        {
+            "nom_maladie": "Pests",
+            "causes": [
+                "Insectes",
+                "Maladies"
+            ],
+            "traitements_specifiques": [
+                "Application d'insecticides",
+                "Traitement antibiotique"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Appliquer une couche fine de mulch pour réguler la température du sol et prévenir les érosions.",
+            "status": "en cours",
+            "categorie": "urgente"
+        },
+        {
+            "description": "Fertiliser régulièrement le riz pour favoriser sa croissance et résistance aux maladies.",
+            "status": "en cours",
+            "categorie": "normale"
+        }
+    ]
+}

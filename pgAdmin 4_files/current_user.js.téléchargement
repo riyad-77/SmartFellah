@@ -1,0 +1,22 @@
+/////////////////////////////////////////////////////////////
+//
+// pgAdmin 4 - PostgreSQL Tools
+//
+// Copyright (C) 2013 - 2026, The pgAdmin Development Team
+// This software is released under the PostgreSQL Licence
+//
+//////////////////////////////////////////////////////////////
+
+define('pgadmin.user_management.current_user', [], function() {
+    return {
+        'id': 1,
+        'email': 'riadlag2004@gmail.com',
+        'is_admin': true,
+        'name': 'riadlag2004',
+        'allow_save_password': true,
+        'allow_save_tunnel_password': false,
+        'auth_sources': ['internal'],
+        'current_auth_source': 'internal',
+        'permissions': ['tools_import_export_servers', 'tools_schema_diff', 'tools_restore', 'tools_backup', 'tools_debugger', 'storage_add_folder', 'list', 'tools_grant_wizard', 'tools_import_export_data', 'tools_query_tool', 'tools_ai', 'tools_search_objects', 'object_register_server', 'storage_remove_folder', 'tools_erd_tool', 'tools_psql_tool', 'change_password', 'tools_maintenance']
+    }
+});

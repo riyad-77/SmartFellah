@@ -1,0 +1,30 @@
+{
+    "culture": "Amandier",
+    "exigences_sol": "sol profond, fertile, bien drainant, léger et humifère",
+    "besoins_hydriques": "800 à 850 mm/an avec des apports en mai-juin-juillet",
+    "temp_optimale": {
+        "temp_min": 7.2,
+        "temp_max": "200 à 400 heures en dessous de 7,2˚C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Necrotic ring Spot",
+            "causes": [
+                "virus"
+            ],
+            "traitements_specifiques": []
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Multipliez les amandes en Juillet-Août et greffez les plants en Décembre-Janvier pour la plantation.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Désherbage du sol en défoncement d'une profondeur de 40-60 cm ou sous-solage sans retourne-miento du sol.",
+            "status": "en cours",
+            "categorie": "urgence"
+        }
+    ]
+}

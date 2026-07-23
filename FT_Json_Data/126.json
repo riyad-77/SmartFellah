@@ -1,0 +1,32 @@
+{
+    "culture": "Prunier",
+    "exigences_sol": "Terre bien drainée et avec un pH adapté",
+    "besoins_hydriques": "Moins de 600 mm d'eau par an, en fonction du climat",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Maladie de la mousse",
+            "causes": [
+                "Vent, pluies"
+            ],
+            "traitements_specifiques": [
+                "Fumage, traitements phyto-sanitaires"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Fertiliser en fonction des besoins de la culture et du sol",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Assurez-vous d'un drainage suffisant pour les racines",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

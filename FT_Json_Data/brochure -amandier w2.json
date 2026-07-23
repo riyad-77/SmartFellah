@@ -1,0 +1,27 @@
+{
+    "culture": "Shaghaat el luzz",
+    "exigences_sol": "Il faut éviter les zones de squellement et limiter l'apport en eau en cas de gelée.",
+    "besoins_hydriques": "Il faut permettre à la plante d'avoir un certain dégazage, en particulier en hiver.",
+    "temp_optimale": {
+        "temp_min": 20,
+        "temp_max": 30
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "La gelée",
+            "causes": [
+                "le refroidissement brusque"
+            ],
+            "traitements_specifiques": [
+                "sécher la plante, limiter l'apport en eau"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Il faut permettre à la plante d'avoir un certain dégazage, en particulier en hiver.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "culture": "Amandier",
+    "exigences_sol": null,
+    "besoins_hydriques": "Une bonne gestion de l'irrigation est essentielle pour le bon fonctionnement du amandier.",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "30°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Maladie de la fleur",
+            "causes": [
+                "Manque d'entretien",
+                "Pollinisation insuffisante"
+            ],
+            "traitements_specifiques": [
+                "Appliquer des produits phytosanitaires"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie du tronc",
+            "causes": [
+                "Dégâts causés par les insectes",
+                "Manque d'eau"
+            ],
+            "traitements_specifiques": [
+                "Appliquer des produits phytosanitaires"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Faire régulièrement une taille de formation et de fructification pour assurer la production optimale.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Utiliser des variétés de amandier résistantes à la sécheresse et pollinisées pour améliorer les rendements.",
+            "status": "en cours",
+            "categorie": "urgence"
+        }
+    ]
+}

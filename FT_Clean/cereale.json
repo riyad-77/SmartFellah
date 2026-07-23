@@ -1,0 +1,54 @@
+{
+    "culture": "Cereale",
+    "exigences_sol": "Sol bien drainé, avec un pH neutre à légèrement acide.",
+    "besoins_hydriques": "Avec une irrigation régulière, mais pas démesurée. Les cultures doivent être soumises à des périodes de sécheresse pour s'adapter aux conditions climatiques du sud-ouest marocain.",
+    "temp_optimale": {
+        "temp_min": "20°C",
+        "temp_max": "30°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "La roue blanche",
+            "causes": [
+                "fumée",
+                "saignement"
+            ],
+            "traitements_specifiques": [
+                "traitement chimique"
+            ]
+        },
+        {
+            "nom_maladie": "La maladie des feuilles",
+            "causes": [
+                "Présence de virus",
+                "Trop de l'eau"
+            ],
+            "traitements_specifiques": [
+                "Traitement avec des insecticides",
+                "Remplacement de la plante affectée"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Fertiliser les plants à régulièrement",
+            "status": null,
+            "categorie": "pas urgent"
+        },
+        {
+            "description": "Appliquer des pesticides pour prévenir la roue blanche",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Apliquer un régime d'irrigation régulier, mais pas démesuré.",
+            "status": "en cours",
+            "categorie": "optionnel"
+        },
+        {
+            "description": "Faire des cultures de sécurité pour éviter les pertes en cas de sécheresse.",
+            "status": "en cours",
+            "categorie": "optionnel"
+        }
+    ]
+}

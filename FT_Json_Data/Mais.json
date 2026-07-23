@@ -1,0 +1,29 @@
+{
+    "culture": "Ensilage",
+    "exigences_sol": "Le sol doit être bien drainé et recevoir au moins 200 mm d'eau par an.",
+    "besoins_hydriques": "Les cultures de printemps nécessitent une irrigation régulière, en particulier pendant la germination et la croissance.",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Mouche",
+            "causes": [
+                "insectes",
+                "bactéries"
+            ],
+            "traitements_specifiques": [
+                "insecticide",
+                "traitement antibiotique"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "L'ensilage est une méthode de conservation des cultures qui consiste à couper les feuilles et les tiges et à les stocker dans un endroit sec et frais.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

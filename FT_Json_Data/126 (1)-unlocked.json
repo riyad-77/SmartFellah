@@ -1,0 +1,29 @@
+{
+    "culture": "Prunier",
+    "exigences_sol": null,
+    "besoins_hydriques": null,
+    "temp_optimale": {
+        "temp_min": "10°C",
+        "temp_max": "30°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Diseases",
+            "causes": [
+                "Frost",
+                "Diseases due to humidity"
+            ],
+            "traitements_specifiques": [
+                "Pruning",
+                "Irrigation"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Provide adequate pruning, watering and fertilization.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

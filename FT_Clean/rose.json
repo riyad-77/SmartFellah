@@ -1,0 +1,79 @@
+{
+    "culture": "Rose",
+    "exigences_sol": "Terre aéré pauvre en sels de calcium, climat propice avec température et hygrométrie modérées.",
+    "besoins_hydriques": "Nourriture régulière, mais pas sous-irrigation.",
+    "temp_optimale": {
+        "temp_min": 15,
+        "temp_max": 25
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Ravageurs",
+            "causes": [
+                "Insectes"
+            ],
+            "traitements_specifiques": [
+                "Insecticide"
+            ]
+        },
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [],
+            "traitements_specifiques": []
+        },
+        {
+            "nom_maladie": "La rouille",
+            "causes": [
+                "Manque d'irrigation",
+                "Températures extrêmes"
+            ],
+            "traitements_specifiques": [
+                "Irrigation régulière",
+                "Application de pesticides"
+            ]
+        },
+        {
+            "nom_maladie": "La pourriture des feuilles",
+            "causes": [
+                "Humidité excessive",
+                "Pollution"
+            ],
+            "traitements_specifiques": [
+                "Aération de la terrain",
+                "Application de produits phytosanitaires"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Fertiliser régulièrement pour maintenir la qualité de la terre.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Effectuer des écoulements reguliers pour éviter les débordements.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Fertiliser régulièrement pour maintenir la qualité de la rose",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Éliminer les mauvaises herbes autour des plantes de rose",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Fertilisation régulière pour maintenir la santé des plants.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Pruning régulière pour encourager les fleurs et prévenir l'usurpation de lumière par les feuilles.",
+            "status": "en cours",
+            "categorie": "pas urgent"
+        }
+    ]
+}

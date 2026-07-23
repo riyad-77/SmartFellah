@@ -1,0 +1,34 @@
+{
+    "culture": "Betterave à sucre monogermes",
+    "exigences_sol": "La meilleure qualité du sol pour semer les graines de betterave à sucre est un sol alluvial avec une texture fine et une structure homogène.",
+    "besoins_hydriques": "Les betteraves à sucre nécessitent environ 20 cm d'eau par mois. Il faut aussi prendre en compte la période de germination et de floraison, pendant laquelle les plants ont besoin d'une irrigation plus régulière.",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Pestes des feuilles",
+            "causes": [
+                "Pollination non appropriée",
+                "Utilisation de semences anciennes"
+            ],
+            "traitements_specifiques": [
+                "Fumigation",
+                "Traitement avec des huiles essentielles"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Le labour doit être fait à la fin de la saison sèche pour éviter les pertes de matière.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Il est important d'assurer une bonne préparation du sol et un semis précis pour obtenir une levée homogène des graines.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

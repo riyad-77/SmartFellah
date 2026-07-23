@@ -1,0 +1,29 @@
+{
+    "culture": "épinard",
+    "exigences_sol": "Mêmes exigences que les choux, même rusticité et résistance au froid. Faible exigences en lumière (on peut la cultiver en strate basse, sous une haute culture). En condition de jour long et haute température (supérieure à 25˚C), la plante monte à graine ; il faut éliminer la hampe florale qui réduit le rendement en feuilles. La culture est sensible à un déficit hydrique et à l'asphyxie. En sol acide, le rendement est faible. Le sol doit avoir un pH supérieur à 6,5.",
+    "besoins_hydriques": "La culture est très exigeante en eau. Un à deux sarclages sont nécessaires pour aérer le sol et enfouir la fumure de couverture.",
+    "temp_optimale": {
+        "temp_min": "15˚C",
+        "temp_max": "25˚C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Mildiou",
+            "causes": [
+                "Humidité excessive",
+                "Vent"
+            ],
+            "traitements_specifiques": [
+                "Fumigation",
+                "Traitement par insecticide"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Apporter 30 kg/ha de N et 70 kg/ha de P2O5 au fond, ainsi que des sarclages pour aérer le sol.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

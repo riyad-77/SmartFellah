@@ -1,0 +1,23 @@
+{
+    "culture": "Cognassier",
+    "exigences_sol": "Le sol doit être maintenu propre par un cover-cropage en automne et deux à trois binages au printemps-été.",
+    "besoins_hydriques": "Les fumures pratiquées dans la région de Meknès pour des arbres en production sont de 120 unités d’azote, 70 unités de P205 et 120 unités de K20/ha. L’azote est apporté en deux fois, 60 U/ha avant la floraison et 60 U après la récolte.",
+    "temp_optimale": {
+        "temp_min": "-26˚C",
+        "temp_max": null
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [],
+            "traitements_specifiques": []
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Le cognassier est une espèce adaptée à une large gamme de climats et de sols. Il supporte des températures froides jusqu'à -26˚C à l’état dormant.",
+            "status": null,
+            "categorie": null
+        }
+    ]
+}

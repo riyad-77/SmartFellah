@@ -1,0 +1,23 @@
+{
+    "culture": "Pêcher",
+    "exigences_sol": null,
+    "besoins_hydriques": "Le pêcher est classé comme une culture de faible besoin en eau.",
+    "temp_optimale": {
+        "temp_min": "-2°C",
+        "temp_max": "-5°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [],
+            "traitements_specifiques": []
+        }
+    ],
+    "recommandations": [
+        {
+            "description": null,
+            "status": null,
+            "categorie": null
+        }
+    ]
+}

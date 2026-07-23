@@ -1,0 +1,27 @@
+{
+    "culture": "Cognassier",
+    "exigences_sol": "Les sols argileux sont considérés comme lourds pour d'autres espèces fruitières.",
+    "besoins_hydriques": "Il supporte des températures froides jusqu'à -26˚C à l'état dormant et tolère les sols argileux. En sol calcaire, il présente une chlorose due au blocage du fer. Ses besoins en eau sont de 600 à 1000 mm.",
+    "temp_optimale": {
+        "temp_min": "-26",
+        "temp_max": "25"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [
+                "Inconnues"
+            ],
+            "traitements_specifiques": [
+                "Inconnus"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Maintenir le sol propre avec un cover-cropage en automne et deux à trois binages au printemps-été.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        }
+    ]
+}

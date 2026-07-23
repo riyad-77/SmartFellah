@@ -1,0 +1,27 @@
+{
+    "culture": "Amandier",
+    "exigences_sol": "Sol profond, fertile, bien drainant, léger et humifère",
+    "besoins_hydriques": "800 à 850 mm/an",
+    "temp_optimale": {
+        "temp_min": "-10˚C",
+        "temp_max": "30˚C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Necrotic ring Spot",
+            "causes": [
+                "virus"
+            ],
+            "traitements_specifiques": [
+                "traitement spécifique"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Fumure avec le mélange N-P-K approprié, irrigation localisée au goutte à goutte",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

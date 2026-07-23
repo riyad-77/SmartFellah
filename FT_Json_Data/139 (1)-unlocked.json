@@ -1,0 +1,23 @@
+{
+    "culture": "Noyer commun (Juglans regia)",
+    "exigences_sol": "Les plantations existent dans les vallées montagneuses avec des altitudes situées entre 1200 m et 1700 m.",
+    "besoins_hydriques": null,
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "30°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [],
+            "traitements_specifiques": []
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Le noyer est planté principalement au bord des courants d'eau et à la limite des parcelles.",
+            "status": null,
+            "categorie": null
+        }
+    ]
+}

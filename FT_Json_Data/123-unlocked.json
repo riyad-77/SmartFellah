@@ -1,0 +1,27 @@
+{
+    "culture": "grenadier",
+    "exigences_sol": "Le grenadier est une espèce connue pour sa tolérance au calcaire et à la salinité. Sa tolérance à la sécheresse est relative et se fait au détriment de sa croissance végétative et de sa fructification.",
+    "besoins_hydriques": "Les sols argilo-limoneux irrigués conviennent aussi à la culture du grenadier.",
+    "temp_optimale": {
+        "temp_min": "-10°C",
+        "temp_max": "40°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [
+                "Inconnues"
+            ],
+            "traitements_specifiques": [
+                "Inconnus"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Le grenadier exige une petite dose de froid en période hivernale pour son évocation florale.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "culture": "Blé",
+    "exigences_sol": "",
+    "besoins_hydriques": null,
+    "temp_optimale": {
+        "temp_min": 15,
+        "temp_max": 25
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [],
+            "traitements_specifiques": []
+        }
+    ],
+    "recommandations": [
+        {
+            "description": null,
+            "status": null,
+            "categorie": null
+        }
+    ]
+}

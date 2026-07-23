@@ -1,0 +1,83 @@
+{
+    "culture": "Prunier",
+    "exigences_sol": "La culture de l'abricot est exigeante en sol profond et bien drainé, argilo-limoneux.",
+    "besoins_hydriques": "L’abricotier préfère les sols bien drainés, profonds, argilo-limoneux.",
+    "temp_optimale": {
+        "temp_min": "-16˚C",
+        "temp_max": "7,2˚C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Enroulement chlorotique",
+            "causes": [
+                "Mycoplasmes"
+            ],
+            "traitements_specifiques": [
+                "Agriculture saine",
+                "Contrôle des maladies"
+            ]
+        },
+        {
+            "nom_maladie": "Maladies",
+            "causes": [
+                "Gel",
+                "Maladies dues à l'humidité"
+            ],
+            "traitements_specifiques": [
+                "Taille",
+                "Irrigation"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie de la rouille verte",
+            "causes": [
+                "fumure excessive",
+                "inondation"
+            ],
+            "traitements_specifiques": [
+                "application de fongicide"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie de la mousse",
+            "causes": [
+                "Vent, pluies"
+            ],
+            "traitements_specifiques": [
+                "Fumage, traitements phyto-sanitaires"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Renouveler le bois fruitier sur 3 et 4 ans.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Assurer une taille, un arrosage et une fertilisation adéquats.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Fertilisation régulière avec un mélange de 10-10-10",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Irrigation régulière, mais pas excessives",
+            "status": "en cours",
+            "categorie": "normale"
+        },
+        {
+            "description": "Fertiliser en fonction des besoins de la culture et du sol",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Assurez-vous d'un drainage suffisant pour les racines",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

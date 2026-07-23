@@ -1,0 +1,23 @@
+{
+    "culture": null,
+    "exigences_sol": null,
+    "besoins_hydriques": null,
+    "temp_optimale": {
+        "temp_min": "10",
+        "temp_max": "20"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": null,
+            "causes": [],
+            "traitements_specifiques": []
+        }
+    ],
+    "recommandations": [
+        {
+            "description": null,
+            "status": null,
+            "categorie": null
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "culture": "betterave à sucre",
+    "exigences_sol": null,
+    "besoins_hydriques": "goutte à goutte",
+    "temp_optimale": {
+        "temp_min": "16-26 °C",
+        "temp_max": "10-20 °C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "nématodes",
+            "causes": [
+                "en début de culture"
+            ],
+            "traitements_specifiques": [
+                "inconnu"
+            ]
+        },
+        {
+            "nom_maladie": "casside",
+            "causes": [
+                "de mai/juin"
+            ],
+            "traitements_specifiques": [
+                "inconnu"
+            ]
+        },
+        {
+            "nom_maladie": "pourriture molle des racines",
+            "causes": [
+                "au moment de la récolte"
+            ],
+            "traitements_specifiques": [
+                "inconnu"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Utiliser un système d'irrigation favorable à la croissance de la plante.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Effectuer un désherbage régulier pour contrôler les populations de plantes adventices et prévenir les phénomènes de pourriture de la racine à la récolte.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

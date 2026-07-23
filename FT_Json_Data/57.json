@@ -1,0 +1,29 @@
+{
+    "culture": "Tomate de primeurs",
+    "exigences_sol": null,
+    "besoins_hydriques": "sensible au froid, craint beaucoup le gel et les vents chauds (chergui) et très exigeante en température",
+    "temp_optimale": {
+        "temp_min": "13-17°C",
+        "temp_max": "20-25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Botrytis et Mildiou",
+            "causes": [
+                "humidité relative élevée",
+                "temps sec"
+            ],
+            "traitements_specifiques": [
+                "irrigation régulière",
+                "aération matinale"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "L'irrigation doit être effectuée régulièrement et en fonction de l'humidité relative du sol",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

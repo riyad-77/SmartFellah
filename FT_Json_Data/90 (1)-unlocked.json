@@ -1,0 +1,34 @@
+{
+    "culture": "Viticulture marocaine",
+    "exigences_sol": null,
+    "besoins_hydriques": "Faible à modéré",
+    "temp_optimale": {
+        "temp_min": 10,
+        "temp_max": 25
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "La coulure",
+            "causes": [
+                "Surproduction de fruits",
+                "Manque d'incision annulaire"
+            ],
+            "traitements_specifiques": [
+                "Traitement chimique",
+                "Pratique de l'incision annulaire"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Appliquer les normes de qualité pour valoriser les produits viti-vinicoles marocains.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Pratiquer l'incision annulaire juste après la nouaison pour améliorer la qualité des raisins de table.",
+            "status": "en cours",
+            "categorie": null
+        }
+    ]
+}

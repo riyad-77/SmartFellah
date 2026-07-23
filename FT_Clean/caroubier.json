@@ -1,0 +1,33 @@
+{
+    "culture": "Caroubier",
+    "exigences_sol": "Il tolère les sols pauvres, sablonneux, limoneux lourds, rocailleux et calcaires, des pH de 6,2 jusqu'à 8,6 mais craint les sols acides et humides.",
+    "besoins_hydriques": "Il est estimé à 16 000 T en gousses (4800 T en graines).",
+    "temp_optimale": {
+        "temp_min": "200 mm de pluie",
+        "temp_max": "Il tolère les précipitations rares ou irrégulières et des périodes estivales sèches."
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [],
+            "traitements_specifiques": []
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Il est souvent utilisé pour lutter contre l'érosion des sols, comme brise vent et comme arbre ornemental compte tenu de sa couronne sphérique, et de son feuillage persistant, dense et brillant.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Sauvegarder la fertilité des sols et améliorer le niveau de vie de la population rurale en utilisant des espèces arborescentes pionnières à usage multiple comme le caroubier.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Conserver les sols pauvres et éviter la sur-érosion.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

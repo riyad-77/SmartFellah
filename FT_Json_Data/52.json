@@ -1,0 +1,23 @@
+{
+    "culture": "pompe de terre",
+    "exigences_sol": null,
+    "besoins_hydriques": "Les hautes températures stimulent la croissance des tiges; par contre les basses températures favorisent davantage la croissance du tubercule.",
+    "temp_optimale": {
+        "temp_min": "6°C",
+        "temp_max": "18°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": null,
+            "traitements_specifiques": null
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Les sols préférés sont ceux qui sont profonds, fertiles et meubles.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

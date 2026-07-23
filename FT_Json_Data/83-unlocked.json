@@ -1,0 +1,28 @@
+{
+    "culture": "Orge",
+    "exigences_sol": "Sol bien drainé et à bonne structure, avec un pH compris entre 6,0 et 7,0.",
+    "besoins_hydriques": "L'orge nécessite une irrigation régulière pendant la phase de croissance, mais peut également tolérer certaines périodes de sécheresse. Il est recommandé d'irriguer 1-2 fois par semaine.",
+    "temp_optimale": {
+        "temp_min": "-5°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "La rouxette",
+            "causes": [
+                "Aperçu du climat",
+                "Présence de graines"
+            ],
+            "traitements_specifiques": [
+                "Traitement par insecticide"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Semer l'orge à une épaisseur de 5-7 cm et espacée à environ 10-15 cm. L'Aide à la culture peut être utile pour éviter les erreurs.",
+            "status": "en cours",
+            "categorie": "urgence"
+        }
+    ]
+}

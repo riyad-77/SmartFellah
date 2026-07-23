@@ -1,0 +1,32 @@
+{
+    "culture": "A Graminées",
+    "exigences_sol": null,
+    "besoins_hydriques": "Les légumineuses nécessitent une irrigation régulière.",
+    "temp_optimale": {
+        "temp_min": 15,
+        "temp_max": 25
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Rougeur des feuilles",
+            "causes": [
+                "Mycosphaerella pinifolia"
+            ],
+            "traitements_specifiques": [
+                "Appliquer des engrais contenant du cuivre"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Fertiliser les légumineuses avec une faible teneur en nitrates.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Éviter les excès d'eau",
+            "status": "En cours",
+            "categorie": "Urgent"
+        }
+    ]
+}

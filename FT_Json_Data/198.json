@@ -1,0 +1,44 @@
+{
+    "culture": "Piment Rouge (Niora)",
+    "exigences_sol": null,
+    "besoins_hydriques": "Très exigeant en rotation des cultures, meilleurs rendements dans les terrains vierges ou nouvellement acquis",
+    "temp_optimale": {
+        "temp_min": 15,
+        "temp_max": 30
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Mauvaise vache de soja (Sudden Death of Soybean)",
+            "causes": [
+                "Insectes",
+                "Famille Phyllotreta"
+            ],
+            "traitements_specifiques": [
+                "Bactériocide"
+            ]
+        },
+        {
+            "nom_maladie": "Noyau brun",
+            "causes": [
+                "Pestes",
+                "Lectiniques"
+            ],
+            "traitements_specifiques": [
+                "Insecticides",
+                "Fumigation"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Préparation des parcelles avec un minimum de 4 mois de récupération et de repos des sols",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Choix d'une varité adaptée à la région de Tadla",
+            "status": "en cours",
+            "categorie": "non urgente"
+        }
+    ]
+}

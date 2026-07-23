@@ -1,0 +1,32 @@
+{
+    "culture": "patate douce",
+    "exigences_sol": "La plante est de saison chaude. Elle nécessite des jours courts pour sa tubérisation (formation du rhizome). Elle a les mêmes exigences écologiques que la culture des courges.",
+    "besoins_hydriques": "Il faut irriguer jusqu'à pleine couverture du sol par la végétation.",
+    "temp_optimale": {
+        "temp_min": "4-5˚C",
+        "temp_max": "27˚C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [
+                "Inconnues"
+            ],
+            "traitements_specifiques": [
+                "Inconnus"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Choisir un matériel végétal sain, indemne de virus.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Traiter contre les thrips, les vers blancs, la noctuelle et la rouille.",
+            "status": "en cours",
+            "categorie": "prioritaire"
+        }
+    ]
+}

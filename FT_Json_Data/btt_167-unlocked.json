@@ -1,0 +1,23 @@
+{
+    "culture": "Mentha verte",
+    "exigences_sol": "La menthe nécessite un gros investissement, mais elle est rentable malgré la cherté des intrants et l’augmentation du coût de production.",
+    "besoins_hydriques": "L'eau douce est abondante et accessible grâce à des puits qui ont en général 20 à 30 mètres de profondeur.",
+    "temp_optimale": {
+        "temp_min": null,
+        "temp_max": null
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [],
+            "traitements_specifiques": []
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Il est important de faire l’épierrage avant l’installation de la menthe pour améliorer la fertilité du sol.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

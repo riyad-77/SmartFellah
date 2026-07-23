@@ -1,0 +1,27 @@
+{
+    "culture": "Fragaria vulgaris",
+    "exigences_sol": "Sols sableux dit «R’mel», aptes à plusieurs cultures, notamment au fraisier, à l’arachide et à la pomme de terre.",
+    "besoins_hydriques": "Eau abondante et de bonne qualité, avec un système goutte-à-goutte sur des sols sableux.",
+    "temp_optimale": {
+        "temp_min": "6°C",
+        "temp_max": "29°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [
+                "Inconnues"
+            ],
+            "traitements_specifiques": [
+                "Inconnus"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "L'application de techniques de production optimales, telles que le système goutte-à-goutte et la fumigation, est recommandée pour une meilleure productivité.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        }
+    ]
+}

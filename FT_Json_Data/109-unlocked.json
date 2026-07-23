@@ -1,0 +1,29 @@
+{
+    "culture": "bananier",
+    "exigences_sol": "Un sol profond, fertile et léger est requis.",
+    "besoins_hydriques": "La banane nécessite une hygrométrie élevée et un bon ensoleillement, mais craint les vents et les variations brusques de température.",
+    "temp_optimale": {
+        "temp_min": "20°C",
+        "temp_max": "30°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Maladie du bananier",
+            "causes": [
+                "Infestation de nématodes",
+                "Infection par les virus"
+            ],
+            "traitements_specifiques": [
+                "Irriguation régulière",
+                "Traitement chimique"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "La sélection des pieds mères est cruciale pour la performance de production.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

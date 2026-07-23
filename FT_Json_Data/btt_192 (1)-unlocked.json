@@ -1,0 +1,34 @@
+{
+    "culture": "arachide",
+    "exigences_sol": "sols sableux",
+    "besoins_hydriques": "irrigué par aspersion",
+    "temp_optimale": {
+        "temp_min": "15°C à 25°C",
+        "temp_max": "30°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Résistance basse aux insectes",
+            "causes": [
+                "manque de diversité dans les semis",
+                "utilisation excessive d'engrais"
+            ],
+            "traitements_specifiques": [
+                "semis diversifiés",
+                "reducion de l'utilisation d'engrais"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Semer des varietes de type Virginia pour améliorer la productivité et la résistance aux insectes.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Reduire l'utilisation d'engrais minéraux et utiliser des méthodes biologiques de contrôle des maladies.",
+            "status": "en cours",
+            "categorie": "prioritaire"
+        }
+    ]
+}

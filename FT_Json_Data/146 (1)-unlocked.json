@@ -1,0 +1,32 @@
+{
+    "culture": "Rosa damascena",
+    "exigences_sol": "Terre aéré pauvre en sels de calcium, climat propice avec température et hygrométrie modérées.",
+    "besoins_hydriques": "Nourriture régulière, mais pas sous-irrigation.",
+    "temp_optimale": {
+        "temp_min": 15,
+        "temp_max": 25
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Pests",
+            "causes": [
+                "Insectes"
+            ],
+            "traitements_specifiques": [
+                "Insecticide"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Fertiliser régulièrement pour maintenir la qualité de la terre.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Effectuer des écoulements reguliers pour éviter les débordements.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

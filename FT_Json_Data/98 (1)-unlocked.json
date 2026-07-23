@@ -1,0 +1,42 @@
+{
+    "culture": "pomme de terre",
+    "exigences_sol": "sol silico-argileux, richem en humus et légèrement acides",
+    "besoins_hydriques": "régime continu d’apport d’eau (80 à 100 % de l’évapotranspiration maximale)",
+    "temp_optimale": {
+        "temp_min": "12-15°C",
+        "temp_max": "16-20°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "mildiou",
+            "causes": [
+                "irrigation par aspersion ou de pluies abondantes mouillant le feuillage sur une longue période"
+            ],
+            "traitements_specifiques": [
+                "traitement au Thirame",
+                "utilisation de produits anti-mildiou"
+            ]
+        },
+        {
+            "nom_maladie": "pucerons",
+            "causes": [
+                "viroses"
+            ],
+            "traitements_specifiques": [
+                "traite par le pirimor"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Faire un travail profond du sol avant la plantation et enfouir de fumure de fond",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Effectuer 2-3 binages lors de la période végétative pour empêcher le verdissement des tubercules",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

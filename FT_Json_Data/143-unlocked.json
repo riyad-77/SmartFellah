@@ -1,0 +1,27 @@
+{
+    "culture": "Amandier",
+    "exigences_sol": "Sols chlorosants avec des densités moyennes de 400 à 600 arbres/ha",
+    "besoins_hydriques": "Faibles disponibilités en eau",
+    "temp_optimale": {
+        "temp_min": "12°C",
+        "temp_max": "30°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Rusticité",
+            "causes": [
+                "Sols pauvres, riches en calcaire"
+            ],
+            "traitements_specifiques": [
+                "Fertilisation avec des engrais chimiques"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Choisir un porte-greffe résistant à la pénétration des larves du capnode noire (Capnodis tenebrionis)",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

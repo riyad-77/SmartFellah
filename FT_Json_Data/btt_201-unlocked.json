@@ -1,0 +1,30 @@
+{
+    "culture": "Fraisier",
+    "exigences_sol": "Sols sableux, aptes à plusieurs cultures.",
+    "besoins_hydriques": "Eau abondante et de bonne qualité.",
+    "temp_optimale": {
+        "temp_min": 6,
+        "temp_max": 29
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [
+                "Inconnues"
+            ],
+            "traitements_specifiques": []
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Conduire la culture sous abri en irrigué avec le système goutte-à-goutte sur des sols sableux.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Utiliser un apport de 40 à 60 T/ha de fumier avant les labours.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

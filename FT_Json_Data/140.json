@@ -1,0 +1,31 @@
+{
+    "culture": "Blé",
+    "exigences_sol": "La faiblesse de la production céréalière marocaine était toujours principalement liée aux effets combinés de la sécheresse et des attaques par la cécidomyie.",
+    "besoins_hydriques": "Les zones bourdéfavorables, les effets dévastateurs du couple sécherresse-cécidomyie sont généralement attribués à la sécheresse seule.",
+    "temp_optimale": {
+        "temp_min": "Les adultes émergent de la puppe lorsque les conditions climatiques sont favorables.",
+        "temp_max": "Sous les conditions marocaines, il y a généralement deux générations de cécidomyie par an."
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Cécidomyie",
+            "causes": [
+                "sécheresse",
+                "attaque par la cécidomyie"
+            ],
+            "traitements_specifiques": []
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "La résistance génétique au fléau de la cécidomyie était introuvable auparavant.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "La disponibilité récente de gènes de résistance et des variétés résistantes à ce ravageur aura donc des répercussions bénéfiques énormes sur l’agriculture et l’économie marocaines.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "culture": "Tomate",
+    "exigences_sol": "Sol bien drainé avec un pH acide à neutre.",
+    "besoins_hydriques": "La tomate a besoin d'une irrigation régulière, en fonction de la température et du sol. Il est recommandé d'irriguer au moins 2 fois par semaine pendant la phase de croissance active.",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Tomate Yellow Leaf Curl Virus (TYLCV)",
+            "causes": [
+                "Bemisia tabaci",
+                "insecte Homoptère de la famille des Aleurodidae"
+            ],
+            "traitements_specifiques": [
+                "insecticides spécifiques contre Bemisia tabaci"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Lutter contre le TYLCV en utilisant des méthodes de lutte intégrées telles que la suppression des insectes, l'utilisation d'insecticides spécifiques et les pratiques agricoles durables.",
+            "status": "en cours",
+            "categorie": "urgente"
+        }
+    ]
+}

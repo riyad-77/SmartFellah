@@ -1,0 +1,33 @@
+{
+    "culture": "Laitue",
+    "exigences_sol": null,
+    "besoins_hydriques": "350-400 mm par cycle cultural",
+    "temp_optimale": {
+        "temp_min": "4˚C",
+        "temp_max": "24˚C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": null,
+            "causes": [
+                "Rhizoctonia solani",
+                "Sclerotinia minor"
+            ],
+            "traitements_specifiques": [
+                "fongicides efficaces"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Le besoin en eau de la culture est de 350-400 mm par cycle cultural.",
+            "status": null,
+            "categorie": "Inconnaissance"
+        },
+        {
+            "description": "La fumure de fond peut être constituée de 5-10 T/ha de fumier + 20 kg N + 50 kg P2O5 + 100 kg K2O/ha.",
+            "status": null,
+            "categorie": "Inconnaissance"
+        }
+    ]
+}

@@ -1,0 +1,217 @@
+{
+    "culture": "Ble",
+    "exigences_sol": "Le sol doit être bien drainé, avec un pH neutre à légèrement acide.",
+    "besoins_hydriques": "Les blés nécessitent au moins 500 mm de précipitations annuelles. Le sol doit être well-drained et avoir un pH neutre à légèrement acide. Les blés sont des plantes hygrophiles, mais ils peuvent tolérer une certaine sécheresse.",
+    "temp_optimale": {
+        "temp_min": "-1°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Cécidomyie",
+            "causes": [
+                "Sécheresse",
+                "Attentes pluviales tardives",
+                "Zones semi-arides"
+            ],
+            "traitements_specifiques": [
+                "Réduire les attentes pluviales",
+                "Améliorer l'irrigation",
+                "Utiliser des variétés résistantes à la cécidomyie"
+            ]
+        },
+        {
+            "nom_maladie": "La rouille",
+            "causes": [
+                "Humidité excessive",
+                "Solissitude"
+            ],
+            "traitements_specifiques": [
+                "L'application de fumées",
+                "Le désherbage"
+            ]
+        },
+        {
+            "nom_maladie": "charbon nu",
+            "causes": [
+                "semence",
+                "débris",
+                "sol"
+            ],
+            "traitements_specifiques": [
+                "traitement chimique",
+                "traitement biologique"
+            ]
+        },
+        {
+            "nom_maladie": "charbon foliaire",
+            "causes": [
+                "sol",
+                "semence"
+            ],
+            "traitements_specifiques": [
+                "traitement chimique",
+                "traitement biologique"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie cryptogamique",
+            "causes": [
+                "Proximité du littoral atlantique",
+                "Pluviométrie"
+            ],
+            "traitements_specifiques": [
+                "Traitement antifongique"
+            ]
+        },
+        {
+            "nom_maladie": "Mauvaises herbes",
+            "causes": [
+                "Infestation de mauvaises herbes"
+            ],
+            "traitements_specifiques": [
+                "Utilisation d'un anti-dicotylédone (Printazol 75)"
+            ]
+        },
+        {
+            "nom_maladie": "Maladies cryptogamiques",
+            "causes": [
+                "Présence du littoral atlantique et de la pluviométrie"
+            ],
+            "traitements_specifiques": [
+                "Traitement antifongique (Impact RM, 1 litre/ha)"
+            ]
+        },
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [],
+            "traitements_specifiques": []
+        },
+        {
+            "nom_maladie": "Chergui",
+            "causes": [
+                "sécheresse et Chergui de fin de cycle"
+            ],
+            "traitements_specifiques": [
+                "irrigation et fertilisation"
+            ]
+        },
+        {
+            "nom_maladie": "mouche",
+            "causes": [
+                "évent",
+                "sols secs"
+            ],
+            "traitements_specifiques": [
+                "insecticide"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Vérifier les conditions climatiques et irriguer régulièrement. Utiliser des variétés résistantes à la cécidomyie.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Utiliser des variétés de blé résistantes à la cécidomyie",
+            "status": "en cours",
+            "categorie": "urgence"
+        },
+        {
+            "description": "Lever les mesures d'irrigation pour éviter les sécheresses et les attaques par la cécidomyie",
+            "status": "en cours",
+            "categorie": "important"
+        },
+        {
+            "description": "La résistance génétique au fléau de la cécidomyie était introuvable auparavant.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "La disponibilité récente de gènes de résistance et des variétés résistantes à ce ravageur aura donc des répercussions bénéfiques énormes sur l’agriculture et l’économie marocaines.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Il est recommandé d'utiliser des semences sélectionnées pour améliorer le rendement du blé dur. Il faut également appliquer une fertilisation azotée en fonction des besoins du sol et de la variété de blé.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "effectuer des pratiques de lutte contre les maladies cryptogamiques",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "realiser des semis réguliers pour éviter les attaques sporadiques",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Effectuer des tournages réguliers pour réduire la surface de contamination",
+            "status": null,
+            "categorie": null
+        },
+        {
+            "description": "Utiliser des semences traitées et faire des programmes de lutte préventive",
+            "status": null,
+            "categorie": null
+        },
+        {
+            "description": "Vérifier régulièrement les graines avant de les semer pour détecter les champignons pathogènes.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Semis en ligne manuellement les 12 et 13 novembre 1998",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Densité de semis à 145 Kg/ha",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Application régulière d'un semi-soir pour réduire les pertes de qualité du grain",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Utilisation d'une densité de semis de 145 Kg/ha pour optimiser le rendement",
+            "status": "En cours",
+            "categorie": "Prioritaire"
+        },
+        {
+            "description": "Semer le blé tendre en novembre, après avoir vérifié les conditions climatiques favorables",
+            "status": null,
+            "categorie": null
+        },
+        {
+            "description": "Applier un traitement antifongique une fois par an pour prévenir la maladie cryptogamique",
+            "status": null,
+            "categorie": null
+        },
+        {
+            "description": "Fertiliser avant la germination",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "choix variétal adapté aux conditions climatiques",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "préparation du sol et semis en fonction des conditions climatiques",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "cultiver dans des trous creusés pour améliorer drainage",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

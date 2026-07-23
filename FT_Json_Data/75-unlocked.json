@@ -1,0 +1,27 @@
+{
+    "culture": "betterave à sucre monogerme",
+    "exigences_sol": "Les travaux de préparation du sol ont pour objectifs fondamentaux, d'une part de réussir une germination et une émergence rapide et régulière des graines, et d'autre part de permettre un enracinement profond.",
+    "besoins_hydriques": "La culture requiert lors de son installation des irrigations rapprochées dans le temps, en vue d'assurer la germination et une levée homogène.",
+    "temp_optimale": {
+        "temp_min": 15,
+        "temp_max": 25
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Maladie des feuilles",
+            "causes": [
+                "Infection par les espèces Mycosportheae"
+            ],
+            "traitements_specifiques": [
+                "Application de fumigant"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Effectuer une préparation du sol soigneuse avant le semis, en choisissant des outils adaptés à la culture monogermes.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

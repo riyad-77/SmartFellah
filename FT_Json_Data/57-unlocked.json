@@ -1,0 +1,34 @@
+{
+    "culture": "Tomate de primeurs",
+    "exigences_sol": "Non spécifiées",
+    "besoins_hydriques": "Optimale humidité relative à 75%",
+    "temp_optimale": {
+        "temp_min": "17°C",
+        "temp_max": "30°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Botrytis",
+            "causes": [
+                "Vent chaud",
+                "Humidité élevée"
+            ],
+            "traitements_specifiques": [
+                "Éprouvette",
+                "Traitements antibiotiques"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Utiliser des serres pour réguler la température et l'humidité.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Lavage régulier du plastique utilisé pour améliorer sa transmission de lumière.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        }
+    ]
+}

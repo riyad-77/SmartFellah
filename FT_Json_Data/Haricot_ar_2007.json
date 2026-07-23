@@ -1,0 +1,34 @@
+{
+    "culture": "Poissonnier",
+    "exigences_sol": "Solide et bien drainé",
+    "besoins_hydriques": "Abeille de rain pour les 2 premiers mois puis ensoleillé après ça",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Maladie de poussière",
+            "causes": [
+                "Poussière sur la surface du sol",
+                "Manque de soleil"
+            ],
+            "traitements_specifiques": [
+                "Ensoleillage",
+                "Mise en place d'un système de drainage"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Vérifier régulièrement les mètres pour éviter la surrétention",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Mettre en place un système de drainage pour éviter l'accumulation d'eau",
+            "status": "réalisé",
+            "categorie": ""
+        }
+    ]
+}

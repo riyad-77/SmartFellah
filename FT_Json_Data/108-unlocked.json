@@ -1,0 +1,30 @@
+{
+    "culture": "Avocatier",
+    "exigences_sol": "Sols sableux ou sablo-argileux, avec pH optimum entre 5,5 et 6,5.",
+    "besoins_hydriques": "1000 à 1200 mm de pluviométrie annuelle, avec une irrigation nécessaire juste après plantation.",
+    "temp_optimale": {
+        "temp_min": "-2˚C",
+        "temp_max": "28,3˚C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Dégâts due à la température excessive",
+            "causes": [
+                "Températures extrêmes"
+            ],
+            "traitements_specifiques": []
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Protéger les jeunes plants contre les vents et les fortes insolations.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Fertiliser avec un apport d'azote modéré pour éviter la réduction de la fructification.",
+            "status": "en cours",
+            "categorie": "non urgent"
+        }
+    ]
+}

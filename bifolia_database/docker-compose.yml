@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  db_bifolia:
+    image: postgis/postgis:15-3.4
+    container_name: bifolia_postgres
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: secretpassword
+      POSTGRES_DB: bifolia_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - bifolia_data:/var/lib/postgresql/data
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: bifolia_pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: riadlag2004@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: secretpassword
+    ports:
+      - "5050:80"
+    depends_on:
+      - db_bifolia
+
+volumes:
+  bifolia_data:

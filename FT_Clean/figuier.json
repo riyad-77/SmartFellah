@@ -1,0 +1,82 @@
+{
+    "culture": "Figuier",
+    "exigences_sol": "Le figuier a besoin de sol bien drainé, en pH neutre (7,0-8,5), avec une teneur de calcium et de potassium élevée.",
+    "besoins_hydriques": "La culture du figuier nécessite une irrigation régulière, surtout pendant la période de floraison et de production. Il faut éviter les excès d'eau qui peuvent entraîner des problèmes de santé de l'arbre.",
+    "temp_optimale": {
+        "temp_min": "10°C",
+        "temp_max": "35°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "La rouxolle du figuier",
+            "causes": [
+                "Oïdium solani",
+                "Pseudomonas syringae"
+            ],
+            "traitements_specifiques": [
+                "Fumigation, application de cuivres"
+            ]
+        },
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [
+                "Inconnues"
+            ],
+            "traitements_specifiques": [
+                "Inconnus"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie des feuilles",
+            "causes": [
+                "Oxycélinum strophanthus",
+                "Phytophthora cactorum"
+            ],
+            "traitements_specifiques": [
+                "traitement avec des herbicides, application de protecteurs contre les maladies"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie de la racine",
+            "causes": [
+                "Fusarium oxysporum",
+                "Phytophthora cactorum"
+            ],
+            "traitements_specifiques": [
+                "traitement avec des herbicides, application de protecteurs contre les maladies"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Les cultures du figuier devraient être contrôlées régulièrement pour éviter les ravageurs tels que les blattes et les coléoptères.",
+            "status": "en cours",
+            "categorie": "important"
+        },
+        {
+            "description": "Les feuilles du figuier devraient être traitées régulièrement pour prévenir la maladie de la rouxolle.",
+            "status": "en cours",
+            "categorie": "important"
+        },
+        {
+            "description": "Rallonger les périodes de froid pour stimuler la floraison et la production de fruits.",
+            "status": null,
+            "categorie": null
+        },
+        {
+            "description": "Faire des relevés précoces pour identifier les variétés de figues le plus résistantes aux maladies.",
+            "status": null,
+            "categorie": null
+        },
+        {
+            "description": "Appliquer un régime de fertilisation équilibré, composé d'azote, phosphore et potassium.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Assurer une irrigation adéquate, en fonction des conditions climatiques.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "culture": "Agrumes",
+    "exigences_sol": null,
+    "besoins_hydriques": null,
+    "temp_optimale": {
+        "temp_min": "-5°C",
+        "temp_max": "+10°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Congélation",
+            "causes": [
+                "Perte d'énergie par le couvert végétal et par le sol",
+                "Convection lorsque les régions plus froides déplacent de l'air vers des zones moins froides"
+            ],
+            "traitements_specifiques": null
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Acclimater les arbres aux températures froides avant l'installation du froid",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Vigiler les tissus végétaux et éviter le gelage de la feuille lorsqu'elle est humide",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

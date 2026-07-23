@@ -1,0 +1,69 @@
+{
+    "culture": "Tomate de primeurs",
+    "exigences_sol": "Non spécifiées",
+    "besoins_hydriques": "Très exigeant en température et humidité relative optimale (75%)",
+    "temp_optimale": {
+        "temp_min": 13,
+        "temp_max": 17
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Botrytis",
+            "causes": [
+                "Température basse",
+                "Humidité élevée"
+            ],
+            "traitements_specifiques": [
+                "Treatment avec des produits antibotrytiques"
+            ]
+        },
+        {
+            "nom_maladie": "Mildiou",
+            "causes": [
+                "Humidité élevée",
+                "Vent chaud (chergui)"
+            ],
+            "traitements_specifiques": [
+                "Treatment avec des produits antimaladies"
+            ]
+        },
+        {
+            "nom_maladie": "Botrytis et Mildiou",
+            "causes": [
+                "humidité relative élevée",
+                "temps sec"
+            ],
+            "traitements_specifiques": [
+                "irrigation régulière",
+                "aération matinale"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Aérer régulièrement les serres pour éviter la formation de condensation et réduire l'humidité relative.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Irriger avec soin pour maintenir une humidité relative optimale (75%).",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Utiliser des serres pour réguler la température et l'humidité.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Lavage régulier du plastique utilisé pour améliorer sa transmission de lumière.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "L'irrigation doit être effectuée régulièrement et en fonction de l'humidité relative du sol",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

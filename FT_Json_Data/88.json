@@ -1,0 +1,33 @@
+{
+    "culture": "Blé dur et Blé tendre",
+    "exigences_sol": null,
+    "besoins_hydriques": "Irrigation nécessaire pour les mois de novembre et décembre",
+    "temp_optimale": {
+        "temp_min": 15,
+        "temp_max": 25
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Maladie cryptogamique",
+            "causes": [
+                "Pluies excessive",
+                "Proximité du littoral atlantique"
+            ],
+            "traitements_specifiques": [
+                "Traitement antifongique"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Semer le blé tendre en novembre, après avoir vérifié les conditions climatiques favorables",
+            "status": null,
+            "categorie": null
+        },
+        {
+            "description": "Applier un traitement antifongique une fois par an pour prévenir la maladie cryptogamique",
+            "status": null,
+            "categorie": null
+        }
+    ]
+}

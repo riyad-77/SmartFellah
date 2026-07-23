@@ -1,0 +1,27 @@
+{
+    "culture": "Riz",
+    "exigences_sol": "Sol ensoleillé et bien drainé",
+    "besoins_hydriques": "Aiguille de 40 cm à 60 cm de profondeur par semaine pendant la période de germination et croissance active (2-3 mois)",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "30°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Riz vert",
+            "causes": [
+                "fumigation, mauvaise sècheresse"
+            ],
+            "traitements_specifiques": [
+                "traitement avec du chlorpyrifos"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Récolte des grains lorsqu'ils sont matures et durs",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

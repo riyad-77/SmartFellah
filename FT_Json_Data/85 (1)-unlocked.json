@@ -1,0 +1,34 @@
+{
+    "culture": "Tournesol",
+    "exigences_sol": "Le tournesol nécessite un sol bien drainé et fertile, avec un pH entre 6.0 et 7.0.",
+    "besoins_hydriques": "Le tournesol a besoin d'une irrigation régulière, mais il est sensible aux excessives eaux qui peuvent entraîner la pourriture des racines.",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Mouche de tournesol",
+            "causes": [
+                "Attaque de moineaux",
+                "Infestation de fourmis"
+            ],
+            "traitements_specifiques": [
+                "Utilisation de pesticides spécifiques",
+                "Remplacement des fleurs en fleur"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Appliquer un traitement insecticide régulièrement pour contrôler les attaques de moineaux.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Assurer une irrigation régulière, mais éviter les excessives eaux qui peuvent entraîner la pourriture des racines.",
+            "status": "En cours",
+            "categorie": "Prioritaire"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "culture": "Fraisier",
+    "exigences_sol": "Sols sableux dit «R’mel» aptes à plusieurs cultures, notamment au fraisier, à l’arachide et à la pomme de terre.",
+    "besoins_hydriques": "Eau abondante et de bonne qualité, système goutte-à-goutte sur des sols sableux.",
+    "temp_optimale": {
+        "temp_min": "6°C",
+        "temp_max": "29°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [],
+            "traitements_specifiques": []
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Conduire la culture sous abri en irrigué avec le système goutte-à-goutte sur des sols sableux.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Affecter une superficie de 3,5 à 200 ha pour les plantations de fraises.",
+            "status": "en cours",
+            "categorie": "non urgente"
+        }
+    ]
+}

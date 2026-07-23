@@ -1,0 +1,33 @@
+{
+    "culture": "Ensilage",
+    "exigences_sol": "Le sol devrait recevoir au moins 800 mm d'orage par an, avec des périodes de soleil prolongées en été. ",
+    "besoins_hydriques": "Les cultures nécessitent une irrigation régulière, notamment pendant la période de floraison et de fruitage.",
+    "temp_optimale": {
+        "temp_min": "-5°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "La mosaïque du blé",
+            "causes": [
+                "Les virus de la mosaïque",
+                "Les parasites"
+            ],
+            "traitements_specifiques": [
+                "Le traitement par les pesticides"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Appliquer une couche d'engrais organique pour améliorer la fertilité du sol.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Fournir de l'eau régulièrement, notamment pendant la période de floraison et de fruitage.",
+            "status": "en cours",
+            "categorie": "non urgente"
+        }
+    ]
+}

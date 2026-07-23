@@ -1,0 +1,59 @@
+{
+    "culture": "Cerisier",
+    "exigences_sol": "En froid hiver-ral pour lever sa dormance, profonds, légers et perméables",
+    "besoins_hydriques": "3000 à 5000 m3 pour une croissance et un développement réguliers",
+    "temp_optimale": {
+        "temp_min": "-1.7 °C à la pleine floraison",
+        "temp_max": "-1.1 °C au stade petit fruit"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Dépérissement bactérien",
+            "causes": [
+                "Bactérie responsable du fléau"
+            ],
+            "traitements_specifiques": [
+                "Application de traitements cupriques pendant la période de chute des feuilles"
+            ]
+        },
+        {
+            "nom_maladie": "Capnode",
+            "causes": [
+                "Larves nuisibles sur les racines"
+            ],
+            "traitements_specifiques": []
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Assurez-vous d'une lumière suffisante pour le développement optimal du cerisier.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Examinez régulièrement les arbres pour détecter les signes de dépérissement bactérien ou de capnode.",
+            "status": "en cours",
+            "categorie": "urgence"
+        },
+        {
+            "description": "Appliquer des traitements cupriques pour prévenir le dépérissement bactérien.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Assurer une bonne irrigation pour éviter les problèmes de capnode.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Appliquer des traitements cupriques pour lutter contre le dépérissement bactérien.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Assurer une bonne irrigation, en particulier après la récolte, pour éviter les stress hydriques.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        }
+    ]
+}

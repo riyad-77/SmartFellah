@@ -1,0 +1,25 @@
+{
+    "culture": "Banane",
+    "exigences_sol": null,
+    "besoins_hydriques": "Une hygrométrie élevée et un bon ensoleillement mais craint les vents et les variations brusques de température.",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "30°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": null,
+            "causes": [
+                "viroses"
+            ],
+            "traitements_specifiques": []
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Choisir un site avec une bonne ventilation et éviter les zones gélives.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

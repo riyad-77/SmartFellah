@@ -1,0 +1,38 @@
+{
+    "culture": "Maïs",
+    "exigences_sol": "Le sol est profond, plat à légèrement vallonné (pente 2-4%), très sableux (taux d'argile autour de 3%, taux de sables autour de 90%) et non calcaire, avec un pH neutre à alcalin (6,8 à 8,4).",
+    "besoins_hydriques": "Le maïs nécessite une irrigation régulière, en particulier pendant les périodes de croissance rapide.",
+    "temp_optimale": {
+        "temp_min": "16°C",
+        "temp_max": "27°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Dormante",
+            "causes": [
+                "Manque d'irrigation",
+                "Sol trop sec"
+            ],
+            "traitements_specifiques": [
+                "Irrigation régulière"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Sélectionner des variétés de maïs adaptées au climat côtière du Maroc, telles que Cecilia ou Samsara.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Effectuer un semis en lignes jumelées avec un semoir de précision Gaspardo pour améliorer la densité théorique et réduire les pertes en grain.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Appliquer une irrigation régulière, en particulier pendant les périodes de croissance rapide, pour prévenir les maladies dues à la sécheresse.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

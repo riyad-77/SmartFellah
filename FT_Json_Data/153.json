@@ -1,0 +1,23 @@
+{
+    "culture": "Caroubier",
+    "exigences_sol": "sols pauvres, sablonneux, limoneux lourds, rocailleux et calcaires, des pH de 6,2 jusqu'à 8,6 mais craint les sols acides et humides",
+    "besoins_hydriques": "précipitations rares ou irrégulières et longues périodes estivales sèches",
+    "temp_optimale": {
+        "temp_min": "200 mm de pluie",
+        "temp_max": "-"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [],
+            "traitements_specifiques": []
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Conserver les sols pauvres et éviter la sur-érosion.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

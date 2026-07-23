@@ -1,0 +1,58 @@
+{
+    "culture": "Aubergine",
+    "exigences_sol": "",
+    "besoins_hydriques": "Avoir une sol avec un pH entre 6 et 7 pour favoriser la croissance.",
+    "temp_optimale": {
+        "temp_min": 18,
+        "temp_max": 28
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Perturbation du rhizome",
+            "causes": [
+                "Surcharge de souffle",
+                "Tropperche",
+                "Maladie fongique"
+            ],
+            "traitements_specifiques": [
+                "Médication antimycétique",
+                "Amélioration des conditions de culture"
+            ]
+        },
+        {
+            "nom_maladie": "Perturbation de la croissance",
+            "causes": [
+                "Manque d'eau",
+                "Tropperche",
+                "Maladie fongique"
+            ],
+            "traitements_specifiques": [
+                "Médication antimycétique",
+                "Amélioration des conditions de culture"
+            ]
+        },
+        {
+            "nom_maladie": "Dégâts des insectes",
+            "causes": [
+                "Présence d'insectes nus",
+                "Insectes qui mangent les feuilles"
+            ],
+            "traitements_specifiques": [
+                "Médication insecticide",
+                "Remplacement des cultures infestées"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Assurez-vous de faire une rotation des cultures pour prévenir la surcharge du sol.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Faites régulièrement des tirs d'insecticide pour contrôler les insectes nus et ceux qui mangent les feuilles.",
+            "status": "en cours",
+            "categorie": "urgence"
+        }
+    ]
+}

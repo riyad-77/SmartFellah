@@ -1,0 +1,25 @@
+{
+    "culture": "Avocatier",
+    "exigences_sol": "Des sols sableux ou sablo-argileux préférés avec un pH optimum entre 5,5 et 6,5.",
+    "besoins_hydriques": "Les besoins en eau sont de 1000 à 1200 mm par an, avec une saison sèche et trop longue entraînant des défoliations.",
+    "temp_optimale": {
+        "temp_min": 12.8,
+        "temp_max": 28.3
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [
+                "Inconnues"
+            ],
+            "traitements_specifiques": []
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "La protection des jeunes plants contre les vents et les fortes insolations est essentielle.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

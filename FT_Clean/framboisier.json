@@ -1,0 +1,34 @@
+{
+    "culture": "Framboisier",
+    "exigences_sol": "Les sols sont généralement bien drainés et aérer dans la région du Loukkos. Cependant, il est recommandé d'éviter les terrains sableux ou argileux.",
+    "besoins_hydriques": "La framboisier nécessite une irrigation régulière, en particulier pendant la période de floraison.",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Maladie des feuilles",
+            "causes": [
+                "Puceron",
+                "Lavage"
+            ],
+            "traitements_specifiques": [
+                "Insecticide",
+                "Fumigation"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Fertiliser régulièrement pour favoriser la croissance et le développement des tiges.",
+            "status": "en cours",
+            "categorie": "normale"
+        },
+        {
+            "description": "Assurer une irrigation régulière, en particulier pendant la période de floraison.",
+            "status": "en cours",
+            "categorie": "normale"
+        }
+    ]
+}

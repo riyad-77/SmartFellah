@@ -1,0 +1,58 @@
+{
+    "culture": "Myrtille",
+    "exigences_sol": "La myrtille est une plante qui nécessite un sol bien drainé et fertile, avec un pH entre 5.5 et 6.5.",
+    "besoins_hydriques": "La myrtille a besoin d'un certain niveau d'humidité, mais elle peut tolérer des périodes de sécheresse. Il est recommandé d'irriger régulièrement pendant la première année après l'installation.",
+    "temp_optimale": {
+        "temp_min": "-10°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [],
+            "traitements_specifiques": []
+        },
+        {
+            "nom_maladie": "Maladie des feuilles vertes",
+            "causes": [
+                "Pucerons",
+                "Pierres filantes"
+            ],
+            "traitements_specifiques": [
+                "Insecticide",
+                "Traitement à base d'huile"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie de l'asparague",
+            "causes": [
+                "infection par Ascochyta"
+            ],
+            "traitements_specifiques": [
+                "traitement avec des produits chimiques, application de solides en couches fines"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "nul",
+            "status": null,
+            "categorie": null
+        },
+        {
+            "description": "Il est recommandé de planter les myrtilles dans des zones bien aéré et ensoleillées.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Les myrtilles nécessitent une exposition à la lumière directe pour se développer correctement.",
+            "status": null,
+            "categorie": "important"
+        },
+        {
+            "description": "Il est recommandé d'apporter régulièrement des nutriments et de limiter les fertilisants dans les sols",
+            "status": null,
+            "categorie": "normale"
+        }
+    ]
+}

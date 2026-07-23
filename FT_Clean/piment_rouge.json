@@ -1,0 +1,71 @@
+{
+    "culture": "Piment rouge",
+    "exigences_sol": "Sol vierge ou nouvellement acquis, sans être occupé par une autre solanaçée pendant 4-5 ans.",
+    "besoins_hydriques": "Très exigeante en rotation des cultures et nécessite un terrrain bien aéré.",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Maladie du piment rouge",
+            "causes": [
+                "Plantes malades",
+                "Environnement défavorable"
+            ],
+            "traitements_specifiques": [
+                "Désherbage,traitement chimique"
+            ]
+        },
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [
+                "Parasitaire"
+            ],
+            "traitements_specifiques": []
+        },
+        {
+            "nom_maladie": "Mauvaise vache de soja (Sudden Death of Soybean)",
+            "causes": [
+                "Insectes",
+                "Famille Phyllotreta"
+            ],
+            "traitements_specifiques": [
+                "Bactériocide"
+            ]
+        },
+        {
+            "nom_maladie": "Noyau brun",
+            "causes": [
+                "Lavage",
+                "Lectiniques"
+            ],
+            "traitements_specifiques": [
+                "Insecticides",
+                "Fumigation"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "L'agricuteur doit réaliser une analyse physico-chimique du sol avant la culture pour déterminer les besoins en éléments fertilisants.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "La rotation avec les céréales est égale-ment recommandée pour la culture de la Niora.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Préparation des parcelles avec un minimum de 4 mois de récupération et de repos des sols",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Choix d'une varité adaptée à la région de Tadla",
+            "status": "en cours",
+            "categorie": "pas urgent"
+        }
+    ]
+}

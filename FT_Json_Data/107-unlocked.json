@@ -1,0 +1,28 @@
+{
+    "culture": "Prunus armeniaca",
+    "exigences_sol": "La culture de l'abricot est exigeante en sol profond et bien drainé, argilo-limoneux.",
+    "besoins_hydriques": "L’abricotier préfère les sols bien drainés, profonds, argilo-limoneux.",
+    "temp_optimale": {
+        "temp_min": "-16˚C",
+        "temp_max": "7,2˚C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Enroulement chlorotique",
+            "causes": [
+                "Mycoplasmes"
+            ],
+            "traitements_specifiques": [
+                "Agriculture saine",
+                "Contrôle des maladies"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Renouveler le bois fruitier sur 3 et 4 ans.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

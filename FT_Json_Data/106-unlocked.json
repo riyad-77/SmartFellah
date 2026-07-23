@@ -1,0 +1,32 @@
+{
+    "culture": "Ficus carica",
+    "exigences_sol": null,
+    "besoins_hydriques": null,
+    "temp_optimale": {
+        "temp_min": 15.0,
+        "temp_max": 30.0
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [
+                "Inconnues"
+            ],
+            "traitements_specifiques": [
+                "Inconnus"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Rallonger les périodes de froid pour stimuler la floraison et la production de fruits.",
+            "status": null,
+            "categorie": null
+        },
+        {
+            "description": "Faire des relevés précoces pour identifier les variétés de figues le plus résistantes aux maladies.",
+            "status": null,
+            "categorie": null
+        }
+    ]
+}

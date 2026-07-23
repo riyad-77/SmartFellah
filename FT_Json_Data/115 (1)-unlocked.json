@@ -1,0 +1,29 @@
+{
+    "culture": "Pomme",
+    "exigences_sol": null,
+    "besoins_hydriques": "La pomme a besoin de bienveillante climatique, en particulier un hiver froid pour la dormance et une température optimale entre 10°C et 25°C.",
+    "temp_optimale": {
+        "temp_min": "5°C",
+        "temp_max": "30°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Vert de pourpre (Erysiphe paeoniae-heracliotis)",
+            "causes": [
+                "Humidité excessive",
+                "Vent chaud"
+            ],
+            "traitements_specifiques": [
+                "Décalcomanie",
+                "Fumigation"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Le pommeire doit être traité régulièrement pour contrôler les maladies et les insectes",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

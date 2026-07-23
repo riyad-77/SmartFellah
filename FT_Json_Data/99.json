@@ -1,0 +1,27 @@
+{
+    "culture": "LE MELON",
+    "exigences_sol": "La culture est très exigeante en chaleur et lumière.",
+    "besoins_hydriques": "Les besoins en eau s’élèvent à 300-400 mm selon les régions.",
+    "temp_optimale": {
+        "temp_min": "15˚C",
+        "temp_max": "25˚C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Oïdium",
+            "causes": [
+                "Attacques par des champignons"
+            ],
+            "traitements_specifiques": [
+                "Fungicides systématiques"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Effectuer trois traitements phytosanitaires contre les champignons du sol",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

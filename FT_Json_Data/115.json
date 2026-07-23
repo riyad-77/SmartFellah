@@ -1,0 +1,33 @@
+{
+    "culture": "Pomme (Malus domestica)",
+    "exigences_sol": "Le sol doit être bien drainé et avoir un pH neutre",
+    "besoins_hydriques": "La pomme nécessite une irrigation régulière, en particulier pendant la phase de floraison.",
+    "temp_optimale": {
+        "temp_min": "10°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Rougeur des feuilles (Powdery mildew)",
+            "causes": [
+                "Humidité excessive",
+                "Vent froid"
+            ],
+            "traitements_specifiques": [
+                "Fumigation, application de fungicides"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Assurez-vous d'avoir un sol bien drainé et un pH neutre.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "L'irrigation régulière est essentielle pendant la phase de floraison.",
+            "status": "En cours",
+            "categorie": "Niveau 2"
+        }
+    ]
+}

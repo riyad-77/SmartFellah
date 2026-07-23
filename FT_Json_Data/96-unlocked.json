@@ -1,0 +1,30 @@
+{
+    "culture": "absinthe",
+    "exigences_sol": "L'absinthe est une plante xérophyte qui pousse dans des régions à faible pluviosité, elle nécessite des endroits bien ensoleillés et des sols sablonneux salins.",
+    "besoins_hydriques": null,
+    "temp_optimale": {
+        "temp_min": "10°C",
+        "temp_max": "30°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Rouille",
+            "causes": [
+                "Spores brunes"
+            ],
+            "traitements_specifiques": null
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Assurez-vous d'apporter suffisamment de fumier pour maintenir la richesse du sol en matière organique.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Faites des irrigations régulières et assurez-vous que le sol est bien aéré pour éviter les problèmes de drainage.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

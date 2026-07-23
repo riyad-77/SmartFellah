@@ -1,0 +1,17 @@
+{
+    "culture": "Inconnue",
+    "exigences_sol": null,
+    "besoins_hydriques": null,
+    "temp_optimale": {
+        "temp_min": null,
+        "temp_max": null
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": null,
+            "traitements_specifiques": null
+        }
+    ],
+    "recommandations": []
+}

@@ -1,0 +1,29 @@
+{
+    "culture": "Blé dur",
+    "exigences_sol": "Le sol doit être bien drainé et avoir une pH neutre pour favoriser la croissance du blé dur.",
+    "besoins_hydriques": "Le blé dur nécessite une humidité moyenne de 20-30% pour atteindre son plein potentiel de production. La quantité d'eau nécessaire varie en fonction des conditions climatiques et du sol.",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "La rouille",
+            "causes": [
+                "Humidité excessive",
+                "Solissitude"
+            ],
+            "traitements_specifiques": [
+                "L'application de fumants",
+                "Le désherbage"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Il est recommandé d'utiliser des semences sélectionnées pour améliorer le rendement du blé dur. Il faut également appliquer une fertilisation azotée en fonction des besoins du sol et de la variété de blé.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

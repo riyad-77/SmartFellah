@@ -1,0 +1,32 @@
+{
+    "culture": "Blé",
+    "exigences_sol": null,
+    "besoins_hydriques": null,
+    "temp_optimale": {
+        "temp_min": 16,
+        "temp_max": 22
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Charbon nu",
+            "causes": [
+                "Ustilago tritici"
+            ],
+            "traitements_specifiques": null
+        },
+        {
+            "nom_maladie": "Charbon foliaire",
+            "causes": [
+                "Urocystis agropyri"
+            ],
+            "traitements_specifiques": null
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Vérifier régulièrement les graines avant de les semer pour détecter les champignons pathogènes.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

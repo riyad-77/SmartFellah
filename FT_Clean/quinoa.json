@@ -1,0 +1,17 @@
+{
+    "culture": "Quinoa",
+    "exigences_sol": "",
+    "besoins_hydriques": "La plante a besoin de journées courtes et de températures fraîches pour pousser, d'où sa culture principalement en altitude. Des températures supérieures à 30 degrés rendent la plante stérile, alors qu'elle résiste bien au gel léger (pas moins de -5ºC).",
+    "temp_optimale": {
+        "temp_min": "-5ºC",
+        "temp_max": "30ºC"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [],
+            "traitements_specifiques": []
+        }
+    ],
+    "recommandations": []
+}

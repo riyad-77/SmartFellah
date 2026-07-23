@@ -1,0 +1,29 @@
+{
+    "culture": "Luzerne",
+    "exigences_sol": "La luzerne nécessite un sol fertile et bien drené avec une pH allant de 6,5 à 7,5.",
+    "besoins_hydriques": "La luzerne a besoin d'une irrigation régulière, en particulier pendant la phase de germination et de floraison.",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "25°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "La cuscute",
+            "causes": [
+                "Infection fongique",
+                "Développement de champignons"
+            ],
+            "traitements_specifiques": [
+                "Tratements antifongiques",
+                "Coupures régulières"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Il est recommandé d'installer sept à huit colonies d'abeilles par hectare dès l'apparition des premières fleurs au milieu du champ pour accroître considérablement le rendement.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

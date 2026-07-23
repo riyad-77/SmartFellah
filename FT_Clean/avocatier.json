@@ -1,0 +1,58 @@
+{
+    "culture": "Avocatier",
+    "exigences_sol": "Sols sableux ou sablo-argileux, avec pH optimum entre 5,5 et 6,5.",
+    "besoins_hydriques": "Les besoins en eau sont de 1000 à 1200 mm. Les apports doivent être bien répartis.",
+    "temp_optimale": {
+        "temp_min": "-2˚C",
+        "temp_max": "25˚C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Défense contre les maladies et parasites",
+            "causes": [
+                "Pluies fortes à la floraison",
+                "Vents forts et desséchants"
+            ],
+            "traitements_specifiques": [
+                "Des brise-vents individuels (roseaux, plastique)",
+                "Irrigation nécessaire juste après plantation"
+            ]
+        },
+        {
+            "nom_maladie": "Dégâts due à la température excessive",
+            "causes": [
+                "Températures extrêmes"
+            ],
+            "traitements_specifiques": []
+        },
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [
+                "Inconnues"
+            ],
+            "traitements_specifiques": []
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Les distances de plantations doivent être variables selon la richesse du sol, le climat et surtout le développement futur de l’arbre. Les distances de plantations les plus rencontrées sont 6x8 m, 7x7 m, 6x6 m, 6x5 m et 6x4 m.",
+            "status": "en cours",
+            "categorie": "urgence"
+        },
+        {
+            "description": "Protéger les jeunes plants contre les vents et les fortes insolations.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Fertiliser avec un apport d'azote modéré pour éviter la réduction de la fructification.",
+            "status": "en cours",
+            "categorie": "non urgent"
+        },
+        {
+            "description": "La protection des jeunes plants contre les vents et les fortes insolations est essentielle.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

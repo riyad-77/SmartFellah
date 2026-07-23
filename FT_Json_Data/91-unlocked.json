@@ -1,0 +1,29 @@
+{
+    "culture": "Safranière",
+    "exigences_sol": "Un sol profond, drainant et riche en matière organique.",
+    "besoins_hydriques": "Des besoins en eau relativement moyens, mais nécessitant une répartition bien répartie le long du cycle de la plante.",
+    "temp_optimale": {
+        "temp_min": "-10°C",
+        "temp_max": "+40°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Maladie des racines",
+            "causes": [
+                "Enfouissement de mauvaises herbes",
+                "Surpopulation"
+            ],
+            "traitements_specifiques": [
+                "Déforestation",
+                "Réduction de la dose d'engrais"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Le suivi régulier des techniques culturales et les interventions correctives sont essentielles pour éviter les pertes en production.",
+            "status": "en cours",
+            "categorie": "urgence"
+        }
+    ]
+}

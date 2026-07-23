@@ -1,0 +1,26 @@
+{
+    "culture": "Cognassier",
+    "exigences_sol": null,
+    "besoins_hydriques": {
+        "temp_min": "-26˚C",
+        "temp_max": "null"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [
+                "Inconnues"
+            ],
+            "traitements_specifiques": [
+                "Inconnus"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Maintenir un sol propre par un cover-cropage en automne et deux à trois binages au printemps-été.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}

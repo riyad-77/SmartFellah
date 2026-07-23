@@ -1,0 +1,28 @@
+{
+    "culture": "Riz",
+    "exigences_sol": "Sol aride, pH légèrement acide à neutre",
+    "besoins_hydriques": "Sécheresse modérée, 400-600 mm/an, avec un éventail de précipitation",
+    "temp_optimale": {
+        "temp_min": 15,
+        "temp_max": 25
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Riz noir",
+            "causes": [
+                "attaque des racines",
+                "fauts de drainage"
+            ],
+            "traitements_specifiques": [
+                " Traitement antimycotique, amélioration du drainage"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Arrosage régulier pour prévenir la sécheresse",
+            "status": "en cours",
+            "categorie": "urgente"
+        }
+    ]
+}

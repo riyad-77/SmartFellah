@@ -1,0 +1,33 @@
+{
+    "culture": "Culture arabe",
+    "exigences_sol": "Les sols doivent avoir un pH entre 6,0 et 7,0.",
+    "besoins_hydriques": "Les cultures ont besoin de 500 mm d'eau par an.",
+    "temp_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "30°C"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "La pourriture des feuilles",
+            "causes": [
+                "Manque de lumière",
+                "Trop d'eau"
+            ],
+            "traitements_specifiques": [
+                "Désherbage, application de fungicides"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Fertiliser les plantes avec un engrais azoté",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Lutter contre les ravageurs avec des insecticides",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
+}
