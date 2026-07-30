@@ -1,8 +1,23 @@
-logs
-.git
-.venv
-venv
-__pycache__
+# Environnements virtuels Python
+venv/
+env/
+.env
+__pycache__/
 *.pyc
-.idea
-.vscode
+
+# Données de la base de données locale
+bifolia_data/
+bifolia_database/
+pgAdmin 4_files/
+
+# Dossiers Airflow lourds
+logs/
+plugins/
+
+# Fichiers Git
+.git/
+.gitignore
+
+# Autres fichiers inutiles pour l'API
+*.pdf
+FT_Vegetal/

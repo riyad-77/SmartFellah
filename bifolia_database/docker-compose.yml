@@ -25,5 +25,18 @@ services:
     depends_on:
       - db_bifolia
 
+  # --- AJOUT DE TON API SMARTFELLAH DANS DOCKER ---
+  api:
+    build: .
+    container_name: smartfellah_api
+    ports:
+      - "8001:8001"
+    environment:
+      - DATABASE_URL=postgresql://admin:secretpassword@db_bifolia:5432/bifolia_db
+    volumes:
+      - .:/app
+    depends_on:
+      - db_bifolia
+
 volumes:
   bifolia_data:

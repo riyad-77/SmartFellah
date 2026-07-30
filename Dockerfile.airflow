@@ -1,0 +1,7 @@
+FROM apache/airflow:2.9.1
+
+# Copie le fichier requirements
+COPY requirements.txt /requirements.txt
+
+# Installation des dépendances Python supplémentaires (NLP, IA)
+RUN pip install --no-cache-dir -r /requirements.txt

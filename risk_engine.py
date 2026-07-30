@@ -1,7 +1,8 @@
 from sqlalchemy import create_engine, text
 import os
 
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://admin:secretpassword@localhost:5432/bifolia_db")
+
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://admin:secretpassword@db_bifolia:5432/bifolia_db")
 engine = create_engine(DATABASE_URL)
 
 def predict_disease_risk(field_id, culture):

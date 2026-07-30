@@ -19,4 +19,4 @@ COPY . .
 EXPOSE 8001
 
 # Commande de lancement de l'API avec Uvicorn
-CMD ["uvicorn", "api_smartfellah.py:app", "--host", "0.0.0.0", "--port", "8001"]
+CMD ["uvicorn", "api_smartfellah:app", "--host", "0.0.0.0", "--port", "8001"]

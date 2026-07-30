@@ -28,3 +28,11 @@ webserver_config.py
 .vscode/
 .idea/
 .DS_Store
+
+# Ignorer le cache
+.cache.sqlite
+
+# Ignorer les dossiers de données PDF et JSON
+FT_Vegetal/
+FT_Json_Data/
+FT_Clean/

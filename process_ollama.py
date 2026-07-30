@@ -1,4 +1,4 @@
-import ollama
+from ollama import Client
 import json
 
 def extraire_seuils_maladie(liste_causes):

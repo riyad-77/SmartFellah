@@ -105,9 +105,18 @@ def normaliser_culture(nom_brut):
     return mapping.get(nom, nom)
 
 def fusionner_par_culture(input_dir, output_dir):
-    if os.path.exists(output_dir):
-        print(f"🧹 Nettoyage du dossier '{output_dir}'...")
-        shutil.rmtree(output_dir)
+    import sys
+    
+    if not os.path.exists(input_dir):
+        os.makedirs(input_dir, exist_ok=True)
+        
+    fichiers_nouveaux = [f for f in os.listdir(input_dir) if f.endswith(".json")]
+    
+    if len(fichiers_nouveaux) == 0:
+        print("✅ Aucun fichier JSON à consolider. Arrêt de l'étape.")
+        sys.exit(0)
+
+    # 1. ON NE SUPPRIME PLUS LE DOSSIER FT_CLEAN
     os.makedirs(output_dir, exist_ok=True)
 
     data_fusionnee = defaultdict(lambda: {
@@ -119,9 +128,34 @@ def fusionner_par_culture(input_dir, output_dir):
         "recommandations": [] 
     })
 
-    fichiers = [f for f in os.listdir(input_dir) if f.endswith(".json")]
-    print(f"🚀 Début de la consolidation et traduction de {len(fichiers)} fichiers... (Cela peut prendre un peu de temps)")
+    # 2. NOUVEAU : CHARGER L'HISTORIQUE DE FT_CLEAN DANS LA MÉMOIRE
+    fichiers_existants = [f for f in os.listdir(output_dir) if f.endswith(".json")]
+    for file in fichiers_existants:
+        with open(os.path.join(output_dir, file), 'r', encoding='utf-8') as f:
+            try:
+                existant = json.load(f)
+                nom_culture = normaliser_culture(existant.get("culture", ""))
+                if nom_culture and nom_culture != "inconnu":
+                    # On restaure les infos de base
+                    data_fusionnee[nom_culture]["culture"] = existant.get("culture", nom_culture.capitalize())
+                    data_fusionnee[nom_culture]["exigences_sol"] = existant.get("exigences_sol", "")
+                    data_fusionnee[nom_culture]["besoins_hydriques"] = existant.get("besoins_hydriques", "")
+                    data_fusionnee[nom_culture]["temp_optimale"] = existant.get("temp_optimale", {"temp_min": None, "temp_max": None})
+                    
+                    # On restaure les maladies avec leur clé pour que les nouvelles puissent s'y greffer
+                    for m in existant.get("maladies_details", []):
+                        cle_mal = normaliser_culture(m.get("nom_maladie", ""))
+                        if cle_mal:
+                            data_fusionnee[nom_culture]["maladies_details"][cle_mal] = m
+                            
+                    data_fusionnee[nom_culture]["recommandations"] = existant.get("recommandations", [])
+            except json.JSONDecodeError:
+                pass
 
+    print(f"🚀 Début de la consolidation de {len(fichiers_nouveaux)} nouveaux fichiers avec l'historique...")
+    
+    # 3. La suite de ta fonction (la boucle "for file in fichiers_nouveaux:") reste EXACTEMENT PAREILLE !
+    # Le script va naturellement écraser les champs vides par les nouvelles infos et ajouter les nouvelles maladies.
     for file in fichiers:
         with open(os.path.join(input_dir, file), 'r', encoding='utf-8') as f:
             try:
@@ -212,4 +246,5 @@ def fusionner_par_culture(input_dir, output_dir):
     print(f"✅ Consolidation et traduction terminées : {compteur} cultures propres générées dans '{output_dir}'.")
 
 if __name__ == "__main__":
-    fusionner_par_culture("FT_Json_Data", "FT_Clean")
+    # <-- MODIFIÉ : On pointe vers le volume Airflow
+    fusionner_par_culture("/opt/airflow/data/FT_Json_Data", "/opt/airflow/data/FT_Clean")

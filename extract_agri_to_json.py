@@ -1,13 +1,18 @@
 import os
-import fitz  # PyMuPDF
-import ollama
+import fitz
+from ollama import Client
 import json
 import shutil
 
-# --- CONFIGURATION ---
-PDF_DIR = "FT_Vegetal"
-JSON_DIR = "FT_Json_Data"
-MODEL_NAME = 'llama3.2' # Tu peux utiliser 'qwen2.5' si Llama galère sur le français
+
+ollama_client = Client(host='http://host.docker.internal:11434')
+
+
+
+BASE_DIR = "/opt/airflow/data"
+PDF_DIR = os.path.join(BASE_DIR, "FT_Vegetal")
+JSON_DIR = os.path.join(BASE_DIR, "FT_Json_Data")
+MODEL_NAME = 'llama3.2'
 
 # --- INITIALISATION DES DOSSIERS ---
 def setup_directories():
@@ -67,10 +72,10 @@ def extract_to_json_robust(pdf_path):
     """
     
     # 3. Appel à l'IA avec forçage du format JSON
-    response = ollama.chat(
+    response = ollama_client.chat( # <-- MODIFIÉ : Utilise ollama_client
         model=MODEL_NAME, 
         messages=[{'role': 'user', 'content': prompt}],
-        format='json'  # MAGIE : Force Ollama à ne sortir QUE du JSON valide
+        format='json'
     )
     
     # Plus besoin de chercher les { et } manuellement !
@@ -79,11 +84,21 @@ def extract_to_json_robust(pdf_path):
 
 # --- BOUCLE PRINCIPALE ---
 if __name__ == "__main__":
-    setup_directories()
+    import sys
     
-    # Liste uniquement les fichiers PDF
+    # S'assurer que le dossier source existe pour éviter le crash
+    if not os.path.exists(PDF_DIR):
+        os.makedirs(PDF_DIR, exist_ok=True)
+        
     fichiers = sorted([f for f in os.listdir(PDF_DIR) if f.endswith(".pdf")])
+    
+    # Si le dossier est vide, on arrête le script avec succès (code 0)
+    if len(fichiers) == 0:
+        print("✅ Aucun nouveau PDF à traiter. Le pipeline s'arrête ici.")
+        sys.exit(0) # Fera passer la case Airflow au VERT
+
     print(f"🚀 Début du traitement de {len(fichiers)} fichiers...\n")
+    setup_directories() # On nettoie FT_Json_Data QUE si on a de nouveaux PDF
 
     for file in fichiers:
         json_path = os.path.join(JSON_DIR, file.replace(".pdf", ".json"))

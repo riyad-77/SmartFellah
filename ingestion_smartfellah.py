@@ -1,5 +1,6 @@
 import json
 import os
+import sys
 import psycopg2
 import re
 from process_ollama import extraire_seuils_maladie  
@@ -9,7 +10,7 @@ DB_CONFIG = {
     "dbname": "bifolia_db", 
     "user": "admin", 
     "password": "secretpassword", 
-    "host": "localhost"
+    "host": "db_bifolia"
 }
 
 def vider_base_de_donnees(cur):
@@ -72,14 +73,20 @@ def extraire_temperature_reelle(texte):
     return None, None
 
 def pipeline_ingestion(source_dir):
+    import sys
     conn = None
     try:
         conn = psycopg2.connect(**DB_CONFIG)
         cur = conn.cursor()
         
-        vider_base_de_donnees(cur)
+        
 
         fichiers = [f for f in os.listdir(source_dir) if f.endswith(".json")]
+
+        if len(fichiers) == 0:
+            print("✅ Aucun nouveau fichier à ingérer. La base reste intacte.")
+            sys.exit(0)
+            
         print(f"🚀 Début de l'ingestion de {len(fichiers)} cultures depuis '{source_dir}'...")
 
         for file in fichiers:
@@ -169,22 +176,32 @@ def pipeline_ingestion(source_dir):
                     nom_traitement = normaliser_texte(t)
                     traitement_id = get_id(cur, "traitements", "nom_traitement", nom_traitement.lower())
                     
+                    # Remplace l'ancien INSERT INTO culture_maladie_details par celui-ci :
                     cur.execute("""
                         INSERT INTO culture_maladie_details (culture_id, maladie_id, traitement_specifique_id) 
-                        VALUES (%s, %s, %s)
-                    """, (culture_id, maladie_id, traitement_id))
+                        SELECT %s, %s, %s
+                        WHERE NOT EXISTS (
+                            SELECT 1 FROM culture_maladie_details 
+                            WHERE culture_id = %s AND maladie_id = %s AND traitement_specifique_id = %s
+                        )
+                    """, (culture_id, maladie_id, traitement_id, culture_id, maladie_id, traitement_id))
 
             # --- 4. INSERTION DES RECOMMANDATIONS ---
             for rec in data.get("recommandations", []):
                 description = rec.get("description", "").strip()
+                
                 if description and description != "inconnu":
                     status = normaliser_texte(rec.get("status", "à faire"))
                     categorie = normaliser_texte(rec.get("categorie", "optionnel"))
                     
                     cur.execute("""
                         INSERT INTO recommandation (description, status, categorie, culture_id)
-                        VALUES (%s, %s, %s, %s)
-                    """, (description, status, categorie, culture_id))
+                        SELECT %s, %s, %s, %s
+                        WHERE NOT EXISTS (
+                            SELECT 1 FROM recommandation 
+                            WHERE description = %s AND culture_id = %s
+                        )
+                    """, (description, status, categorie, culture_id, description, culture_id))
 
         conn.commit()
         print("\n🎉 Pipeline terminé avec succès ! La base de données Bifolia est prête et formatée.")
@@ -197,5 +214,4 @@ def pipeline_ingestion(source_dir):
         if conn: conn.close()
 
 if __name__ == "__main__":
-    # Assure-toi que c'est bien le dossier avec tes JSON propres
-    pipeline_ingestion("FT_Clean")
+    pipeline_ingestion("/opt/airflow/data/FT_Clean")
