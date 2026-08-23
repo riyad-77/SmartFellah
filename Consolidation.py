@@ -247,4 +247,4 @@ def fusionner_par_culture(input_dir, output_dir):
 
 if __name__ == "__main__":
     # <-- MODIFIÉ : On pointe vers le volume Airflow
-    fusionner_par_culture("/opt/airflow/data/FT_Json_Data", "/opt/airflow/data/FT_Clean")
+    fusionner_par_culture("FT_Json_Data", "FT_Clean")

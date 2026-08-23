@@ -1,6 +1,6 @@
 from airflow import DAG
 from airflow.operators.bash import BashOperator
-from datetime import datetime
+from datetime import datetime, timedelta
 
 with DAG(
     'bifolia_document_ingestion',
@@ -26,6 +26,7 @@ with DAG(
     task_ingest = BashOperator(
         task_id='ingest_to_postgis',
         bash_command='cd /opt/airflow/project && python ingestion_smartfellah.py',
+        execution_timeout=timedelta(hours=2), # 👈 NOUVEAU : On autorise la tâche à tourner jusqu'à 2 heures
     )
 
     task_extract >> task_consolidate >> task_ingest

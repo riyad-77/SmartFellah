@@ -3,14 +3,13 @@ import os
 import sys
 import psycopg2
 import re
-from process_ollama import extraire_seuils_maladie  
 
 # --- CONFIGURATION BASE DE DONNÉES ---
 DB_CONFIG = {
     "dbname": "bifolia_db", 
     "user": "admin", 
     "password": "secretpassword", 
-    "host": "db_bifolia"
+    "host": "localhost",
 }
 
 def vider_base_de_donnees(cur):
@@ -53,33 +52,25 @@ def safe_float(valeur, valeur_par_defaut):
 
 def extraire_temperature_reelle(texte):
     """
-    NOUVEAU : Extrait les valeurs numériques d'un texte complexe (ex: '-16°C à -24°C (dormants)').
-    Filtre les valeurs aberrantes (ex: '700 heures') pour ne garder que les températures plausibles.
+    Extrait les valeurs numériques d'un texte complexe.
     """
     if not texte:
         return None, None
         
-    # Cherche tous les nombres (négatifs et décimaux inclus)
     nombres = re.findall(r'-?\d+\.?\d*', str(texte))
     
     if nombres:
-        # On convertit en float et on filtre (une température agricole dépasse rarement -50 et +60)
-        # Cela permet d'éliminer automatiquement le "700" de "700 heures de froid"
         valeurs_temp = [float(n) for n in nombres if -50 <= float(n) <= 60]
-        
         if valeurs_temp:
             return min(valeurs_temp), max(valeurs_temp)
             
     return None, None
 
 def pipeline_ingestion(source_dir):
-    import sys
     conn = None
     try:
         conn = psycopg2.connect(**DB_CONFIG)
         cur = conn.cursor()
-        
-        
 
         fichiers = [f for f in os.listdir(source_dir) if f.endswith(".json")]
 
@@ -87,7 +78,7 @@ def pipeline_ingestion(source_dir):
             print("✅ Aucun nouveau fichier à ingérer. La base reste intacte.")
             sys.exit(0)
             
-        print(f"🚀 Début de l'ingestion de {len(fichiers)} cultures depuis '{source_dir}'...")
+        print(f"🚀 Début de l'ingestion factuelle de {len(fichiers)} cultures depuis '{source_dir}'...")
 
         for file in fichiers:
             with open(os.path.join(source_dir, file), 'r', encoding='utf-8') as f:
@@ -103,14 +94,10 @@ def pipeline_ingestion(source_dir):
             sol_id = get_id(cur, "ref_exigences_sol", "libelle", normaliser_texte(data.get("exigences_sol")))
             eau_id = get_id(cur, "ref_besoins_hydriques", "libelle", normaliser_texte(data.get("besoins_hydriques")))
             
-            # --- CORRECTION DE L'EXTRACTION TEXTUELLE (REGEX) ---
             temp_dict = data.get("temp_optimale", {})
-            
-            # On extrait les plages possibles depuis le texte
             min_vals = extraire_temperature_reelle(temp_dict.get("temp_min"))
             max_vals = extraire_temperature_reelle(temp_dict.get("temp_max"))
             
-            # On consolide pour avoir la vraie limite basse et haute
             t_min_opt = min_vals[0] if min_vals[0] is not None else None
             t_max_opt = max_vals[1] if max_vals[1] is not None else (max_vals[0] if max_vals[0] is not None else None)
             
@@ -144,14 +131,14 @@ def pipeline_ingestion(source_dir):
                 cur.execute("SELECT id FROM cultures WHERE nom_culture = %s", (nom_culture.lower(),))
                 culture_id = cur.fetchone()[0]
             
-            # --- 3. INSERTION DES MALADIES ---
+            # --- 3. INSERTION DES MALADIES (Données brutes) ---
             for m_det in data.get('maladies_details', []):
                 nom_maladie = normaliser_texte(m_det.get('nom_maladie'))
                 if nom_maladie == "inconnu" or not nom_maladie: 
                     continue
                 
                 causes_liste = m_det.get('causes', [])
-                seuils = extraire_seuils_maladie(causes_liste)
+                seuils = {} # Les seuils seront gérés mathématiquement par les modèles plus tard
                 
                 t_min = safe_float(seuils.get('temp_min'), -50.0)
                 t_max = safe_float(seuils.get('temp_max'), 60.0)
@@ -174,9 +161,10 @@ def pipeline_ingestion(source_dir):
                     
                 for t in traitements:
                     nom_traitement = normaliser_texte(t)
-                    traitement_id = get_id(cur, "traitements", "nom_traitement", nom_traitement.lower())
                     
-                    # Remplace l'ancien INSERT INTO culture_maladie_details par celui-ci :
+                    # NOUVEAU : On stocke le traitement brut, tel qu'issu du ministère
+                    traitement_id = get_id(cur, "traitements", "nom_traitement", nom_traitement)
+                    
                     cur.execute("""
                         INSERT INTO culture_maladie_details (culture_id, maladie_id, traitement_specifique_id) 
                         SELECT %s, %s, %s
@@ -186,14 +174,14 @@ def pipeline_ingestion(source_dir):
                         )
                     """, (culture_id, maladie_id, traitement_id, culture_id, maladie_id, traitement_id))
 
-            # --- 4. INSERTION DES RECOMMANDATIONS ---
+            # --- 4. INSERTION DES RECOMMANDATIONS (Données brutes) ---
             for rec in data.get("recommandations", []):
-                description = rec.get("description", "").strip()
+                description_brute = rec.get("description", "").strip()
                 
-                if description and description != "inconnu":
+                if description_brute and description_brute != "inconnu":
                     status = normaliser_texte(rec.get("status", "à faire"))
                     categorie = normaliser_texte(rec.get("categorie", "optionnel"))
-                    
+
                     cur.execute("""
                         INSERT INTO recommandation (description, status, categorie, culture_id)
                         SELECT %s, %s, %s, %s
@@ -201,17 +189,20 @@ def pipeline_ingestion(source_dir):
                             SELECT 1 FROM recommandation 
                             WHERE description = %s AND culture_id = %s
                         )
-                    """, (description, status, categorie, culture_id, description, culture_id))
+                    """, (description_brute, status, categorie, culture_id, description_brute, culture_id))
 
-        conn.commit()
-        print("\n🎉 Pipeline terminé avec succès ! La base de données Bifolia est prête et formatée.")
+            conn.commit()
+            print(f"💾 Données froides pour '{nom_culture.capitalize()}' sauvegardées !")
+            
+        print("\n🎉 Pipeline terminé ! La base Bifolia est prête pour les modèles prédictifs.")
         
     except Exception as e:
         print(f"\n❌ Erreur fatale lors de l'ingestion : {e}")
         if conn: conn.rollback()
+        sys.exit(1)
     finally:
         if 'cur' in locals() and cur: cur.close()
         if conn: conn.close()
 
 if __name__ == "__main__":
-    pipeline_ingestion("/opt/airflow/data/FT_Clean")
+    pipeline_ingestion("FT_Clean")
