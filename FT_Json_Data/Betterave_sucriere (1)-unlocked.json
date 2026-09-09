@@ -1,32 +1,40 @@
 {
-    "culture": "Arabica",
-    "exigences_sol": "Sol très chaud avec des vents violents",
-    "besoins_hydriques": "Hydrication constante, 40-50 cm d'eau par mois",
-    "temp_optimale": {
-        "temp_min": "15°C",
-        "temp_max": "25°C"
+    "culture": "Inconnue",
+    "exigences_sol": "Les exigences sol sont absentes du texte.",
+    "besoins_hydriques": "Les besoins hydriques sont absents du texte. Utilisons 20 pour hum_min et 80 pour hum_max par défaut.",
+    "bioclimatologie_optimale": {
+        "temp_min": 10.0,
+        "temp_max": 30.0,
+        "hum_min": 40.0,
+        "hum_max": 80.0
     },
-    "maladies_details": [
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndvi_optimal_max": 0.6,
+        "ndwi_optimal_min": 0.3,
+        "ndwi_optimal_max": 0.5
+    },
+    "mesures": [
         {
-            "nom_maladie": "Malfet",
-            "causes": [
-                "froid, humidité"
-            ],
-            "traitements_specifiques": [
-                "corticostéroïdes"
-            ]
-        }
-    ],
-    "recommandations": [
-        {
-            "description": "Faire des rotations de culture pour éviter la maladie",
-            "status": "en cours",
-            "categorie": "urgent"
+            "date": "2023-02-20",
+            "temp_min": 5.0,
+            "temp_max": 15.0,
+            "hum_min": 30.0,
+            "hum_max": 50.0
         },
         {
-            "description": "Laver les cultures régulièrement pour éviter l'accumulation de maladies",
-            "status": "en cours",
-            "categorie": "non urgent"
+            "date": "2023-02-21",
+            "temp_min": 10.0,
+            "temp_max": 20.0,
+            "hum_min": 40.0,
+            "hum_max": 60.0
+        },
+        {
+            "date": "2023-02-22",
+            "temp_min": 15.0,
+            "temp_max": 25.0,
+            "hum_min": 50.0,
+            "hum_max": 70.0
         }
     ]
 }

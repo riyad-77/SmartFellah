@@ -1,38 +1,36 @@
 {
-    "culture": "Maïs",
-    "exigences_sol": "Le sol est profond, plat à légèrement vallonné (pente 2-4%), très sableux (taux d'argile autour de 3%, taux de sables autour de 90%) et non calcaire, avec un pH neutre à alcalin (6,8 à 8,4).",
-    "besoins_hydriques": "Le maïs nécessite une irrigation régulière, en particulier pendant les périodes de croissance rapide.",
-    "temp_optimale": {
-        "temp_min": "16°C",
-        "temp_max": "27°C"
+    "culture": "Maïs ensilage",
+    "exigences_sol": "Les sables de Larache sont très sables, avec un taux de sables autour de 90% et un pH neutre à alcalin (6,8 à 8,4).",
+    "besoins_hydriques": "Le maïs a besoin d'une humidité ambiante de 60% pour son croissante et de 80% pour sa maturité. Les semis ont été effectués en lignes jumelées avec un semoir de précision Gaspardo, avec un écartement de 95 cm entre les doubles lignes, 45 cm entre les lignes et 14,6 cm sur la ligne.",
+    "bioclimatologie_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "27°C",
+        "hum_min": "60%",
+        "hum_max": "80%"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Dormante",
+            "nom_maladie": "Maladie du maïs",
             "causes": [
-                "Manque d'irrigation",
-                "Sol trop sec"
+                "Insectes",
+                "Fungal"
             ],
             "traitements_specifiques": [
-                "Irrigation régulière"
+                "Insecticide",
+                "Fumigation"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Sélectionner des variétés de maïs adaptées au climat côtière du Maroc, telles que Cecilia ou Samsara.",
-            "status": "en cours",
-            "categorie": "urgent"
-        },
-        {
-            "description": "Effectuer un semis en lignes jumelées avec un semoir de précision Gaspardo pour améliorer la densité théorique et réduire les pertes en grain.",
-            "status": "en cours",
-            "categorie": "urgent"
-        },
-        {
-            "description": "Appliquer une irrigation régulière, en particulier pendant les périodes de croissance rapide, pour prévenir les maladies dues à la sécheresse.",
-            "status": "en cours",
-            "categorie": "urgent"
+            "description": "Il est recommandé de surveiller l'humidité ambiante et de prendre des mesures pour maintenir un taux optimal de 60% pour la croissance du maïs.",
+            "status": "En cours",
+            "categorie": "Urgent"
         }
     ]
 }

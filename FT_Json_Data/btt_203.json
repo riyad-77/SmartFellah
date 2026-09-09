@@ -1,32 +1,36 @@
 {
     "culture": "Myrtille",
-    "exigences_sol": null,
-    "besoins_hydriques": "Les myrtilles nécessitent une irrigation régulière pour favoriser leur croissance et productivité. Il est recommandé d'apporter environ 10 à 15 cm de couche de mulch ou de tapis de drainage pour réduire la perte d'eau et améliorer la qualité du sol.",
-    "temp_optimale": {
-        "temp_min": null,
-        "temp_max": "12°C"
+    "exigences_sol": "Le myrtillier appartient au genre Vaccinium et à la famille des Ericacées qui comprend un grand nombre d'espèces différentes. La sélection de l'espèce Vaccinium corymbosum (fruits en corymbe) ou Myrtille arbustive est faite pour répondre aux besoins du marché et étendre la saison de production.",
+    "besoins_hydriques": "La myrtille a besoin d'un sol bien drainé et frais pour croître, avec une humidité ambiante de 60 à 80%. La irrigation est nécessaire, mais il est recommandé d'irriguer avec des eaux de qualité pour éviter les problèmes de santé des plantes.",
+    "bioclimatologie_optimale": {
+        "temp_min": 10,
+        "temp_max": 25,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Maladie de l'asparague",
+            "nom_maladie": "Mouche de la myrtille",
             "causes": [
-                "infection par Ascochyta"
+                "infection par des champignons",
+                "influence de la chaleur"
             ],
             "traitements_specifiques": [
-                "traitement avec des produits chimiques, application de solides en couches fines"
+                "traitement avec des fungicides",
+                "cultivation sur sol frais"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Les myrtilles nécessitent une exposition à la lumière directe pour se développer correctement.",
-            "status": null,
-            "categorie": "important"
-        },
-        {
-            "description": "Il est recommandé d'apporter régulièrement des nutriments et de limiter les fertilisants dans les sols",
-            "status": null,
-            "categorie": "normal"
+            "description": "La myrtille est une culture profitable pour les producteurs marocains, en particulier pour les régions à hiver doux.",
+            "status": "en cours",
+            "categorie": "urgent"
         }
     ]
 }

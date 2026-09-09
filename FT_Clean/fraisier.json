@@ -1,42 +1,75 @@
 {
     "culture": "Fraisier",
-    "exigences_sol": "Sols sableux dit «R’mel», aptes à plusieurs cultures, notamment au fraisier, à l’arachide et à la pomme de terre.",
-    "besoins_hydriques": "Eau abondante et de bonne qualité, avec un système goutte-à-goutte sur des sols sableux.",
-    "temp_optimale": {
-        "temp_min": "6°C",
-        "temp_max": "29°C"
+    "exigences_sol": "Sols sableux dit «R’mel» aptes à plusieurs cultures, en particulier au fraisier, à l’arachide et à la pomme de terre.",
+    "besoins_hydriques": "Eau abondante et de bonne qualité.",
+    "bioclimatologie_optimale": {
+        "temp_min": 6,
+        "temp_max": 29,
+        "hum_min": 20,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": null,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Inconnue",
+            "nom_maladie": "Les maladies courantes du fraisier (vírus de la maladie des fraises, ravageurs, etc.)",
             "causes": [
-                "Inconnues"
+                "Faisonnement",
+                "Érosion des feuilles",
+                "Biodiversité",
+                "Sécheresse"
             ],
             "traitements_specifiques": [
-                "Inconnus"
+                "Prévention des ravageurs",
+                "Fumigation, traitements antibactériens"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie Verte",
+            "causes": [
+                "Infection par des bactéries du genre Pseudomonas"
+            ],
+            "traitements_specifiques": [
+                "Application de fungicides, irrigation régulière"
+            ]
+        },
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [
+                "Inconnue"
+            ],
+            "traitements_specifiques": [
+                "Inconnue"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie Verte",
+            "causes": [
+                "Infection par des bactéries du genre Pseudomonas"
+            ],
+            "traitements_specifiques": [
+                "Application de fungicides, irrigation régulière"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "L'application de techniques de production optimales, telles que le système goutte-à-goutte et la fumigation, est recommandée pour une meilleure productivité.",
+            "description": "Conduire la culture sous abri avec le système goutte-à-goutte sur des sols sableux.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Conduire la culture sous abri, utiliser des systèmes goutte-à-goutte, et appliquer des techniques de prévention des ravageurs.",
             "status": "En cours",
             "categorie": "Urgent"
         },
         {
-            "description": "Conduire la culture sous abri en irrigué avec le système goutte-à-goutte sur des sols sableux.",
+            "description": "Assurer une irrigation régulière et une bonne drainage du sol pour prévenir les problèmes de nédium et de pourriture",
             "status": "en cours",
             "categorie": "urgent"
-        },
-        {
-            "description": "Utiliser un apport de 40 à 60 T/ha de fumier avant les labours.",
-            "status": "en cours",
-            "categorie": "urgent"
-        },
-        {
-            "description": "Affecter une superficie de 3,5 à 200 ha pour les plantations de fraises.",
-            "status": "en cours",
-            "categorie": "pas urgent"
         }
     ]
 }

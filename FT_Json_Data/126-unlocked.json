@@ -1,33 +1,36 @@
 {
     "culture": "Prunier",
-    "exigences_sol": "sol bien drainé avec un pH neutre à légèrement acide",
-    "besoins_hydriques": "irrigation régulière, mais pas excessives",
-    "temp_optimale": {
-        "temp_min": 10,
-        "temp_max": 25
+    "exigences_sol": "Le prunier a besoin d'un sol bien drainé et bien aéré, avec un pH neutre à légèrement acide. La culture doit être menée en semi-intensité, avec une répartition équilibrée de la charge agricole sur le terrain. La profondeur du sol doit être de 150 à 200 cm.",
+    "besoins_hydriques": "Le prunier a besoin d'une irrigation régulière, en particulier pendant la période de floraison et de fructification. La fréquence et la quantité d'eau devront être adaptées aux conditions climatiques et aux différents groupes de variétés.",
+    "bioclimatologie_optimale": {
+        "temp_min": "5°C",
+        "temp_max": "35°C",
+        "hum_min": 50,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Maladie de la rouille verte",
+            "nom_maladie": "Maladie de la prunier",
             "causes": [
-                "fumure excessive",
-                "inondation"
+                "Plantes maladies",
+                "Mouche"
             ],
             "traitements_specifiques": [
-                " application de fungicide"
+                "Détériorant des herbicides",
+                "Insecticide"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Fertilisation régulière avec un mélange de 10-10-10",
-            "status": "en cours",
-            "categorie": "urgent"
-        },
-        {
-            "description": "Irrigation régulière, mais pas excessives",
-            "status": "en cours",
-            "categorie": "normale"
+            "description": "Effectuer des vérifications régulières sur la santé du prunier pour détecter les maladies et les ravageurs",
+            "status": "En cours",
+            "categorie": "Urgent"
         }
     ]
 }

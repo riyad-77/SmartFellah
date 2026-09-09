@@ -2,11 +2,38 @@
     "culture": "Piment rouge",
     "exigences_sol": "Sol vierge ou nouvellement acquis, sans être occupé par une autre solanaçée pendant 4-5 ans.",
     "besoins_hydriques": "Très exigeante en rotation des cultures et nécessite un terrrain bien aéré.",
-    "temp_optimale": {
+    "bioclimatologie_optimale": {
         "temp_min": "15°C",
-        "temp_max": "25°C"
+        "temp_max": "25°C",
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": null,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
+        {
+            "nom_maladie": "La maladie des feuilles noires",
+            "causes": [
+                "infections bactériennes"
+            ],
+            "traitements_specifiques": [
+                "traitement antibiotique"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie des feuilles vertes",
+            "causes": [
+                "Plantes à feuilles vertes",
+                "Plantes à feuilles vertes"
+            ],
+            "traitements_specifiques": [
+                "Inoculation avec des bactéries spécifiques",
+                "Traitement chimique"
+            ]
+        },
         {
             "nom_maladie": "Maladie du piment rouge",
             "causes": [
@@ -16,13 +43,6 @@
             "traitements_specifiques": [
                 "Désherbage,traitement chimique"
             ]
-        },
-        {
-            "nom_maladie": "Inconnue",
-            "causes": [
-                "Parasitaire"
-            ],
-            "traitements_specifiques": []
         },
         {
             "nom_maladie": "Mauvaise vache de soja (Sudden Death of Soybean)",
@@ -43,6 +63,17 @@
             "traitements_specifiques": [
                 "Insecticides",
                 "Fumigation"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie du sol",
+            "causes": [
+                "Rotations insuffisantes",
+                "Manque de fertilisation"
+            ],
+            "traitements_specifiques": [
+                "Rotation de cultures",
+                "Fertilisation régulière"
             ]
         }
     ],
@@ -66,6 +97,21 @@
             "description": "Choix d'une varité adaptée à la région de Tadla",
             "status": "en cours",
             "categorie": "pas urgent"
+        },
+        {
+            "description": "Effectuer des rotations de cultures pour éviter les maladies du sol.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "La conduite de la Niora nécessite une rotation des cultures pour éviter la fatigue du sol.",
+            "status": "en cours",
+            "categorie": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know."
+        },
+        {
+            "description": "La rotation des cultures et la mise en place d'un système d'irrigation efficace sont essentiels pour prévenir la fatigue du sol et la pression parasitaire.",
+            "status": "en cours",
+            "categorie": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know."
         }
     ]
 }

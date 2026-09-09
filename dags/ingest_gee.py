@@ -13,7 +13,7 @@ try:
 except Exception as e:
     print(f"Erreur d'initialisation GEE : {e}")
 
-DB_URL = "postgresql://admin:secretpassword@host.docker.internal:5432/bifolia_db"
+DB_URL = "postgresql://admin:secretpassword@localhost:5432/bifolia_db"
 engine = create_engine(DB_URL)
 
 # ==========================================

@@ -1,28 +1,36 @@
 {
-    "culture": "Arabie",
-    "exigences_sol": null,
-    "besoins_hydriques": "L'arbre nécessite une quantité importante de l'eau pour s'enraciner et se développer. La quantité d'eau requise dépend des conditions climatiques.",
-    "temp_optimale": {
-        "temp_min": 2800,
-        "temp_max": 2400
+    "culture": "Rapeseed",
+    "exigences_sol": "The soil must be fertile and well-drained, with a pH between 6.0 and 7.0.",
+    "besoins_hydriques": "The crop requires regular watering, especially during the flowering stage. The soil should be kept moist but not waterlogged.",
+    "bioclimatologie_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "25°C",
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Fungal diseases",
+            "nom_maladie": "Clubroot",
             "causes": [
-                "Fungal infections",
-                "Bacterial infections"
+                "Poor soil conditions",
+                "Inadequate drainage"
             ],
             "traitements_specifiques": [
-                "Antifungal treatments"
+                "Crop rotation",
+                "Soil treatment"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Il est essentiel de fournir une quantité suffisante d'eau à l'arbre pour le soutenir pendant la période de germination et de croissance.",
-            "status": "en cours",
-            "categorie": "urgent"
+            "description": "Regular monitoring of soil moisture and temperature is essential.",
+            "status": "In progress",
+            "categorie": "Urgent"
         }
     ]
 }

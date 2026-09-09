@@ -1,15 +1,5 @@
 {
-    "author": "Dr. K. Srinivasan",
-    "title": "The Art of Meditation: A Guide to Inner Peace and Enlightenment",
-    "subtitle": "",
-    "publisher": "",
-    "publication_date": "",
-    "genre": "",
-    "isbn": "",
-    "dtpub": "",
-    "lccn": "",
-    "language": "",
-    "subject": [],
-    "description": "",
-    "content": ""
+    "title": "The Math Behind the Magic of Fibonacci Numbers",
+    "type": "essay",
+    "text": "Fibonacci numbers are a series of numbers in which each number is the sum of the two preceding numbers: 0, 1, 1, 2, 3, 5, 8, 13, and so on. The Fibonacci sequence has been a source of fascination for mathematicians and scientists for centuries, and its properties have been used to describe the growth of many natural phenomena. In this essay, we will explore the mathematical properties of Fibonacci numbers and their appearance in nature, as well as their cultural significance. We will also delve into the history of Fibonacci numbers and their impact on mathematics and science."
 }

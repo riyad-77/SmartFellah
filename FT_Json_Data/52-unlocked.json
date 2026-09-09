@@ -1,34 +1,52 @@
 {
-    "culture": "Pomme de Terre",
+    "culture": "pomme de terre",
     "exigences_sol": "La plupart des sols conviennent à la culture de la pomme de terre à condition qu'ils soient bien drainés et pas trop pierreux. Les sols préférés sont ceux qui sont profonds, fertiles et meubles.",
     "besoins_hydriques": "La pomme de terre est relativement tolérante à la salinité par rapport aux autres cultures maraîchères. Cependant, un taux de salinité élevé peut bloquer l'absorption de l'eau par le système racinaire.",
-    "temp_optimale": {
-        "temp_min": "6-8°C",
-        "temp_max": "18°C"
+    "bioclimatologie_optimale": {
+        "temp_min": "6°C",
+        "temp_max": "18°C",
+        "hum_min": "12%",
+        "hum_max": "80%"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
         {
-            "nom_maladie": "Galle commune sur tubercule",
+            "nom_maladie": "Maladie blanche",
             "causes": [
-                "alcalinité excessive du sol",
-                "manque de drainage"
+                "Infection par une champignonne",
+                "Attaque de insectes"
             ],
             "traitements_specifiques": [
-                "amendement du sol",
-                "irrigation régulière"
+                "Agriculture biologique",
+                "Traitement chimique"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie de la racine",
+            "causes": [
+                "Infection par une bactérie",
+                "Attaque de champignons"
+            ],
+            "traitements_specifiques": [
+                "Traitement chimique",
+                "Agriculture biologique"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "L'irrigation régulière est essentielle pour éviter les problèmes de salinité et assurer un bon rendement.",
+            "description": "Assurer un bon contact entre le plant et le sol",
             "status": "en cours",
             "categorie": "urgent"
         },
         {
-            "description": "La préparation du sol est cruciale pour garantir un bon contact entre le plant et le sol. Il faut assurer un drainage optimal et éviter les sols trop pierreux ou argileux.",
+            "description": "Réduire la salinité du sol en le lessinant avec une eau d'irrigation douce",
             "status": "en cours",
-            "categorie": "urgent"
+            "categorie": "important"
         }
     ]
 }

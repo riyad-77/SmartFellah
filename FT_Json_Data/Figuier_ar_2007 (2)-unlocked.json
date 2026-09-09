@@ -1,34 +1,36 @@
 {
-    "culture": "Riz",
-    "exigences_sol": "Sol à 20-25°C, solaire avec protection contre la sécheresse.",
-    "besoins_hydriques": "Irrigation régulière, 3-4 fois par mois.",
-    "temp_optimale": {
-        "temp_min": "15°C",
-        "temp_max": "30°C"
+    "culture": "Inconnue",
+    "exigences_sol": "Le texte n'indique pas les exigences sol de la culture. Il est donc impossible de déterminer les besoins spécifiques en termes de pH, de nutriments, etc. ",
+    "besoins_hydriques": "La culture demande une quantité importante d'eau, en particulier pendant la phase de croissance. Il est recommandé de fournir au moins 20 cm d'eau par semaine.",
+    "bioclimatologie_optimale": {
+        "temp_min": null,
+        "temp_max": 25,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Maladie de la plante",
+            "nom_maladie": "Maladie X",
             "causes": [
-                "Trop de soleil",
-                "Sécheresse"
+                "Causes 1",
+                "Causes 2"
             ],
             "traitements_specifiques": [
-                "Arrosage régulier",
-                "Protection contre les insectes"
+                "Traitements 1",
+                "Traitements 2"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Arrosez régulièrement, en particulier pendant les périodes de sécheresse.",
+            "description": "Recommandation 1",
             "status": "en cours",
             "categorie": "urgent"
-        },
-        {
-            "description": "Faites des couches de mulch pour protéger la plante contre la sécheresse et les insectes.",
-            "status": "en cours",
-            "categorie": "non urgent"
         }
     ]
 }

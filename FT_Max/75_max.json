@@ -1,0 +1,6 @@
+{
+    "culture": "betterave à sucre monogerme",
+    "ndvi_optimal_max": 5,
+    "ndwi_optimal_max": 0.3,
+    "evi_optimal_max": 0.8
+}

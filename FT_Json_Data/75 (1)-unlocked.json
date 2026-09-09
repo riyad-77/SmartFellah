@@ -1,34 +1,35 @@
 {
-    "culture": "Betterave à sucre monogermes",
-    "exigences_sol": "La meilleure qualité du sol pour semer les graines de betterave à sucre est un sol alluvial avec une texture fine et une structure homogène.",
-    "besoins_hydriques": "Les betteraves à sucre nécessitent environ 20 cm d'eau par mois. Il faut aussi prendre en compte la période de germination et de floraison, pendant laquelle les plants ont besoin d'une irrigation plus régulière.",
-    "temp_optimale": {
+    "culture": "Betterave à sucre",
+    "exigences_sol": "La culture nécessite une structure superficielle bien aérée, avec une structure profonde répertoriée par le labour.",
+    "besoins_hydriques": "La betterave requiert des irrigations rapprochées pour assurer la germination et une levée homogène. La micro-exploitation et le morcellement des parcelles rendent difficile l'investissement en matières de machines agricoles.",
+    "bioclimatologie_optimale": {
         "temp_min": "15°C",
-        "temp_max": "25°C"
+        "temp_max": "25°C",
+        "hum_min": "60%",
+        "hum_max": "80%"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
         {
-            "nom_maladie": "Pestes des feuilles",
+            "nom_maladie": "Maladie des feuilles",
             "causes": [
-                "Pollination non appropriée",
-                "Utilisation de semences anciennes"
+                "Infection par des virus"
             ],
             "traitements_specifiques": [
-                "Fumigation",
-                "Traitement avec des huiles essentielles"
+                "Agriculture biologique",
+                "Traitement chimique"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Le labour doit être fait à la fin de la saison sèche pour éviter les pertes de matière.",
-            "status": "en cours",
-            "categorie": "urgent"
-        },
-        {
-            "description": "Il est important d'assurer une bonne préparation du sol et un semis précis pour obtenir une levée homogène des graines.",
-            "status": "en cours",
-            "categorie": "urgent"
+            "description": "Mise en place d'un système d'irrigation plus efficace pour assurer la germination et une levée homogène.",
+            "status": "En cours",
+            "categorie": "Urgent"
         }
     ]
 }

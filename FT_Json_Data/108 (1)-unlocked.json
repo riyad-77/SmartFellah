@@ -1,29 +1,51 @@
 {
-    "culture": "Avocatier",
-    "exigences_sol": null,
+    "culture": "avocatier (Persea americana)",
+    "exigences_sol": "La culture de l'avocatier préfère des sols sableux ou sablo-argileux. Il est sensible à la salinité, particulièrement au chlorure de sodium. La race mexicaine est la plus sensible au sodium et la race antillaise la plus tolérante.",
     "besoins_hydriques": "Les besoins en eau sont de 1000 à 1200 mm. Les apports doivent être bien répartis.",
-    "temp_optimale": {
-        "temp_min": "-2˚C",
-        "temp_max": "25˚C"
+    "bioclimatologie_optimale": {
+        "temp_min": "-4°C",
+        "temp_max": "28,3°C",
+        "hum_min": "70%",
+        "hum_max": "80%"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Défense contre les maladies et parasites",
+            "nom_maladie": "Abléssion des feuilles",
             "causes": [
-                "Pluies fortes à la floraison",
-                "Vents forts et desséchants"
+                "manque de lumière",
+                "manque d'eau",
+                "attaque de parasites"
             ],
             "traitements_specifiques": [
-                "Des brise-vents individuels (roseaux, plastique)",
-                "Irrigation nécessaire juste après plantation"
+                "irrigation, fumigation, applications de pesticides"
+            ]
+        },
+        {
+            "nom_maladie": "Faut de croissance",
+            "causes": [
+                "excess de nutrition",
+                "attaque de parasites"
+            ],
+            "traitements_specifiques": [
+                "réduction de l'apport en fertilisants, applications de pesticides"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Les distances de plantations doivent être variables selon la richesse du sol, le climat et surtout le développement futur de l’arbre. Les distances de plantations les plus rencontrées sont 6x8 m, 7x7 m, 6x6 m, 6x5 m et 6x4 m.",
+            "description": "Mettre des brise-vents individuels pour protéger les jeunes plants des coups de soleil et du vent.",
             "status": "en cours",
-            "categorie": "urgence"
+            "categorie": "urgent"
+        },
+        {
+            "description": "Faire une irrigation régulière et suffisante pour les plantations.",
+            "status": "en cours",
+            "categorie": "urgent"
         }
     ]
 }

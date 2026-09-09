@@ -1,25 +1,34 @@
 {
-    "culture": "Shaghaat el luzz",
-    "exigences_sol": "Il faut éviter les zones de squellement et limiter l'apport en eau en cas de gelée.",
-    "besoins_hydriques": "Il faut permettre à la plante d'avoir un certain dégazage, en particulier en hiver.",
-    "temp_optimale": {
-        "temp_min": 20,
-        "temp_max": 30
+    "culture": "شجرة اللوز",
+    "exigences_sol": "تتطلب شجرة اللوز التربة العميقة والخصبة التي تصرف الماء جيدا والخفيفة والغنية متر، لكن أحسن النتائج عند التربة الخصبة والخفيفة والغنية متر، و 2450 لذبال. تنمو شجرة اللوز على ارتفاع يمكن أن يصل إلى 1.750 متر.750 هي التي يمكن الحصول عليها في المناطق التي يبلغ علوها التحريض على اإلزهار. تفضل شجرة اللوز التربة العميقة والخصبة. ",
+    "benefits_hydriques": "شجرة اللوز تتطلب نسبة هامة من الضوء والحرارة أثناء مرحلة نمو الثمرة,، وتختار الشجرة الرطوبة العالية في هذه المرحلة، كما تخشى الرطوبة العالية خالل مرحلة اإلزهار (خطر اإلصابة بمرض المونيليا والتبقع والفيرتيسيليوم). ",
+    "bioclimatologie_optimale": {
+        "temp_min": "15",
+        "temp_max": "25",
+        "hum_min": "60",
+        "hum_max": "80"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
         {
-            "nom_maladie": "La gelée",
+            "nom_maladie": "المرض المونيليا",
             "causes": [
-                "le refroidissement brusque"
+                "الرطوبة العالية",
+                "الحرارة"
             ],
             "traitements_specifiques": [
-                "sécher la plante, limiter l'apport en eau"
+                "الترطيب",
+                "الحماية من الجفاف"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Il faut permettre à la plante d'avoir un certain dégazage, en particulier en hiver.",
+            "description": "توفير الضوء والتهوية الالزمين لنمو جميع األعضاء",
             "status": "en cours",
             "categorie": "urgent"
         }

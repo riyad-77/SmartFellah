@@ -1,44 +1,53 @@
 {
-    "culture": "blé",
-    "exigences_sol": null,
-    "besoins_hydriques": null,
-    "temp_optimale": {
-        "temp_min": 16,
-        "temp_max": 22
+    "culture": "Blé",
+    "exigences_sol": "Le blé peut être attaqué par de nombreuses maladies à différents stades de son développement. Ces attaques peuvent occasionner des pertes importantes lorsqu'elles sont sensibles et que les conditions de l'environnement sont favorables à l'expansion des maladies.",
+    "besoins_hydriques": "Le blé nécessite une humidité ambiante de 60 à 80% pour une croissance optimale. Il est sensible aux conditions de développement qui lui sont particulières, telles que la température, l'humidité et la lumière.",
+    "bioclimatologie_optimale": {
+        "temp_min": "15",
+        "temp_max": "25",
+        "hum_min": "60",
+        "hum_max": "80"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
         {
-            "nom_maladie": "charbon nu",
+            "nom_maladie": "Septorioses",
             "causes": [
-                "semence",
-                "débris",
-                "sol"
+                "Favorables conditions climatiques",
+                "Variétés sensibles"
             ],
             "traitements_specifiques": [
-                "traitement chimique",
-                "traitement biologique"
+                "Fumigation, application de produits phytosanitaires"
             ]
         },
         {
-            "nom_maladie": "charbon foliaire",
+            "nom_maladie": "Rouilles",
             "causes": [
-                "sol",
-                "semence"
+                "Favorables conditions climatiques",
+                "Variétés sensibles"
             ],
             "traitements_specifiques": [
-                "traitement chimique",
-                "traitement biologique"
+                "Fumigation, application de produits phytosanitaires"
+            ]
+        },
+        {
+            "nom_maladie": "Helminthosporiose",
+            "causes": [
+                "Favorables conditions climatiques",
+                "Variétés sensibles"
+            ],
+            "traitements_specifiques": [
+                "Fumigation, application de produits phytosanitaires"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "effectuer des pratiques de lutte contre les maladies cryptogamiques",
-            "status": "en cours",
-            "categorie": "urgent"
-        },
-        {
-            "description": "realiser des semis réguliers pour éviter les attaques sporadiques",
+            "description": "Conduire des campagnes de lutte préventive",
             "status": "en cours",
             "categorie": "urgent"
         }

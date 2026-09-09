@@ -2,9 +2,16 @@
     "culture": "Ble",
     "exigences_sol": "Le sol doit être bien drainé, avec un pH neutre à légèrement acide.",
     "besoins_hydriques": "Les blés nécessitent au moins 500 mm de précipitations annuelles. Le sol doit être well-drained et avoir un pH neutre à légèrement acide. Les blés sont des plantes hygrophiles, mais ils peuvent tolérer une certaine sécheresse.",
-    "temp_optimale": {
+    "bioclimatologie_optimale": {
         "temp_min": "-1°C",
-        "temp_max": "25°C"
+        "temp_max": "25°C",
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
@@ -83,11 +90,6 @@
             ]
         },
         {
-            "nom_maladie": "Inconnue",
-            "causes": [],
-            "traitements_specifiques": []
-        },
-        {
             "nom_maladie": "Chergui",
             "causes": [
                 "sécheresse et Chergui de fin de cycle"
@@ -104,6 +106,110 @@
             ],
             "traitements_specifiques": [
                 "insecticide"
+            ]
+        },
+        {
+            "nom_maladie": "La maladie des moineaux",
+            "causes": [
+                "L'attaque des moineaux peut être causée par la présence de graines dans les cultures"
+            ],
+            "traitements_specifiques": [
+                "L'application de fongicides foliaires et la mise en place de programmes de lutte raisonnée et intégrée"
+            ]
+        },
+        {
+            "nom_maladie": "Septorioses",
+            "causes": [
+                "Favorables conditions climatiques",
+                "Variétés sensibles"
+            ],
+            "traitements_specifiques": [
+                "Fumigation, application de produits phytosanitaires"
+            ]
+        },
+        {
+            "nom_maladie": "Rouilles",
+            "causes": [
+                "Favorables conditions climatiques",
+                "Variétés sensibles"
+            ],
+            "traitements_specifiques": [
+                "Fumigation, application de produits phytosanitaires"
+            ]
+        },
+        {
+            "nom_maladie": "Helminthosporiose",
+            "causes": [
+                "Favorables conditions climatiques",
+                "Variétés sensibles"
+            ],
+            "traitements_specifiques": [
+                "Fumigation, application de produits phytosanitaires"
+            ]
+        },
+        {
+            "nom_maladie": "Rougeur des feuilles",
+            "causes": [
+                "Infection par les champignons",
+                "Atteinte par les insectes"
+            ],
+            "traitements_specifiques": [
+                "Traitements fongiques",
+                "Traitement par insecticide"
+            ]
+        },
+        {
+            "nom_maladie": "Fusarium",
+            "causes": [
+                "Nuit de froide",
+                "Perte d'eau"
+            ],
+            "traitements_specifiques": [
+                "Traitement avec des herbicides",
+                "Régulation de l'irrigation"
+            ]
+        },
+        {
+            "nom_maladie": "Mildiou",
+            "causes": [
+                "Humidité excessive",
+                "Perte de qualité du grain"
+            ],
+            "traitements_specifiques": [
+                "Traitement avec des fungicides",
+                "Régulation de l'irrigation"
+            ]
+        },
+        {
+            "nom_maladie": "Rougeole du blé",
+            "causes": [
+                "Température extrême",
+                "Manque d'humidité"
+            ],
+            "traitements_specifiques": [
+                "Irrigation, Fumigation, Traitement chimique"
+            ]
+        },
+        {
+            "nom_maladie": "Rougeur du grain",
+            "causes": [
+                "infection par des bactéries",
+                "atteinte par des insectes"
+            ],
+            "traitements_specifiques": [
+                "traitement antibiotique",
+                "application de pesticides"
+            ]
+        },
+        {
+            "nom_maladie": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+            "causes": [
+                "Nuit de froide",
+                "Perte d'eau"
+            ],
+            "traitements_specifiques": [
+                "Traitement avec des herbicides",
+                "Régulation de l'irrigation"
             ]
         }
     ],
@@ -210,6 +316,66 @@
         },
         {
             "description": "cultiver dans des trous creusés pour améliorer drainage",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Vérifier régulièrement les niveaux d'humidité du sol et de l'air pour éviter les sécheresses et les attaques de cécidomyie.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Il est recommandé de réaliser des tests de résistance génétique aux maladies pour sélectionner les variétés de blé tendre les plus résistantes.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Cultiver de variétés résistantes à la cécidomyie",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "L'amélioration de la fertilité du sol et l'application de techniques de lutter contre les mauvaises herbes et les maladies cryptogamiques sont recommandées.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Conduire des campagnes de lutte préventive",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Connaître les symptômes spécifiques des maladies cryptogamiques du blé",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Choisir des variétés de blé dur et tendre adaptées aux conditions du nord-ouest marocain",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Sélection des variétés de blé tendre adaptées aux conditions climatiques du Nord-Ouest du Maroc",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "L'irrigation doit être régulière et ciblée pour éviter les problèmes de qualité du grain.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "La gestion de la sécheresse est essentielle pour éviter les pertes de productivité.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "La réduction de la pression de l'eau est recommandée pour réduire les pertes d'eau et améliorer la productivité.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Mise en place d'un système d'irrigation plus efficace pour réduire les pertes d'eau et maintenir la productivité.",
             "status": "en cours",
             "categorie": "urgent"
         }

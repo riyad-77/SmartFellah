@@ -3,201 +3,228 @@ import os
 import sys
 import psycopg2
 import re
+import unicodedata
 
-# --- CONFIGURATION BASE DE DONNÉES ---
+try:
+    from deep_translator import GoogleTranslator
+except ImportError:
+    print("❌ Erreur : pip install deep-translator")
+    sys.exit(1)
+
+traducteur = GoogleTranslator(source='auto', target='fr')
+
 DB_CONFIG = {
-    "dbname": "bifolia_db", 
-    "user": "admin", 
-    "password": "secretpassword", 
+    "dbname": "bifolia_db",
+    "user": "admin",
+    "password": "secretpassword",
     "host": "localhost",
 }
 
-def vider_base_de_donnees(cur):
-    """Vide toutes les tables de référence et de liaison pour repartir à zéro."""
-    print("🧹 Nettoyage de la base de données en cours...")
+def traduire_texte(texte):
+    if not texte or not isinstance(texte, str): return texte
+    try:
+        return traducteur.translate(texte).title() if len(texte) > 2 else texte
+    except Exception: return texte
+
+def normaliser_culture(nom_brut):
+    if not nom_brut: return "inconnu"
+    nom = str(nom_brut).lower().strip()
+    nom = unicodedata.normalize('NFKD', nom).encode('ASCII', 'ignore').decode('utf-8')
+    nom = nom.replace("'", " ").replace("’", " ") 
+    nom = re.sub(r'[\-_]', ' ', nom)
+    nom = re.sub(r'[\(\)\.]', '', nom)
+    nom = re.sub(r'^(le |la |les |l )', '', nom)
+    nom = re.sub(r'\s+', ' ', nom).strip()
+
+    intrus = ["poisson", "poissonnier", "inconnue", "culture inconnue", "culture x", "helm", "hormone", "edesse", "hlemm", "a graminees", "achlamydes", "almellya", "arabie", "arabricotier", "arbecette", "arbre a feuilles persistantes", "cerealiculture", "culture marocaine", "ensilage", "legumineuses alimentaires", "orage", "pente cerise", "pompe de terre", "riz du figue", "shaghaat el luzz", "viticulture", "viticulture marocaine", "ziza", "poulet", "rouille brune du ble", "arabin mais traduis en francais", "culture du semis direct", "cereales inconnue"]
+    if nom in intrus: return None
+
+    mapping = {
+        "abricot": "abricotier", "abricot prunus armeniaca": "abricotier", "arbre de prunus armeniaca": "abricotier", "abricotier prunus armeniaca": "abricotier", "abricotier prunus armeniaca": "abricotier",
+        "شجرة اللوز": "amandier", "amandier": "amandier", "amygdalus communis": "amandier", "louz": "amandier",
+        "cognassier cydonia vulgaris": "cognassier", "cognassier cydonia vulgaris et neflier du japon": "cognassier", "cognassier cydonia vulgaris et neflier du japon eriobotrya japonica": "cognassier",
+        "avocatier persea americana": "avocatier",
+        "noyer commun juglans regia": "noyer commun", "noyer": "noyer commun",
+        "figue": "figuier", "ficus carica": "figuier", 
+        "framboise": "framboisier",
+        "pomier": "pommier", "pomme malus domestica": "pommier", "pomme": "pommier",
+        "grenade": "grenadier", 
+        "palm tree": "palmier dattier", "nkhil temr": "palmier dattier", "nkhil el temmar": "palmier dattier", "nakhil temmar": "palmier dattier", "nkhil tamr": "palmier dattier", "palmier": "palmier dattier",
+        "prunus armeniaca": "prunier",
+        "rosa damascena": "rose",
+        "peche": "pecher", "pecher prunus persica": "pecher", "prunus persica": "pecher",
+        "raisin de table": "vigne", "sultanine": "vigne",
+        "capparis": "caprier", 
+        "mentha verte": "menthe verte", "mentha viridis ou mentha spicata var viridis": "menthe verte", "mentha spicata var viridis": "menthe verte", "mentha viridis": "menthe verte", "mentha verte mentha viridis ou mentha spicat": "menthe verte","mentha verte mentha viridis ou mentha spicata var viridis": "menthe verte",
+        "saffron": "safran", "safraniere": "safran", "crocus sativus l": "safran",
+        "organe" : "oregano",
+        "stevia rebaudiana": "stevia",
+        "absinthe artemisia absinthium": "absinthe", "artemisia absinthium": "absinthe", "herbe sainte": "absinthe", "absinthe artemisia absinthium": "absinthe",
+        "cereales d automne": "cereale", "cereales": "cereale", "cereales de printemps": "cereale", "cereales inconnue": "cereale", "graminees": "cereale", "graminee": "cereale",
+        "culture de ble": "ble", "ble dur": "ble", "ble tendre": "ble", "ble dur et ble tendre": "ble",
+        "riz vert": "riz", 
+        "arabe": "arabica", "arabique": "arabica", "araabiyat": "arabica", "culture arabe": "arabica",
+        "arachidonne": "arachide", "arachis hypogaea": "arachide", "arachid": "arachide",
+        "vicia sativa": "vesce", "vicia villosa": "vesce",
+        "agrume": "agrumes", "citron": "agrumes", 
+        "bananier": "banane",
+        "culture de mais": "mais", "zea mays": "mais", "mais ensilage": "mais", "culture de mais ensilage en goutte a goutte d": "mais", "culture de mais ensilage en goutte a goutte dans les sables de larache": "mais",
+        "culture de soja": "soja",
+        "betterave a sucre monogermes": "betterave a sucre", "betterave a sucre monogerme": "betterave a sucre", 
+        "piment rouge niora": "piment rouge", "niora": "piment rouge",
+        "fragaria vulgaris": "fraisier", "fraisier fragaria vulgaris": "fraisier", "frasier fragaria vulgaris": "fraisier",
+        "rapeseed": "colza",
+        "epinard et estragon": "epinard",
+        "patate douce et le navet en maroc": "patate douce",
+        "tomate de primeurs": "tomate", "tomate sous serre": "tomate"
+    }
+    
+    if any("\u0600" <= c <= "\u06FF" for c in nom): nom = traduire_texte(nom).lower().strip()
+    return mapping.get(nom, nom)
+
+def preparer_base_de_donnees(cur):
+    print("🧹 Création des tables manquantes et nettoyage de la base de données...")
     cur.execute("""
-        TRUNCATE TABLE recommandation, culture_maladie_details, cultures, maladies, traitements, 
-                       ref_exigences_sol, ref_besoins_hydriques, ref_temp_optimale 
+        CREATE TABLE IF NOT EXISTS culture_communes_recommandees (
+            id SERIAL PRIMARY KEY,
+            culture_id INTEGER REFERENCES cultures(id) ON DELETE CASCADE,
+            nom_commune VARCHAR(255),
+            UNIQUE (culture_id, nom_commune)
+        );
+    """)
+    cur.execute("""
+        TRUNCATE TABLE recommandation, culture_communes_recommandees, culture_maladie_details, cultures, maladies, traitements,
+                       ref_exigences_sol, ref_besoins_hydriques, ref_temp_optimale
         RESTART IDENTITY CASCADE;
     """)
-    print("✅ Base de données vidée avec succès.\n")
+    print("✅ Base de données prête.\n")
 
-def normaliser_texte(texte):
-    """Nettoyage de base pour les textes et troncage de sécurité à 490 caractères."""
-    if not texte:
-        return "inconnu"
+def normaliser_texte(texte, limit=490):
+    if not texte: return "inconnu"
     texte = str(texte).strip()
-    if texte.lower() not in ['nan', 'none', 'null', '']:
-        return texte[:490]
-    return "inconnu"
+    return texte[:limit] if texte.lower() not in ['nan', 'none', 'null', ''] else "inconnu"
 
 def get_id(cur, table, col_nom, valeur):
-    """Récupère ou insère une valeur dans une table de référence et retourne son ID."""
     query = f"""
-        INSERT INTO {table} ({col_nom}) VALUES (%s) 
-        ON CONFLICT ({col_nom}) DO UPDATE SET {col_nom} = EXCLUDED.{col_nom} 
+        INSERT INTO {table} ({col_nom}) VALUES (%s)
+        ON CONFLICT ({col_nom}) DO UPDATE SET {col_nom} = EXCLUDED.{col_nom}
         RETURNING id;
     """
     cur.execute(query, (valeur,))
     return cur.fetchone()[0]
 
-def safe_float(valeur, valeur_par_defaut):
-    """Tente de convertir une valeur simple en float."""
-    if valeur is None:
-        return valeur_par_defaut
-    try:
-        return float(valeur)
-    except (ValueError, TypeError):
-        return valeur_par_defaut
+def safe_float(valeur, defaut):
+    if valeur is None: return defaut
+    try: return float(valeur)
+    except: return defaut
 
-def extraire_temperature_reelle(texte):
-    """
-    Extrait les valeurs numériques d'un texte complexe.
-    """
-    if not texte:
-        return None, None
-        
-    nombres = re.findall(r'-?\d+\.?\d*', str(texte))
-    
-    if nombres:
-        valeurs_temp = [float(n) for n in nombres if -50 <= float(n) <= 60]
-        if valeurs_temp:
-            return min(valeurs_temp), max(valeurs_temp)
-            
-    return None, None
-
-def pipeline_ingestion(source_dir):
+def pipeline_ingestion(clean_dir):
     conn = None
     try:
         conn = psycopg2.connect(**DB_CONFIG)
         cur = conn.cursor()
+        preparer_base_de_donnees(cur)
 
-        fichiers = [f for f in os.listdir(source_dir) if f.endswith(".json")]
+        fichiers_clean = [f for f in os.listdir(clean_dir) if f.endswith(".json")]
+        print(f"🚀 Début de l'ingestion de {len(fichiers_clean)} cultures depuis '{clean_dir}'...")
 
-        if len(fichiers) == 0:
-            print("✅ Aucun nouveau fichier à ingérer. La base reste intacte.")
-            sys.exit(0)
-            
-        print(f"🚀 Début de l'ingestion factuelle de {len(fichiers)} cultures depuis '{source_dir}'...")
-
-        for file in fichiers:
-            with open(os.path.join(source_dir, file), 'r', encoding='utf-8') as f:
+        for file in fichiers_clean:
+            with open(os.path.join(clean_dir, file), 'r', encoding='utf-8') as f:
                 data = json.load(f)
                 
-            nom_culture = normaliser_texte(data.get("culture"))
-            if nom_culture == "inconnu": 
-                continue
+            nom_brut = normaliser_texte(data.get("culture"))
+            nom_culture = normaliser_culture(nom_brut)
+            if not nom_culture or nom_culture == "inconnu": continue
                 
             print(f"-> Traitement de : {nom_culture.capitalize()}")
-            
-            # --- 1. GESTION DES RÉFÉRENCES ---
+                
             sol_id = get_id(cur, "ref_exigences_sol", "libelle", normaliser_texte(data.get("exigences_sol")))
             eau_id = get_id(cur, "ref_besoins_hydriques", "libelle", normaliser_texte(data.get("besoins_hydriques")))
             
-            temp_dict = data.get("temp_optimale", {})
-            min_vals = extraire_temperature_reelle(temp_dict.get("temp_min"))
-            max_vals = extraire_temperature_reelle(temp_dict.get("temp_max"))
+            bioclim = data.get("bioclimatologie_optimale") or {}
+            t_min = safe_float(bioclim.get("temp_min"), None)
+            t_max = safe_float(bioclim.get("temp_max"), None)
             
-            t_min_opt = min_vals[0] if min_vals[0] is not None else None
-            t_max_opt = max_vals[1] if max_vals[1] is not None else (max_vals[0] if max_vals[0] is not None else None)
-            
-            cur.execute("""
-                SELECT id FROM ref_temp_optimale 
-                WHERE temp_min IS NOT DISTINCT FROM %s AND temp_max IS NOT DISTINCT FROM %s
-            """, (t_min_opt, t_max_opt))
+            cur.execute("SELECT id FROM ref_temp_optimale WHERE temp_min IS NOT DISTINCT FROM %s AND temp_max IS NOT DISTINCT FROM %s", (t_min, t_max))
             row_temp = cur.fetchone()
-            
             if row_temp:
                 temp_opt_id = row_temp[0]
             else:
-                cur.execute("""
-                    INSERT INTO ref_temp_optimale (temp_min, temp_max) 
-                    VALUES (%s, %s) RETURNING id;
-                """, (t_min_opt, t_max_opt))
+                cur.execute("INSERT INTO ref_temp_optimale (temp_min, temp_max) VALUES (%s, %s) RETURNING id;", (t_min, t_max))
                 temp_opt_id = cur.fetchone()[0]
             
-            # --- 2. INSERTION DE LA CULTURE ---
+            # INSERT CULTURE
+            # --- EXTRACTION ---
+            indices = data.get("indices_satellitaires_requis") or {}
+            
+            # On remplace les valeurs par défaut par None (qui devient NULL en SQL)
+            ndvi_min = safe_float(indices.get("ndvi_optimal_min"), None)
+            ndvi_max = safe_float(indices.get("ndvi_optimal_max"), None)
+            ndwi_min = safe_float(indices.get("ndwi_optimal_min"), None)
+            ndwi_max = safe_float(indices.get("ndwi_optimal_max"), None)
+            evi_min = safe_float(indices.get("evi_optimal_min"), None)
+            evi_max = safe_float(indices.get("evi_optimal_max"), None)
+
+            # --- INSERTION ---
             cur.execute("""
-                INSERT INTO cultures (nom_culture, exigence_sol_id, besoin_hydrique_id, temp_optimale_id) 
-                VALUES (%s, %s, %s, %s) 
-                ON CONFLICT (nom_culture) DO NOTHING 
+                INSERT INTO cultures (
+                    nom_culture, exigence_sol_id, besoin_hydrique_id, temp_optimale_id, 
+                    ndvi_optimal_min, ndvi_optimal_max, 
+                    ndwi_optimal_min, ndwi_optimal_max, 
+                    evi_optimal_min, evi_optimal_max
+                )
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s) 
+                ON CONFLICT (nom_culture) 
+                DO UPDATE SET 
+                    ndvi_optimal_min = EXCLUDED.ndvi_optimal_min,
+                    ndvi_optimal_max = EXCLUDED.ndvi_optimal_max,
+                    ndwi_optimal_min = EXCLUDED.ndwi_optimal_min,
+                    ndwi_optimal_max = EXCLUDED.ndwi_optimal_max,
+                    evi_optimal_min = EXCLUDED.evi_optimal_min,
+                    evi_optimal_max = EXCLUDED.evi_optimal_max
                 RETURNING id;
-            """, (nom_culture.lower(), sol_id, eau_id, temp_opt_id))
+            """, (nom_culture.lower()[:100], sol_id, eau_id, temp_opt_id, 
+                  ndvi_min, ndvi_max, ndwi_min, ndwi_max, evi_min, evi_max))
             
             row = cur.fetchone()
-            if row:
-                culture_id = row[0]
-            else:
-                cur.execute("SELECT id FROM cultures WHERE nom_culture = %s", (nom_culture.lower(),))
-                culture_id = cur.fetchone()[0]
+            culture_id = row[0] if row else cur.execute("SELECT id FROM cultures WHERE nom_culture = %s", (nom_culture.lower()[:100],)) or cur.fetchone()[0]
             
-            # --- 3. INSERTION DES MALADIES (Données brutes) ---
-            for m_det in data.get('maladies_details', []):
+            # INSERT ZONES
+            zones = data.get("zones_recommandees") or []
+            for zone in zones:
+                zone_propre = traduire_texte(zone).strip()
+                if len(zone_propre) > 1 and not any(c in zone_propre for c in ["∏", "ô", "é°"]):
+                    cur.execute("""
+                        INSERT INTO culture_communes_recommandees (culture_id, nom_commune)
+                        VALUES (%s, %s) ON CONFLICT (culture_id, nom_commune) DO NOTHING;
+                    """, (culture_id, zone_propre.title()[:255]))
+
+            # INSERT MALADIES
+            for m_det in (data.get('maladies_details') or []):
+                if not isinstance(m_det, dict): continue
                 nom_maladie = normaliser_texte(m_det.get('nom_maladie'))
-                if nom_maladie == "inconnu" or not nom_maladie: 
-                    continue
+                if nom_maladie == "inconnu" or not nom_maladie: continue
                 
-                causes_liste = m_det.get('causes', [])
-                seuils = {} # Les seuils seront gérés mathématiquement par les modèles plus tard
+                cur.execute("INSERT INTO maladies (nom_maladie, temp_min_declenchement, temp_max_declenchement, humidite_min_declenchement) VALUES (%s, -50.0, 60.0, 0.0) ON CONFLICT (nom_maladie) DO NOTHING RETURNING id;", (nom_maladie.lower(),))
+                row_mal = cur.fetchone()
+                maladie_id = row_mal[0] if row_mal else cur.execute("SELECT id FROM maladies WHERE nom_maladie = %s", (nom_maladie.lower(),)) or cur.fetchone()[0]
                 
-                t_min = safe_float(seuils.get('temp_min'), -50.0)
-                t_max = safe_float(seuils.get('temp_max'), 60.0)
-                h_min = safe_float(seuils.get('humidite_min'), 0.0)
-                
-                cur.execute("""
-                    INSERT INTO maladies (nom_maladie, temp_min_declenchement, temp_max_declenchement, humidite_min_declenchement)
-                    VALUES (%s, %s, %s, %s)
-                    ON CONFLICT (nom_maladie) DO UPDATE 
-                    SET temp_min_declenchement = EXCLUDED.temp_min_declenchement,
-                        temp_max_declenchement = EXCLUDED.temp_max_declenchement,
-                        humidite_min_declenchement = EXCLUDED.humidite_min_declenchement
-                    RETURNING id;
-                """, (nom_maladie.lower(), t_min, t_max, h_min))
-                maladie_id = cur.fetchone()[0]
-                
-                traitements = m_det.get('traitements_specifiques', [])
-                if not traitements:
-                    traitements = ["aucun"]
-                    
-                for t in traitements:
-                    nom_traitement = normaliser_texte(t)
-                    
-                    # NOUVEAU : On stocke le traitement brut, tel qu'issu du ministère
-                    traitement_id = get_id(cur, "traitements", "nom_traitement", nom_traitement)
-                    
-                    cur.execute("""
-                        INSERT INTO culture_maladie_details (culture_id, maladie_id, traitement_specifique_id) 
-                        SELECT %s, %s, %s
-                        WHERE NOT EXISTS (
-                            SELECT 1 FROM culture_maladie_details 
-                            WHERE culture_id = %s AND maladie_id = %s AND traitement_specifique_id = %s
-                        )
-                    """, (culture_id, maladie_id, traitement_id, culture_id, maladie_id, traitement_id))
+                for t in (m_det.get('traitements_specifiques') or ["aucun"]):
+                    traitement_id = get_id(cur, "traitements", "nom_traitement", normaliser_texte(t))
+                    cur.execute("INSERT INTO culture_maladie_details (culture_id, maladie_id, traitement_specifique_id) VALUES (%s, %s, %s) ON CONFLICT DO NOTHING;", (culture_id, maladie_id, traitement_id))
 
-            # --- 4. INSERTION DES RECOMMANDATIONS (Données brutes) ---
-            for rec in data.get("recommandations", []):
-                description_brute = rec.get("description", "").strip()
-                
-                if description_brute and description_brute != "inconnu":
-                    status = normaliser_texte(rec.get("status", "à faire"))
-                    categorie = normaliser_texte(rec.get("categorie", "optionnel"))
+            # INSERT RECOMMANDATIONS
+            for rec in (data.get("recommandations") or []):
+                if not isinstance(rec, dict): continue
+                desc = normaliser_texte(rec.get("description", ""))
+                if desc and desc != "inconnu":
+                    cur.execute("INSERT INTO recommandation (description, status, categorie, culture_id) VALUES (%s, %s, %s, %s)", (desc, normaliser_texte(rec.get("status", "à faire"), limit=50), normaliser_texte(rec.get("categorie", "optionnel"), limit=50), culture_id))
 
-                    cur.execute("""
-                        INSERT INTO recommandation (description, status, categorie, culture_id)
-                        SELECT %s, %s, %s, %s
-                        WHERE NOT EXISTS (
-                            SELECT 1 FROM recommandation 
-                            WHERE description = %s AND culture_id = %s
-                        )
-                    """, (description_brute, status, categorie, culture_id, description_brute, culture_id))
-
-            conn.commit()
-            print(f"💾 Données froides pour '{nom_culture.capitalize()}' sauvegardées !")
-            
-        print("\n🎉 Pipeline terminé ! La base Bifolia est prête pour les modèles prédictifs.")
+        conn.commit()
+        print("✅ Pipeline terminé ! La base Bifolia est prête (Cultures + Zones + Maladies).")
         
     except Exception as e:
-        print(f"\n❌ Erreur fatale lors de l'ingestion : {e}")
+        print(f"\n❌ Erreur fatale : {e}")
         if conn: conn.rollback()
         sys.exit(1)
     finally:
@@ -205,4 +232,4 @@ def pipeline_ingestion(source_dir):
         if conn: conn.close()
 
 if __name__ == "__main__":
-    pipeline_ingestion("FT_Clean")
+    pipeline_ingestion(r"C:\Users\hp\SmartFellah\FT_Clean")

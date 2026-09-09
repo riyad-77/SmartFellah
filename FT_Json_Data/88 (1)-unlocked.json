@@ -1,31 +1,33 @@
 {
     "culture": "Blé dur et Blé tendre",
-    "exigences_sol": "Sol de type Dehss et Tirs",
-    "besoins_hydriques": "Irrigation, 180 unités/ha d'azote au semis, 3 irrigations en 1999 et une irrigation en 2000",
-    "temp_optimale": {
-        "temp_min": "Environ 10°C",
-        "temp_max": "Avec températures optimales entre 15°C et 25°C"
+    "exigences_sol": "Sol de type Dehss et Sol de type Tirs",
+    "besoins_hydriques": "Période de germination : 12 et 13 novembre 1998, 8 et 10 novembre 1999, Irrigation : 3 fois en 1999 et 1 fois en 2000",
+    "bioclimatologie_optimale": {
+        "temp_min": 12.5,
+        "temp_max": 25,
+        "hum_min": 70,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
             "nom_maladie": "Maladie cryptogamique",
             "causes": [
-                "Proximité du littoral atlantique",
-                "Pluviométrie"
+                "Pluies",
+                "Proximité du littoral atlantique"
             ],
             "traitements_specifiques": [
-                "Traitement antifongique"
+                "Traitement antifongique (Impact RM, 1 litre/ha)"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Semis en ligne manuellement les 12 et 13 novembre 1998",
-            "status": "En cours",
-            "categorie": "Urgent"
-        },
-        {
-            "description": "Densité de semis à 145 Kg/ha",
+            "description": "Choisir des variétés de blé dur et tendre adaptées aux conditions du nord-ouest marocain",
             "status": "En cours",
             "categorie": "Urgent"
         }

@@ -1,30 +1,32 @@
 {
-    "culture": "pomme de terre",
-    "exigences_sol": "La culture préfère un sol silico-argileux, riche en humus et légèrement acide. Le sol doit être bien drainant et sans obstacles afin de permettre un bon développement des tubercules.",
-    "besoins_hydriques": "La culture préfère un régime continu d'apport d'eau (80 à 100 % de l’évapotranspiration maximale). Dans le cas d’une sécheresse imposée, il est recommandé de faire au moins trois irrigations d’appoint.",
-    "temp_optimale": {
-        "temp_min": "12-15°C",
-        "temp_max": "16-20°C"
+    "culture": "Pomme de Terre",
+    "exigences_sol": "La culture préfère un climat frais, des sols silico-argileux, riches en humus et légèrement acides. Le sol doit être bien drainant et sans obstacles.",
+    "besoins_hydriques": "La culture préfère un régime continu d'apport d'eau (80 à 100 % de l'évapotranspiration maximale).",
+    "bioclimatologie_optimale": {
+        "temp_min": 12,
+        "temp_max": 20,
+        "hum_min": 80,
+        "hum_max": 20
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
             "nom_maladie": "Mildiou",
             "causes": [
-                "irrigation par aspersion ou de pluies abondantes"
+                "pluies abondantes, aspersion, feuillage mouillé"
             ],
             "traitements_specifiques": [
-                "Antéor"
+                "produits anti-mildiou, traitement au Thirame"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Faire au moins trois irrigations d'appoint dans le cas d'une sécheresse imposée.",
-            "status": "en cours",
-            "categorie": "urgent"
-        },
-        {
-            "description": "Procéder à un travail profond du sol et enfouir la fumure de fond avant la plantation.",
+            "description": "Faire régulièrement le sol à sa capacité au champ",
             "status": "en cours",
             "categorie": "urgent"
         }

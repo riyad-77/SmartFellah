@@ -1,28 +1,27 @@
 {
     "culture": "Tomate",
-    "exigences_sol": "Le sol doit être bien aéré et drainant. La teneur en matière organique du sol doit être assez élevée (2-3 %) pour obtenir de bons rendements.",
-    "besoins_hydriques": "La culture est très sensible à la sécheresse, il est donc recommandé d'apporter des apports d'eau réguliers. La teneur en matière organique du sol doit être assez élevée (2-3 %) pour obtenir de bons rendements.",
-    "temp_optimale": {
-        "temp_min": "12°C",
-        "temp_max": "25°C"
+    "exigences_sol": "Le sol doit être bien aéré et drainant. L&#39;asphyxie racinaire, même temporaire, est préjudiciable à la culture. La teneur en matière organique du sol doit être assez élevée (2-3 %) pour obtenir de bons rendements. Le pH optimal du sol est de 5,5- 6,8.",
+    "besoins_hydriques": "Les besoins en eau de la culture peuvent être couverts par des apports de 25 % des besoins globaux durant la phase végétative, 50 % durant le pic des cueillettes et 25 % à la dernière phase de la culture.",
+    "bioclimatologie_optimale": {
+        "temp_min": 13,
+        "temp_max": 17,
+        "hum_min": 75,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Inconnue",
-            "causes": [
-                "Fongicide",
-                "Insecticide"
-            ],
-            "traitements_specifiques": []
-        },
-        {
             "nom_maladie": "Virus de l'enroulement des feuilles jaunes de la tomate (TYLCV)",
             "causes": [
-                "Bemisia tabaci",
-                "insecte Homoptère de la famille des Aleurodidae"
+                "Bemisia tabaci"
             ],
             "traitements_specifiques": [
-                "insecticides spécifiques contre Bemisia tabaci"
+                "Insecticide",
+                "Culture biologique"
             ]
         },
         {
@@ -46,43 +45,129 @@
                 "insecticides",
                 "culture biologique"
             ]
+        },
+        {
+            "nom_maladie": "Nématodes",
+            "causes": [
+                "Présence de nématodes dans le sol"
+            ],
+            "traitements_specifiques": [
+                "Utilisation de 80 à 100 g de semence/ha de terrain",
+                "Pollinisation nécessite l'installation de 4 ruches de bourdons/ha en période florale et durant les cueillettes"
+            ]
+        },
+        {
+            "nom_maladie": "Nématode",
+            "causes": [
+                "Présence de nématodes dans le sol"
+            ],
+            "traitements_specifiques": [
+                "Utilisation de 80 à 100 g de semence/ha de terrain"
+            ]
+        },
+        {
+            "nom_maladie": "Botrytis",
+            "causes": [
+                "vent chaud",
+                "exigences de température basse"
+            ],
+            "traitements_specifiques": [
+                "fumigation",
+                "application de fungicides"
+            ]
+        },
+        {
+            "nom_maladie": "Mildiou",
+            "causes": [
+                "Humidité élevée",
+                "Vent chaud (chergui)"
+            ],
+            "traitements_specifiques": [
+                "Treatment avec des produits antimaladies"
+            ]
+        },
+        {
+            "nom_maladie": "Botrytis et Mildiou",
+            "causes": [
+                "humidité relative élevée",
+                "temps sec"
+            ],
+            "traitements_specifiques": [
+                "irrigation régulière",
+                "aération matinale"
+            ]
+        },
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [],
+            "traitements_specifiques": []
+        },
+        {
+            "nom_maladie": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+            "causes": [
+                "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know."
+            ],
+            "traitements_specifiques": [
+                "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+                "Culture biologique"
+            ]
         }
     ],
     "recommandations": [
         {
-            "description": "Avec un équipement supplémentaire (pompe doseuse et bacs), il est facile d'introduire la fertigation dans l'exploitation.",
-            "status": null,
-            "categorie": "Inconnue"
-        },
-        {
-            "description": "Il est conseillé d'utiliser le goutte-à-goutte pour l'irrigation, en évitant les à-coups d'apports d'eau.",
+            "description": "Maintenir une température optimale et une humidité relative de 75%",
             "status": "en cours",
             "categorie": "urgent"
         },
         {
-            "description": "Lutter contre le TYLCV en utilisant des méthodes de lutte intégrées telles que la suppression des insectes, l'utilisation d'insecticides spécifiques et les pratiques agricoles durables.",
+            "description": "Utiliser le goutte-à-goutte pour l&#39;irrigation, éviter les à-coups d&#39;apports d&#39;eau et minimiser les pertes de fertilisant par lessivage.",
             "status": "en cours",
             "categorie": "urgent"
         },
         {
-            "description": "L'approvisionnement en plants sains est essentiel pour éviter les pertes dues à la maladie des feuilles jaunes.",
+            "description": "La surveillance particulière des rongeurs (souris et rats) doit être effectuée du semis à la levée.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Préparer le terrain avant la plantation, labourer, nivelé et désinfecté en cas de présence de nématodes",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Faire des mesures de prévention régulières pour empêcher la propagation du virus.",
+            "status": "En cours",
+            "categorie": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know."
+        },
+        {
+            "description": "Choisir des plantes saines pour les pépinières, appliquer des protécoles biologiques et des traitements chimiques pour prévenir l'infestation du TYLCV.",
+            "status": "en cours",
+            "categorie": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know."
+        },
+        {
+            "description": "Utiliser des combinaisons de filets pour assurer une meilleure protection des plants, surtout lorsqu'un seul type de filet ne constitue pas sufficient pour protéger les plants.",
+            "status": "en cours",
+            "categorie": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know."
+        },
+        {
+            "description": "Utilisation régulière d'irrigation pour maintenir une humidité relative optimale",
             "status": "en cours",
             "categorie": "urgent"
         },
         {
-            "description": "La protection des pépinières par des filets et serres canariennes en bois est recommandée pour prévenir l'infestation des insectes.",
+            "description": "Élimination des humidités de condensation pour prévenir le botrytis",
             "status": "en cours",
             "categorie": "urgent"
         },
         {
-            "description": "Faire des semis précoce pour éviter les maladies et les insectes.",
+            "description": "Aération matinale pour prévenir le mildiou",
             "status": "en cours",
             "categorie": "urgent"
         },
         {
-            "description": "Utiliser des filets pour protéger les plants contre les insectes et les maladies.",
-            "status": "en cours",
-            "categorie": "pas urgent"
+            "description": "Irriger régulièrement pour maintenir une humidité relative optimale",
+            "status": "En cours",
+            "categorie": "Urgent"
         }
     ]
 }

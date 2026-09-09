@@ -1,23 +1,30 @@
 {
     "culture": "Cognassier",
-    "exigences_sol": "Le sol doit être maintenu propre par un cover-cropage en automne et deux à trois binages au printemps-été.",
-    "besoins_hydriques": "Les fumures pratiquées dans la région de Meknès pour des arbres en production sont de 120 unités d’azote, 70 unités de P205 et 120 unités de K20/ha. L’azote est apporté en deux fois, 60 U/ha avant la floraison et 60 U après la récolte.",
-    "temp_optimale": {
+    "exigences_sol": "Le cognassier est adapté à une large gamme de climats et de sols, mais il tolère les sols argileux qui sont généralement considérés comme lourds pour d'autres espèces fruitières.",
+    "besoins_hydriques": "Le cognassier demande une irrigation correspondant à 0,5 ETP pendant la période de floraison et à une ETP pendant la phase de grossissement du fruit.",
+    "bioclimatologie_optimale": {
         "temp_min": "-26˚C",
-        "temp_max": null
+        "temp_max": "ND",
+        "hum_min": "20",
+        "hum_max": "80"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
         {
-            "nom_maladie": "Inconnue",
+            "nom_maladie": "ND",
             "causes": [],
             "traitements_specifiques": []
         }
     ],
     "recommandations": [
         {
-            "description": "Le cognassier est une espèce adaptée à une large gamme de climats et de sols. Il supporte des températures froides jusqu'à -26˚C à l’état dormant.",
-            "status": null,
-            "categorie": null
+            "description": "ND",
+            "status": "ND",
+            "categorie": "ND"
         }
     ]
 }

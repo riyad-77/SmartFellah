@@ -1,21 +1,35 @@
 {
-    "culture": "Caroubier",
-    "exigences_sol": "sols pauvres, sablonneux, limoneux lourds, rocailleux et calcaires, des pH de 6,2 jusqu'à 8,6 mais craint les sols acides et humides",
-    "besoins_hydriques": "précipitations rares ou irrégulières et longues périodes estivales sèches",
-    "temp_optimale": {
-        "temp_min": "200 mm de pluie",
-        "temp_max": "-"
+    "culture": "caroubier",
+    "exigences_sol": "Le caroubier tolère les sols pauvres, sablonneux, limoneux lourds, rocailleux et calcaires, des pH de 6,2 jusquà 8,6 mais craint les sols acides et humides.",
+    "besoins_hydriques": "La production du caroubier dépend essentielle-ment des précipitations.",
+    "bioclimatologie_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "28°C",
+        "hum_min": "20%",
+        "hum_max": "80%"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Inconnue",
-            "causes": [],
-            "traitements_specifiques": []
+            "nom_maladie": "Des infections fongiques",
+            "causes": [
+                "Plantes malades",
+                "Ensoleillement",
+                "Sols pauvres"
+            ],
+            "traitements_specifiques": [
+                "Tratements fongiques",
+                "Amélioration de l'état du sol"
+            ]
         }
     ],
     "recommandations": [
         {
-            "description": "Conserver les sols pauvres et éviter la sur-érosion.",
+            "description": "L'utilisation de techniques de lutter contre l'érosion des sols",
             "status": "en cours",
             "categorie": "urgent"
         }

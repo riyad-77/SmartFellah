@@ -1,33 +1,30 @@
 {
-    "culture": "Céréales",
-    "exigences_sol": null,
-    "besoins_hydriques": null,
-    "temp_optimale": {
-        "temp_min": "20°C",
-        "temp_max": "30°C"
+    "culture": "Inconnue",
+    "exigences_sol": "Aucune information sur les exigences du sol est fournie",
+    "besoins_hydriques": "Aucune information sur les besoins hydriques est fournie",
+    "bioclimatologie_optimale": {
+        "temp_min": null,
+        "temp_max": null,
+        "hum_min": null,
+        "hum_max": null
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "La roue blanche",
-            "causes": [
-                "fumée",
-                "saignement"
-            ],
-            "traitements_specifiques": [
-                "traitement chimique"
-            ]
+            "nom_maladie": "Inconnue",
+            "causes": [],
+            "traitements_specifiques": []
         }
     ],
     "recommandations": [
         {
-            "description": "Fertiliser les plants à régulièrement",
-            "status": null,
-            "categorie": "non urgente"
-        },
-        {
-            "description": "Appliquer des pesticides pour prévenir la roue blanche",
-            "status": "en cours",
-            "categorie": "urgente"
+            "description": "Inconnue",
+            "status": "Inconnue",
+            "categorie": "Inconnue"
         }
     ]
 }

@@ -2,9 +2,16 @@
     "culture": "Orge",
     "exigences_sol": "Sol bien drainé et à bonne structure, avec un pH compris entre 6,0 et 7,0.",
     "besoins_hydriques": "Les sols ont un pH très bas, ce qui nécessite une irrigation régulière.",
-    "temp_optimale": {
+    "bioclimatologie_optimale": {
         "temp_min": 20,
-        "temp_max": 30
+        "temp_max": 30,
+        "hum_min": "60%",
+        "hum_max": "80%"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0,4",
+        "ndwi_optimal_min": "0,0",
+        "evi_optimal_min": "0,3"
     },
     "maladies_details": [
         {
@@ -47,6 +54,15 @@
                 "Applications de fungicides",
                 "Mise en place d'un régime d'irrigation réduite"
             ]
+        },
+        {
+            "nom_maladie": "Mouche",
+            "causes": [
+                "Attaque de la mouche sur les feuilles"
+            ],
+            "traitements_specifiques": [
+                "Application de pesticides, irrigation régulière, maintien de l'hygiène du champ"
+            ]
         }
     ],
     "recommandations": [
@@ -87,6 +103,11 @@
         },
         {
             "description": "Irriger soigneusement",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Application régulière de pesticides pour contrôler les insectes qui peuvent attaquer les feuilles de l'orge.",
             "status": "en cours",
             "categorie": "urgent"
         }

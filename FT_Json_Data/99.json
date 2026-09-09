@@ -1,25 +1,59 @@
 {
-    "culture": "LE MELON",
+    "culture": "Melon",
     "exigences_sol": "La culture est très exigeante en chaleur et lumière.",
     "besoins_hydriques": "Les besoins en eau s’élèvent à 300-400 mm selon les régions.",
-    "temp_optimale": {
-        "temp_min": "15˚C",
-        "temp_max": "25˚C"
+    "bioclimatologie_optimale": {
+        "temp_min": 15,
+        "temp_max": 25,
+        "hum_min": 80,
+        "hum_max": 20
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Oïdium",
+            "nom_maladie": "Fonte de semis",
             "causes": [
-                "Attacques par des champignons"
+                "Hyméxasol"
             ],
             "traitements_specifiques": [
-                "Fungicides systématiques"
+                "Fongicide systémique à base d'Hyméxasol"
+            ]
+        },
+        {
+            "nom_maladie": "Maladies cryptogamiques",
+            "causes": [
+                "ASPersion",
+                "Pivot"
+            ],
+            "traitements_specifiques": [
+                "Fertilisation"
+            ]
+        },
+        {
+            "nom_maladie": "Ravageurs",
+            "causes": [
+                "Nématodes",
+                "Orobanche",
+                "Oïdium",
+                "Fusariose",
+                "Viroses",
+                "Thrips",
+                "Pucerons",
+                "Acariens"
+            ],
+            "traitements_specifiques": [
+                "Fertilisation",
+                "Traitements phytosanitaires"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Effectuer trois traitements phytosanitaires contre les champignons du sol",
+            "description": "Fertilisation régulière et contrôle des maladies et ravageurs",
             "status": "en cours",
             "categorie": "urgent"
         }

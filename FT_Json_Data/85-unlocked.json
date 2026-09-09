@@ -1,34 +1,36 @@
 {
     "culture": "Tournesol",
-    "exigences_sol": "La culture du tournesol nécessite un sol bien drainé et fertile, avec un pH neutre.",
-    "besoins_hydriques": "Le tournesol a besoin d'une irrigation régulière, en particulier pendant les périodes de croissance.",
-    "temp_optimale": {
-        "temp_min": "15°C",
-        "temp_max": "25°C"
+    "exigences_sol": "Les tournesols nécessitent un sol bien drené et frais, avec un pH acide à neutre.",
+    "besoins_hydriques": "Les tournesols nécessitent une irrigation régulière, notamment en période de floraison et de graines.",
+    "bioclimatologie_optimale": {
+        "temp_min": 5,
+        "temp_max": 25,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Maladie des feuilles",
+            "nom_maladie": "Maladie des tournesols",
             "causes": [
-                "Infection par un virus",
-                "Ataque de moineaux"
+                "Attaque de moineaux",
+                "Attacques de ravageurs"
             ],
             "traitements_specifiques": [
-                "Treatment spécifique",
-                "Prévention"
+                "Traitement avec des insecticides",
+                "Traitement avec des fungicides"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Fertiliser régulièrement pour promouvoir la croissance du tournesol.",
+            "description": "Étendre la culture des tournesols dans les régions du Gharb et du Saïs.",
             "status": "en cours",
-            "categorie": "urgent"
-        },
-        {
-            "description": "Assurer une irrigation régulière et suffisante pour les plantes.",
-            "status": "en cours",
-            "categorie": "prioritaire"
+            "categorie": "urgence"
         }
     ]
 }

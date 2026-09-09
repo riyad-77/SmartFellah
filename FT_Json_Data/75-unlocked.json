@@ -1,25 +1,32 @@
 {
-    "culture": "betterave à sucre monogerme",
-    "exigences_sol": "Les travaux de préparation du sol ont pour objectifs fondamentaux, d'une part de réussir une germination et une émergence rapide et régulière des graines, et d'autre part de permettre un enracinement profond.",
-    "besoins_hydriques": "La culture requiert lors de son installation des irrigations rapprochées dans le temps, en vue d'assurer la germination et une levée homogène.",
-    "temp_optimale": {
+    "culture": "Betterave à sucre",
+    "exigences_sol": "La culture nécessite une structure superficielle bien aéré et un sol profond, mais hétérogène.",
+    "besoins_hydriques": "La betterave monogerme nécessite des irrigations rapprochées pour assurer la germination et une levée homogène.",
+    "bioclimatologie_optimale": {
         "temp_min": 15,
-        "temp_max": 25
+        "temp_max": 30,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Maladie des feuilles",
+            "nom_maladie": "Rougeur et pourriture des feuilles",
             "causes": [
-                "Infection par les espèces Mycosportheae"
+                "Infection par des maladies fongiques"
             ],
             "traitements_specifiques": [
-                "Application de fumigant"
+                "Application de fungicides"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Effectuer une préparation du sol soigneuse avant le semis, en choisissant des outils adaptés à la culture monogermes.",
+            "description": "Mise en place de l'irrigation à partir du réseau pour assurer des irrigations rapprochées et une germination homogène.",
             "status": "en cours",
             "categorie": "urgent"
         }

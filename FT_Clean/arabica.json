@@ -2,9 +2,16 @@
     "culture": "Arabica",
     "exigences_sol": "argilo-limoneux bien drainants",
     "besoins_hydriques": "très groupés dans le temps",
-    "temp_optimale": {
+    "bioclimatologie_optimale": {
         "temp_min": 7.2,
-        "temp_max": -16
+        "temp_max": -16,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
@@ -61,6 +68,50 @@
             "traitements_specifiques": [
                 "Désherbage, application de fungicides"
             ]
+        },
+        {
+            "nom_maladie": "Mosaïque",
+            "causes": [
+                "Infection par le virus",
+                "Manque de lumière"
+            ],
+            "traitements_specifiques": [
+                "Fumigation",
+                "Traitement avec des herbicides"
+            ]
+        },
+        {
+            "nom_maladie": "Moustiques",
+            "causes": [
+                "Présence de minuscules quantités d'humidité",
+                "Présence de minuscules quantités de déchets"
+            ],
+            "traitements_specifiques": [
+                "Traitement avec des insecticides",
+                "Modification du drainage"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie des feuilles",
+            "causes": [
+                "Manque d'eau",
+                "Temps froid"
+            ],
+            "traitements_specifiques": [
+                "Irrigation régulière",
+                "Paillage"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie des feuilles vertes",
+            "causes": [
+                "Manque de lumière",
+                "Trop de humidité"
+            ],
+            "traitements_specifiques": [
+                "Réduction de l'apport en nitrate",
+                "Amélioration de l'air circulation"
+            ]
         }
     ],
     "recommandations": [
@@ -116,6 +167,31 @@
         },
         {
             "description": "Il est essentiel de surveiller régulièrement les niveaux d'humidité du sol pour éviter les problèmes de dessication ou d'écoulement excessif.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Fertiliser régulièrement pour maintenir la teneur en nutriments moyenne.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Ajuster l'irrigation pour éviter les excesses d'eau.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Irriger les plantes régulièrement, mais pas trop",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "L'application régulière d'un engrais azoté",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "L'irrigation doit être effectuée à intervalles réguliers pour éviter les excès d'eau",
             "status": "en cours",
             "categorie": "urgent"
         }

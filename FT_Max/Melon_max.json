@@ -1,0 +1,6 @@
+{
+    "culture": "Culture du Maroc",
+    "ndvi_optimal_max": 0.45,
+    "ndwi_optimal_max": 0.35,
+    "evi_optimal_max": 0.65
+}

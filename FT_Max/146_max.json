@@ -1,0 +1,6 @@
+{
+    "culture": "Rose",
+    "ndvi_optimal_max": "20",
+    "ndwi_optimal_max": "10",
+    "evi_optimal_max": "30"
+}

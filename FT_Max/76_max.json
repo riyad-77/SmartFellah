@@ -1,0 +1,6 @@
+{
+    "culture": "Semis Direct",
+    "ndvi_optimal_max": 0.85,
+    "ndwi_optimal_max": 0.78,
+    "evi_optimal_max": 0.72
+}

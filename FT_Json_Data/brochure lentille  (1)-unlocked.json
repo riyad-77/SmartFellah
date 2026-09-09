@@ -1,27 +1,39 @@
 {
     "culture": "Ziza",
-    "exigences_sol": "Sol avec pH neutre à légèrement acide (5,5-6,5)",
-    "besoins_hydriques": "Aucun besoin de précipitation extrême mais un sol bien drainé est recommandé.",
-    "temp_optimale": {
-        "temp_min": 10,
-        "temp_max": 25
+    "exigences_sol": "Le sol doit avoir un pH compris entre 5,5 et 9, avec une teneur en potassium (K2O) comprise entre 150 et 300 kg/ha.",
+    "besoins_hydriques": "Les légumineuses ont besoin d'une irrigation régulière, avec une teneur en eau moyenne de 20 à 40 cm au début de la culture, et 10 à 20 cm à la fin de la culture.",
+    "bioclimatologie_optimale": {
+        "temp_min": 7,
+        "temp_max": 12,
+        "hum_min": 40,
+        "hum_max": 60
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.3,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.4
     },
     "maladies_details": [
         {
-            "nom_maladie": "Ver Blanc",
+            "nom_maladie": "Maladie de la chenopodie",
             "causes": [
-                "Insectes comme le ver blanc"
+                "Ascochyta fabae",
+                "Botrytis cinerea",
+                "Uromyces fabae",
+                "Fusarium sp"
             ],
             "traitements_specifiques": [
-                "Utiliser des pesticides appropriés"
+                "Uromyces fabae",
+                "Fusarium sp",
+                "Ascochyta fabae"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Agréoler à la bonne épaisseur pour favoriser l'absorption de nutriments",
+            "description": "Mécanisation de la culture des légumineuses alimentaires au Maroc",
             "status": "en cours",
-            "categorie": "urgente"
+            "categorie": "urgent"
         }
     ]
 }

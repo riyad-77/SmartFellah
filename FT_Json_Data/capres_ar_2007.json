@@ -1,32 +1,50 @@
 {
-    "culture": "Capparis",
-    "exigences_sol": " nécessite un sol bien drainé, avec une exposition au soleil direct, mais protégée de vents violents ",
-    "besoins_hydriques": " Il a besoin d'une irrigation régulière, mais pas trop élevée, car il peut être sensibilité aux excesses d'eau",
-    "temp_optimale": {
-        "temp_min": 47.0,
-        "temp_max": 80.0
+    "culture": "Arabe",
+    "exigences_sol": "Le sol doit avoir un pH neutre, entre 6,0 et 7,0, et une teneur en nutriments moyenne.",
+    "besoins_hydriques": "La culture nécessite une irrigation régulière, mais pas excessive. La teneur en humus doit être de 1,5 à 2,5 cm.",
+    "bioclimatologie_optimale": {
+        "temp_min": 15,
+        "temp_max": 25,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Vertu de l'humidité",
+            "nom_maladie": "Mosaïque",
             "causes": [
-                "Trop d'eau",
-                "Trop peu d'eau"
+                "Infection par le virus",
+                "Manque de lumière"
             ],
             "traitements_specifiques": [
-                "Réduire l'irrigation",
-                "Augmenter la drainage"
+                "Fumigation",
+                "Traitement avec des herbicides"
+            ]
+        },
+        {
+            "nom_maladie": "Moustiques",
+            "causes": [
+                "Présence de minuscules quantités d'humidité",
+                "Présence de minuscules quantités de déchets"
+            ],
+            "traitements_specifiques": [
+                "Traitement avec des insecticides",
+                "Modification du drainage"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Fertiliser les racines régulièrement pour maintenir une bonne santé",
+            "description": "Fertiliser régulièrement pour maintenir la teneur en nutriments moyenne.",
             "status": "en cours",
             "categorie": "urgent"
         },
         {
-            "description": "Payer attention à la quantité d'eau qu'on lui donne, car il peut être sensibilité aux excesses d'eau",
+            "description": "Ajuster l'irrigation pour éviter les excesses d'eau.",
             "status": "en cours",
             "categorie": "urgent"
         }

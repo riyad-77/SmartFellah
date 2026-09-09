@@ -1,31 +1,28 @@
 {
-    "culture": "maïs",
-    "exigences_sol": "Sol sableux, non calcaire, pH neutre à alcalin (6,8 à 8,4)",
-    "besoins_hydriques": "Avec un besoin annuel au régime de croisière (non compris celui des veaux et vêles) d'environ 22.000 t.",
-    "temp_optimale": {
-        "temp_min": "18,5 - 29 °C",
-        "temp_max": "27°C en septembre/octobre"
+    "culture": "Maïs ensilage",
+    "exigences_sol": "Les sables de Larache, c’est le risque que la semence soit déterrée par les vents qui détermine la profondeur de semis. D’après les observations réunies sur le sujet, ce risque est en général limité pour les semis de printemps, du fait d’un sol encore à l’état humide en mars/avril. Le risque est par contre à son maximum en plein été ou les semis interviennent sur du sol poussiéreux très sensible à l’érosion éolienne.",
+    "besoins_hydriques": "L'ensilage est payé au prix usuel du marché, qui se situe les années de faible demande entre 400 et 500 Dh/tonne. Le besoin annuel au régime de croisière (non compris celui des veaux et vêles) est d'environ 22 000 t.",
+    "bioclimatologie_optimale": {
+        "temp_min": "16°C",
+        "temp_max": "27°C",
+        "hum_min": null,
+        "hum_max": null
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Maladie du maïs",
-            "causes": [
-                "Aphides",
-                "Pierres filantes"
-            ],
-            "traitements_specifiques": [
-                "Insecticide, Fumigatifs"
-            ]
+            "nom_maladie": "Inconnue",
+            "causes": [],
+            "traitements_specifiques": []
         }
     ],
     "recommandations": [
         {
-            "description": "Semer en lignes jumelées avec un semoir de précision Gaspardo",
-            "status": "en cours",
-            "categorie": "urgent"
-        },
-        {
-            "description": "Fertiliser avant la germination et à la maturité des fruits",
+            "description": "Conduire l'ensilage en goutte à goutte dans les sables de Larache pour minimiser le risque de perte de grains",
             "status": "en cours",
             "categorie": "urgent"
         }

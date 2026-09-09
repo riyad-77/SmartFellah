@@ -1,23 +1,36 @@
 {
     "culture": "Inconnue",
-    "exigences_sol": null,
-    "besoins_hydriques": null,
-    "temp_optimale": {
-        "temp_min": null,
-        "temp_max": null
+    "exigences_sol": "Description des exigences solaires et climatiques pour la culture spécifique.",
+    "besoins_hydriques": "Description des besoins hydriques de la culture, y compris l'arrosage et l'irrigation.",
+    "bioclimatologie_optimale": {
+        "temp_min": "20",
+        "temp_max": "30",
+        "hum_min": "60",
+        "hum_max": "80"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
         {
-            "nom_maladie": "Inconnue",
-            "causes": [],
-            "traitements_specifiques": []
+            "nom_maladie": "Maladie X",
+            "causes": [
+                "Causes 1",
+                "Causes 2"
+            ],
+            "traitements_specifiques": [
+                "Traitements 1",
+                "Traitements 2"
+            ]
         }
     ],
     "recommandations": [
         {
-            "description": null,
-            "status": null,
-            "categorie": null
+            "description": "Description de la recommandation",
+            "status": "en cours",
+            "categorie": "urgent"
         }
     ]
 }

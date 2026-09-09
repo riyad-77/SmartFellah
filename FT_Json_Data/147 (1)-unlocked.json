@@ -1,28 +1,35 @@
 {
     "culture": "Tomate",
-    "exigences_sol": "Sol bien drainé avec un pH acide à neutre.",
-    "besoins_hydriques": "La tomate a besoin d'une irrigation régulière, en fonction de la température et du sol. Il est recommandé d'irriguer au moins 2 fois par semaine pendant la phase de croissance active.",
-    "temp_optimale": {
+    "exigences_sol": "Le sol doit être bien drainé et avoir une bonne structure pour absorber l'eau et les nutriments. Il est préférable que le sol soit légèrement acide avec un pH compris entre 6,0 et 6,5.",
+    "besoins_hydriques": "La tomate a besoin d'une irrigation régulière, mais pas trop abondante. Il est préférable de faire des irrigations délicates, en fonction de la période du cycle de croissance de la culture.",
+    "bioclimatologie_optimale": {
         "temp_min": "15°C",
-        "temp_max": "25°C"
+        "temp_max": "25°C",
+        "hum_min": "60%",
+        "hum_max": "80%"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
         {
             "nom_maladie": "Tomate Yellow Leaf Curl Virus (TYLCV)",
             "causes": [
-                "Bemisia tabaci",
-                "insecte Homoptère de la famille des Aleurodidae"
+                "Bemisia tabaci"
             ],
             "traitements_specifiques": [
-                "insecticides spécifiques contre Bemisia tabaci"
+                "Insecticide",
+                "Culture biologique"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Lutter contre le TYLCV en utilisant des méthodes de lutte intégrées telles que la suppression des insectes, l'utilisation d'insecticides spécifiques et les pratiques agricoles durables.",
-            "status": "en cours",
-            "categorie": "urgente"
+            "description": "Faire des mesures de prévention régulières pour empêcher la propagation du virus.",
+            "status": "En cours",
+            "categorie": "Urgent"
         }
     ]
 }

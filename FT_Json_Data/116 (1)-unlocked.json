@@ -1,39 +1,43 @@
 {
     "culture": "Cerisier",
-    "exigences_sol": "En froid hiver-ral pour lever sa dormance, profonds, légers et perméables",
-    "besoins_hydriques": "3000 à 5000 m3 pour une croissance et un développement réguliers",
-    "temp_optimale": {
-        "temp_min": "-1.7 °C à la pleine floraison",
-        "temp_max": "-1.1 °C au stade petit fruit"
+    "exigences_sol": "Le cerisier préfère des sols profonds, légers et perméables. Il est exigent en lumière et supporte la rigueur du froid en période de repos végétatif mais reste sensible aux gelées printanières à l'époque de floraison.",
+    "besoins_hydriques": "Le cerisier exige des quantités importantes en eau (3000 à 5000 m3) pour une croissance et un développement régulier.",
+    "bioclimatologie_optimale": {
+        "temp_min": "−1,7 °C",
+        "temp_max": "7,2 °C",
+        "hum_min": "50 %",
+        "hum_max": "80 %"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
         {
             "nom_maladie": "Dépérissement bactérien",
             "causes": [
-                "Bactérie responsable du fléau"
+                "Contamination bactérienne"
             ],
             "traitements_specifiques": [
-                "Application de traitements cupriques pendant la période de chute des feuilles"
+                "Application de traitements cupriques"
             ]
         },
         {
             "nom_maladie": "Capnode",
             "causes": [
-                "Larves nuisibles sur les racines"
+                "Infection des racines"
             ],
-            "traitements_specifiques": []
+            "traitements_specifiques": [
+                "Traitement spécifique"
+            ]
         }
     ],
     "recommandations": [
         {
-            "description": "Assurez-vous d'une lumière suffisante pour le développement optimal du cerisier.",
-            "status": "en cours",
-            "categorie": "urgent"
-        },
-        {
-            "description": "Examinez régulièrement les arbres pour détecter les signes de dépérissement bactérien ou de capnode.",
-            "status": "en cours",
-            "categorie": "urgence"
+            "description": "Surveiller les gelées printanières et les risques de gelée des fleurs et des jeunes fruits.",
+            "status": "En cours",
+            "categorie": "Urgent"
         }
     ]
 }

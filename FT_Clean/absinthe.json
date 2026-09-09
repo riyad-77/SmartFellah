@@ -1,53 +1,48 @@
 {
     "culture": "Absinthe",
-    "exigences_sol": "Plante xérophyte, pousse dans des régions à faible pluviosité, nécessite des endroits bien ensoleillés.",
-    "besoins_hydriques": "Nécessite une irrigation régulière, mais la quantité de eau nécessaire n'est pas déterminée.",
-    "temp_optimale": {
+    "exigences_sol": "L'absinthe est une plante xérophyte qui pousse dans des régions à faible pluviosité. Elle est possible dans des zones arides, sèches avec des températures allant d’un extrême à l’autre. Sa plantation exige des endroits bien ensoleillés. L'absinthe n'est pas exigente en sol; elle pousse un peu partout sur des terrains rocheux, secs et arides. Elle réussit également sur des sols argileux calcaires. Elle est même indiquée pour mettre en valeur les terrains pauvres et inaptes aux autres cultures.",
+    "besoins_hydriques": "Les besoins réels en eau de cette culture ne sont pas déterminés. Cependant, dans la région d’El Broj, Province de Settat, les producteurs d’absinthe font 2 à 3 irrigations par quinzaine en saison sèche, avec absence d’apport d’eau pendant l’hiver.",
+    "bioclimatologie_optimale": {
         "temp_min": "10°C",
-        "temp_max": "des températures allant d’un extrême à l’autre"
+        "temp_max": "25°C",
+        "hum_min": "20%",
+        "hum_max": "80%"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
         {
             "nom_maladie": "Rouille",
             "causes": [
-                "perte de turgescence",
-                "perte de chlorophylle"
+                "Des spores brunes"
             ],
             "traitements_specifiques": [
-                "irrigation régulière"
+                "Appliquer des produits chimiques"
+            ]
+        },
+        {
+            "nom_maladie": "Ravageurs",
+            "causes": [
+                "Pucerons jaunes"
+            ],
+            "traitements_specifiques": [
+                "Utiliser des insecticides"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Fertilisation régulière, apport de matière organique et soins culturaux adaptés.",
-            "status": null,
-            "categorie": "urgent"
-        },
-        {
-            "description": "Désherbage régulier pour supprimer les mauvaises herbes et promouvoir la croissance de l’absinthe.",
-            "status": null,
-            "categorie": "pas urgent"
-        },
-        {
-            "description": "Assurez-vous d'apporter suffisamment de fumier pour maintenir la richesse du sol en matière organique.",
+            "description": "Apporter un apport de matière organique sous forme de fumier en automne.",
             "status": "en cours",
             "categorie": "urgent"
         },
         {
-            "description": "Faites des irrigations régulières et assurez-vous que le sol est bien aéré pour éviter les problèmes de drainage.",
+            "description": "La récolte se fait normalement à partir de la deuxième année lors de la floraison en Juillet et Août.",
             "status": "en cours",
             "categorie": "urgent"
-        },
-        {
-            "description": "Entretien régulier, irrigation et fertilisation appropriée",
-            "status": null,
-            "categorie": null
-        },
-        {
-            "description": "Désherbage et binage réguliers pour prévenir la concurrence avec les mauvaises herbes",
-            "status": null,
-            "categorie": null
         }
     ]
 }

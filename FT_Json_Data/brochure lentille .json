@@ -1,50 +1,35 @@
 {
     "culture": "Légumineuses alimentaires",
-    "exigences_sol": "Le sol doit être bien drainé et avoir un pH entre 5,5 et 9.",
-    "Besoins_hydriques": "La légumineuse nécessite une irrigation régulière pour éviter la sécheresse.",
-    "temp_optimale": {
-        "temp_min": 25,
-        "temp_max": 40
+    "exigences_sol": "Les exigences solaires des légumineuses alimentaires sont variées et dépendent de la culture en question.",
+    "besoins_hydriques": "Les besoins hydriques des légumineuses alimentaires sont également variées et dépendent de la culture en question.",
+    "bioclimatologie_optimale": {
+        "temp_min": 10,
+        "temp_max": 25,
+        "hum_min": 40,
+        "hum_max": 60
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.3,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.4
     },
     "maladies_details": [
         {
-            "nom_maladie": "Ascochyta fabae",
-            "causes": [
-                "infection par Ascochytalus fabae"
-            ],
-            "traitements_specifiques": [
-                "application de Talstar"
-            ]
-        },
-        {
             "nom_maladie": "Botrytis cinerea",
             "causes": [
-                "infection par Botrytis cinerea"
+                "Ascochytalentis",
+                "Fusariumsp"
             ],
             "traitements_specifiques": [
-                "application de fungicides"
-            ]
-        },
-        {
-            "nom_maladie": "Fusarium sp.",
-            "causes": [
-                "infection par Fusarium sp."
-            ],
-            "traitements_specifiques": [
-                "application de fungicides"
+                "Talstar"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "L'application régulière d'un fumage en hiver et du désherbage à la fin de la saison est recommandé.",
+            "description": "La mécanisation de la culture des légumineuses alimentaires est recommandée.",
             "status": "en cours",
             "categorie": "urgent"
-        },
-        {
-            "description": "La mise en place d'un système d'irrigation automatique est suggérée pour éviter la sécheresse.",
-            "status": "en cours",
-            "categorie": "prioritaire"
         }
     ]
 }

@@ -1,27 +1,18 @@
 {
-    "culture": null,
-    "exigences_sol": "Inconnue",
-    "besoins_hydriques": "Inconnue",
-    "temp_optimale": {
+    "culture": "Inconnue",
+    "exigences_sol": null,
+    "besoins_hydriques": null,
+    "bioclimatologie_optimale": {
         "temp_min": null,
-        "temp_max": null
+        "temp_max": null,
+        "hum_min": null,
+        "hum_max": null
     },
-    "maladies_details": [
-        {
-            "nom_maladie": null,
-            "causes": [
-                "Inconnues"
-            ],
-            "traitements_specifiques": [
-                "Inconnus"
-            ]
-        }
-    ],
-    "recommandations": [
-        {
-            "description": "Inconnue",
-            "status": "Inconnue",
-            "Categorie": "Inconnue"
-        }
-    ]
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
+    },
+    "maladies_details": [],
+    "recommandations": []
 }

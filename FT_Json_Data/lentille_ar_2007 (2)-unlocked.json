@@ -1,45 +1,34 @@
 {
-    "culture": "Arachis hypogaea",
-    "exigences_sol": "sol avec un pH acide à 5,5-6,5",
-    "besoins_hydriques": "apport d'eau de 1 000 à 2 000 mm/an",
-    "temp_optimale": {
-        "temp_min": 15,
-        "temp_max": 35
+    "culture": "Inconnue",
+    "exigences_sol": "null",
+    "besoins_hydriques": "null",
+    "bioclimatologie_optimale": {
+        "temp_min": null,
+        "temp_max": null,
+        "hum_min": 20,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Mauvaise vache",
+            "nom_maladie": "null",
             "causes": [
-                "infections bactériennes",
-                "insectes"
+                "null"
             ],
             "traitements_specifiques": [
-                "traitement antibiotique",
-                "éradication des insectes"
-            ]
-        },
-        {
-            "nom_maladie": "Ratéfiération de la tige",
-            "causes": [
-                "manque d'eau",
-                "sol salin"
-            ],
-            "traitements_specifiques": [
-                "traitement hydrique",
-                "amendement du sol"
+                "null"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Apport d'engrais organique pour améliorer la fertilité du sol",
-            "status": "en cours",
-            "Categorie": "urgent"
-        },
-        {
-            "description": "Élimination des insectes nuisibles",
-            "status": "en cours",
-            "Categorie": "important"
+            "description": "null",
+            "status": "null",
+            "categorie": "null"
         }
     ]
 }

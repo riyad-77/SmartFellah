@@ -1,23 +1,36 @@
 {
     "culture": "Pêcher",
-    "exigences_sol": null,
-    "besoins_hydriques": "Le pêcher est classé comme une culture de faible besoin en eau.",
-    "temp_optimale": {
-        "temp_min": "-2°C",
-        "temp_max": "-5°C"
+    "exigences_sol": "Les besoins en froid, chez les variétés de pêcher, varient entre 250 et 900 UF. Des variétés à très faibles besoins en froid comme la Flordaking, Flordabell et des variétés originaires d'Afrique du Sud peuvent être cultivées dans des milieux à hiver doux et printemps précoce comme la région de Taroudant et Marrakech.",
+    "besoins_hydriques": "Le pêcher est une espèce qui nécessite une certaine quantité d'eau pour se développer. Cependant, les besoins en eau peuvent varier en fonction de la variété et de la région où il est cultivé.",
+    "bioclimatologie_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "25°C",
+        "hum_min": "60%",
+        "hum_max": "80%"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
         {
-            "nom_maladie": "Inconnue",
-            "causes": [],
-            "traitements_specifiques": []
+            "nom_maladie": "Maladie du pêcher",
+            "causes": [
+                "Infection par des virus",
+                "Insectes"
+            ],
+            "traitements_specifiques": [
+                "Application de produits phytoprotecteurs",
+                "Traitement avec des agents antimicrobiens"
+            ]
         }
     ],
     "recommandations": [
         {
-            "description": null,
-            "status": null,
-            "categorie": null
+            "description": "Il est recommandé de planter le pêcher dans un verger bien drainé et bien aéré pour éviter les problèmes de humidité.",
+            "status": "En cours",
+            "categorie": "Urgent"
         }
     ]
 }

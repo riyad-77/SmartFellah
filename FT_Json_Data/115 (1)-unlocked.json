@@ -1,29 +1,48 @@
 {
-    "culture": "Pomme",
-    "exigences_sol": null,
-    "besoins_hydriques": "La pomme a besoin de bienveillante climatique, en particulier un hiver froid pour la dormance et une température optimale entre 10°C et 25°C.",
-    "temp_optimale": {
-        "temp_min": "5°C",
-        "temp_max": "30°C"
+    "culture": "Pomme (Malus domestica)",
+    "exigences_sol": "La pomme nécessite un sol bien drainé et fertile, avec un pH neutre à légèrement acide (5,5-6,5).",
+    "besoins_hydriques": "La pomme a besoin d'une irrigation régulière, en particulier pendant la période de floraison et de fruitification. La teneur en eau du sol doit être de 600-800 mm an.",
+    "bioclimatologie_optimale": {
+        "temp_min": "0°C",
+        "temp_max": "25°C",
+        "hum_min": "60%",
+        "hum_max": "80%"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
         {
-            "nom_maladie": "Vert de pourpre (Erysiphe paeoniae-heracliotis)",
+            "nom_maladie": "Maladie de la pierre",
             "causes": [
-                "Humidité excessive",
-                "Vent chaud"
+                "Frost",
+                "Étincelles"
             ],
             "traitements_specifiques": [
-                "Décalcomanie",
-                "Fumigation"
+                "Appliques chimiques",
+                "Prétraitement"
+            ]
+        },
+        {
+            "nom_maladie": "Mouche de pomme",
+            "causes": [
+                "Feuilles déchirées",
+                "Travails",
+                "Climat"
+            ],
+            "traitements_specifiques": [
+                "Appliques chimiques",
+                "Prétraitement"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Le pommeire doit être traité régulièrement pour contrôler les maladies et les insectes",
-            "status": "en cours",
-            "categorie": "urgent"
+            "description": "L'irrigation doit être effectuée en fonction de la teneur en eau du sol, en particulier pendant la période de floraison et de fruitification.",
+            "status": "En cours",
+            "categorie": "Urgent"
         }
     ]
 }

@@ -1,0 +1,6 @@
+{
+    "culture": "Saffran",
+    "ndvi_optimal_max": "0,9",
+    "ndwi_optimal_max": "0,75",
+    "evi_optimal_max": "0,8"
+}

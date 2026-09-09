@@ -1,32 +1,32 @@
 {
-    "culture": "Arabique",
-    "exigences_sol": "Il faut avoir un sol bien drainé et bien aéré pour cette culture.",
-    "besoins_hydriques": "La culture nécessite une irrigation régulière, en particulier pendant la période de floraison.",
-    "temp_optimale": {
+    "culture": "Culture marocaine",
+    "exigences_sol": "Le sol doit avoir une température moyenne entre 15°C et 25°C, avec une humidité moyenne entre 50% et 70%.",
+    "besoins_hydriques": "La culture nécessite une irrigation régulière, avec une quantité d'eau de 500 à 1000 mm par an.",
+    "bioclimatologie_optimale": {
         "temp_min": 15,
-        "temp_max": 25
+        "temp_max": 25,
+        "hum_min": 50,
+        "hum_max": 70
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "La blaine",
+            "nom_maladie": "Maladie X",
             "causes": [
-                "Les températures extrêmes",
-                "Le manque de humidité"
+                "Causes de la maladie X"
             ],
             "traitements_specifiques": [
-                "L'irrigation régulière",
-                "Le contrôle des insectes"
+                "Traitements spécifiques de la maladie X"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Il faut régler l'eau régulièrement pour éviter les surchauffures.",
-            "status": "en cours",
-            "categorie": "urgent"
-        },
-        {
-            "description": "Il est important de contrôler les insectes pour empêcher la propagation des maladies.",
+            "description": "Recommandation 1",
             "status": "en cours",
             "categorie": "urgent"
         }

@@ -1,11 +1,36 @@
 {
     "culture": "Inconnue",
-    "exigences_sol": null,
-    "besoins_hydriques": null,
-    "temp_optimale": {
-        "temp_min": null,
-        "temp_max": null
+    "exigences_sol": "La terre est pauvre en nutriments, mais a un sol solaire abondant.",
+    "besoins_hydriques": "Les plantes ont besoin d'une irrigation régulière.",
+    "bioclimatologie_optimale": {
+        "temp_min": 10,
+        "temp_max": 30,
+        "hum_min": 60,
+        "hum_max": 80
     },
-    "maladies_details": [],
-    "recommandations": []
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Maladie des feuilles vertes",
+            "causes": [
+                "pauvreté en nutriments",
+                "manque d'humidité"
+            ],
+            "traitements_specifiques": [
+                "irrigation régulière",
+                "fertilisation"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Fertiliser les plantes régulièrement.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
 }

@@ -1,28 +1,19 @@
 {
-    "culture": "Riz",
-    "exigences_sol": "Sol aride, pH légèrement acide à neutre",
-    "besoins_hydriques": "Sécheresse modérée, 400-600 mm/an, avec un éventail de précipitation",
-    "temp_optimale": {
-        "temp_min": 15,
-        "temp_max": 25
+    "culture": "Inconnue",
+    "exigences_sol": "Climat tempéré, sol au sud, terroir aride",
+    "besoins_hydriques": "Le sol est sec et calcaire, nécessite une irrigation régulière",
+    "bioclimatologie_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "25°C",
+        "hum_min": "60%",
+        "hum_max": "80%"
     },
-    "maladies_details": [
-        {
-            "nom_maladie": "Riz noir",
-            "causes": [
-                "attaque des racines",
-                "fauts de drainage"
-            ],
-            "traitements_specifiques": [
-                " Traitement antimycotique, amélioration du drainage"
-            ]
-        }
-    ],
-    "recommandations": [
-        {
-            "description": "Arrosage régulier pour prévenir la sécheresse",
-            "status": "en cours",
-            "categorie": "urgente"
-        }
-    ]
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndvi_optimal_max": "1.0",
+        "ndvi_moyen": "0.7",
+        "ndwi_optimal_min": "0.2",
+        "ndwi_optimal_max": "0.8",
+        "ndwi_moyen": "0.5"
+    }
 }

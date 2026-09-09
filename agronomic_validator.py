@@ -4,7 +4,7 @@ import os
 
 # Connexion dynamique (prend en compte Docker ou le test local)
 
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://admin:secretpassword@db_bifolia:5432/bifolia_db")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://admin:secretpassword@localhost:5432/bifolia_db")
 engine = create_engine(DATABASE_URL)
 
 def validate_crop(field_id, culture_nom):

@@ -1,33 +1,34 @@
 {
-    "culture": "Blé dur et Blé tendre",
-    "exigences_sol": null,
-    "besoins_hydriques": "Irrigation nécessaire pour les mois de novembre et décembre",
-    "temp_optimale": {
-        "temp_min": 15,
-        "temp_max": 25
+    "culture": "Inconnue",
+    "exigences_sol": "Les variétés de blé utilisées actuellement dans la zone sont de type semi-précoces produites pour d'autres régions céréalières du pays n'ayant pas les mêmes caractéristiques pédo-climatiques que celles du Nord-Ouest du pays.",
+    "besoins_hydriques": "Les semis sont en général effec-tus assez précocement en début novembre, ce qui fait que les variétés arrivent à maturité au mois de mai qui est généralement pluvieux.",
+    "bioclimatologie_optimale": {
+        "temp_min": "15",
+        "temp_max": "25",
+        "hum_min": "60",
+        "hum_max": "80"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
         {
-            "nom_maladie": "Maladie cryptogamique",
+            "nom_maladie": "Mauvaises herbes",
             "causes": [
-                "Pluies excessive",
-                "Proximité du littoral atlantique"
+                "Infestation par mauvaises herbes"
             ],
             "traitements_specifiques": [
-                "Traitement antifongique"
+                "Désherbage avec Printazol 75"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Semer le blé tendre en novembre, après avoir vérifié les conditions climatiques favorables",
-            "status": null,
-            "categorie": null
-        },
-        {
-            "description": "Applier un traitement antifongique une fois par an pour prévenir la maladie cryptogamique",
-            "status": null,
-            "categorie": null
+            "description": "Identification de variétés de blé dur et de blé tendre adaptées aux conditions du Nord-Ouest marocain",
+            "status": "en cours",
+            "categorie": "urgent"
         }
     ]
 }

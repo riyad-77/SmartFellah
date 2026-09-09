@@ -1,23 +1,36 @@
 {
-    "culture": "",
-    "exigences_sol": null,
-    "besoins_hydriques": null,
-    "temp_optimale": {
-        "temp_min": null,
-        "temp_max": null
+    "culture": "Amygdalus communis",
+    "exigences_sol": "Le sol doit avoir une température moyenne entre 15°C et 25°C, avec une humidité ambiante comprise entre 60% et 80%.",
+    "besoins_hydriques": "L'arbre nécessite une irrigation régulière, mais pas excessive. Il est préférable d'irriguer les racines régulièrement pendant les périodes de sècher.",
+    "bioclimatologie_optimale": {
+        "temp_min": 10,
+        "temp_max": 30,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": null,
-            "causes": [],
-            "traitements_specifiques": []
+            "nom_maladie": "Pestes",
+            "causes": [
+                "Insectes",
+                "Maladies fongiques"
+            ],
+            "traitements_specifiques": [
+                "Insecticides",
+                "Fongicides"
+            ]
         }
     ],
     "recommandations": [
         {
-            "description": null,
-            "status": null,
-            "categorie": ""
+            "description": "Fertiliser régulièrement pour maintenir une santé optimale.",
+            "status": "en cours",
+            "categorie": "urgent"
         }
     ]
 }

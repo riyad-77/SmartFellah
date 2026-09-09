@@ -1,27 +1,35 @@
 {
     "culture": "Tomate",
-    "exigences_sol": null,
-    "besoins_hydriques": null,
-    "temp_optimale": {
+    "exigences_sol": "La tomate nécessite un sol bien aéré et drainant, avec une teneur en matière organique de 2-3% pour obtenir de bons rendements. Le pH optimal du sol est de 5,5-6,8.",
+    "besoins_hydriques": "La tomate nécessite une irrigation continue, avec une demande en eau de 25% des besoins globaux durant la phase végétative, 50% durant le pic des cueillettes et 25% à la dernière phase de la culture.",
+    "bioclimatologie_optimale": {
         "temp_min": 12,
-        "temp_max": 25
+        "temp_max": 25,
+        "hum_min": 20,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Inconnue",
+            "nom_maladie": "Nématodes",
             "causes": [
-                "Inconnues"
+                "Présence de nématodes dans le sol"
             ],
             "traitements_specifiques": [
-                "Inconnus"
+                "Utilisation de 80 à 100 g de semence/ha de terrain",
+                "Pollinisation nécessite l'installation de 4 ruches de bourdons/ha en période florale et durant les cueillettes"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": null,
-            "status": "en cours",
-            "categorie": "urgent"
+            "description": "La surveillance particulière des rongeurs (souris et rats) doit être effectuée du semis à la levée.",
+            "status": "En cours",
+            "categorie": "Urgent"
         }
     ]
 }

@@ -1,0 +1,6 @@
+{
+    "culture": "abricot (Prunus armeniaca)",
+    "ndvi_optimal_max": 80,
+    "ndwi_optimal_max": 85,
+    "evi_optimal_max": 85
+}

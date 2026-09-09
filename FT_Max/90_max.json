@@ -1,0 +1,6 @@
+{
+    "culture": "Viticulture marocaine",
+    "ndvi_optimal_max": 0.74,
+    "ndwi_optimal_max": 0.65,
+    "evi_optimal_max": 0.58
+}

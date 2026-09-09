@@ -1,42 +1,35 @@
 {
-    "culture": "Blé",
-    "exigences_sol": null,
-    "besoins_hydriques": null,
-    "temp_optimale": {
-        "temp_min": "15˚C",
-        "temp_max": "25˚C"
+    "culture": "Rouille brune du blé",
+    "exigences_sol": "La maladie du blé est causée par des champignons pathogènes qui se conservent dans la semence, le sol et les débris. Les conditions favorables à l'infection correspondent à un temps doux (16-22˚C).",
+    "besoins_hydriques": "Les conditions favorables à l'infection correspondent à une humidité du sol faible (10-15%) et des températures de 10 à 20˚C.",
+    "bioclimatologie_optimale": {
+        "temp_min": "10",
+        "temp_max": "20",
+        "hum_min": "20",
+        "hum_max": "80"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
         {
-            "nom_maladie": "Charbon nu",
+            "nom_maladie": "Rouille brune du blé",
             "causes": [
-                "semence"
+                " champignon pathogène",
+                " conditions climatiques favorables"
             ],
             "traitements_specifiques": [
-                null
-            ]
-        },
-        {
-            "nom_maladie": "Charbon foliaire",
-            "causes": [
-                "sol",
-                "semence"
-            ],
-            "traitements_specifiques": [
-                null
+                "lavage, application de fumigants"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Effectuer des tournages réguliers pour réduire la surface de contamination",
-            "status": null,
-            "categorie": null
-        },
-        {
-            "description": "Utiliser des semences traitées et faire des programmes de lutte préventive",
-            "status": null,
-            "categorie": null
+            "description": "Effectuer des analyses de laboratoire pour détecter les agents pathogènes",
+            "status": "en cours",
+            "categorie": "urgent"
         }
     ]
 }

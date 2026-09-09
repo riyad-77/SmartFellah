@@ -1,0 +1,6 @@
+{
+    "culture": "Amandier",
+    "ndvi_optimal_max": 0.65,
+    "ndwi_optimal_max": 0.85,
+    "evi_optimal_max": 0.95
+}

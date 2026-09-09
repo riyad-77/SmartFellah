@@ -1,26 +1,30 @@
 {
     "culture": "Tomate",
-    "exigences_sol": null,
-    "besoins_hydriques": "La culture est très sensible à la sécheresse, il est donc recommandé d'apporter des apports d'eau réguliers. La teneur en matière organique du sol doit être assez élevée (2-3 %) pour obtenir de bons rendements.",
-    "temp_optimale": {
-        "temp_min": "12°C",
-        "temp_max": "25°C"
+    "exigences_sol": "Le sol doit être bien aéré et drainant. L&#39;asphyxie racinaire, même temporaire, est préjudiciable à la culture. La teneur en matière organique du sol doit être assez élevée (2-3 %) pour obtenir de bons rendements. Le pH optimal du sol est de 5,5- 6,8.",
+    "besoins_hydriques": "Les besoins en eau de la culture peuvent être couverts par des apports de 25 % des besoins globaux durant la phase végétative, 50 % durant le pic des cueillettes et 25 % à la dernière phase de la culture.",
+    "bioclimatologie_optimale": {
+        "temp_min": "12˚C",
+        "temp_max": "25˚C",
+        "hum_min": "15-18˚C",
+        "hum_max": "15˚C"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
             "nom_maladie": "Inconnue",
-            "causes": [
-                "Fongicide",
-                "Insecticide"
-            ],
+            "causes": [],
             "traitements_specifiques": []
         }
     ],
     "recommandations": [
         {
-            "description": "Avec un équipement supplémentaire (pompe doseuse et bacs), il est facile d'introduire la fertigation dans l'exploitation.",
-            "status": null,
-            "categorie": "Inconnue"
+            "description": "Utiliser le goutte-à-goutte pour l&#39;irrigation, éviter les à-coups d&#39;apports d&#39;eau et minimiser les pertes de fertilisant par lessivage.",
+            "status": "en cours",
+            "categorie": "urgent"
         }
     ]
 }

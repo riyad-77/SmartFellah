@@ -1,21 +1,36 @@
 {
-    "culture": "LA PATATE DOUCE",
-    "exigences_sol": null,
-    "besoins_hydriques": "Il faut irriguer jusqu&#39;à pleine couverture du sol par la végétation.",
-    "temp_optimale": {
-        "temp_min": "4-5^°C",
-        "temp_max": "95 % HR"
+    "culture": "Inconnue",
+    "exigences_sol": "La plante est de saison chaude. Elle nécessite des jours courts pour sa tubérisation (formation du rhizome). Elle a les mêmes exigences écologiques que la culture des courges.",
+    "besoins_hydriques": "Il faut irriguer jusqu'à pleine couverture du sol par la végétation.",
+    "bioclimatologie_optimale": {
+        "temp_min": "10",
+        "temp_max": "27",
+        "hum_min": "80",
+        "hum_max": "100"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
         {
-            "nom_maladie": null,
-            "causes": null,
-            "traitements_specifiques": null
+            "nom_maladie": "thrips, vers blancs, la noctuelle et la rouille",
+            "causes": [
+                "thrips",
+                "vers blancs",
+                "noctuelle",
+                "rouille"
+            ],
+            "traitements_specifiques": [
+                "choix d'un matériel végétal sain",
+                "traitements spécifiques"
+            ]
         }
     ],
     "recommandations": [
         {
-            "description": "Il faut choisir un matériel végétal sain, indemne de virus.",
+            "description": "Choisir un matériel végétal sain, indemne de virus.",
             "status": "en cours",
             "categorie": "urgent"
         }

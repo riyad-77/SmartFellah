@@ -1,0 +1,6 @@
+{
+    "culture": "Pomme de terre",
+    "ndvi_optimal_max": 0.65,
+    "ndwi_optimal_max": 0.55,
+    "evi_optimal_max": 0.75
+}

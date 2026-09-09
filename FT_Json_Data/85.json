@@ -1,33 +1,36 @@
 {
     "culture": "Tournesol",
-    "exigences_sol": "La culture du tournesol nécessite un sol bien drainé et fertile, avec une pH entre 6,5 et 7,5.",
-    "besoins_hydriques": "Le tournesol a besoin d'une irrigation régulière, en particulier pendant la période de germination et de floraison.",
-    "temp_optimale": {
-        "temp_min": "15°C",
-        "temp_max": "25°C"
+    "exigences_sol": "La culture du tournesol nécessite un sol bien drainé et avec une bonne structure pour éviter les problèmes d'écoulement de l'eau. La pH de sol idéal est compris entre 6 et 7.",
+    "besoins_hydriques": "Le tournesol nécessite une irrigation régulière pour être produite en quantités importantes. Il est recommandé d'irriguer les plantes au moins deux fois par jour pendant la période de floraison.",
+    "bioclimatologie_optimale": {
+        "temp_min": 15,
+        "temp_max": 30,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Moustiques rouges",
+            "nom_maladie": "Mouche blanche",
             "causes": [
-                "Présence de moustiques rouges",
-                "Contamination des graines"
+                "Attaque de moineaux",
+                "Bactéries"
             ],
             "traitements_specifiques": [
-                "Traitement des graines avec des insecticides"
+                "Traitement par insecticide",
+                "Traitement par antibiotiques"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "L'irrigation régulière est essentielle pour le tournesol.",
-            "status": "en cours",
-            "categorie": "urgent"
-        },
-        {
-            "description": "Le contrôle des moustiques rouges est crucial pour prévenir les maladies.",
-            "status": "en cours",
-            "categorie": "prioritaire"
+            "description": "Améliorer la qualité de l'eau de irrigation et réduire la consommation d'eau pour minimiser les impacts sur l'environnement.",
+            "status": "En cours",
+            "categorie": "Urgent"
         }
     ]
 }

@@ -1,30 +1,41 @@
 {
     "culture": "Blé",
-    "exigences_sol": null,
-    "besoins_hydriques": null,
-    "temp_optimale": {
+    "exigences_sol": "Le blé peut être attaqué par de nombreuses maladies à différents stades de son développement.",
+    "besoins_hydriques": "L'importance du charbon foliaire se dévelope plus particulièrement sur le blé dur.",
+    "bioclimatologie_optimale": {
         "temp_min": 16,
-        "temp_max": 22
+        "temp_max": 22,
+        "hum_min": 20,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
             "nom_maladie": "Charbon nu",
             "causes": [
-                "Ustilago tritici"
+                "Agent causal: Ustilago tritici"
             ],
-            "traitements_specifiques": null
+            "traitements_specifiques": [
+                "Recourir aux techniques histologiques et microscopiques appropriées"
+            ]
         },
         {
             "nom_maladie": "Charbon foliaire",
             "causes": [
-                "Urocystis agropyri"
+                "Agent causal: Urocystis agropyri"
             ],
-            "traitements_specifiques": null
+            "traitements_specifiques": [
+                "Maintenir un taux d'humidité du sol faible (10-15%) et des températures de 10 à 20˚C"
+            ]
         }
     ],
     "recommandations": [
         {
-            "description": "Vérifier régulièrement les graines avant de les semer pour détecter les champignons pathogènes.",
+            "description": "Connaître les symptômes spécifiques des maladies cryptogamiques du blé",
             "status": "en cours",
             "categorie": "urgent"
         }

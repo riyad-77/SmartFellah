@@ -1,29 +1,35 @@
 {
-    "culture": "céréaliculture",
-    "exigences_sol": null,
-    "besoins_hydriques": "la céréaliculture a besoin d'une irrigation régulière pour être productive",
-    "temp_optimale": {
-        "temp_min": "-6°C",
-        "temp_max": "40°C"
+    "culture": "Blé tendre",
+    "exigences_sol": "Le sol est un élément crucial pour la production de blé tendre. Il est recommandé de choisir des sols bien drainés et riches en matières organiques.",
+    "besoins_hydriques": "La surface de la ferme est de 3 200 ha, dont 415 ha réservés à l'olivier intensif et à l'arboriculture fruitière. La ferme est en partie irriguée par pivots (254 ha) et par goutte à goutte (395 ha). La demande en eau est de 5 000 m³/jour.",
+    "bioclimatologie_optimale": {
+        "temp_min": 10,
+        "temp_max": 25,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Maladie du blé",
+            "nom_maladie": "Rougeole du blé",
             "causes": [
-                "sécheresse",
-                "chergui"
+                "Température extrême",
+                "Manque d'humidité"
             ],
             "traitements_specifiques": [
-                "irrigation accrue",
-                "fumigation"
+                "Irrigation, Fumigation, Traitement chimique"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "La ferme Louata doit mettre en place un système d'irrigation plus efficace pour atténuer les effets de la sécheresse.",
-            "status": "en cours",
-            "categorie": "urgent"
+            "description": "La réduction de la pression de l'eau est recommandée pour réduire les pertes d'eau et améliorer la productivité.",
+            "status": "En cours",
+            "categorie": "Urgent"
         }
     ]
 }

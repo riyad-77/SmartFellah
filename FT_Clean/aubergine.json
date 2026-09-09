@@ -2,9 +2,16 @@
     "culture": "Aubergine",
     "exigences_sol": "",
     "besoins_hydriques": "Avoir une sol avec un pH entre 6 et 7 pour favoriser la croissance.",
-    "temp_optimale": {
+    "bioclimatologie_optimale": {
         "temp_min": 18,
-        "temp_max": 28
+        "temp_max": 28,
+        "hum_min": null,
+        "hum_max": null
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": null,
+        "ndwi_optimal_min": null,
+        "evi_optimal_min": null
     },
     "maladies_details": [
         {

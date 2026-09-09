@@ -1,10 +1,17 @@
 {
-    "culture": "abricot (Prunus armeniaca)",
-    "exigences_sol": "argilo-limoneux bien drainants",
-    "besoins_hydriques": "froid hivernal, moyens à forts hydroréflexions et éviter les printemps pluvieux et humides",
-    "temp_optimale": {
-        "temp_min": "-16˚C à -24˚C (dormants)",
-        "temp_max": "700 à 1000 heures de température froide en dessous de 7,2˚ C"
+    "culture": "Prunus armeniaca",
+    "exigences_sol": "sol profond argilo-limoneux bien drainant",
+    "besoins_hydriques": "dose de fumure N: 100-150 U/ha, P205: 80-100 U/ha, K20: 150 U/ha",
+    "bioclimatologie_optimale": {
+        "temp_min": 7.2,
+        "temp_max": 10,
+        "hum_min": 80,
+        "hum_max": 20
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
@@ -12,12 +19,23 @@
             "causes": [
                 "mycoplasmes"
             ],
-            "traitements_specifiques": []
+            "traitements_specifiques": [
+                "traitement antibiotique"
+            ]
+        },
+        {
+            "nom_maladie": "Stem pitting",
+            "causes": [
+                "virus"
+            ],
+            "traitements_specifiques": [
+                "traitement vétérinaire"
+            ]
         }
     ],
     "recommandations": [
         {
-            "description": "Renouveler le bois fruitier sur 3 et 4 ans, maintenir la coursonne assez courte pour faire sortir les bouquets de Mai à proximité de la charpentière.",
+            "description": "Appliquer régulièrement des doses de fumure potassique",
             "status": "en cours",
             "categorie": "urgent"
         }

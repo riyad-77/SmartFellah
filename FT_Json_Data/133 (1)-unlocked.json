@@ -1,10 +1,17 @@
 {
-    "culture": "quinoa",
-    "exigences_sol": null,
-    "besoins_hydriques": null,
-    "temp_optimale": {
-        "temp_min": "-5ºC",
-        "temp_max": "30ºC"
+    "culture": "Quinoa",
+    "exigences_sol": "La plante pousse jusqu'à une hauteur moyenne de 1 à 1,5 m. Les couleurs de la plante sont très variées, du rose au rouge, en passant par le jaune et le noir. La plante nécessite de 90 à 120 jours de culture avant d'arriver à maturité. Les grains de quinoa sont généralement beiges ou roses mais certaines variétés produisent des grains noirs, oranges ou blancs. La plante a besoin de journées courtes et de températures fraîches pour pousser, d'où sa culture principalement en altitude. Des températures supérieures à 30 degrés rendent la plante stérile, alors qu'elle résiste bien au gel léger (pas moins de -5ºC). De même, la plante résiste bien à la sécheresse ou à des précipitations faibles (< 400 mm par an).",
+    "besoins_hydriques": "La culture du quinoa a beaucoup de similarités avec la culture de sésame, particulièrement au semis, à la récolte et dans le besoin d'eau. La culture une fois établie peut tolérer le manque d'eau. C'est une culture assez rustique, mais un apport en engrais de fond et de couverture améliore le rendement.",
+    "bioclimatologie_optimale": {
+        "temp_min": 0,
+        "temp_max": 30,
+        "hum_min": 20,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
@@ -15,7 +22,7 @@
     ],
     "recommandations": [
         {
-            "description": null,
+            "description": "La culture de Quinoa nécessite de 90 à 120 jours de culture avant d'arriver à maturité.",
             "status": "en cours",
             "categorie": "urgent"
         }

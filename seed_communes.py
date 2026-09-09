@@ -1,8 +1,9 @@
 import pandas as pd
-from sqlalchemy import create_engine
+import rasterio
+from sqlalchemy import create_engine, text
+import os
 
-# 1. Configuration de la connexion à ta base PostgreSQL (port 5432)
-# Adapte le nom d'utilisateur, mot de passe et nom de base si nécessaire
+# 1. Configuration de la connexion à la base PostgreSQL
 DB_USER = "admin"
 DB_PASSWORD = "secretpassword"
 DB_HOST = "localhost"
@@ -12,7 +13,38 @@ DB_NAME = "bifolia_db"
 DATABASE_URL = f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
 engine = create_engine(DATABASE_URL)
 
-# 2. Dataset de référence complet des communes et de leurs coordonnées géographiques
+# 2. La légende officielle WRB issue de SIG-Maroc
+wrb_legend = {
+    2: "Acrisols", 4: "Andosols", 5: "Arenosols", 6: "Cambisols", 
+    7: "Chernozems", 10: "Ferralsols", 11: "Fluvisols", 12: "Gleysols", 
+    13: "Gypsisols", 15: "Histosols", 16: "Kastanozems", 18: "Leptosols", 
+    20: "Phaeozems", 24: "Regosols", 25: "Solonchaks", 26: "Solonetz", 
+    29: "Vertisols"
+}
+
+# 3. Fonction d'extraction spatiale
+def extraire_type_sol(lat, lon, raster_path="classification_sols.tif"):
+    """
+    Ouvre le fichier .tif, convertit les coordonnées GPS en pixels, 
+    et retourne le type de sol scientifique.
+    """
+    if not os.path.exists(raster_path):
+        print(f"⚠️ Fichier {raster_path} introuvable.")
+        return "inconnu"
+        
+    try:
+        with rasterio.open(raster_path) as dataset:
+            # rasterio.index prend (longitude, latitude)
+            row, col = dataset.index(lon, lat)
+            pixel_value = dataset.read(1)[row, col]
+            
+            # Retourne le nom du sol, ou 'inconnu' si la valeur n'est pas dans la légende
+            return wrb_legend.get(int(pixel_value), "inconnu")
+    except Exception as e:
+        print(f"Erreur d'extraction pour Lat:{lat}/Lon:{lon} -> {e}")
+        return "inconnu"
+
+# 4. Dataset de référence des communes
 data_communes = [
     # Région Rabat-Salé-Kénitra
     {"nom_commune": "Kénitra", "cercle": "Kénitra", "province": "Kénitra", "region": "Rabat-Salé-Kénitra", "latitude": 34.2610, "longitude": -6.5802},
@@ -78,12 +110,40 @@ data_communes = [
     {"nom_commune": "Taourirt", "cercle": "Taourirt", "province": "Taourirt", "region": "Oriental", "latitude": 34.4103, "longitude": -2.8906},
 ]
 
-# 3. Conversion en DataFrame Pandas
-df = pd.DataFrame(data_communes)
+# 5. Application de l'extraction spatiale automatisée
+print("🌍 Extraction des types de sols depuis le fichier satellite...")
+for commune in data_communes:
+    sol = extraire_type_sol(commune["latitude"], commune["longitude"])
+    commune["type_de_sol"] = sol
+    print(f"   -> {commune['nom_commune']} : {sol}")
 
-print(f"Chargement de {len(df)} communes dans la base de données PostgreSQL...")
+# 6. Mise à jour de la base de données
+print(f"\nMise à jour de {len(data_communes)} communes dans PostgreSQL...")
 
-# 4. Insertion dans la table 'communes_maroc' (remplace la table si elle existe déjà)
-df.to_sql('communes_maroc', engine, if_exists='replace', index=False)
+# --- BLOC 1 : Gestion de la structure de la table (Transaction isolée) ---
+try:
+    with engine.begin() as conn_ddl:
+        conn_ddl.execute(text("ALTER TABLE communes_maroc ADD COLUMN type_de_sol VARCHAR(150);"))
+        print("Colonne 'type_de_sol' ajoutée à la structure.")
+except Exception:
+    # L'erreur (colonne existante) annule cette transaction uniquement, sans bloquer la suite.
+    pass 
 
-print("Succès ! La table 'communes_maroc' a été remplie avec succès.")
+# --- BLOC 2 : Mise à jour des données (Nouvelle transaction propre) ---
+with engine.begin() as conn_dml:
+    for data in data_communes:
+        query = text("""
+            UPDATE communes_maroc 
+            SET type_de_sol = :sol,
+                latitude = :lat,
+                longitude = :lon
+            WHERE LOWER(nom_commune) = LOWER(:nom)
+        """)
+        conn_dml.execute(query, {
+            "sol": data["type_de_sol"], 
+            "lat": data["latitude"],
+            "lon": data["longitude"],
+            "nom": data["nom_commune"]
+        })
+
+print("✅ Succès ! La table 'communes_maroc' est synchronisée avec la carte spatiale.")

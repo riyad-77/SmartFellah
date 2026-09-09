@@ -1,10 +1,17 @@
 {
     "culture": "Amandier",
-    "exigences_sol": "Sol profond, fertile, bien drainant, léger et humifère",
-    "besoins_hydriques": "800 à 850 mm/an",
-    "temp_optimale": {
-        "temp_min": "-10˚C",
-        "temp_max": "30˚C"
+    "exigences_sol": "L'amandier nécessite des sols profonds, fertiles, bien drainant, légers et humifères.",
+    "besoins_hydriques": "Les besoins en eau de l'amandier sont de 800 à 850 mm/an.",
+    "bioclimatologie_optimale": {
+        "temp_min": "12",
+        "temp_max": "25",
+        "hum_min": "60",
+        "hum_max": "80"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
@@ -13,13 +20,13 @@
                 "virus"
             ],
             "traitements_specifiques": [
-                "traitement spécifique"
+                "inoculation virusologique"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Fumure avec le mélange N-P-K approprié, irrigation localisée au goutte à goutte",
+            "description": "La plantation d'amandiers devrait être effectuée en zones avec un climat froid et sec.",
             "status": "en cours",
             "categorie": "urgent"
         }

@@ -1,23 +1,34 @@
 {
-    "culture": "Inconnue",
-    "exigences_sol": null,
-    "besoins_hydriques": null,
-    "temp_optimale": {
-        "temp_min": null,
-        "temp_max": null
+    "culture": "Culture du Semis Direct",
+    "exigences_sol": "Le sol doit être couvert en permanence par une biomasse sèche (paillis ou mulch) de résidus végétaux, retrouve son état naturel, sa vie biologique s'anime, sa qualité se redresse, sa fertilité s'enrichit et il est à l'abri des différentes formes de dégradation.",
+    "besoins_hydriques": "Les humides doivent être élevés pour permettre des semis indépendamment des pluies et des difficultés d'accès au terrain.",
+    "bioclimatologie_optimale": {
+        "temp_min": "10°C",
+        "temp_max": "30°C",
+        "hum_min": "60%",
+        "hum_max": "80%"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.3",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.4"
     },
     "maladies_details": [
         {
-            "nom_maladie": "Inconnue",
-            "causes": [],
-            "traitements_specifiques": []
+            "nom_maladie": "Maladie X",
+            "causes": [
+                "causes de la maladie X"
+            ],
+            "traitements_specifiques": [
+                "traitements spécifiques pour la maladie X"
+            ]
         }
     ],
     "recommandations": [
         {
-            "description": null,
-            "status": "null",
-            "categorie": "null"
+            "description": "La mise en place du semis direct est une priorité pour l'amélioration de la productivité et de la qualité des sols.",
+            "status": "en cours",
+            "categorie": "urgent"
         }
     ]
 }

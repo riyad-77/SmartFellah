@@ -1,29 +1,37 @@
 {
-    "culture": "Pois",
-    "exigences_sol": "Le sol devrait être bien exposé pour cette culture.",
-    "besoins_hydriques": "La culture doit être arrosée régulièrement.",
-    "temp_optimale": {
-        "temp_min": 15,
-        "temp_max": 25
+    "culture": "Inconnue",
+    "exigences_sol": "Conditions climatiques et sols favorables pour la croissance des cultures",
+    "besoins_hydriques": "Régime hydrologique avec précipitations régulières et eau de pluie abondante",
+    "bioclimatologie_optimale": {
+        "temp_min": 20,
+        "temp_max": 30,
+        "hum_min": 60,
+        "hum_max": 80
     },
-    "maladies_details": [
-        {
-            "nom_maladie": "Mauvaise végétation",
-            "causes": [
-                "Manque de lumière",
-                "Manque d'eau"
-            ],
-            "traitements_specifiques": [
-                "Ajuster l'exposition au soleil",
-                "Ajuster la quantité d'eau"
-            ]
-        }
+    "indices_satellitaires_requis": {
+        "température": 25,
+        "humidité": 70,
+        "sol": 30
+    },
+    "environnement": "Météorologique et solaire favorables pour la croissance des cultures",
+    "pays": [
+        "Afrique",
+        "Asie",
+        "Amérique du Nord"
     ],
-    "recommandations": [
-        {
-            "description": "Rallier les feuilles régulièrement.",
-            "status": "en cours",
-            "categorie": "urgent"
-        }
+    "region": [
+        "Sahara",
+        "Mediterranée",
+        "Côte du Pacifique"
+    ],
+    "ville": [
+        "Agadir",
+        "Marseille",
+        "San Francisco"
+    ],
+    "région": [
+        "Maroc",
+        "France",
+        "États-Unis"
     ]
 }

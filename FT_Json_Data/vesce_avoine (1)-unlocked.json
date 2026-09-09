@@ -1,29 +1,16 @@
 {
-    "culture": "Pente Cerisé",
-    "exigences_sol": "Sol exposé au soleil pendant 6-8 heures, avec une température moyenne de 15°C à 25°C. Le sol doit être bien aéré et avoir un pH neutre.",
-    "besoins_hydriques": "Arrosage régulier, mais pas trop exigeant. Il est préférable d'arroser tous les jours pendant la première année après plantation.",
-    "temp_optimale": {
-        "temp_min": 15,
-        "temp_max": 25
-    },
-    "maladies_details": [
-        {
-            "nom_maladie": "Pente Cerisé",
-            "causes": [
-                "Déshydration",
-                "Fumée de feu"
-            ],
-            "traitements_specifiques": [
-                "Arrosage régulier",
-                "Fumigation"
-            ]
-        }
-    ],
-    "recommandations": [
-        {
-            "description": "Arrosez régulièrement, mais assurez-vous que le sol ne soit jamais trop mou. Cela aidera à prévenir la déshydration.",
-            "status": "en cours",
-            "categorie": "urgent"
-        }
-    ]
+    "culture": "Inconnue",
+    "exigences_sol": "La culture nécessite un sol chaud et sec avec des périodes de température élevée.",
+    "besoins_hydriques": "La culture nécessite une irrigation régulière, en particulier pendant la période de germination.",
+    "température_optimale": "Entre 20°C et 30°C",
+    "humidité_optimale": "Entre 50% et 70% de humidité relative",
+    "intensité_lumineuse": "Faible à modérée",
+    "periodes_de_sommeil": "3 à 4 heures par jour",
+    "periodes_de_journee": "10 à 12 heures par jour",
+    "periodes_de_pluie": "Aucune pluie nécessaire",
+    "periodes_de_sécheresse": "Aucune sécheresse nécessaire",
+    "nutriments_requis": "azote, phosphore, potassium",
+    "pestes_reques": "aphides, pulgues",
+    "maladies_reques": "rougeole",
+    "especes_reques": "Vicia villosa, Vicia sativa"
 }

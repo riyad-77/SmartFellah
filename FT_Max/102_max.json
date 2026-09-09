@@ -1,0 +1,6 @@
+{
+    "culture": "artichaut",
+    "ndvi_optimal_max": "18-20",
+    "ndwi_optimal_max": "6-6,8",
+    "evi_optimal_max": "1.500-2.000"
+}

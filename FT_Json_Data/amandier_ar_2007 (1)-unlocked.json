@@ -1,22 +1,35 @@
 {
     "culture": "Amygdalus communis",
-    "exigences_sol": null,
-    "besoins_hydriques": null,
-    "temp_optimale": {
-        "temp_min": 132.0,
-        "temp_max": 40.0
+    "exigences_sol": "Le sol doit avoir une température moyenne comprise entre 15°C et 25°C pour permettre à la culture de pousser correctement.",
+    "besoins_hydriques": "La culture nécessite une irrigation régulière, en particulier pendant la période de floraison.",
+    "bioclimatologie_optimale": {
+        "temp_min": 15,
+        "temp_max": 25,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Inconnue",
-            "causes": [],
-            "traitements_specifiques": []
+            "nom_maladie": "Maladie des feuilles",
+            "causes": [
+                "attaque de insectes",
+                "famine"
+            ],
+            "traitements_specifiques": [
+                "application de pesticides",
+                "irrigation régulière"
+            ]
         }
     ],
     "recommandations": [
         {
-            "description": null,
-            "status": null,
+            "description": "Appliquer des pesticides pour contrôler les attaques d'insectes",
+            "status": "en cours",
             "categorie": "urgent"
         }
     ]

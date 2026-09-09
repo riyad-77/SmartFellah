@@ -1,17 +1,19 @@
 {
     "culture": "Pecher",
-    "exigences_sol": "La culture de pêcher nécessite un sol bien drainé et fertile.",
-    "besoins_hydriques": "Le pêcher est classé comme une culture de faible besoin en eau.",
-    "temp_optimale": {
-        "temp_min": "-2°C",
-        "temp_max": "-5°C"
+    "exigences_sol": "Le pêcher nécessite un sol bien drainé et à bonne structure pour s'implanter et se développer.",
+    "besoins_hydriques": "Le pêcher a besoin d'une irrigation régulière, mais pas excessive. Il est recommandé d'irriguer les plants 2-3 fois par semaine pendant la période de floraison et 1 fois par semaine pendant la période de croissance.",
+    "bioclimatologie_optimale": {
+        "temp_min": 10,
+        "temp_max": 25,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
-        {
-            "nom_maladie": "Inconnue",
-            "causes": [],
-            "traitements_specifiques": []
-        },
         {
             "nom_maladie": "Maladie du feu",
             "causes": [
@@ -53,38 +55,66 @@
             "traitements_specifiques": [
                 "Protéger les yeux avec un masque de soleil"
             ]
+        },
+        {
+            "nom_maladie": "Maladie du pêcher",
+            "causes": [
+                "Infection par des virus",
+                "Insectes"
+            ],
+            "traitements_specifiques": [
+                "Application de produits phytoprotecteurs",
+                "Traitement avec des agents antimicrobiens"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie de la chaux",
+            "causes": [
+                "Infection par la bactérie Pseudomonas syringae"
+            ],
+            "traitements_specifiques": [
+                "Irrigateur biologique",
+                "Fumigation"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie de la peau",
+            "causes": [
+                "Infection par virus",
+                "Atteinte par insectes"
+            ],
+            "traitements_specifiques": [
+                "Fumigation",
+                "Traitement avec des insecticides"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie du froid",
+            "causes": [
+                "Atteinte par les températures basse",
+                "Atteinte par les gelées"
+            ],
+            "traitements_specifiques": [
+                "Gelée artificielle",
+                "Traitement avec des protecteurs de gelée"
+            ]
         }
     ],
     "recommandations": [
         {
-            "description": "Assurer une irrigation régulière et abondante, en particulier pendant la floraison.",
-            "status": "en cours",
-            "categorie": "urgent"
+            "description": "Il est recommandé de planter des variétés à faible besoin en froid pour éviter les gelées et les dégâts causés par les températures basse.",
+            "status": "En cours",
+            "categorie": "Urgent"
         },
         {
-            "description": "Effectuer un écran de fumée chaque nuit à risque de gel pour protéger le verger.",
-            "status": "en cours",
-            "categorie": "prioritaire"
+            "description": "Il est recommandé de planter le pêcher dans un verger bien drainé et bien aéré pour éviter les problèmes de humidité.",
+            "status": "En cours",
+            "categorie": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know."
         },
         {
-            "description": "L'association de variétés pollinisatrices est recommandée pour les cultures en sol léger.",
+            "description": "Assurer une bonne ventilation dans le verger pour éviter les gelées",
             "status": "en cours",
-            "categorie": "urgent"
-        },
-        {
-            "description": "La protection phytosanitaire est essentielle pour prévenir les ravageurs et les maladies.",
-            "status": "en cours",
-            "categorie": "pas urgent"
-        },
-        {
-            "description": "Vérifier régulièrement l'état du filtre anti-UV pour garantir une protection adéquate",
-            "status": "en cours",
-            "categorie": "optionnel"
-        },
-        {
-            "description": "effectuer des examens réguliers pour détecter les problèmes oculaires précocement",
-            "status": "en cours",
-            "categorie": "optionnel"
+            "categorie": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know."
         }
     ]
 }

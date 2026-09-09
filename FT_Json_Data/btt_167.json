@@ -1,32 +1,36 @@
 {
     "culture": "Menthe verte",
-    "exigences_sol": "sol argileux, fertile, à forte réten- tion en eau, dépourvu de cailloux et les terrains sont plats",
-    "besoins_hydriques": "eau douce, abondante et accessible",
-    "temp_optimale": {
-        "temp_min": "20°C",
-        "temp_max": "25°C"
+    "exigences_sol": "Le sol argileux, fertile, à forte rétention en eau, dépourvu de cailloux et les terrains sont plats. L'eau est douce, abondante et accessible grâce à des puits qui ont en général 20 à 30 mètres de profondeur.",
+    "besoins_hydriques": "La menthe nécessite un gros investissement, mais elle est rentable malgré la cherté des intrants et l'augmentation du coût de production.",
+    "bioclimatologie_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "25°C",
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Périssement des feuilles",
+            "nom_maladie": "Roty de la menthe",
             "causes": [
-                "infections bactériennes"
+                "Infection bactérienne",
+                "Contamination par des insectes"
             ],
             "traitements_specifiques": [
-                "traitement chimique avec des produits phytosanitaires"
+                "Application de produits phytosanitaires",
+                "Traitement thermique"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "L'application régulière d'un engrais organique peut aider à prévenir les maladies",
-            "status": "en cours",
-            "categorie": "urgent"
-        },
-        {
-            "description": "Il est recommandé de récolter la menthe à la fin de la journée pour éviter les attaques de grillons",
-            "status": "en cours",
-            "categorie": "urgent"
+            "description": "Utiliser des pratiques culturelles durables, tels que la rotation des cultures et l'usage de produits biologiques.",
+            "status": "En cours",
+            "categorie": "Urgent"
         }
     ]
 }

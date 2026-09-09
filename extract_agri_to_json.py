@@ -1,20 +1,16 @@
 import os
-import fitz
+import pymupdf
 from ollama import Client
 import json
 import shutil
 
+ollama_client = Client(host='http://localhost:11434')
 
-ollama_client = Client(host='http://host.docker.internal:11434')
-
-
-
-BASE_DIR = "/opt/airflow/data"
+BASE_DIR = r"C:\Users\hp\SmartFellah"
 PDF_DIR = os.path.join(BASE_DIR, "FT_Vegetal")
 JSON_DIR = os.path.join(BASE_DIR, "FT_Json_Data")
 MODEL_NAME = 'llama3.2'
 
-# --- INITIALISATION DES DOSSIERS ---
 def setup_directories():
     """Prépare le dossier de destination en le nettoyant s'il existe."""
     if os.path.exists(JSON_DIR):
@@ -23,34 +19,49 @@ def setup_directories():
     os.makedirs(JSON_DIR, exist_ok=True)
     print(f"📁 Dossier '{JSON_DIR}' prêt.")
 
-# --- FONCTION D'EXTRACTION ---
 def extract_to_json_robust(pdf_path):
     """Extrait le texte d'un PDF et le structure en JSON via Ollama."""
-    # 1. Lecture du PDF
-    doc = fitz.open(pdf_path)
+    doc = pymupdf.open(pdf_path)
     full_text = "\n".join([page.get_text("text") for page in doc])
-    doc.close() # Bonne pratique : libérer la mémoire du fichier
+    doc.close() 
     
     if len(full_text.strip()) < 50:
         raise ValueError("Document vide ou illisible (probablement un scan sans OCR)")
 
-    # 2. Préparation du Prompt
+    # Prompt mis à jour pour inclure "zones_recommandees"
     prompt = f"""
     Tu es un expert agronome au Maroc. Extrais les données du document technique fourni en format JSON.
 
     RÈGLES DE SORTIE :
     1. Retourne UNIQUEMENT un objet JSON valide.
-    2. Si une information est absente, utilise null.
+    2. Si une information est absente du texte, utilise null ou une estimation scientifique prudente.
     3. Si la culture est en arabe, traduis-la en français.
-    4. NE JAMAIS deviner. Si la culture n'est pas explicite, écris "Inconnue".
+    4. NE JAMAIS deviner la culture. Si la culture n'est pas explicite, écris "Inconnue".
     5. NE JAMAIS utiliser "Blé" par défaut.
+    6. Pour hum_min et hum_max, extrait le taux d'humidité en pourcentage (sinon 20 et 80 par défaut).
+    7. Pour les indices satellitaires (ndvi, ndwi, evi), si absent, mets 0.4 (ndvi), 0.0 (ndwi), et 0.3 (evi).
+    8. Pour zones_recommandees, identifie les villes, communes ou régions agricoles du Maroc explicitement mentionnées (si aucune, retourne []).
 
     Structure JSON obligatoire EXACTE :
     {{
         "culture": "string",
+        "zones_recommandees": ["liste des communes recommandees"],
         "exigences_sol": "description",
         "besoins_hydriques": "description",
-        "temp_optimale": {{"temp_min": "valeur", "temp_max": "valeur"}},
+        "bioclimatologie_optimale": {{
+            "temp_min": "valeur numerique", 
+            "temp_max": "valeur numerique",
+            "hum_min": "valeur numerique",
+            "hum_max": "valeur numerique"
+        }},
+        "indices_satellitaires_requis": {{
+            "ndvi_optimal_min": "valeur numerique",
+            "ndvi_optimal_max": "valeur numerique",
+            "ndwi_optimal_min": "valeur numerique",
+            "ndwi_optimal_max": "valeur numerique",
+            "evi_optimal_min": "valeur numerique",
+            "evi_optimal_max": "valeur numerique"
+        }},
         "maladies_details": [
             {{
                 "nom_maladie": "nom de la maladie",
@@ -59,46 +70,41 @@ def extract_to_json_robust(pdf_path):
             }}
         ],
         "recommandations": [
-        {{
-            "description": "description détaillée du conseil ou de la tâche agricole à réaliser",
-            "status": "en cours",
-            "categorie": "urgent" 
-        }}
-    ]
+            {{
+                "description": "description détaillée",
+                "status": "en cours",
+                "categorie": "urgent" 
+            }}
+        ]
     }}
 
     Texte à analyser :
     {full_text[:6000]}
     """
     
-    # 3. Appel à l'IA avec forçage du format JSON
-    response = ollama_client.chat( # <-- MODIFIÉ : Utilise ollama_client
+    response = ollama_client.chat(
         model=MODEL_NAME, 
         messages=[{'role': 'user', 'content': prompt}],
         format='json'
     )
     
-    # Plus besoin de chercher les { et } manuellement !
     content = response['message']['content']
     return json.loads(content)
 
-# --- BOUCLE PRINCIPALE ---
 if __name__ == "__main__":
     import sys
     
-    # S'assurer que le dossier source existe pour éviter le crash
     if not os.path.exists(PDF_DIR):
         os.makedirs(PDF_DIR, exist_ok=True)
         
     fichiers = sorted([f for f in os.listdir(PDF_DIR) if f.endswith(".pdf")])
     
-    # Si le dossier est vide, on arrête le script avec succès (code 0)
     if len(fichiers) == 0:
         print("✅ Aucun nouveau PDF à traiter. Le pipeline s'arrête ici.")
-        sys.exit(0) # Fera passer la case Airflow au VERT
+        sys.exit(0)
 
     print(f"🚀 Début du traitement de {len(fichiers)} fichiers...\n")
-    setup_directories() # On nettoie FT_Json_Data QUE si on a de nouveaux PDF
+    setup_directories()
 
     for file in fichiers:
         json_path = os.path.join(JSON_DIR, file.replace(".pdf", ".json"))

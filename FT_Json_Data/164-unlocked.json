@@ -1,50 +1,52 @@
 {
-    "culture": "Canne à sucre",
-    "exigences_sol": "Les sables sables sont très riches en humus, mais d'importance limitée.",
-    "besoins_hydriques": "Une irrigation régulière est nécessaire, notamment pendant la période chaude de début d'été.",
-    "temp_optimale": {
-        "temp_min": "18-22°C",
-        "temp_max": "29°C"
+    "culture": "canne à sucre",
+    "exigences_sol": "Les terrains sont assez profonds, plats à légèrement vallon-nés (pente ≈2-4 %), de texture très sableuse (taux d'argile autour de 3 %, taux de sables autour de 90 %), non calcaires et de pH neutre à alcalin (6,8 à 8,4).",
+    "besoins_hydriques": "Une humidité ambiante ou du sol recommandé en pourcentage de 60-80%.",
+    "bioclimatologie_optimale": {
+        "temp_min": "16 °C",
+        "temp_max": "26 °C",
+        "hum_min": "60%",
+        "hum_max": "80%"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
         {
             "nom_maladie": "Nématodes",
             "causes": [
-                "Infestation de nématodes dans la culture"
+                "Infections par nématodes"
             ],
             "traitements_specifiques": [
-                "Application d'herbicides et/ou des traitements spécifiques contre les nématodes"
+                "Application d'herbicides"
             ]
         },
         {
             "nom_maladie": "Casside",
             "causes": [
-                "Infestation de cassides dans la culture"
+                "Infections par casside"
             ],
             "traitements_specifiques": [
-                "Désherbage et/ou application d'herbicides"
+                "Désherbage"
             ]
         },
         {
             "nom_maladie": "Pourriture molle des racines",
             "causes": [
-                "Phénomène de pourriture des racines à la récolte"
+                "Infections par pourriture molle des racines"
             ],
             "traitements_specifiques": [
-                "Traitement spécifique contre la pourriture molle"
+                "Traitement spécifique"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "L'irrigation régulière est nécessaire, notamment pendant la période chaude de début d'été.",
-            "status": "En cours",
-            "categorie": "Urgent"
-        },
-        {
-            "description": "Le désherbage est nécessaire pour contrôler les populations hivernales et printanières.",
-            "status": "En cours",
-            "categorie": "Urgent"
+            "description": "L'expérience a été menée dans la ferme de Bargha sise dans la région de Laouamra, à 25 km au sud de Larache (nord du Maroc).",
+            "status": "en cours",
+            "categorie": "urgent"
         }
     ]
 }

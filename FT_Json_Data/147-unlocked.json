@@ -1,32 +1,32 @@
 {
     "culture": "Tomate",
-    "exigences_sol": null,
-    "besoins_hydriques": "La tomate nécessite un sol bien drainé et riche en nutriments.",
-    "temp_optimale": {
-        "temp_min": "15°C",
-        "temp_max": "25°C"
+    "exigences_sol": "Le sol doit être bien drainé, avec un pH acide (environ 6,0 à 6,5). Le sol doit être aussi bien aéré et être riche en humus. Les sols secs doivent être traités avec des humectants ou des substances qui réduisent l'évaporation de l'eau en surface. Les sols trop acides ne sont pas favorables à la croissance des tomates.",
+    "besoins_hydriques": "Les tomates ont besoin d'un sol bien drainé et d'une humidité ambiante de 60 à 80%. La plantation en zone aride nécessite une irrigation régulière. La quantité d'eau nécessite varie selon la zone et le climat. Les plantes peuvent être irriguées avec des pompes de basse puissance, des systèmes de sprinklers et des gouttières. L'irrigation devrait être réalisée dans la matinée ou l'après-midi pour éviter les dégâts des insectes et les maladies.",
+    "bioclimatologie_optimale": {
+        "temp_min": "10",
+        "temp_max": "25",
+        "hum_min": "60",
+        "hum_max": "80"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
         {
             "nom_maladie": "Maladie des feuilles jaunes",
             "causes": [
-                "Virus TYLCV",
-                "Insecte Bemisia tabaci"
+                "Virus Tomato Yellow Leaf Curl Virus (TYLCV)"
             ],
             "traitements_specifiques": [
-                "Traitement chimique",
-                "Traitement biologique"
+                "Traitement chimique avec des insecticides, application de protécoles biologiques"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "L'approvisionnement en plants sains est essentiel pour éviter les pertes dues à la maladie des feuilles jaunes.",
-            "status": "en cours",
-            "categorie": "urgent"
-        },
-        {
-            "description": "La protection des pépinières par des filets et serres canariennes en bois est recommandée pour prévenir l'infestation des insectes.",
+            "description": "Choisir des plantes saines pour les pépinières, appliquer des protécoles biologiques et des traitements chimiques pour prévenir l'infestation du TYLCV.",
             "status": "en cours",
             "categorie": "urgent"
         }

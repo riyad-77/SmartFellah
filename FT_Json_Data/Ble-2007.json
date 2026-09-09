@@ -1,29 +1,35 @@
 {
-    "culture": "Culture de blé",
-    "exigences_sol": "Sol solaire",
-    "besoins_hydriques": "Hydrounitre",
-    "temp_optimale": {
+    "culture": "Riz",
+    "exigences_sol": "Sol chaud et bien drainé, pH neutre à légèrement acide",
+    "besoins_hydriques": "Sol bien drainé, pH neutre à légèrement acide, 10-20 cm d'humidité solide",
+    "bioclimatologie_optimale": {
         "temp_min": 15,
-        "temp_max": 25
+        "temp_max": 30,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "La rouille",
+            "nom_maladie": "Riz noir",
             "causes": [
-                "Étiologie 1",
-                "Étiologie 2"
+                "Fusariosis",
+                "Pythium",
+                "Rhizoctonia"
             ],
             "traitements_specifiques": [
-                "Traitement 1",
-                "Traitement 2"
+                "Fumigation, Traitement par inoculés"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Fertiliser avant la germination",
-            "status": "en cours",
-            "categorie": "urgent"
+            "description": "Vérifier régulièrement les cultures pour détecter les maladies et les pests",
+            "itération": 1
         }
     ]
 }

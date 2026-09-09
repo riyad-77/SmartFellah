@@ -1,27 +1,43 @@
 {
-    "culture": "Arbecette",
-    "exigences_sol": null,
-    "besoins_hydriques": "Les besoins en eau de l'abricotier sont élevés au moment de la croissance du fruit, particulièrement pendant le durcissement du noyau.",
-    "temp_optimale": {
-        "temp_min": -10,
-        "temp_max": 7.2
+    "culture": "Abricotier (Prunus armeniaca)",
+    "exigences_sol": "L'abricotier n'est pas très exigeant en matière de sol, pourvu qu'il ne soit pas trop lourd et humide.",
+    "besoins_hydriques": "Les besoins en eau de l'abricotier sont élevés au moment de la croissance du fruit, notamment pendant le durcissement du noyau.",
+    "bioclimatologie_optimale": {
+        "temp_min": 0,
+        "temp_max": 25,
+        "hum_min": 50,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Gelée",
+            "nom_maladie": "Maladie du fruit",
             "causes": [
-                "Froid extrême"
+                "Infection par des bactéries"
             ],
             "traitements_specifiques": [
-                "Engraissage du porte-greffe"
+                "Fumigation, traitement avec des produits chimiques"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie des racines",
+            "causes": [
+                "Infection par des champignons"
+            ],
+            "traitements_specifiques": [
+                "Traitement avec des produits chimiques, removal des racines infestées"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Maintenir un rythme soutenu des apports d'eau, en fonction de la densité, de l'âge des arbres, de la nature du sol et des conditions climatiques.",
-            "status": null,
-            "categorie": "Importante"
+            "description": "Apporter des irrigations régulières et en fonction de la demande du sol et de la croissance du fruit.",
+            "status": "En cours",
+            "categorie": "Urgent"
         }
     ]
 }

@@ -2,16 +2,18 @@
     "culture": "Noyer commun",
     "exigences_sol": "Les plantations existent dans les vallées montagneuses avec des altitudes situées entre 1200 m et 1700 m.",
     "besoins_hydriques": "Le noyer a une demande de water importante pour sa croissance, il faut donc assurer une irrigation régulière.",
-    "temp_optimale": {
+    "bioclimatologie_optimale": {
         "temp_min": "15°C",
-        "temp_max": "30°C"
+        "temp_max": "30°C",
+        "hum_min": "60%",
+        "hum_max": "80%"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": null,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
-        {
-            "nom_maladie": "Inconnue",
-            "causes": [],
-            "traitements_specifiques": []
-        },
         {
             "nom_maladie": "Rougeur des feuilles",
             "causes": [
@@ -33,6 +35,49 @@
                 "traitement avec des insecticides",
                 "application de produits chimiques anti-bactériens"
             ]
+        },
+        {
+            "nom_maladie": "Les maladies qui affectent le noyer sont souvent liées à la surculture et à l'absence de rotation des cultures.",
+            "causes": [
+                "Surculture",
+                "Absence de rotation des cultures"
+            ],
+            "traitements_specifiques": [
+                "Traitement par incinération, application de cuivre et zinc"
+            ]
+        },
+        {
+            "nom_maladie": "Puceronne du noyer",
+            "causes": [
+                "Manque d'irrigation",
+                "Présence de parasites"
+            ],
+            "traitements_specifiques": [
+                "Application de pesticides",
+                "Irrigation régulière"
+            ]
+        },
+        {
+            "nom_maladie": "Mouche du noyer",
+            "causes": [
+                "Présence de substances chimiques",
+                "Manque de maintien des arbres"
+            ],
+            "traitements_specifiques": [
+                "Application de pesticides",
+                "Entretien des arbres"
+            ]
+        },
+        {
+            "nom_maladie": "Rougeole",
+            "causes": [
+                "Infection par des bactéries",
+                "Infection par des virus"
+            ],
+            "traitements_specifiques": [
+                "Agrégation des feuilles",
+                "Appliquage de produits chimiques"
+            ]
         }
     ],
     "recommandations": [
@@ -48,6 +93,21 @@
         },
         {
             "description": "Considérer le mode de multiplication par greffage pour améliorer la production et la qualité des noix.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "La culture du noyer est recommandée pour les zones humides et tempérées. Il est essentiel de fournir un sol bien drainé et d'appliquer des fertilisants adaptés à la culture.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "L'entretien régulier des plants est essentiel pour prévenir les maladies. Les feuilles doivent être régulièrement enlevées pour permettre une bonne ventilation et éviter la prolifération des parasites.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Assurer une bonne irrigation régulière, en particulier pendant la période de floraison et de noyau.",
             "status": "en cours",
             "categorie": "urgent"
         }

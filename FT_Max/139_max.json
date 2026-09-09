@@ -1,0 +1,6 @@
+{
+    "culture": "noyer commun",
+    "ndvi_optimal_max": "12",
+    "ndwi_optimal_max": "60",
+    "evi_optimal_max": "0.4"
+}

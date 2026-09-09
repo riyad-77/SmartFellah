@@ -1,29 +1,48 @@
 {
     "culture": "Luzerne",
-    "exigences_sol": "La luzerne nécessite un sol fertile et bien drené avec une pH allant de 6,5 à 7,5.",
-    "besoins_hydriques": "La luzerne a besoin d'une irrigation régulière, en particulier pendant la phase de germination et de floraison.",
-    "temp_optimale": {
-        "temp_min": "15°C",
-        "temp_max": "25°C"
+    "exigences_sol": "La luzerne est une culture qui nécessite un sol bien drainé et ayant un pH neutre, entre 6,0 et 7,0. La densité de semis est de 3 à 5 plantes par mètre linéaire, et l'écartement entre lignes doit être modulé selon les régions et la capacité de rétention en eau des sols.",
+    "besoins_hydriques": "La luzerne nécessite une irrigation régulière, en particulier pendant les périodes de croissance et de floraison. Le taux d'humidité ambiante idéal est entre 60% et 80%.",
+    "bioclimatologie_optimale": {
+        "temp_min": "15",
+        "temp_max": "25",
+        "hum_min": "60",
+        "hum_max": "80"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
         {
-            "nom_maladie": "La cuscute",
+            "nom_maladie": "Maladie de la luzerne verte",
             "causes": [
-                "Infection fongique",
-                "Développement de champignons"
+                "infection par le virus de la luzerne verte"
             ],
             "traitements_specifiques": [
-                "Tratements antifongiques",
-                "Coupures régulières"
+                "application de pesticides, dégorgement de la plante"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie de la luzerne blanche",
+            "causes": [
+                "infection par le champignon de la luzerne blanche"
+            ],
+            "traitements_specifiques": [
+                "application de pesticides, coupe de la plante"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Il est recommandé d'installer sept à huit colonies d'abeilles par hectare dès l'apparition des premières fleurs au milieu du champ pour accroître considérablement le rendement.",
+            "description": "L'installation de colonies d'abeilles domestiques est recommandée pour augmenter le rendement",
             "status": "en cours",
             "categorie": "urgent"
+        },
+        {
+            "description": "L'irrigation régulière est nécessaire pendant les périodes de croissance et de floraison",
+            "status": "en cours",
+            "categorie": "important"
         }
     ]
 }

@@ -1,32 +1,36 @@
 {
     "culture": "Ficus carica",
-    "exigences_sol": null,
-    "besoins_hydriques": null,
-    "temp_optimale": {
-        "temp_min": 15.0,
-        "temp_max": 30.0
+    "exigences_sol": "La culture du figuier nécessite un sol bien drainé, avec un pH neutre à légèrement acide (5,5-6,5). Les sols calcaires sont particulièrement adaptés.",
+    "besoins_hydriques": "Le figuier nécessite une irrigation régulière, mais non excessive. Il est préférable de lui fournir environ 600 mm de pluie par an.",
+    "bioclimatologie_optimale": {
+        "temp_min": 10,
+        "temp_max": 30,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Inconnue",
+            "nom_maladie": "Maladie de la vertu",
             "causes": [
-                "Inconnues"
+                "Infection bactérienne",
+                "Infection fongique"
             ],
             "traitements_specifiques": [
-                "Inconnus"
+                "Traitement antibiotique",
+                "Traitement antifongique"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Rallonger les périodes de froid pour stimuler la floraison et la production de fruits.",
-            "status": null,
-            "categorie": null
-        },
-        {
-            "description": "Faire des relevés précoces pour identifier les variétés de figues le plus résistantes aux maladies.",
-            "status": null,
-            "categorie": null
+            "description": "La culture du figuier doit être menée avec soin, en particulier lors de la récolte. Il est recommandé de laisser des feuilles sur les rameaux pour aider la plante à se régénérer.",
+            "status": "en cours",
+            "categorie": "urgent"
         }
     ]
 }

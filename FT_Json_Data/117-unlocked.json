@@ -1,29 +1,35 @@
 {
-    "culture": "luzerne",
-    "exigences_sol": "Le sol doit être bien drainé et avoir un pH compris entre 6,0 et 7,0.",
-    "besoins_hydriques": "La luzerne nécessite une irrigation régulière, en particulier pendant la période de floraison.",
-    "temp_optimale": {
-        "temp_min": "15°C",
-        "temp_max": "25°C"
+    "culture": "Luzerne",
+    "exigences_sol": "La densité de semis et l'écartement vont modifier la structure du peuplement et conditioner les relations entre le rendement et ses composantes. Pour un rendement grainier élevé, les plantes doivent être semées à grand écartement afin d'obtenir des plantes vigoureuses.",
+    "besoins_hydriques": "La gestion de l'irrigation est importante pour les luzernes. Il est recommandé d'irriguer à raison de 10 à 15 cm par mois, selon les conditions climatiques.",
+    "bioclimatologie_optimale": {
+        "temp_min": 10,
+        "temp_max": 25,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Cercosse des feuilles",
+            "nom_maladie": "Cuscute",
             "causes": [
-                "Infection par le virus du cercosse",
-                "Attente de la pluie"
+                "infections virales et bactériennes"
             ],
             "traitements_specifiques": [
-                "Traitement anti-viral",
-                "Prévention avec un traitements phytovirus"
+                "traitement antibiotique",
+                "traitement antifongique"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "La pollinisation est essentielle pour la production de graines. Utiliser des colonies d'abeilles domestiques peut améliorer le rendement.",
+            "description": "L'installation de colonies d'abeilles domestiques est recommandée pour augmenter le rendement",
             "status": "en cours",
-            "categorie": "urgence"
+            "categorie": "urgent"
         }
     ]
 }

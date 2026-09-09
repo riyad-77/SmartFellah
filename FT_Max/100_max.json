@@ -1,0 +1,6 @@
+{
+    "culture": "tomate",
+    "ndvi_optimal_max": 25,
+    "ndwi_optimal_max": 15,
+    "evi_optimal_max": 18
+}

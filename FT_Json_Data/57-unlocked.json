@@ -1,34 +1,57 @@
 {
     "culture": "Tomate de primeurs",
-    "exigences_sol": "Non spécifiées",
-    "besoins_hydriques": "Optimale humidité relative à 75%",
-    "temp_optimale": {
-        "temp_min": "17°C",
-        "temp_max": "30°C"
+    "exigences_sol": "rien mentionné",
+    "besoins_hydriques": "Optimale HR de 75 %",
+    "bioclimatologie_optimale": {
+        "temp_min": 13,
+        "temp_max": 17,
+        "hum_min": 75,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
             "nom_maladie": "Botrytis",
             "causes": [
-                "Vent chaud",
-                "Humidité élevée"
+                "température élevée",
+                "humidité relative élevée"
             ],
             "traitements_specifiques": [
-                "Éprouvette",
-                "Traitements antibiotiques"
+                "irrigation régulière",
+                "élimination des humidités de condensation"
+            ]
+        },
+        {
+            "nom_maladie": "Mildiou",
+            "causes": [
+                "humidité relative élevée",
+                "vent chaud"
+            ],
+            "traitements_specifiques": [
+                "irrigation régulière",
+                "aération matinale"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Utiliser des serres pour réguler la température et l'humidité.",
-            "status": "En cours",
-            "categorie": "Urgent"
+            "description": "Utilisation régulière d'irrigation pour maintenir une humidité relative optimale",
+            "status": "en cours",
+            "categorie": "urgent"
         },
         {
-            "description": "Lavage régulier du plastique utilisé pour améliorer sa transmission de lumière.",
-            "status": "En cours",
-            "categorie": "Urgent"
+            "description": "Élimination des humidités de condensation pour prévenir le botrytis",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Aération matinale pour prévenir le mildiou",
+            "status": "en cours",
+            "categorie": "urgent"
         }
     ]
 }

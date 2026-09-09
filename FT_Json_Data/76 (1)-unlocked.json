@@ -1,21 +1,36 @@
 {
     "culture": "Inconnue",
-    "exigences_sol": null,
-    "besoins_hydriques": null,
-    "temp_optimale": {
-        "temp_min": "24° C",
-        "temp_max": "30° C"
+    "exigences_sol": "Le sol doit avoir une couche arable d'au moins 30% de sol couvert et être exempt de toute action de retournement ou mixage des horizons.",
+    "besoins_hydriques": "Les cultures doivent avoir accès à des humidités élevées du sol, permettant des semis indépendamment des pluies et des difficultés d'accès au terrain.",
+    "bioclimatologie_optimale": {
+        "temp_min": 15.0,
+        "temp_max": 30.0,
+        "hum_min": 60.0,
+        "hum_max": 80.0
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Inconnue",
+            "nom_maladie": "Érosion des sols",
             "causes": [
-                "Inconnues"
+                "Erosion éolienne",
+                "Erosion hydrique"
             ],
             "traitements_specifiques": [
-                "Inconnus"
+                "Réduction des émissions de gaz à effet serre",
+                "Pratiques de conservation de l'eau"
             ]
         }
     ],
-    "recommandations": []
+    "recommandations": [
+        {
+            "description": "Utiliser des machines spécialisées pour le semis et la gestion des résidus",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
 }

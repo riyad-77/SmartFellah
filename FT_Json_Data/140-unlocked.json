@@ -1,32 +1,36 @@
 {
-    "culture": "Blé",
-    "exigences_sol": "sol bien drainé avec un pH optimal entre 6,0 et 7,0",
-    "besoins_hydriques": "régime d'irrigation régulier, en fonction de la période du cycle de croissance",
-    "temp_optimale": {
-        "temp_min": "10°C",
-        "temp_max": "25°C"
+    "culture": "Blé tendre",
+    "exigences_sol": "Le sol doit être bien drainé et avoir une pH acide à neutre, entre 6,0 et 7,0.",
+    "besoins_hydriques": "Les cultures de blé tendre nécessitent des irrigations régulières, mais pas excessives, pour éviter les troubles de la croissance. La quantité d'eau requise dépend de la période de la culture.",
+    "bioclimatologie_optimale": {
+        "temp_min": 10,
+        "temp_max": 25,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
             "nom_maladie": "Cécidomyie",
             "causes": [
+                "sécheresse",
                 "attaque par la cécidomyie"
             ],
             "traitements_specifiques": [
-                "traitement avec des insecticides"
+                "irrigation régulière",
+                "traitement spécifique contre la cécidomyie"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Utiliser des variétés de blé résistantes à la cécidomyie",
+            "description": "Il est recommandé de réaliser des tests de résistance génétique aux maladies pour sélectionner les variétés de blé tendre les plus résistantes.",
             "status": "en cours",
-            "categorie": "urgence"
-        },
-        {
-            "description": "Lever les mesures d'irrigation pour éviter les sécheresses et les attaques par la cécidomyie",
-            "status": "en cours",
-            "categorie": "important"
+            "categorie": "urgent"
         }
     ]
 }

@@ -1,29 +1,36 @@
 {
-    "culture": "Orge",
-    "exigences_sol": null,
-    "besoins_hydriques": "Les sols ont un pH très bas, ce qui nécessite une irrigation régulière.",
-    "temp_optimale": {
-        "temp_min": 20,
-        "temp_max": 30
+    "culture": "Riz",
+    "exigences_sol": "Le sol doit avoir une bonne structure et une bonne capacité de stockage de l'eau. La température moyenne annuelle doit être comprise entre 15°C et 25°C.",
+    "besoins_hydriques": "Le riz a besoin d'une température de 25°C pour germer et de 30°C pour se développer. Il nécessite une humidité ambiante de 60% à 80%.",
+    "bioclimatologie_optimale": {
+        "temp_min": "15",
+        "temp_max": "25",
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "La rouille",
+            "nom_maladie": "Rougeur foliaire",
             "causes": [
-                "manque d'azote",
-                "sol basique"
+                "Taux d'humidité ambiante élevé",
+                "Fertilisation excessive"
             ],
             "traitements_specifiques": [
-                "fertilisation azotée",
-                "traitement contre la rouille"
+                "Réduction de l'apport de fertilisants",
+                "Mise en place d'un système d'irrigation plus efficace"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "L'irrigation régulière est essentielle pour les orges. Il est recommandé d'appliquer environ 20 cm3/m² de eau par jour.",
-            "status": null,
-            "categorie": null
+            "description": "L'implémentation d'un système d'irrigation plus efficace est recommandée pour réduire la perte d'eau et améliorer les rendements.",
+            "status": "En cours",
+            "categorie": "Urgent"
         }
     ]
 }

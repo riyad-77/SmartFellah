@@ -1,25 +1,32 @@
 {
-    "culture": "Riz",
-    "exigences_sol": "Sol ensoleillé et bien drainé",
-    "besoins_hydriques": "Aiguille de 40 cm à 60 cm de profondeur par semaine pendant la période de germination et croissance active (2-3 mois)",
-    "temp_optimale": {
+    "culture": "Pomme de Terre",
+    "exigences_sol": "Sol àsoleil, solide, bien drainé.",
+    "besoins_hydriques": "Arrosage régulier, en fonction de la période de croissance.",
+    "bioclimatologie_optimale": {
         "temp_min": "15°C",
-        "temp_max": "30°C"
+        "temp_max": "25°C",
+        "hum_min": "60%",
+        "hum_max": "80%"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
         {
-            "nom_maladie": "Riz vert",
+            "nom_maladie": "Maladie de la pomme de terre",
             "causes": [
-                "fumigation, mauvaise sècheresse"
+                "Insectes, maladies fongiques"
             ],
             "traitements_specifiques": [
-                "traitement avec du chlorpyrifos"
+                "Application de pesticides, traitement de la maladie fongique"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Récolte des grains lorsqu'ils sont matures et durs",
+            "description": "Arrosage régulier, en fonction de la période de croissance.",
             "status": "en cours",
             "categorie": "urgent"
         }

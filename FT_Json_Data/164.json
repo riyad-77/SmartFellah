@@ -1,50 +1,52 @@
 {
-    "culture": "betterave à sucre",
-    "exigences_sol": null,
-    "besoins_hydriques": "goutte à goutte",
-    "temp_optimale": {
-        "temp_min": "16-26 °C",
-        "temp_max": "10-20 °C"
+    "culture": "Canne à sucre",
+    "exigences_sol": "Les sols sableux de Larache présentent une texture très sableuse (taux de sables autour de 90 %), non calcaires et de pH neutre à alcalin (6,8 à 8,4).",
+    "besoins_hydriques": "La betterave à sucre nécessite une irrigation régulière, notamment pendant la période de floraison et de récolte.",
+    "bioclimatologie_optimale": {
+        "temp_min": "16°C",
+        "temp_max": "26°C",
+        "hum_min": "70%",
+        "hum_max": "80%"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "nématodes",
+            "nom_maladie": "Nématodes",
             "causes": [
-                "en début de culture"
+                "Présence de nématodes dans le sol"
             ],
             "traitements_specifiques": [
-                "inconnu"
+                "Traitement avec des nématocides"
             ]
         },
         {
-            "nom_maladie": "casside",
+            "nom_maladie": "Casside",
             "causes": [
-                "de mai/juin"
+                "Présence de casside dans le sol"
             ],
             "traitements_specifiques": [
-                "inconnu"
+                "Désherbage manuel et mécanique"
             ]
         },
         {
-            "nom_maladie": "pourriture molle des racines",
+            "nom_maladie": "Pourriture molle des racines",
             "causes": [
-                "au moment de la récolte"
+                "Présence de pourriture molle des racines"
             ],
             "traitements_specifiques": [
-                "inconnu"
+                "Traitement avec des fungicides"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Utiliser un système d'irrigation favorable à la croissance de la plante.",
-            "status": "en cours",
-            "categorie": "urgent"
-        },
-        {
-            "description": "Effectuer un désherbage régulier pour contrôler les populations de plantes adventices et prévenir les phénomènes de pourriture de la racine à la récolte.",
-            "status": "en cours",
-            "categorie": "urgent"
+            "description": "Installer un système d'irrigation régulier, notamment pendant la période de floraison et de récolte.",
+            "status": "En cours",
+            "categorie": "Urgent"
         }
     ]
 }

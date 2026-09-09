@@ -1,0 +1,6 @@
+{
+    "culture": "Melon",
+    "ndvi_optimal_max": 6.2,
+    "ndwi_optimal_max": 6.5,
+    "evi_optimal_max": 8.2
+}

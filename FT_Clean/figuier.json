@@ -2,9 +2,16 @@
     "culture": "Figuier",
     "exigences_sol": "Le figuier a besoin de sol bien drainé, en pH neutre (7,0-8,5), avec une teneur de calcium et de potassium élevée.",
     "besoins_hydriques": "La culture du figuier nécessite une irrigation régulière, surtout pendant la période de floraison et de production. Il faut éviter les excès d'eau qui peuvent entraîner des problèmes de santé de l'arbre.",
-    "temp_optimale": {
+    "bioclimatologie_optimale": {
         "temp_min": "10°C",
-        "temp_max": "35°C"
+        "temp_max": "35°C",
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": null,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
@@ -15,15 +22,6 @@
             ],
             "traitements_specifiques": [
                 "Fumigation, application de cuivres"
-            ]
-        },
-        {
-            "nom_maladie": "Inconnue",
-            "causes": [
-                "Inconnues"
-            ],
-            "traitements_specifiques": [
-                "Inconnus"
             ]
         },
         {
@@ -44,6 +42,61 @@
             ],
             "traitements_specifiques": [
                 "traitement avec des herbicides, application de protecteurs contre les maladies"
+            ]
+        },
+        {
+            "nom_maladie": "Vertu",
+            "causes": [
+                "Plante de feuillus",
+                "Feuilles enroulées"
+            ],
+            "traitements_specifiques": [
+                "Traitement chimique",
+                "Traitement biologique"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie de la vertu",
+            "causes": [
+                "Infection bactérienne",
+                "Infection fongique"
+            ],
+            "traitements_specifiques": [
+                "Traitement antibiotique",
+                "Traitement antifongique"
+            ]
+        },
+        {
+            "nom_maladie": "La rouille",
+            "causes": [
+                "Manuelle",
+                "Infection des feuilles"
+            ],
+            "traitements_specifiques": [
+                "Traitement des infestations avec des produits biologiques",
+                "Traitement des infestations avec des produits chimiques"
+            ]
+        },
+        {
+            "nom_maladie": "La pourriture des racines",
+            "causes": [
+                "Manuelle",
+                "Infection des racines"
+            ],
+            "traitements_specifiques": [
+                "Traitement des infestations avec des produits biologiques",
+                "Traitement des infestations avec des produits chimiques"
+            ]
+        },
+        {
+            "nom_maladie": "Vertu",
+            "causes": [
+                "Plante de feuillus",
+                "Feuilles enroulées"
+            ],
+            "traitements_specifiques": [
+                "Traitement chimique",
+                "Traitement biologique"
             ]
         }
     ],
@@ -75,6 +128,21 @@
         },
         {
             "description": "Assurer une irrigation adéquate, en fonction des conditions climatiques.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "La figue nécessite une attention régulière pour éviter les maladies et les insectes",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "La culture du figuier doit être menée avec soin, en particulier lors de la récolte. Il est recommandé de laisser des feuilles sur les rameaux pour aider la plante à se régénérer.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Il est recommandé de faire des cultures régulières et de veiller à ce que les rameaux soient défeuillés régulièrement pour éviter les infestations de rouille.",
             "status": "en cours",
             "categorie": "urgent"
         }

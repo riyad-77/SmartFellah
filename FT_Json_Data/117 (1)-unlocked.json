@@ -1,41 +1,36 @@
 {
     "culture": "Luzerne",
-    "exigences_sol": "Le sol doit être bien drainé et avoir une pH entre 6,5 et 7,5.",
-    "besoins_hydriques": "La luzerne a besoin d'une irrigation régulière, en particulier pendant la floraison. Il est recommandé d'irriguer les plantes à raison de 2-3 litres par mètre linéaire par jour",
-    "temp_optimale": {
-        "temp_min": "15°C",
-        "temp_max": "25°C"
+    "exigences_sol": "Le sol doit être bien drainé et avoir un pH neutre, entre 6,0 et 7,0. La luzerne préfère les sols calcaires ou les sols alluviaux avec une bonne capacité de rétention en eau.",
+    "besoins_hydriques": "La luzerne nécessite une irrigation régulière, en particulier pendant la période de floraison et de récolte. La quantité d'eau nécessite dépend de la densité de plantation et du climat. Dans les régions arides du Maroc, la luzerne peut être cultivée avec un besoin d'irrigation réduit.",
+    "bioclimatologie_optimale": {
+        "temp_min": "10°C",
+        "temp_max": "25°C",
+        "hum_min": "60%",
+        "hum_max": "80%"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
         {
-            "nom_maladie": "La cuscute",
+            "nom_maladie": "Cuscute",
             "causes": [
-                "Influence des conditions climatiques",
-                "Atteinte à la racine du plant",
-                "Dégâts causés par les insectes"
+                "infections virales",
+                "infections fongiques"
             ],
             "traitements_specifiques": [
-                "Traitement phytosanitaire",
-                "Utilisation de semences résistantes"
-            ]
-        },
-        {
-            "nom_maladie": "Les maladies cryptogamiques",
-            "causes": [
-                "Infection des tiges et des feuilles",
-                "Développement de champignons"
-            ],
-            "traitements_specifiques": [
-                "Traitements chimiques",
-                "Utilisation de semences résistantes"
+                "traitement antiviral",
+                "traitement antifungique"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Il est important de choisir une variété de luzerne adaptée à la région et aux conditions climatiques.",
-            "status": "En cours",
-            "categorie": "Urgent"
+            "description": "L'installation de colonies d'abeilles domestiques est recommandée pour augmenter le rendement.",
+            "status": "en cours",
+            "categorie": "urgent"
         }
     ]
 }

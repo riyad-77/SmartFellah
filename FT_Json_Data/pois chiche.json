@@ -1,5 +1,36 @@
 {
-    "culture": "ALMELLYA",
-    "exigences_sol": "لا يوجد نص إضافي",
-    "besoins_hydriques": "الرتبة الرملية"
+    "culture": "Inconnue",
+    "exigences_sol": "دليل الفالح : زراعة احلم─ص",
+    "besoins_hydriques": "سقيّّ الّي يفحَلَّ نَغَمَ الأَعَزُّ بِالرُبُطِياتِ الّتي تُخالُفُ الحُبُّبَينَ الأَرضَ",
+    "bioclimatologie_optimale": {
+        "temp_min": 15,
+        "temp_max": 25,
+        "hum_min": 20,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "أمراض النباتات",
+            "causes": [
+                "الجفاف",
+                "المرطبات"
+            ],
+            "traitements_specifiques": [
+                "الخضروات المائية",
+                "الأسمدة"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "حفظ الرطوبة في نفقات الزراعة",
+            "status": "أوngoing",
+            "categorie": "urgent"
+        }
+    ]
 }

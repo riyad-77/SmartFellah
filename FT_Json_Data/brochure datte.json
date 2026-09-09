@@ -1,27 +1,34 @@
 {
-    "culture": "Citron",
-    "exigences_sol": "Le sol doit être bien drainé et avoir une bonne structure pour permettre aux racines de s'écarter et d'absorber les nutriments et l'eau.",
-    "besoins_hydriques": "Les cultures de citron nécessitent une quantité importante d'eau, en particulier pendant la période de croissance. Il est recommandé d'aplanir le sol, d'améliorer son drainage et d'ajouter des matériaux organiques pour réduire l'érosion.",
-    "temp_optimale": {
+    "culture": "Nkhil tamr",
+    "exigences_sol": "L'ensoleillement, la température et la fertilité du sol sont essentielles pour une culture de palmiers de tomate.",
+    "besoins_hydriques": "Le sol doit être bien drainé et avoir une bonne aération pour éviter l'accumulation d'eau, qui peut entraîner des problèmes de pourriture et de maladies.",
+    "bioclimatologie_optimale": {
         "temp_min": 10,
-        "temp_max": 25
+        "temp_max": 30,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Mouche",
+            "nom_maladie": "Maladie du moustique à sang",
             "causes": [
-                "Insectes",
-                "Plantes"
+                "Présence de moustiques",
+                "Contamination de la nourriture"
             ],
             "traitements_specifiques": [
-                "Aérosols",
-                "Pesticides"
+                "Ultraviolet",
+                "Réchauffage"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Il est essentiel de régler l'arrosage en fonction des besoins du sol et de la plante. Il est également recommandé d'utiliser des matériaux organiques pour améliorer le drainage et réduire l'érosion.",
+            "description": "Assurer une bonne aération du sol et un bon drainage",
             "status": "En cours",
             "categorie": "Urgent"
         }

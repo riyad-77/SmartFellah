@@ -1,41 +1,50 @@
 {
     "culture": "Melon",
-    "exigences_sol": "Très exigeante en chaleur et lumière.",
-    "besoins_hydriques": "300-400 mm selon les régions, système de goutte-à-goutte.",
-    "temp_optimale": {
-        "temp_min": "20˚C",
-        "temp_max": "25˚C"
+    "exigences_sol": "La culture est très exigeante en chaleur et lumière. Certaines variétés sont indifférentes à la longueur du jour, mais les jours longs conviennent toujours à la culture.",
+    "besoins_hydriques": "Les besoins en eau s’élèvent à 300-400 mm selon les régions. L’irrigation est pilotée en fonction des conditions climatiques.",
+    "bioclimatologie_optimale": {
+        "temp_min": 10,
+        "temp_max": 35,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Fusariose",
+            "nom_maladie": "Fonction de semis",
             "causes": [
-                "Environnement humide",
-                "Fumier non approprié"
+                "Fonte des semis"
             ],
             "traitements_specifiques": [
-                "Fungicide systémique à base de propamocarbe"
+                "Fongicide systémique à base d'Hyméxasol"
             ]
         },
         {
-            "nom_maladie": "Oïdium",
+            "nom_maladie": "Ravageurs",
             "causes": [
-                "Température excessive",
-                "Sécheresse"
+                "Nématodes",
+                "Orobanche",
+                "Oïdium",
+                "Fusariose",
+                "Viroses",
+                "Thrips",
+                "Pucerons",
+                "Acariens"
             ],
             "traitements_specifiques": [
-                "Pompage régulier, application de cuivres chimiques"
+                "Fungicides",
+                "Insecticides",
+                "Fumure de fond"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Labour profond, deux cover-cropages croisés, deux passages d’herse rotative ; enfouissement de fumier de bovin et de la fumure minérale.",
-            "status": "En cours",
-            "categorie": "Urgent"
-        },
-        {
-            "description": "Apport de 30-50 tonnes à l’hectare de fumier de fond, 20 unités d’azote, 100 unités de P205 et 50 unités de K20.",
+            "description": "Procéder à l'irrigation régulière en fonction des conditions climatiques.",
             "status": "En cours",
             "categorie": "Urgent"
         }

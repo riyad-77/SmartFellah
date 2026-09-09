@@ -1,44 +1,36 @@
 {
-    "culture": "Piment Rouge (Niora)",
-    "exigences_sol": null,
-    "besoins_hydriques": "Très exigeant en rotation des cultures, meilleurs rendements dans les terrains vierges ou nouvellement acquis",
-    "temp_optimale": {
+    "culture": "Niora",
+    "exigences_sol": "La culture de la Niora nécessite un sol bien drainé et aéré, avec une profondeur d'au moins 30 cm. Le sol doit être nettoyé de débris et d'herbes avant la plantation. La rotation des cultures est également recommandée pour prévenir la pression parasitaire.",
+    "besoins_hydriques": "La culture de la Niora nécessite une irrigation régulière, mais le sol doit être maintenu en jachère ou cultivé à base de graminées ou légumineuses pour éviter la fatigue du sol. La pression parasitaire est également importante à gérer.",
+    "bioclimatologie_optimale": {
         "temp_min": 15,
-        "temp_max": 30
+        "temp_max": 25,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Mauvaise vache de soja (Sudden Death of Soybean)",
+            "nom_maladie": "Maladie des feuilles vertes",
             "causes": [
-                "Insectes",
-                "Famille Phyllotreta"
+                "Plantes à feuilles vertes",
+                "Plantes à feuilles vertes"
             ],
             "traitements_specifiques": [
-                "Bactériocide"
-            ]
-        },
-        {
-            "nom_maladie": "Noyau brun",
-            "causes": [
-                "Pestes",
-                "Lectiniques"
-            ],
-            "traitements_specifiques": [
-                "Insecticides",
-                "Fumigation"
+                "Inoculation avec des bactéries spécifiques",
+                "Traitement chimique"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Préparation des parcelles avec un minimum de 4 mois de récupération et de repos des sols",
+            "description": "La rotation des cultures et la mise en place d'un système d'irrigation efficace sont essentiels pour prévenir la fatigue du sol et la pression parasitaire.",
             "status": "en cours",
             "categorie": "urgent"
-        },
-        {
-            "description": "Choix d'une varité adaptée à la région de Tadla",
-            "status": "en cours",
-            "categorie": "non urgente"
         }
     ]
 }

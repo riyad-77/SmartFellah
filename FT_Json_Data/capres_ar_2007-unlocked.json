@@ -1,53 +1,36 @@
 {
-    "culture": "Riz",
-    "exigences_sol": "Sol à l'ombre, pH 5,0-6,5",
-    "besoins_hydriques": "Séchage lent, nécessite une humeur moyenne",
-    "temp_optimale": {
-        "temp_min": "15°C",
-        "temp_max": "30°C"
+    "culture": "Capparis",
+    "exigences_sol": "exigences solaires et températures élevées",
+    "besoins_hydriques": "bien élevé en eau",
+    "bioclimatologie_optimale": {
+        "temp_min": 25,
+        "temp_max": 35,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Rougeur foliaire",
+            "nom_maladie": "Maladie de la soif",
             "causes": [
-                "Maladie fongique",
-                "Déshydration"
+                "manque d'eau",
+                "températures élevées"
             ],
             "traitements_specifiques": [
-                "Fumage, irrigation régulière"
-            ]
-        },
-        {
-            "nom_maladie": "Perte de teneurs en azote",
-            "causes": [
-                "Déshydration, sol trop calé ], "
-            ]
-        },
-        {
-            "nom_maladie": "Puteur des feuilles",
-            "causes": [
-                "Maladie fongique, exposition à la lumière excessive"
-            ],
-            "traitements_specifiques": [
-                "Fumage, gestion de l'exposition à la lumière"
+                "irrigation",
+                "ventilation"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Irrigation régulière",
+            "description": "irrigation régulière et ventilation",
             "status": "en cours",
             "categorie": "urgent"
-        },
-        {
-            "description": "Fumage et gestion de l'exposition à la lumière",
-            "status": "en cours",
-            "categorie": "urgence"
-        },
-        {
-            "description": "Suppression des maladies fongiques",
-            "status": "en cours",
-            "categorie": "urgence"
         }
     ]
 }

@@ -1,30 +1,38 @@
 {
-    "culture": "Fraisier",
-    "exigences_sol": "Sols sableux, aptes à plusieurs cultures.",
-    "besoins_hydriques": "Eau abondante et de bonne qualité.",
-    "temp_optimale": {
+    "culture": "fraisier (Fragaria vulgaris)",
+    "exigences_sol": "Sols sableux, aptes à plusieurs cultures, en particulier au fraisier, à l'arachide et à la pomme de terre.",
+    "besoins_hydriques": "Eau abondante et de bonne qualité, système goutte-à-goutte sur des sols sableux.",
+    "bioclimatologie_optimale": {
         "temp_min": 6,
-        "temp_max": 29
+        "temp_max": 29,
+        "hum_min": 20,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Inconnue",
+            "nom_maladie": "Les maladies courantes du fraisier (vírus de la maladie des fraises, ravageurs, etc.)",
             "causes": [
-                "Inconnues"
+                "Faisonnement",
+                "Érosion des feuilles",
+                "Biodiversité",
+                "Sécheresse"
             ],
-            "traitements_specifiques": []
+            "traitements_specifiques": [
+                "Prévention des ravageurs",
+                "Fumigation, traitements antibactériens"
+            ]
         }
     ],
     "recommandations": [
         {
-            "description": "Conduire la culture sous abri en irrigué avec le système goutte-à-goutte sur des sols sableux.",
-            "status": "en cours",
-            "categorie": "urgent"
-        },
-        {
-            "description": "Utiliser un apport de 40 à 60 T/ha de fumier avant les labours.",
-            "status": "en cours",
-            "categorie": "urgent"
+            "description": "Conduire la culture sous abri, utiliser des systèmes goutte-à-goutte, et appliquer des techniques de prévention des ravageurs.",
+            "status": "En cours",
+            "categorie": "Urgent"
         }
     ]
 }

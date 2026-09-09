@@ -1,23 +1,34 @@
 {
     "culture": "Grenadier",
-    "exigences_sol": "Les sols argilo-limoneux irrigués conviennent aussi à la culture du grenadier.",
-    "besoins_hydriques": "La tolérance à la sécheresse est relative et se fait au détriment de sa croissance végétative et de sa fructification. Les meilleurs résultats d’installation de plantations sont obtenus en sols d'alluvions profond avec des disponibilités satisfaisantes en eau (bords des courants d'eau).",
-    "temp_optimale": {
-        "temp_min": "-10°C",
-        "temp_max": "+40°C"
+    "exigences_sol": "Le grenadier est une espèce connue pour sa tolérance au calcaire et à la salinité. Sa tolérance à la sécheresse est relative et se fait au détriment de sa croissance végétative et de sa fructification. Les meilleurs résultats d’installation de plantations sont obtenus en sols d'alluvions profond avec des disponibilités satisfaisantes en eau (bords des courants d'eau). Les sols argilo-limoneux irrigués conviennent aussi à la culture du grenadier.",
+    "besoins_hydriques": "La tolérance à la sécheresse est relative et se fait au détriment de sa croissance végétative et de sa fructification.",
+    "bioclimatologie_optimale": {
+        "temp_min": 0.0,
+        "temp_max": 40.0,
+        "hum_min": 20.0,
+        "hum_max": 80.0
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
             "nom_maladie": "Inconnue",
-            "causes": [],
-            "traitements_specifiques": []
+            "causes": [
+                "Inconnues"
+            ],
+            "traitements_specifiques": [
+                "Inconnues"
+            ]
         }
     ],
     "recommandations": [
         {
-            "description": "Conduire la culture du grenadier en plantation régulière, seule ou associée à d'autres arbres fruitiers.",
-            "status": "en cours",
-            "categorie": "urgent"
+            "description": "Inconnue",
+            "status": "Inconnue",
+            "categorie": "Inconnue"
         }
     ]
 }

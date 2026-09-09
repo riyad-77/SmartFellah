@@ -2,9 +2,16 @@
     "culture": "Prunier",
     "exigences_sol": "La culture de l'abricot est exigeante en sol profond et bien drainé, argilo-limoneux.",
     "besoins_hydriques": "L’abricotier préfère les sols bien drainés, profonds, argilo-limoneux.",
-    "temp_optimale": {
+    "bioclimatologie_optimale": {
         "temp_min": "-16˚C",
-        "temp_max": "7,2˚C"
+        "temp_max": "7,2˚C",
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
@@ -46,6 +53,56 @@
             "traitements_specifiques": [
                 "Fumage, traitements phyto-sanitaires"
             ]
+        },
+        {
+            "nom_maladie": "Piqûres de tige",
+            "causes": [
+                "virus"
+            ],
+            "traitements_specifiques": [
+                "traitement vétérinaire"
+            ]
+        },
+        {
+            "nom_maladie": "Rougeole",
+            "causes": [
+                "Plaque de rouille",
+                "Vieille plaque de rouille"
+            ],
+            "traitements_specifiques": [
+                "Fumure potassique",
+                "Traitement avec des herbicides"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie de la prunier",
+            "causes": [
+                "Plantes maladies",
+                "Mouche"
+            ],
+            "traitements_specifiques": [
+                "Détériorant des herbicides",
+                "Insecticide"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie de la pourriture des racines",
+            "causes": [
+                "Bactéries",
+                "Champignons"
+            ],
+            "traitements_specifiques": [
+                "Traitement avec des produits phytosanitaires"
+            ]
+        },
+        {
+            "nom_maladie": "Piqûres de tige",
+            "causes": [
+                "virus"
+            ],
+            "traitements_specifiques": [
+                "traitement vétérinaire"
+            ]
         }
     ],
     "recommandations": [
@@ -76,6 +133,31 @@
         },
         {
             "description": "Assurez-vous d'un drainage suffisant pour les racines",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Les doses suivantes sont préconisées: N: 100-150 U/ha, P205: 80-100 U/ha; K20: 150 U/ha",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Appliquer régulièrement des doses de fumure potassique",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "La culture du prunier nécessite une attention particulière pour éviter les maladies.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Effectuer des vérifications régulières sur la santé du prunier pour détecter les maladies et les ravageurs",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Il est recommandé de pratiquer une rotation des cultures pour éviter les maladies répétitives.",
             "status": "en cours",
             "categorie": "urgent"
         }

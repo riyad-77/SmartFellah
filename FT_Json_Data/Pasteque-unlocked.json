@@ -1,26 +1,33 @@
 {
-    "culture": "blé",
-    "exigences_sol": "sol aride",
-    "besoins_hydriques": "beaucoup d'humidité",
-    "temp_optimale": {
+    "culture": "Riz",
+    "exigences_sol": "Le sol doit être bien drainé et avoir une pH neutre pour que le riz pèse.",
+    "besoins_hydriques": "Le riz nécessite une irrigation régulière, mais pas trop d'eau. Il doit être arrosé tous les jours pendant la période de germination et de croissance.",
+    "bioclimatologie_optimale": {
         "temp_min": "15°C",
-        "temp_max": "25°C"
+        "temp_max": "30°C",
+        "hum_min": "60%",
+        "hum_max": "80%"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
         {
-            "nom_maladie": "mouche",
+            "nom_maladie": "Mouche",
             "causes": [
-                "vent",
-                "sols sec"
+                "Température trop élevée",
+                "Manque d'eau"
             ],
             "traitements_specifiques": [
-                "insecticide"
+                "Utiliser des insecticides"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "cultiver dans des trous creusés pour améliorer drainage",
+            "description": "Vérifier régulièrement l'état de la culture et prendre des mesures pour contrôler les maladies.",
             "status": "en cours",
             "categorie": "urgent"
         }

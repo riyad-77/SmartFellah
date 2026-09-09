@@ -1,33 +1,35 @@
 {
-    "culture": "Rapeseed",
-    "exigences_sol": "The soil must be well-drained and have a pH between 6.0 and 7.5.",
-    "besoins_hydriques": "Adequate water supply, with a minimum of 25 cm per growing season.",
-    "temp_optimale": {
-        "temp_min": "-10°C",
-        "temp_max": "+25°C"
+    "culture": "Poulet",
+    "exigences_sol": "Le sol doit être sain et avoir une bonne structure pour permettre une croissance rapide et saine des poulets.",
+    "besoins_hydriques": "Les poulets ont besoin d'une quantité importante d'eau pour se rafraîchir et se laver. Il est recommandé de fournir au moins 1 litre d'eau par poulet par jour.",
+    "bioclimatologie_optimale": {
+        "temp_min": 15,
+        "temp_max": 25,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Clubroot",
+            "nom_maladie": "Maladie d'Oie",
             "causes": [
-                "Infection by Clubroot disease",
-                "Poor soil preparation"
+                "Infection de la pneumonie",
+                "Infection de l'ostéomyélite"
             ],
             "traitements_specifiques": [
-                "Cultivate the soil regularly",
-                "Use fungicides"
+                "Antibiotiques",
+                "Isolement"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Rotate the crop with another non-brassica crop to avoid soil-borne diseases.",
-            "status": "Ongoing",
-            "categorie": "Urgent"
-        },
-        {
-            "description": "Use integrated pest management techniques, including biological control and cultural controls.",
-            "status": "On-going",
+            "description": "Il est recommandé de fournir une surface de 10 000 mètres carrés par poulet pour une croissance saine et rapide.",
+            "status": "En cours",
             "categorie": "Urgent"
         }
     ]

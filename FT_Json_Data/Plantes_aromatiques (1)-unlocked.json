@@ -1,16 +1,1 @@
-{
-    "culture": "Riz",
-    "exigences_sol": null,
-    "besoins_hydriques": null,
-    "temp_optimale": {
-        "temp_min": "20",
-        "temp_max": "30"
-    },
-    "precautions": [
-        "Éviter le soleil fort",
-        "Prendre des soins de la moisissure sur les sols"
-    ],
-    "diseases": [
-        "Rizien"
-    ]
-}
+{}

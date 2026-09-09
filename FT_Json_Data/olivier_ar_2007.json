@@ -1,23 +1,35 @@
 {
-    "culture": "",
-    "exigences_sol": "Inconnue",
-    "besoins_hydriques": "Inconnue",
-    "temp_optimale": {
-        "temp_min": null,
-        "temp_max": null
+    "culture": "Riz",
+    "exigences_sol": "Sol chaud et bien drainé",
+    "besoins_hydriques": "Abeille 300-400 mm par an, avec 60-80 mm par an de précipitation",
+    "bioclimatologie_optimale": {
+        "temp_min": 15,
+        "temp_max": 30,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Inconnue",
-            "causes": [],
-            "traitements_specifiques": []
+            "nom_maladie": "Maladie des racines",
+            "causes": [
+                "Infection par les champignons",
+                "Surcharge hydrique"
+            ],
+            "traitements_specifiques": [
+                "Fumigation, désinfection du sol"
+            ]
         }
     ],
     "recommandations": [
         {
-            "description": "",
-            "status": null,
-            "categorie": ""
+            "description": "Mise en place d'un système d'irrigation efficace",
+            "status": "en cours",
+            "categorie": "urgent"
         }
     ]
 }

@@ -1,41 +1,36 @@
 {
-    "culture": "Blé dur et Blé tendre",
-    "exigences_sol": "Sol de type Dehss dans une zone plaine avec un climat partiellement sous influence océanique, Sol de type Tirs sur le plateau avec un climat continental",
-    "besoins_hydriques": "Irrigation régulière, en particulier pour les essais de la station Mrissa",
-    "temp_optimale": {
+    "culture": "Blé tendre",
+    "exigences_sol": "Le blé tendre nécessite un sol avec un pH entre 6,0 et 7,0 et une matière organique élevée.",
+    "besoins_hydriques": "Le blé tendre nécessite une irrigation régulière, en particulier pendant la période de floraison.",
+    "bioclimatologie_optimale": {
         "temp_min": "15°C",
-        "temp_max": "25°C"
+        "temp_max": "25°C",
+        "hum_min": "60%",
+        "hum_max": "80%"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
         {
-            "nom_maladie": "Mauvaises herbes",
+            "nom_maladie": "Rougeur des feuilles",
             "causes": [
-                "Infestation de mauvaises herbes"
+                "Infection par les champignons",
+                "Atteinte par les insectes"
             ],
             "traitements_specifiques": [
-                "Utilisation d'un anti-dicotylédone (Printazol 75)"
-            ]
-        },
-        {
-            "nom_maladie": "Maladies cryptogamiques",
-            "causes": [
-                "Présence du littoral atlantique et de la pluviométrie"
-            ],
-            "traitements_specifiques": [
-                "Traitement antifongique (Impact RM, 1 litre/ha)"
+                "Traitements fongiques",
+                "Traitement par insecticide"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Application régulière d'un semi-soir pour réduire les pertes de qualité du grain",
+            "description": "Sélection des variétés de blé tendre adaptées aux conditions climatiques du Nord-Ouest du Maroc",
             "status": "En cours",
             "categorie": "Urgent"
-        },
-        {
-            "description": "Utilisation d'une densité de semis de 145 Kg/ha pour optimiser le rendement",
-            "status": "En cours",
-            "categorie": "Prioritaire"
         }
     ]
 }

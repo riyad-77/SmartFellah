@@ -1,19 +1,38 @@
 {
     "culture": "Inconnue",
-    "exigences_sol": null,
-    "besoins_hydriques": null,
-    "temp_optimale": {
-        "temp_min": null,
-        "temp_max": null
+    "exigences_sol": "Le climat est défini par de nombreux éléments, entre autres la température, l’insolation, les précipitations, l’humidité relative et les vents. Il dépend de plusieurs facteurs tels que la latitude, le relief, les courants marins et la proximité des côtes, et résulte de l’interaction de l’ensemble des facteurs mis en jeu.",
+    "besoins_hydriques": "Les espèces tropicales sont sensibles aux basses températures et ne tolèrent pas les gelées tout au long de leurs cycles de croissance. Elles ont besoin de suffisamment de chaleur pour la maturation de leurs fruits. Parmi ces espèces figurent le bananier, le manguier, l’ananas et le papayer. Les espèces subtropicales tolèrent légèrement les gelées mais n’ont pas besoin de froid pour leur fructification.",
+    "bioclimatologie_optimale": {
+        "temp_min": "15",
+        "temp_max": "35",
+        "hum_min": "60",
+        "hum_max": "80"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
-        null
+        {
+            "nom_maladie": "Maladie de la plupart des espèces tropicales",
+            "causes": [
+                "température élevée",
+                "manque de chaleur",
+                "déshydratation"
+            ],
+            "traitements_specifiques": [
+                "irrigation régulière",
+                "fertilisation spécifique",
+                "protection contre les insectes"
+            ]
+        }
     ],
     "recommandations": [
         {
-            "description": null,
-            "status": null,
-            "categorie": null
+            "description": "L'horticulteur marocain doit étudier les exigences climatiques particulières de chaque espèce et prendre des mesures pour les adapter à ses conditions.",
+            "status": "en cours",
+            "categorie": "urgent"
         }
     ]
 }

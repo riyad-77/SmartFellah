@@ -1,34 +1,36 @@
 {
     "culture": "Framboisier",
-    "exigences_sol": "Les sols sont généralement bien drainés et aérer dans la région du Loukkos. Cependant, il est recommandé d'éviter les terrains sableux ou argileux.",
-    "besoins_hydriques": "La framboisier nécessite une irrigation régulière, en particulier pendant la période de floraison.",
-    "temp_optimale": {
-        "temp_min": "15°C",
-        "temp_max": "25°C"
+    "exigences_sol": "Les sols doivent être bien drainés et avoir un pH neutre pour le framboisier. La culture nécessite un sol froid et humide, avec une profondeur de 60-90 cm.",
+    "besoins_hydriques": "Le framboisier nécessite une irrigation régulière, en particulier pendant la période de floraison. Il est recommandé d'irriguer les plants en fonction des conditions climatiques.",
+    "bioclimatologie_optimale": {
+        "temp_min": "5°C",
+        "temp_max": "25°C",
+        "hum_min": "60%",
+        "hum_max": "80%"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Maladie des feuilles",
+            "nom_maladie": "Malf raise",
             "causes": [
-                "Aphid",
-                "Pestes"
+                "Fongaison",
+                "Attaque de ravageurs"
             ],
             "traitements_specifiques": [
-                "Insecticide",
-                "Fumigation"
+                "Fongicides",
+                "Insecticides"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Fertiliser régulièrement pour favoriser la croissance et le développement des tiges.",
+            "description": "Il est recommandé de planter le framboisier en groupes pour maximiser la productivité.",
             "status": "en cours",
-            "categorie": "normale"
-        },
-        {
-            "description": "Assurer une irrigation régulière, en particulier pendant la période de floraison.",
-            "status": "en cours",
-            "categorie": "normale"
+            "categorie": "urgent"
         }
     ]
 }

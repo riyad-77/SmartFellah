@@ -1,29 +1,37 @@
 {
-    "culture": "Achlamydes",
-    "exigences_sol": "La culture nécessite une solitétrie et un drainage adaptés aux conditions du site.",
-    "besoins_hydriques": "Le Achlamyde nécessite des besoins hydriques de type à base d'eau, avec une consommation moyenne de 500 mm par an.",
-    "temp_optimale": {
-        "temp_min": "15°C",
-        "temp_max": "25°C"
+    "culture": "Pois",
+    "exigences_sol": "La terre doit être bien drainée et avoir un pH neutre.",
+    "besoins_hydriques": "Le sol doit être arrosé régulièrement, surtout pendant la période de floraison.",
+    "bioclimatologie_optimale": {
+        "temp_min": 15,
+        "temp_max": 25,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Mouche des Achlamydes",
+            "nom_maladie": "Morte de plantes",
             "causes": [
-                "Taux de pH élevé",
-                "Manque de nutrition"
+                "Manque d'eau",
+                "Trop d'eau",
+                "Maladies végétales"
             ],
             "traitements_specifiques": [
-                "Environnement contrôlé",
-                "Application de pesticides spécifiques"
+                "Arrosage régulier",
+                "Traitement antimicrobien"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Appliquer un solitérité adaptée aux conditions du site et assurer une drainage adéquat.",
+            "description": "Utiliser un système de drainage pour éviter les excesses d'eau",
             "status": "en cours",
-            "categorie": "urgence"
+            "categorie": "urgent"
         }
     ]
 }

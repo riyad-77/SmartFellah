@@ -1,41 +1,56 @@
 {
     "culture": "Amandier",
-    "exigences_sol": "Sol calcaire ou argileux avec une bonne drainage",
-    "besoins_hydriques": "Besoins modérés à faibles (50-100 mm/an)",
-    "temp_optimale": {
-        "temp_min": "15°C",
-        "temp_max": "25°C"
+    "exigences_sol": "Les plantations traditionnelles sont localisées dans les zones de relief, telles que l'Azilal, Al Hoceima, Amezmiz, etc. Elles nécessitent un sol calcaire avec une bonne structure pour supporter la croissance des arbres.",
+    "besoins_hydriques": "Les plantations traditionnelles nécessitent une irrigation régulière, en particulier pendant la période de floraison. La réduction des densités des plantations peut également faciliter l'infiltration de l'eau dans le sol.",
+    "bioclimatologie_optimale": {
+        "temp_min": 10,
+        "temp_max": 25,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Mauvaise pollinisation",
+            "nom_maladie": "Maladie des feuilles",
             "causes": [
-                "Faible quantité de fleurs",
-                "Qualité des fleurs"
-            ],
-            "traitements_specifiques": []
-        },
-        {
-            "nom_maladie": "Résistance à certaines maladies",
-            "causes": [
-                "Bacillus subtilis",
-                "Fusarium oxysporum"
+                "Pollinisation insuffisante",
+                "Manque d'entretien",
+                "Gelées"
             ],
             "traitements_specifiques": [
-                "Applications de pesticides"
+                "Sélection de variétés tolérantes à la sécheresse",
+                "Programme de lutte contre les maladies",
+                "Amélioration de la pollinisation"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie des racines",
+            "causes": [
+                "Sécheresse",
+                "Manque d'irrigation",
+                "Contamination du sol"
+            ],
+            "traitements_specifiques": [
+                "Amélioration de la drainage du sol",
+                "Programme de lutte contre les maladies",
+                "Réduction des doses de pesticides"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Sur-graftage des arbres avec des variétés commerciales performantes",
-            "status": "en cours",
-            "categorie": "urgent"
+            "description": "Conduire des tests de pollinisation pour améliorer la qualité de la pollinisation",
+            "status": "En cours",
+            "categorie": "Urgent"
         },
         {
-            "description": "Travail du sol sous la frondaison des arbres pour collecter l'eau de pluie et faciliter son infiltrations",
-            "status": "planifié",
-            "categorie": "prioritaire"
+            "description": "Lancer un programme de sélection de variétés tolérantes à la sécheresse",
+            "status": "En cours",
+            "categorie": "Prioritaire"
         }
     ]
 }

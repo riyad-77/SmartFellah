@@ -1,0 +1,6 @@
+{
+    "culture": "bananier",
+    "ndvi_optimal_max": 1900,
+    "ndwi_optimal_max": 2300,
+    "evi_optimal_max": 350
+}

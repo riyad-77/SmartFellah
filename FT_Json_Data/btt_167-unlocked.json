@@ -1,10 +1,17 @@
 {
-    "culture": "Mentha verte",
-    "exigences_sol": "La menthe nécessite un gros investissement, mais elle est rentable malgré la cherté des intrants et l’augmentation du coût de production.",
-    "besoins_hydriques": "L'eau douce est abondante et accessible grâce à des puits qui ont en général 20 à 30 mètres de profondeur.",
-    "temp_optimale": {
-        "temp_min": null,
-        "temp_max": null
+    "culture": "Mentha viridis ou Mentha spicata var. viridis",
+    "exigences_sol": "Le sol «Tirs» est argileux, fertile, à forte rétention en eau, dépourvu de cailloux et les terrains sont plats. L’eau est douce, abondante et accessible grâce à des puits qui ont en général 20 à 30 mètres de profondeur.",
+    "besoins_hydriques": "Les 85.000 tonnes de menthe fraîche produites en 2006-07, 4.200 tonnes sont exportées. Avec 780 ha de menthe, Settat est la principale province qui cultive et qui produit la menthe.",
+    "bioclimatologie_optimale": {
+        "temp_min": "14°C",
+        "temp_max": "23°C",
+        "hum_min": "60%",
+        "hum_max": "80%"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
         {
@@ -15,7 +22,7 @@
     ],
     "recommandations": [
         {
-            "description": "Il est important de faire l’épierrage avant l’installation de la menthe pour améliorer la fertilité du sol.",
+            "description": "L'implication de la main d'œuvre (familiale ou recrutée) est importante dans toutes les opérations culturales: plantation, irrigation, épandage d’engrais et du fumier, désherbage, traitements phytosanitaires et récolte.",
             "status": "en cours",
             "categorie": "urgent"
         }

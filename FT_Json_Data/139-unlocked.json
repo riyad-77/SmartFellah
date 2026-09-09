@@ -1,40 +1,47 @@
 {
     "culture": "Noyer commun (Juglans regia)",
-    "exigences_sol": "Le noyer est planté principalement au bord des courants d'eau et à la limite des parcelles, en îlots et/ou en arbres isolés. Il préfère les sols bien drainés et les altitudes situées entre 1200 m et 1700 m.",
-    "besoins_hydriques": "Le noyer a une demande de water importante pour sa croissance, il faut donc assurer une irrigation régulière.",
-    "temp_optimale": {
-        "temp_min": "10°C",
-        "temp_max": "30°C"
+    "exigences_sol": "La culture du noyer nécessite des sols well-drainés avec un pH neutre, entre 6,0 et 7,0.",
+    "besoins_hydriques": "Le noyer nécessite une forte irrigation, en particulier pendant la floraison et la noixification. Les plants doivent être irrigués régulièrement, mais pas trop, car cela peut entraîner une surirrigation qui peut conduire à des problèmes de santé des plantes.",
+    "bioclimatologie_optimale": {
+        "temp_min": "5°C",
+        "temp_max": "25°C",
+        "hum_min": "60%",
+        "hum_max": "80%"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Rougeur des feuilles",
+            "nom_maladie": "Puceronne du noyer",
             "causes": [
-                "manque de lumière",
-                "trop d'eau"
+                "Manque d'irrigation",
+                "Présence de parasites"
             ],
             "traitements_specifiques": [
-                "irrigation contrôlée",
-                "application de pesticides"
+                "Application de pesticides",
+                "Irrigation régulière"
             ]
         },
         {
-            "nom_maladie": "Maladie à la noix",
+            "nom_maladie": "Mouche du noyer",
             "causes": [
-                "attaque des insectes",
-                "infection bactérienne"
+                "Présence de substances chimiques",
+                "Manque de maintien des arbres"
             ],
             "traitements_specifiques": [
-                "traitement avec des insecticides",
-                "application de produits chimiques anti-bactériens"
+                "Application de pesticides",
+                "Entretien des arbres"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "L'arrosage doit être effectué à l'aide d'un système de rotation de couvertures pour minimiser les pertes d'eau. Il est recommandé d'utiliser des nozzles qui délivrent une quantité d'eau variable selon la température et la durée du cycle.",
-            "status": "en cours",
-            "categorie": "urgent"
+            "description": "L'entretien régulier des plants est essentiel pour prévenir les maladies. Les feuilles doivent être régulièrement enlevées pour permettre une bonne ventilation et éviter la prolifération des parasites.",
+            "status": "En cours",
+            "categorie": "Urgent"
         }
     ]
 }

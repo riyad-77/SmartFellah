@@ -1,0 +1,6 @@
+{
+    "culture": "tournesol",
+    "ndvi_optimal_max": "10 qx/ha",
+    "ndwi_optimal_max": "16 qx/ha",
+    "evi_optimal_max": "15 qx/ha"
+}

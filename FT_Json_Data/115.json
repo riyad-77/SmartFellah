@@ -1,33 +1,38 @@
 {
     "culture": "Pomme (Malus domestica)",
-    "exigences_sol": "Le sol doit être bien drainé et avoir un pH neutre",
-    "besoins_hydriques": "La pomme nécessite une irrigation régulière, en particulier pendant la phase de floraison.",
-    "temp_optimale": {
-        "temp_min": "10°C",
-        "temp_max": "25°C"
+    "exigences_sol": "La culture du pommier a des exigences sol qui incluent un sol frais, humide et bien aérier, avec une pH adapté à la plante.",
+    "besoins_hydriques": "La culture du pommier a des besoins hydriques importants, en particulier en période de fruitification. La plante nécessite un sol bien drainé et une irrigation régulière.",
+    "bioclimatologie_optimale": {
+        "temp_min": "−5 °C",
+        "temp_max": "28 °C",
+        "hum_min": "60 %",
+        "hum_max": "80 %"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Rougeur des feuilles (Powdery mildew)",
+            "nom_maladie": "Maladie du pommier",
             "causes": [
-                "Humidité excessive",
-                "Vent froid"
+                "Bactéries",
+                "Virus",
+                "Fongiques"
             ],
             "traitements_specifiques": [
-                "Fumigation, application de fungicides"
+                "Traitement antibiotique",
+                "Traitement antiviral",
+                "Traitement fungicide"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Assurez-vous d'avoir un sol bien drainé et un pH neutre.",
-            "status": "En cours",
-            "categorie": "Urgent"
-        },
-        {
-            "description": "L'irrigation régulière est essentielle pendant la phase de floraison.",
-            "status": "En cours",
-            "categorie": "Niveau 2"
+            "description": "La culture du pommier nécessite une attention particulière en termes de soins de sol et d'irrigation.",
+            "status": "en cours",
+            "categorie": "urgent"
         }
     ]
 }

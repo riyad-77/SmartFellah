@@ -1,0 +1,6 @@
+{
+    "culture": "Blé",
+    "ndvi_optimal_max": 0.85,
+    "ndwi_optimal_max": 0.72,
+    "evi_optimal_max": 0.63
+}

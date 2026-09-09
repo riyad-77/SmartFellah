@@ -2,9 +2,16 @@
     "culture": "Arachide",
     "exigences_sol": "sols sableux",
     "besoins_hydriques": "irrigué par aspersion",
-    "temp_optimale": {
+    "bioclimatologie_optimale": {
         "temp_min": "15°C à 25°C",
-        "temp_max": "30°C"
+        "temp_max": "30°C",
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": null,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
@@ -16,15 +23,6 @@
             "traitements_specifiques": [
                 "semis diversifiés",
                 "reducion de l'utilisation d'engrais"
-            ]
-        },
-        {
-            "nom_maladie": "Inconnue",
-            "causes": [
-                "Inconnues"
-            ],
-            "traitements_specifiques": [
-                "Incongru"
             ]
         },
         {
@@ -48,6 +46,31 @@
                 "traitement hydrique",
                 "amendement du sol"
             ]
+        },
+        {
+            "nom_maladie": "Maladie des feuilles",
+            "causes": [
+                "Présence de virus"
+            ],
+            "traitements_specifiques": [
+                "Traitement avec des insecticides"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie X",
+            "causes": [
+                "Dégénérescence des feuilles",
+                "Réduction des rendements"
+            ],
+            "traitements_specifiques": [
+                "Traitement chimique",
+                "Manipulation manuelle"
+            ]
+        },
+        {
+            "nom_maladie": "Inconnue",
+            "causes": null,
+            "traitements_specifiques": null
         }
     ],
     "recommandations": [
@@ -85,6 +108,16 @@
             "description": "Élimination des insectes nuisibles",
             "status": "en cours",
             "categorie": "optionnel"
+        },
+        {
+            "description": "Utiliser des techniques de production plus intenses pour augmenter les rendements.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Optimiser la technique de production et réduire les pesticides",
+            "status": "En cours",
+            "categorie": "Urgent"
         }
     ]
 }

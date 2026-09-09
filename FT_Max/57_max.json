@@ -1,0 +1,6 @@
+{
+    "culture": "Tomate",
+    "ndvi_optimal_max": 20,
+    "ndwi_optimal_max": 25,
+    "evi_optimal_max": 17
+}

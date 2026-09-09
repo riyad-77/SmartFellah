@@ -1,34 +1,36 @@
 {
     "culture": "Tomate",
-    "exigences_sol": "Le sol doit être bien drainé et avoir un pH moyen pour permettre une bonne croissance des plants.",
-    "besoins_hydriques": "Les tomates ont besoin d'une certaine quantité d'eau, mais pas trop d'eau pour éviter les maladies.",
-    "temp_optimale": {
+    "exigences_sol": "Le sol doit être bien drené et avoir une bonne structure pour absorber et conserver l'eau. Il est donc important de choisir un sol adapté à la production de tomate en particulier.",
+    "besoins_hydriques": "Le sol doit être bien drené et avoir une bonne structure pour absorber et conserver l'eau. Il est donc important de choisir un sol adapté à la production de tomate en particulier.",
+    "bioclimatologie_optimale": {
         "temp_min": "15°C",
-        "temp_max": "30°C"
+        "temp_max": "25°C",
+        "hum_min": "60%",
+        "hum_max": "80%"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
         {
-            "nom_maladie": "TYLCV",
+            "nom_maladie": "Maladie des feuilles jaunes",
             "causes": [
-                "Bemisia tabaci",
-                "insecte Homoptère de la famille des Aleurodidae"
+                "TYLCV",
+                "Bemisia tabaci"
             ],
             "traitements_specifiques": [
-                "insecticides",
-                "culture biologique"
+                "Traitement biologique",
+                "Traitement chimique"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Faire des semis précoce pour éviter les maladies et les insectes.",
+            "description": "Utiliser des combinaisons de filets pour assurer une meilleure protection des plants, surtout lorsqu'un seul type de filet ne constitue pas sufficient pour protéger les plants.",
             "status": "en cours",
             "categorie": "urgent"
-        },
-        {
-            "description": "Utiliser des filets pour protéger les plants contre les insectes et les maladies.",
-            "status": "en cours",
-            "categorie": "non urgente"
         }
     ]
 }

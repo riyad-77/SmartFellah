@@ -1,23 +1,35 @@
 {
     "culture": "Noyer commun (Juglans regia)",
-    "exigences_sol": "Les plantations existent dans les vallées montagneuses avec des altitudes situées entre 1200 m et 1700 m.",
-    "besoins_hydriques": null,
-    "temp_optimale": {
-        "temp_min": "15°C",
-        "temp_max": "30°C"
+    "exigences_sol": "Le noyer est planté principalement au bord des courants d'eau et à la limite des parcelles, en îlots et/ou en arbres isolés. Il est cultivé pour la production de noix, du bois noble mais aussi pour l'ombre qu'il procure durant la période estivale.",
+    "besoins_hydriques": "Les plants ont été distribués et installés dans différentes régions du Maroc, sans étude préalable de comportement. Les agriculteurs dénomment ce noyer par le terme Roumi. Les variétés sont des semis de noix non greffés.",
+    "bioclimatologie_optimale": {
+        "temp_min": "10°C",
+        "temp_max": "25°C",
+        "hum_min": "60%",
+        "hum_max": "80%"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Inconnue",
-            "causes": [],
-            "traitements_specifiques": []
+            "nom_maladie": "Les maladies qui affectent le noyer sont souvent liées à la surculture et à l'absence de rotation des cultures.",
+            "causes": [
+                "Surculture",
+                "Absence de rotation des cultures"
+            ],
+            "traitements_specifiques": [
+                "Traitement par incinération, application de cuivre et zinc"
+            ]
         }
     ],
     "recommandations": [
         {
-            "description": "Le noyer est planté principalement au bord des courants d'eau et à la limite des parcelles.",
-            "status": null,
-            "categorie": null
+            "description": "La culture du noyer est recommandée pour les zones humides et tempérées. Il est essentiel de fournir un sol bien drainé et d'appliquer des fertilisants adaptés à la culture.",
+            "status": "En cours",
+            "categorie": "Urgent"
         }
     ]
 }

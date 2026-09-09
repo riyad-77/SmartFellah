@@ -1,0 +1,6 @@
+{
+    "culture": "abricotier",
+    "ndvi_optimal_max": "250",
+    "ndwi_optimal_max": "500",
+    "evi_optimal_max": "7.2"
+}

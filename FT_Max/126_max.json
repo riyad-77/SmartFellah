@@ -1,0 +1,6 @@
+{
+    "culture": "prunier",
+    "ndvi_optimal_max": "60",
+    "ndwi_optimal_max": "70",
+    "evi_optimal_max": "75"
+}

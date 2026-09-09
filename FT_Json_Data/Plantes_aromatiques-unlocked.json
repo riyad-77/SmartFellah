@@ -1,15 +1,1 @@
-{
-    "culture": null,
-    "exigences_sol": null,
-    "besoins_hydriques": null,
-    "temp_optimale": {
-        "temp_min": null,
-        "temp_max": null
-    },
-    "precautions": [
-        {
-            "id": "MDIW",
-            "name": "Precaution MDIW"
-        }
-    ]
-}
+{}

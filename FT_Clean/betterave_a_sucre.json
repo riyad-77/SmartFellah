@@ -2,9 +2,16 @@
     "culture": "Betterave a sucre",
     "exigences_sol": "La meilleure qualité du sol pour semer les graines de betterave à sucre est un sol alluvial avec une texture fine et une structure homogène.",
     "besoins_hydriques": "goutte à goutte",
-    "temp_optimale": {
+    "bioclimatologie_optimale": {
         "temp_min": "16-26 °C",
-        "temp_max": "10-20 °C"
+        "temp_max": "10-20 °C",
+        "hum_min": "60%",
+        "hum_max": "80%"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
         {
@@ -63,6 +70,15 @@
             "traitements_specifiques": [
                 "Herbicides, Fumigations"
             ]
+        },
+        {
+            "nom_maladie": "Rougeur et pourriture des feuilles",
+            "causes": [
+                "Infection par des maladies fongiques"
+            ],
+            "traitements_specifiques": [
+                "Application de fungicides"
+            ]
         }
     ],
     "recommandations": [
@@ -100,6 +116,26 @@
             "description": "Réaliser un labour précis et une préparation du sol soignée pour permettre un enracinement profond.",
             "status": "En cours",
             "categorie": "Urgent"
+        },
+        {
+            "description": "Mise en place d'un système d'irrigation plus efficace pour assurer la germination et une levée homogène.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Mise en place de l'irrigation à partir du réseau pour assurer des irrigations rapprochées et une germination homogène.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Realiser des labourages réguliers et soignés pour obtenir une structure superficielle bien aerie et profonde en racine.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Assurer une irrigation régulière et rapprochée pour assurer la germination et une levée homogene.",
+            "status": "en cours",
+            "categorie": "urgent"
         }
     ]
 }

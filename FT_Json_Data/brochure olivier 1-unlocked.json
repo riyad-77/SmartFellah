@@ -1,17 +1,52 @@
 {
     "culture": "Inconnue",
-    "exigences_sol": null,
-    "besoins_hydriques": null,
-    "temp_optimale": {
-        "temp_min": null,
-        "temp_max": null
+    "exigences_sol": "Description du sol requis",
+    "besoins_hydriques": "Description des besoins hydriques",
+    "bioclimatologie_optimale": {
+        "temp_min": 15.5,
+        "temp_max": 30.2,
+        "hum_min": 20,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.3,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.4
     },
     "maladies_details": [
         {
-            "nom_maladie": null,
-            "causes": [],
-            "traitements_specifiques": []
+            "nom_maladie": "Mélingue",
+            "causes": [
+                "Oxyde de soufre",
+                "Température élevée"
+            ],
+            "traitements_specifiques": [
+                "Aérosolisation",
+                "Utilisation de pulvérisateurs"
+            ]
+        },
+        {
+            "nom_maladie": "Malaria",
+            "causes": [
+                "Moscqé",
+                "Humidité élevée"
+            ],
+            "traitements_specifiques": [
+                "Médicaments antimalaires",
+                "Traitement par transfusion sanguine"
+            ]
         }
     ],
-    "recommandations": []
+    "recommandations": [
+        {
+            "description": "Application de pesticides régulièrement",
+            "status": "En cours",
+            "categorie": "Prioritaire"
+        },
+        {
+            "description": "Création de zones de réduction de la température",
+            "status": "En cours",
+            "categorie": "Prioritaire"
+        }
+    ]
 }

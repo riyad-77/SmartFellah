@@ -1,33 +1,37 @@
 {
-    "culture": "Viticulture",
-    "exigences_sol": "Sol bien drainé et avec une pH comprise entre 6,0 et 7,0.",
-    "besoins_hydriques": "Aire d'écoulement régulière pour l'évacuation des eaux de ruissellement et la réduction du risque de teneur en eau.",
-    "temp_optimale": {
-        "temp_min": 10,
-        "temp_max": 35
+    "culture": "Sultanine",
+    "exigences_sol": "Il est exigé que le sol soit bien drainé et avoir un pH légèrement acide (5,5-6,5).",
+    "besoins_hydriques": "Les raisins de table nécessitent une certaine quantité d'eau, mais pas trop. Il est recommandé d'apporter environ 200 mm d'eau par an, soit environ 50 mm en hiver et 100 mm en été.",
+    "bioclimatologie_optimale": {
+        "temp_min": "15°C",
+        "temp_max": "25°C",
+        "hum_min": "60%",
+        "hum_max": "80%"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Coublage",
+            "nom_maladie": "Mille-feuille",
             "causes": [
+                "Fumée",
                 "Vent",
-                "Rafle"
+                "Pluie"
             ],
             "traitements_specifiques": [
-                "Fumigation, désherbage"
+                "Tratement chimique",
+                "Prévention"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "L'incision annulaire doit être pratiquée juste après la nouaison pour améliorer le poids moyen des baies.",
-            "status": "En cours",
-            "categorie": "Urgent"
-        },
-        {
-            "description": "L'éclaircissage des grappes entières peut se réaliser avant la floraison pour améliorer le pourcentage de fécondation des fleurs des grappes conservées.",
-            "status": "En cours",
-            "categorie": "Urgent"
+            "description": "Assurer une irrigation régulière et équilibrée",
+            "status": "en cours",
+            "categorie": "urgence"
         }
     ]
 }

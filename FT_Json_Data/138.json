@@ -1,34 +1,35 @@
 {
     "culture": "Pêcher",
-    "exigences_sol": null,
-    "besoins_hydriques": "Le pêcher est classé sous-alimentaire en termes de besoins en eau. Il nécessite une irrigation régulière, surtout pendant la période de floraison.",
-    "temp_optimale": {
-        "temp_min": "-2°C",
-        "temp_max": "+25°C"
+    "exigences_sol": "La Perse",
+    "besoins_hydriques": "Les besoins en eau sont relativement faibles, il est recommandé de les irriguer deux fois par semaine, de préférer l'irrigation par goutte d'or ou par micro-irrigation.",
+    "bioclimatologie_optimale": {
+        "temp_min": 10,
+        "temp_max": 30,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Maladie des feuilles rouges",
+            "nom_maladie": "Maladie de la chaux",
             "causes": [
-                "Concentrations élevées de azote",
-                "Pauvreté en phosphore"
+                "Infection par le bacterium Pseudomonas syringae"
             ],
             "traitements_specifiques": [
-                "Application de fumure de phosphore",
-                "Utilisation de pesticides spéciaux"
+                "Irrigateur biologique",
+                "Fumigation"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "L'association de variétés pollinisatrices est recommandée pour les cultures en sol léger.",
+            "description": "Assurer une bonne ventilation dans le verger pour éviter les gelées",
             "status": "en cours",
             "categorie": "urgent"
-        },
-        {
-            "description": "La protection phytosanitaire est essentielle pour prévenir les ravageurs et les maladies.",
-            "status": "en cours",
-            "categorie": "non urgente"
         }
     ]
 }

@@ -1,0 +1,6 @@
+{
+    "culture": "Laitue",
+    "ndvi_optimal_max": 20,
+    "ndwi_optimal_max": 23,
+    "evi_optimal_max": 7
+}

@@ -1,0 +1,6 @@
+{
+    "culture": "Cognassier",
+    "ndvi_optimal_max": "3000",
+    "ndwi_optimal_max": "25000",
+    "evi_optimal_max": "25000"
+}

@@ -1,0 +1,6 @@
+{
+    "culture": "Pommier",
+    "ndvi_optimal_max": 0.6,
+    "ndwi_optimal_max": 0.4,
+    "evi_optimal_max": 0.8
+}

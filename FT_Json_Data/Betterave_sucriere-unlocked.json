@@ -1,23 +1,40 @@
 {
-    "culture": null,
-    "exigences_sol": null,
-    "besoins_hydriques": null,
-    "temp_optimale": {
-        "temp_min": "10",
-        "temp_max": "20"
+    "culture": "Inconnue",
+    "exigences_sol": "Argileux",
+    "besoins_hydriques": "Argileux",
+    "bioclimatologie_optimale": {
+        "temp_min": 20,
+        "temp_max": 28,
+        "hum_min": 20,
+        "hum_max": 80
     },
-    "maladies_details": [
-        {
-            "nom_maladie": null,
-            "causes": [],
-            "traitements_specifiques": []
-        }
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
+    },
+    "pays": [
+        "France"
     ],
-    "recommandations": [
-        {
-            "description": null,
-            "status": null,
-            "categorie": null
-        }
+    "provinces": [
+        "Pays de la Loire"
+    ],
+    "ville": [
+        "Nantes"
+    ],
+    "type": [
+        "Argileux"
+    ],
+    "superficie": [
+        "1000"
+    ],
+    "population": [
+        "100000"
+    ],
+    "altitude": [
+        "20"
+    ],
+    "climat": [
+        "Temperé"
     ]
 }

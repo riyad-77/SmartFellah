@@ -1,29 +1,35 @@
 {
     "culture": "Myrtille",
-    "exigences_sol": "La myrtille est une plante qui nécessite un sol bien drainé et fertile, avec un pH entre 5.5 et 6.5.",
-    "besoins_hydriques": "La myrtille a besoin d'un certain niveau d'humidité, mais elle peut tolérer des périodes de sécheresse. Il est recommandé d'irriger régulièrement pendant la première année après l'installation.",
-    "temp_optimale": {
-        "temp_min": "-10°C",
-        "temp_max": "25°C"
+    "exigences_sol": "Le myrtillier appartient au genre Vaccinium et à la famille des Ericacées qui comprend un grand nombre d’espèces différentes. Par rapport à l'espèce endémique européenne (Vaccinium myrtillus), les différents Vaccinium (Vaccinium corymbosum, Vaccinium ashei, Vaccinium darrowii, Vaccinium angustifolium...) à fruits bleus sont classés sous le terme générique de Myrtille.",
+    "besoins_hydriques": "Les besoins hydriques de la myrtille sont dépendants de la variété et de la région de production. Les variétés du type Southern Highbush sont généralement préférées parce qu’elles sont plus précoces et que leurs fruits sont d’une meilleure qualité.",
+    "bioclimatologie_optimale": {
+        "temp_min": "10",
+        "temp_max": "25",
+        "hum_min": "70",
+        "hum_max": "80"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
         {
-            "nom_maladie": "Maladie des feuilles vertes",
+            "nom_maladie": "Maladie de la myrtille",
             "causes": [
-                "Aphides",
-                "Pierres filantes"
+                "Plantes sensibles au froid",
+                "Infection par des champignons"
             ],
             "traitements_specifiques": [
-                "Insecticide",
-                "Traitement à base d'huile"
+                "Fumigation, traitement avec des insecticides"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Il est recommandé de planter les myrtilles dans des zones bien aéré et ensoleillées.",
-            "status": "en cours",
-            "categorie": "urgent"
+            "description": "L'installation de la culture de myrtille nécessite un coût relativement élevé (environ 800.000 Dh/ha). Il est important de choisir des variétés appropriées pour la région de production et de les sélectionner en fonction des besoins du marché.",
+            "status": "En cours",
+            "categorie": "Urgent"
         }
     ]
 }

@@ -1,17 +1,36 @@
 {
-    "culture": "Inconnue",
-    "exigences_sol": null,
-    "besoins_hydriques": null,
-    "temp_optimale": {
-        "temp_min": null,
-        "temp_max": null
+    "culture": "Artichaut",
+    "exigences_sol": "Le sol doit être profond, de texture moyenne, et bien drainé.",
+    "besoins_hydriques": "Les besoins en eau sont élevés (1.500-2.000 mm/cycle).",
+    "bioclimatologie_optimale": {
+        "temp_min": "10",
+        "temp_max": "25",
+        "hum_min": "20",
+        "hum_max": "80"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
         {
-            "nom_maladie": "Inconnue",
-            "causes": null,
-            "traitements_specifiques": null
+            "nom_maladie": "Mildiou",
+            "causes": [
+                "Roty",
+                "Pectinolyse"
+            ],
+            "traitements_specifiques": [
+                "Fumage de fond",
+                "Engraissage"
+            ]
         }
     ],
-    "recommandations": []
+    "recommandations": [
+        {
+            "description": "La rotation culturale est nécessaire pour éviter les maladies.",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
 }

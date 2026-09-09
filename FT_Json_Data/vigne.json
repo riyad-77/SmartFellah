@@ -1,4 +1,119 @@
 {
-    "version": 3,
-    "text": "<!DOCTYPE html><html><head>\n\t<meta charset=\"UTF-8\">\n\t<title>1</title>\n\t<style type=\"text/css\">\n\t\tbody {\n\th background-color: #f2f2f2;\n\t}\n\n\t</style>\n</head><body>\n\t<\npadding style=\"padding-top:100px; padding-left:50px; \">\n\t\t<\nh1>2.1</h1>\n\t\t<\nblockquote style=\"border: 0; margin-bottom: 0;\"> &quot;áHÎdÉH á£ÑJôŸG πeGƒédG&quot; &#39;&#39;&quot;\n\t\t\t<\ta href=\"#top\" class=\"icon-up-arrow\" title=\"Back to top\"><span class=\"sr-only\">Skip to content</span><svg class=\"up-arrow icon icon-md-xlarge\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\"\n\t\t\t\t<title>Back to top</title>\n\t\t\t\t<path d=\"M17 5.5l-8 8H5L12 21l7-7z\"></path></svg></a>\n\t\t</\nt\th1>2.2</h1>\n\t\t<\nblockquote style=\"border: 0; margin-bottom: 0;\"> &quot;™bƒŸG QÉ«àNEG&quot;\n\t\t\t<\ta href=\"#top\" class=\"icon-up-arrow\" title=\"Back to top\"><span class=\"sr-only\">Skip to content</span><svg class=\"up-arrow icon icon-md-xlarge\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\"\n\t\t\t\t<title>Back to top</title>\n\t\t\t\t<path d=\"M17 5.5l-8 8H5L12 21l7-7z\"></path></svg></a>\n\t\t</\nt\n\t</p>\n</body></html>"
+    "version": "2021-11-01",
+    "header": {
+        "title": "Introduction",
+        "content": "This is a sample template for a book chapter."
+    },
+    "toc": [
+        "Introduction",
+        "Theoretical Background",
+        "Methodology",
+        "Results",
+        "Conclusion"
+    ],
+    "body": [
+        "Introduction",
+        "Theoretical Background",
+        "Methodology",
+        "Results",
+        "Conclusion"
+    ],
+    "author": "John Doe",
+    "date": "2022-01-01",
+    "keywords": [
+        "topic1",
+        "topic2",
+        "topic3"
+    ],
+    "sections": [
+        {
+            "title": "Introduction",
+            "text": "This is a sample template for a book chapter. You can modify it to suit your needs."
+        },
+        {
+            "title": "Theoretical Background",
+            "text": "This section should provide an overview of the theoretical framework used in the study."
+        },
+        {
+            "title": "Methodology",
+            "text": "This section should describe the research design, methods, and procedures used to collect and analyze the data."
+        },
+        {
+            "title": "Results",
+            "text": "This section should present the findings of the study, including any tables, figures, and summaries."
+        },
+        {
+            "title": "Conclusion",
+            "text": "This section should summarize the main findings and implications of the study, and provide recommendations for future research."
+        }
+    ],
+    "index": [
+        "Introduction",
+        "Theoretical Background",
+        "Methodology",
+        "Results",
+        "Conclusion"
+    ],
+    "styles": [
+        "font-family: Arial, sans-serif;",
+        "font-size: 12px;",
+        "line-height: 1.5;",
+        "color: #333;",
+        "text-align: left;",
+        "margin-bottom: 20px;",
+        "padding-bottom: 20px;"
+    ],
+    "template": {
+        "title": "Book Template",
+        "description": "A sample template for a book chapter.",
+        "image": "https://example.com/image.jpg",
+        "author": "John Doe",
+        "date": "2022-01-01",
+        "keywords": [
+            "topic1",
+            "topic2",
+            "topic3"
+        ],
+        "sections": [
+            {
+                "title": "Introduction",
+                "text": "This is a sample template for a book chapter. You can modify it to suit your needs."
+            },
+            {
+                "title": "Theoretical Background",
+                "text": "This section should provide an overview of the theoretical framework used in the study."
+            },
+            {
+                "title": "Methodology",
+                "text": "This section should describe the research design, methods, and procedures used to collect and analyze the data."
+            },
+            {
+                "title": "Results",
+                "text": "This section should present the findings of the study, including any tables, figures, and summaries."
+            },
+            {
+                "title": "Conclusion",
+                "text": "This section should summarize the main findings and implications of the study, and provide recommendations for future research."
+            }
+        ],
+        "index": [
+            "Introduction",
+            "Theoretical Background",
+            "Methodology",
+            "Results",
+            "Conclusion"
+        ],
+        "styles": [
+            "font-family: Arial, sans-serif;",
+            "font-size: 12px;",
+            "line-height: 1.5;",
+            "color: #333;",
+            "text-align: left;",
+            "margin-bottom: 20px;",
+            "padding-bottom: 20px;"
+        ]
+    },
+    "footer": {
+        "text": "Copyright 2022. All rights reserved."
+    }
 }

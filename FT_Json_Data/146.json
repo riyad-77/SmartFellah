@@ -1,45 +1,36 @@
 {
     "culture": "Rosa damascena",
-    "exigences_sol": "La rose doit bénéficier d'un climat propice, d'une température et d'une hygrométrie modérées, sur terrain aéré pauvre en sels de calcium.",
-    "besoins_hydriques": "Les roses nécessitent une irrigation régulière, en particulier pendant la période de floraison.",
-    "temp_optimale": {
-        "temp_min": "15°C",
-        "temp_max": "25°C"
+    "exigences_sol": "Une température et une hygrométrie modérées, sur terrain aéré pauvre en sels de calcium.",
+    "besoins_hydriques": "Une quantité d'huile essentielle qui peut être extraite par hydrodistillation.",
+    "bioclimatologie_optimale": {
+        "temp_min": 15,
+        "temp_max": 25,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "La rouille",
+            "nom_maladie": "Maladie de la rose",
             "causes": [
-                "Manque d'irrigation",
-                "Températures extrêmes"
+                "Infections par des champignons",
+                "Maladies virales"
             ],
             "traitements_specifiques": [
-                "Irrigation régulière",
-                "Application de pesticides"
-            ]
-        },
-        {
-            "nom_maladie": "La pourriture des feuilles",
-            "causes": [
-                "Humidité excessive",
-                "Pollution"
-            ],
-            "traitements_specifiques": [
-                "Aération de la terrain",
-                "Application de produits phytosanitaires"
+                "Traitement avec des herbicides",
+                "Traitement avec des fungicides"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Fertilisation régulière pour maintenir la santé des plants.",
-            "status": "en cours",
-            "categorie": "urgent"
-        },
-        {
-            "description": "Pruning régulière pour encourager les fleurs et prévenir l'usurpation de lumière par les feuilles.",
-            "status": "en cours",
-            "categorie": "non urgente"
+            "description": "Fournir des aides financières aux cultivateurs de roses pour améliorer la qualité et la quantité de production.",
+            "status": "En cours",
+            "categorie": "Prioritaire"
         }
     ]
 }

@@ -1,26 +1,22 @@
 import json
 import os
-import shutil
+import sys
 import unicodedata
 import re
 from collections import defaultdict
 
-# --- NOUVEAU : Importation du traducteur ---
 try:
     from deep_translator import GoogleTranslator
 except ImportError:
     print("❌ Erreur : Veuillez installer la librairie avec la commande : pip install deep-translator")
     exit()
 
-# Initialisation du traducteur (détection automatique vers le français)
 traducteur = GoogleTranslator(source='auto', target='fr')
 
 def traduire_texte(texte):
-    """ Traduit un texte en français. Retourne le texte original en cas d'échec. """
     if not texte or not isinstance(texte, str):
         return texte
     try:
-        # Petite sécurité pour ne pas traduire les textes trop courts (ex: "oui", "non")
         if len(texte) > 3:
             return traducteur.translate(texte)
         return texte
@@ -28,15 +24,12 @@ def traduire_texte(texte):
         return texte
 
 def traduire_liste(liste):
-    """ Traduit une liste de chaînes de caractères. """
     if not liste or not isinstance(liste, list):
         return liste
     return [traduire_texte(el) for el in liste if isinstance(el, str)]
 
 def normaliser_culture(nom_brut):
-    """ Standardise les noms et filtre les aberrations. """
-    if not nom_brut:
-        return "inconnu"
+    if not nom_brut: return "inconnu"
         
     nom = str(nom_brut).lower().strip()
     nom = unicodedata.normalize('NFKD', nom).encode('ASCII', 'ignore').decode('utf-8')
@@ -45,68 +38,61 @@ def normaliser_culture(nom_brut):
     nom = re.sub(r'^(le |la |les |l\')', '', nom)
     nom = re.sub(r'\s+', ' ', nom).strip()
 
-    # FILTRAGE STRICT DES INTRUS
     intrus = [
         "poisson", "poissonnier", "inconnue", "culture inconnue", "culture x", 
         "helm", "hormone", "edesse", "hlemm", "a graminees", "achlamydes", 
         "almellya", "arabie", "arabricotier", "arbecette", "arbre a feuilles persistantes", 
         "cerealiculture", "culture marocaine", "ensilage", "legumineuses alimentaires", 
         "orage", "pente cerise", "pompe de terre", "riz du figue", 
-        "shaghaat el luzz", "viticulture", "viticulture marocaine", "ziza"
+        "shaghaat el luzz", "viticulture", "viticulture marocaine", "ziza",
+        "poulet", "rouille brune du ble", "arabin mais traduis en francais", 
+        "culture du semis direct", "cereales inconnue"
     ]
-    if nom in intrus:
-        return None
+    if nom in intrus: return None
 
-    # MAPPING DES DOUBLONS & TRADUCTIONS DES TITRES
-    # 8. MAPPING (Pour fusionner les doublons, traduire l'anglais et le latin)
     mapping = {
-        # Fruits & Arbres
-        "abricot": "abricotier", "abricot prunus armeniaca": "abricotier", "arbre de prunus armeniaca": "abricotier",
-        "amandier": "amandier", "amygdalus communis": "amandier", "louz": "amandier",
-        "cognassier cydonia vulgaris": "cognassier",
+        "abricot": "abricotier", "abricot prunus armeniaca": "abricotier", "arbre de prunus armeniaca": "abricotier", "abricotier prunus armeniaca": "abricotier", "abricotier_prunus_armeniaca": "abricotier",
+        "شجرة اللوز": "amandier", "amandier": "amandier", "amygdalus communis": "amandier", "louz": "amandier",
+        "cognassier cydonia vulgaris": "cognassier", "cognassier cydonia vulgaris et neflier du japon": "cognassier", "cognassier_cydonia_vulgaris_et_neflier_du_japon_eriobotrya_japonica": "cognassier",
         "avocatier persea americana": "avocatier",
         "noyer commun juglans regia": "noyer commun", "noyer": "noyer commun",
-        "figue": "figuier", "ficus carica": "figuier", # Corrigé en figuier
+        "figue": "figuier", "ficus carica": "figuier", 
         "framboise": "framboisier",
         "pomier": "pommier", "pomme malus domestica": "pommier", "pomme": "pommier",
         "grenade": "grenadier", 
-        "palm tree": "palmier dattier", "nkhil temr": "palmier dattier", "nkhil el temmar": "palmier dattier",
-        "prunus armeniaca": "prunier",
+        "palm tree": "palmier dattier", "nkhil temr": "palmier dattier", "nkhil el temmar": "palmier dattier", "nakhil temmar": "palmier dattier", "nkhil tamr": "palmier dattier", "palmier": "palmier dattier",
+        "prunus armeniaca": "prunier", 
         "rosa damascena": "rose",
-        "peche": "pecher", "pecher prunus persica": "pecher", # Fusion du fruit et de l'arbre
-        "raisin de table": "vigne", # Regroupement sous la plante mère
-        "capparis": "caprier", # Traduction du latin
-        
-        # Herbes & Épices
-        "mentha verte": "menthe verte", "mentha viridis ou mentha spicata var viridis": "menthe verte", "mentha spicata var viridis": "menthe verte", "mentha viridis": "menthe verte",
-        "saffron": "safran", "safraniere": "safran",
+        "peche": "pecher", "pecher prunus persica": "pecher", "prunus persica": "pecher",
+        "raisin de table": "vigne", "sultanine": "vigne",
+        "capparis": "caprier", 
+        "mentha verte": "menthe verte", "mentha viridis ou mentha spicata var viridis": "menthe verte", "mentha spicata var viridis": "menthe verte", "mentha viridis": "menthe verte", "mentha verte mentha viridis ou mentha spicat": "menthe verte","mentha verte mentha viridis ou mentha spicata var viridis": "menthe verte",
+        "saffron": "safran", "safraniere": "safran", "crocus sativus l": "safran",
         "organe" : "oregano",
-        "stevia rebaudiana": "stevia", # Simplification
-        
-        # Céréales
-        "cereales d automne": "cereale", "cereales": "cereale", "cereales de printemps": "cereale",
+        "stevia rebaudiana": "stevia",
+        "absinthe artemisia absinthium": "absinthe", "artemisia absinthium": "absinthe", "herbe sainte": "absinthe", "absinthe_artemisia_absinthium":"absinthe",
+        "cereales d automne": "cereale", "cereales": "cereale", "cereales de printemps": "cereale", "cereales inconnue": "cereale",
         "culture de ble": "ble", "ble dur": "ble", "ble tendre": "ble", "ble dur et ble tendre": "ble",
-        "riz vert": "riz", # Fusion du riz
-        
-        # Café & Légumineuses
+        "riz vert": "riz", 
         "arabe": "arabica", "arabique": "arabica", "araabiyat": "arabica", "culture arabe": "arabica",
         "arachidonne": "arachide", "arachis hypogaea": "arachide", "arachid": "arachide",
-        
-        # Légumes & Autres
-        "agrume": "agrumes", "citron": "agrumes", # On englobe le citron dans agrumes
+        "vicia sativa": "vesce", "vicia villosa": "vesce",
+        "agrume": "agrumes", "citron": "agrumes", 
         "bananier": "banane",
-        "culture de mais": "mais", "zea mays": "mais", "mais ensilage": "mais",
+        "culture de mais": "mais", "zea mays": "mais", "mais ensilage": "mais", "culture de mais ensilage en goutte a goutte d": "mais", "culture_de_mais_ensilage_en_goutte_a_goutte_dans_les_sables_de_larache": "mais",
         "culture de soja": "soja",
-        "betterave a sucre monogermes": "betterave a sucre", "betterave a sucre monogerme": "betterave a sucre", # Fusion des betteraves
-        "piment rouge niora": "piment rouge",
-        "fragaria vulgaris": "fraisier",
-        "rapeseed": "colza" # Traduction de l'anglais
+        "betterave a sucre monogermes": "betterave a sucre", "betterave a sucre monogerme": "betterave a sucre", 
+        "piment rouge niora": "piment rouge", "niora": "piment rouge",
+        "fragaria vulgaris": "fraisier", "fraisier fragaria vulgaris": "fraisier", "frasier fragaria vulgaris": "fraisier",
+        "rapeseed": "colza",
+        "epinard et estragon": "epinard",
+        "patate douce et le navet en maroc": "patate douce",
+        "tomate de primeurs": "tomate", "tomate sous serre": "tomate"
     }
     return mapping.get(nom, nom)
 
+
 def fusionner_par_culture(input_dir, output_dir):
-    import sys
-    
     if not os.path.exists(input_dir):
         os.makedirs(input_dir, exist_ok=True)
         
@@ -116,19 +102,23 @@ def fusionner_par_culture(input_dir, output_dir):
         print("✅ Aucun fichier JSON à consolider. Arrêt de l'étape.")
         sys.exit(0)
 
-    # 1. ON NE SUPPRIME PLUS LE DOSSIER FT_CLEAN
     os.makedirs(output_dir, exist_ok=True)
 
     data_fusionnee = defaultdict(lambda: {
         "culture": "",
+        "zones_recommandees": [],
         "exigences_sol": "",
         "besoins_hydriques": "",
-        "temp_optimale": {"temp_min": None, "temp_max": None},
+        "bioclimatologie_optimale": {"temp_min": None, "temp_max": None, "hum_min": None, "hum_max": None},
+        "indices_satellitaires_requis": {
+            "ndvi_optimal_min": None, "ndvi_optimal_max": None,
+            "ndwi_optimal_min": None, "ndwi_optimal_max": None,
+            "evi_optimal_min": None,  "evi_optimal_max": None
+        },
         "maladies_details": {},
         "recommandations": [] 
     })
 
-    # 2. NOUVEAU : CHARGER L'HISTORIQUE DE FT_CLEAN DANS LA MÉMOIRE
     fichiers_existants = [f for f in os.listdir(output_dir) if f.endswith(".json")]
     for file in fichiers_existants:
         with open(os.path.join(output_dir, file), 'r', encoding='utf-8') as f:
@@ -136,13 +126,20 @@ def fusionner_par_culture(input_dir, output_dir):
                 existant = json.load(f)
                 nom_culture = normaliser_culture(existant.get("culture", ""))
                 if nom_culture and nom_culture != "inconnu":
-                    # On restaure les infos de base
                     data_fusionnee[nom_culture]["culture"] = existant.get("culture", nom_culture.capitalize())
+                    data_fusionnee[nom_culture]["zones_recommandees"] = existant.get("zones_recommandees", [])
                     data_fusionnee[nom_culture]["exigences_sol"] = existant.get("exigences_sol", "")
                     data_fusionnee[nom_culture]["besoins_hydriques"] = existant.get("besoins_hydriques", "")
-                    data_fusionnee[nom_culture]["temp_optimale"] = existant.get("temp_optimale", {"temp_min": None, "temp_max": None})
                     
-                    # On restaure les maladies avec leur clé pour que les nouvelles puissent s'y greffer
+                    anciennes_temps = existant.get("temp_optimale", {})
+                    bioclim = existant.get("bioclimatologie_optimale", {
+                        "temp_min": anciennes_temps.get("temp_min"), 
+                        "temp_max": anciennes_temps.get("temp_max"), 
+                        "hum_min": None, "hum_max": None
+                    })
+                    data_fusionnee[nom_culture]["bioclimatologie_optimale"] = bioclim
+                    data_fusionnee[nom_culture]["indices_satellitaires_requis"] = existant.get("indices_satellitaires_requis", {"ndvi_optimal_min": None, "ndwi_optimal_min": None, "evi_optimal_min": None})
+                    
                     for m in existant.get("maladies_details", []):
                         cle_mal = normaliser_culture(m.get("nom_maladie", ""))
                         if cle_mal:
@@ -154,14 +151,11 @@ def fusionner_par_culture(input_dir, output_dir):
 
     print(f"🚀 Début de la consolidation de {len(fichiers_nouveaux)} nouveaux fichiers avec l'historique...")
     
-    # 3. La suite de ta fonction (la boucle "for file in fichiers_nouveaux:") reste EXACTEMENT PAREILLE !
-    # Le script va naturellement écraser les champs vides par les nouvelles infos et ajouter les nouvelles maladies.
-    for file in fichiers:
+    for file in fichiers_nouveaux:
         with open(os.path.join(input_dir, file), 'r', encoding='utf-8') as f:
             try:
                 contenu = json.load(f)
             except json.JSONDecodeError:
-                print(f"⚠️ Erreur de lecture : {file}")
                 continue
                 
             items = [contenu] if isinstance(contenu, dict) else contenu
@@ -175,33 +169,61 @@ def fusionner_par_culture(input_dir, output_dir):
                 
                 data_fusionnee[nom_culture]["culture"] = nom_culture.capitalize()
                 
-                # --- TRADUCTION DES TEXTES LONGS ---
+                # FUSION DES ZONES GEOGRAPHIQUES
+                nouvelles_zones = item.get("zones_recommandees", [])
+                if isinstance(nouvelles_zones, list):
+                    anciennes_zones = data_fusionnee[nom_culture]["zones_recommandees"]
+                    for z in nouvelles_zones:
+                        z_clean = traduire_texte(str(z).strip()).title()
+                        if z_clean and z_clean not in anciennes_zones:
+                            anciennes_zones.append(z_clean)
+                    data_fusionnee[nom_culture]["zones_recommandees"] = anciennes_zones
+                
                 if not data_fusionnee[nom_culture]["exigences_sol"] and item.get("exigences_sol"):
                     data_fusionnee[nom_culture]["exigences_sol"] = traduire_texte(item.get("exigences_sol"))
                     
                 if not data_fusionnee[nom_culture]["besoins_hydriques"] and item.get("besoins_hydriques"):
                     data_fusionnee[nom_culture]["besoins_hydriques"] = traduire_texte(item.get("besoins_hydriques"))
                 
-                temp_opt = item.get("temp_optimale", {})
-                if isinstance(temp_opt, dict):
-                    if not data_fusionnee[nom_culture]["temp_optimale"]["temp_min"] and temp_opt.get("temp_min"):
-                        data_fusionnee[nom_culture]["temp_optimale"]["temp_min"] = temp_opt.get("temp_min")
-                    if not data_fusionnee[nom_culture]["temp_optimale"]["temp_max"] and temp_opt.get("temp_max"):
-                        data_fusionnee[nom_culture]["temp_optimale"]["temp_max"] = temp_opt.get("temp_max")
+                bioclim_new = item.get("bioclimatologie_optimale", {})
+                if isinstance(bioclim_new, dict):
+                    if not data_fusionnee[nom_culture]["bioclimatologie_optimale"]["temp_min"] and bioclim_new.get("temp_min"):
+                        data_fusionnee[nom_culture]["bioclimatologie_optimale"]["temp_min"] = bioclim_new.get("temp_min")
+                    if not data_fusionnee[nom_culture]["bioclimatologie_optimale"]["temp_max"] and bioclim_new.get("temp_max"):
+                        data_fusionnee[nom_culture]["bioclimatologie_optimale"]["temp_max"] = bioclim_new.get("temp_max")
+                    if not data_fusionnee[nom_culture]["bioclimatologie_optimale"]["hum_min"] and bioclim_new.get("hum_min"):
+                        data_fusionnee[nom_culture]["bioclimatologie_optimale"]["hum_min"] = bioclim_new.get("hum_min")
+                    if not data_fusionnee[nom_culture]["bioclimatologie_optimale"]["hum_max"] and bioclim_new.get("hum_max"):
+                        data_fusionnee[nom_culture]["bioclimatologie_optimale"]["hum_max"] = bioclim_new.get("hum_max")
                 
-                # --- TRADUCTION DES MALADIES ---
+                indices_new = item.get("indices_satellitaires_requis", {})
+                if isinstance(indices_new, dict):
+                    if not data_fusionnee[nom_culture]["indices_satellitaires_requis"]["ndvi_optimal_min"] and indices_new.get("ndvi_optimal_min"):
+                        data_fusionnee[nom_culture]["indices_satellitaires_requis"]["ndvi_optimal_min"] = indices_new.get("ndvi_optimal_min")
+                    if not data_fusionnee[nom_culture]["indices_satellitaires_requis"]["ndvi_optimal_max"] and indices_new.get("ndvi_optimal_max"):
+                        data_fusionnee[nom_culture]["indices_satellitaires_requis"]["ndvi_optimal_max"] = indices_new.get("ndvi_optimal_max")
+                        
+                    if not data_fusionnee[nom_culture]["indices_satellitaires_requis"]["ndwi_optimal_min"] and indices_new.get("ndwi_optimal_min"):
+                        data_fusionnee[nom_culture]["indices_satellitaires_requis"]["ndwi_optimal_min"] = indices_new.get("ndwi_optimal_min")
+                    if not data_fusionnee[nom_culture]["indices_satellitaires_requis"]["ndwi_optimal_max"] and indices_new.get("ndwi_optimal_max"):
+                        data_fusionnee[nom_culture]["indices_satellitaires_requis"]["ndwi_optimal_max"] = indices_new.get("ndwi_optimal_max")
+                        
+                    if not data_fusionnee[nom_culture]["indices_satellitaires_requis"]["evi_optimal_min"] and indices_new.get("evi_optimal_min"):
+                        data_fusionnee[nom_culture]["indices_satellitaires_requis"]["evi_optimal_min"] = indices_new.get("evi_optimal_min")
+                    if not data_fusionnee[nom_culture]["indices_satellitaires_requis"]["evi_optimal_max"] and indices_new.get("evi_optimal_max"):
+                        data_fusionnee[nom_culture]["indices_satellitaires_requis"]["evi_optimal_max"] = indices_new.get("evi_optimal_max")
+                        
                 maladies = item.get("maladies_details", [])
                 if isinstance(maladies, list):
                     for m in maladies:
                         if m and isinstance(m, dict):
                             m_nom = m.get("nom_maladie")
                             if m_nom:
-                                cle_maladie = normaliser_culture(m_nom) # On utilise la même logique pour nettoyer la clé
+                                cle_maladie = normaliser_culture(m_nom) 
                                 if not cle_maladie: 
                                     cle_maladie = m_nom.lower().strip()
                                 
                                 if cle_maladie not in data_fusionnee[nom_culture]["maladies_details"]:
-                                    # Traduction du contenu de la maladie
                                     m_traduite = {
                                         "nom_maladie": traduire_texte(m_nom),
                                         "causes": traduire_liste(m.get("causes", [])),
@@ -209,7 +231,6 @@ def fusionner_par_culture(input_dir, output_dir):
                                     }
                                     data_fusionnee[nom_culture]["maladies_details"][cle_maladie] = m_traduite
 
-                # --- TRADUCTION DES RECOMMANDATIONS ---
                 recommandations = item.get("recommandations", [])
                 if isinstance(recommandations, list):
                     for rec in recommandations:
@@ -246,5 +267,4 @@ def fusionner_par_culture(input_dir, output_dir):
     print(f"✅ Consolidation et traduction terminées : {compteur} cultures propres générées dans '{output_dir}'.")
 
 if __name__ == "__main__":
-    # <-- MODIFIÉ : On pointe vers le volume Airflow
-    fusionner_par_culture("FT_Json_Data", "FT_Clean")
+    fusionner_par_culture(r"C:\Users\hp\SmartFellah\FT_Json_Data", r"C:\Users\hp\SmartFellah\FT_Clean")

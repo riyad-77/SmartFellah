@@ -1,10 +1,17 @@
 {
     "culture": "Prunus armeniaca",
-    "exigences_sol": "La culture de l'abricot est exigeante en sol profond et bien drainé, argilo-limoneux.",
-    "besoins_hydriques": "L’abricotier préfère les sols bien drainés, profonds, argilo-limoneux.",
-    "temp_optimale": {
-        "temp_min": "-16˚C",
-        "temp_max": "7,2˚C"
+    "exigences_sol": "Les sols argilo-limoneux bien drainants sont préférés",
+    "besoins_hydriques": "Les superficies occupées par la culture du prunier s'élèvent actuellement à 69000 ha pour une production de 50000 T",
+    "bioclimatologie_optimale": {
+        "temp_min": 7.2,
+        "temp_max": 22,
+        "hum_min": 80,
+        "hum_max": 20
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
@@ -13,14 +20,13 @@
                 "Mycoplasmes"
             ],
             "traitements_specifiques": [
-                "Agriculture saine",
-                "Contrôle des maladies"
+                "Des pesticides et des herbicides"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Renouveler le bois fruitier sur 3 et 4 ans.",
+            "description": "Les doses suivantes sont préconisées: N: 100-150 U/ha, P205: 80-100 U/ha; K20: 150 U/ha",
             "status": "en cours",
             "categorie": "urgent"
         }

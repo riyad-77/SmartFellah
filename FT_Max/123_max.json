@@ -1,0 +1,6 @@
+{
+    "culture": "grenadier",
+    "ndvi_optimal_max": "0,70",
+    "ndwi_optimal_max": "0,55",
+    "evi_optimal_max": "0,40"
+}

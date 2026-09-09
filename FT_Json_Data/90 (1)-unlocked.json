@@ -1,34 +1,37 @@
 {
-    "culture": "Viticulture marocaine",
-    "exigences_sol": null,
-    "besoins_hydriques": "Faible à modéré",
-    "temp_optimale": {
-        "temp_min": 10,
-        "temp_max": 25
+    "culture": "Raisin de table",
+    "exigences_sol": "Le sol doit être bien drainé et avoir un pH neutre.",
+    "besoins_hydriques": "Les raisins de table nécessitent un climat sec et bien aéré, avec une température moyenne de 15°C à 25°C.",
+    "bioclimatologie_optimale": {
+        "temp_min": 15,
+        "temp_max": 25,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "La coulure",
+            "nom_maladie": "Millerandage",
             "causes": [
-                "Surproduction de fruits",
-                "Manque d'incision annulaire"
+                "infection de la feuille",
+                "insectes",
+                "fongicides"
             ],
             "traitements_specifiques": [
-                "Traitement chimique",
-                "Pratique de l'incision annulaire"
+                "traitement antifongique",
+                "traitement insecticide"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Appliquer les normes de qualité pour valoriser les produits viti-vinicoles marocains.",
+            "description": "Effectuer des incisions annulaires régulièrement pour améliorer la qualité des raisins de table.",
             "status": "en cours",
             "categorie": "urgent"
-        },
-        {
-            "description": "Pratiquer l'incision annulaire juste après la nouaison pour améliorer la qualité des raisins de table.",
-            "status": "en cours",
-            "categorie": null
         }
     ]
 }

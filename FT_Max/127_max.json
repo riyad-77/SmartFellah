@@ -1,0 +1,6 @@
+{
+    "culture": "Agrumes",
+    "ndvi_optimal_max": 0.8,
+    "ndwi_optimal_max": 0.9,
+    "evi_optimal_max": 0.9
+}

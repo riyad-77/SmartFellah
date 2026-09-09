@@ -1,11 +1,36 @@
 {
-    "culture": "framboisier",
-    "exigences_sol": null,
-    "besoins_hydriques": null,
-    "temp_optimale": {
-        "temp_min": "15",
-        "temp_max": "25"
+    "culture": "Framboisier",
+    "exigences_sol": "Les zones tempérées froides, avec un cumul de froid suffisant pour les variétés nécessitant de l'exigence en froid.",
+    "besoins_hydriques": "Les superficies plantées doivent être irriguées régulièrement, avec une humidité ambiante entre 60 et 80%.",
+    "bioclimatologie_optimale": {
+        "temp_min": 10,
+        "temp_max": 25,
+        "hum_min": 60,
+        "hum_max": 80
     },
-    "maladies_details": [],
-    "recommandations": []
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Maladie des feuilles",
+            "causes": [
+                "Manque de lumière",
+                "Trop de humidité"
+            ],
+            "traitements_specifiques": [
+                "Traitement avec des insecticides",
+                "Réduction de l'irrigation"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Conducter des essais d'adaptation avant la production commerciale",
+            "status": "en cours",
+            "categorie": "urgent"
+        }
+    ]
 }

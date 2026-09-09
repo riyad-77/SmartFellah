@@ -1,21 +1,32 @@
 {
     "culture": "grenadier",
-    "exigences_sol": "sols d'alluvions profond avec disponibilités satisfaisantes en eau",
-    "besoins_hydriques": "bords des courants d'eau ou sols argilo-limoneux irrigués",
-    "temp_optimale": {
-        "temp_min": "-10°C",
-        "temp_max": "+40°C"
+    "exigences_sol": "Les sols argilo-limoneux irrigués conviennent à la culture du grenadier. Cet espece peut supporter des extrêmes de températures allant de -10 et +40°C. Le grenadier exige une petite dose de froid en période hivernale pour son évocation florale mais il craint les conditions généralement froides des hautes altitudes.",
+    "besoins_hydriques": "Les sols d'alluvions profond avec des disponibilités satisfaisantes en eau sont les plus favorables à la culture du grenadier. La tolérance à la sécheresse est relative et se fait au détriment de sa croissance végétative et de sa fructification.",
+    "bioclimatologie_optimale": {
+        "temp_min": 0.4,
+        "temp_max": 40,
+        "hum_min": 20,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
             "nom_maladie": "Inconnue",
-            "causes": [],
-            "traitements_specifiques": []
+            "causes": [
+                "Inconnue"
+            ],
+            "traitements_specifiques": [
+                "Inconnue"
+            ]
         }
     ],
     "recommandations": [
         {
-            "description": "L'agriculteur doit choisir des variétés de grenadier performantes et adapter les pratiques agricoles en fonction des conditions locales.",
+            "description": "La fête des grenades est une occasion de valoriser la culture du grenadier et de promouvoir son importance dans la production fruitière marocaine.",
             "status": "en cours",
             "categorie": "urgent"
         }

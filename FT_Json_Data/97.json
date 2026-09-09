@@ -1,27 +1,34 @@
 {
-    "culture": "épinard",
-    "exigences_sol": "Mêmes exigences que les choux, même rusticité et résistance au froid. Faible exigences en lumière (on peut la cultiver en strate basse, sous une haute culture). En condition de jour long et haute température (supérieure à 25˚C), la plante monte à graine ; il faut éliminer la hampe florale qui réduit le rendement en feuilles. La culture est sensible à un déficit hydrique et à l'asphyxie. En sol acide, le rendement est faible. Le sol doit avoir un pH supérieur à 6,5.",
+    "culture": "Épinard",
+    "exigences_sol": "Exigences édapho-climatiques de la culture : mêmes exigences que les choux, même rusticité et résistance au froid. Faible exigences en lumière (on peut la cultiver en strate basse, sous une haute culture). En condition de jour long et haute température (supérieure à 25˚C), la plante monte à graine; il faut éliminer la hampe florale qui réduit le rendement en feuilles. La culture est sensible à un déficit hydrique et à l’asphyxie. En sol acide, le rendement est faible. Le sol doit avoir un pH supérieur à 6,5.",
     "besoins_hydriques": "La culture est très exigeante en eau. Un à deux sarclages sont nécessaires pour aérer le sol et enfouir la fumure de couverture.",
-    "temp_optimale": {
-        "temp_min": "15˚C",
-        "temp_max": "25˚C"
+    "bioclimatologie_optimale": {
+        "temp_min": "15",
+        "temp_max": "25",
+        "hum_min": "60",
+        "hum_max": "80"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
         {
             "nom_maladie": "Mildiou",
             "causes": [
-                "Humidité excessive",
-                "Vent"
+                "Fongique",
+                "Rusticité"
             ],
             "traitements_specifiques": [
                 "Fumigation",
-                "Traitement par insecticide"
+                "Triage"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Apporter 30 kg/ha de N et 70 kg/ha de P2O5 au fond, ainsi que des sarclages pour aérer le sol.",
+            "description": "Couper la plante à partir de 5-10 cm du sol.",
             "status": "en cours",
             "categorie": "urgent"
         }

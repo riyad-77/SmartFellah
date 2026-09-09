@@ -2,9 +2,16 @@
     "culture": "Pistachier",
     "exigences_sol": "La culture du pistachier nécessite un sol bien drainé et avec une bonne structure, pour permettre à l'arbre d'établir ses racines profondes.",
     "besoins_hydriques": "Le pistachier a besoin d'un sol bien drainé et avec une bonne structure, mais également de bons apports en eau. Il est sensible aux sécheresses et aux conditions climatiques extrêmes.",
-    "temp_optimale": {
+    "bioclimatologie_optimale": {
         "temp_min": "7.2°C",
-        "temp_max": "22°C"
+        "temp_max": "22°C",
+        "hum_min": "20%",
+        "hum_max": "80%"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
         {
@@ -56,6 +63,73 @@
                 "développement très rapide"
             ],
             "traitements_specifiques": []
+        },
+        {
+            "nom_maladie": "Fragilité de l'espèce lors de la transplantation",
+            "causes": [
+                "manque d'irrigation après la mise en place",
+                "retard dans la transplantation"
+            ],
+            "traitements_specifiques": [
+                "irrigation régulière",
+                "transplantation à racines nues"
+            ]
+        },
+        {
+            "nom_maladie": "Mise à fruit tardive",
+            "causes": [
+                "lenteur de croissance des plants"
+            ],
+            "traitements_specifiques": [
+                "fertilisation régulière",
+                "entretien régulier"
+            ]
+        },
+        {
+            "nom_maladie": "Faiblesse des rendements",
+            "causes": [
+                "manque d'irrigation",
+                "fertilisation insuffisante"
+            ],
+            "traitements_specifiques": [
+                "irrigation régulière",
+                "fertilisation régulière"
+            ]
+        },
+        {
+            "nom_maladie": "Pollinisation",
+            "causes": [
+                "absence d'arbres mâles issus de pollinisateurs spécifiques",
+                "dispositif inadéquat de répartition des pollinisateurs"
+            ],
+            "traitements_specifiques": [
+                "implantation d'arbres mâles",
+                "amélioration du dispositif de répartition des pollinisateurs"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie des rejets",
+            "causes": [
+                "Transplantation maladroite",
+                "Manque d'irrigation",
+                "Faible entretien"
+            ],
+            "traitements_specifiques": [
+                "Elimination systématique des rejets",
+                "Fertilisation et irrigation régulière",
+                "Traitement antifongique"
+            ]
+        },
+        {
+            "nom_maladie": "Mortalité élevée",
+            "causes": [
+                "Transplantation",
+                "Manque d'irrigation"
+            ],
+            "traitements_specifiques": [
+                "Irrigation régulière",
+                "Gestion des rejets"
+            ]
         }
     ],
     "recommandations": [
@@ -93,6 +167,31 @@
             "description": "Les variétés femelles performantes et leurs pollinisateurs spécifiques, leurs besoins en froid, les techniques de multiplication et de conduite de la culture ne constituent pas aujourd'hui des contraintes comme auparavant.",
             "status": null,
             "categorie": null
+        },
+        {
+            "description": "L'arbre doit être planté dans un endroit bien aéré avec un sol bien drainé.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "L'arbre doit être irrigué régulièrement, en particulier pendant la période de croissance.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Février 2005 : Le bulletin mensuel de l'INRA présente les résultats de l'étude sur la sélection variétale du pistachier.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Optimisation de la conduite culturale et de la gestion des rejets",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Extension de la culture du pistachier en zones marginalisées",
+            "status": "En cours",
+            "categorie": "Important"
         }
     ]
 }

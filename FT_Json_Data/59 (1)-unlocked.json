@@ -1,23 +1,36 @@
 {
-    "culture": "Céréaliculture",
-    "exigences_sol": null,
-    "besoins_hydriques": null,
-    "temp_optimale": {
-        "temp_min": null,
-        "temp_max": null
+    "culture": "Céréales (Inconnue)",
+    "exigences_sol": "Les céréales nécessitent un sol bien drainé et aéré, avec une pH entre 6,0 et 7,0.",
+    "besoins_hydriques": "Les céréales nécessitent une irrigation régulière, mais pas excessive, avec un taux d'humidité ambiante entre 20% et 30%.",
+    "bioclimatologie_optimale": {
+        "temp_min": 10,
+        "temp_max": 25,
+        "hum_min": 20,
+        "hum_max": 30
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Inconnue",
-            "causes": [],
-            "traitements_specifiques": []
+            "nom_maladie": "Mauvaises herbes",
+            "causes": [
+                "Manque de désherbage",
+                "Utilisation de pesticides non efficaces"
+            ],
+            "traitements_specifiques": [
+                "Désherbage régulier",
+                "Utilisation de pesticides spécifiques"
+            ]
         }
     ],
     "recommandations": [
         {
-            "description": "L'amélioration de l'itinéraire technique constitue la clé de la réussite. Il s'agit de raisonner les techniques en fonction des objectifs de rendement à atteindre, en le décomposant en plusieurs étapes, par le biais des composantes de rendement et en tenant compte des interactions entre techniques et des compensations entre composantes.",
-            "status": null,
-            "categorie": null
+            "description": "Améliorer les techniques de fertilitisation et d'irrigation, ainsi que la gestion des mauvaises herbes.",
+            "status": "En cours",
+            "categorie": "Urgent"
         }
     ]
 }

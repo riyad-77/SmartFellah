@@ -2,24 +2,40 @@
     "culture": "Laitue",
     "exigences_sol": "Les exigences en sol sont faibles; on rencontre les salades sur tous les types de sols. Le pH optimal du sol est de 6-6,8.",
     "besoins_hydriques": "Le besoin en eau de la culture est de 350-400 mm par cycle cultural.",
-    "temp_optimale": {
-        "temp_min": "4˚C",
-        "temp_max": "24˚C"
+    "bioclimatologie_optimale": {
+        "temp_min": 7,
+        "temp_max": 23,
+        "hum_min": 20,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
             "nom_maladie": "Pourriture basale (Rhizoctonia solani)",
             "causes": [
-                "Températures élevées"
+                "Infection par Rhizoctonia solani"
             ],
             "traitements_specifiques": [
-                "Fungicides efficaces"
+                "Fongicides efficaces"
+            ]
+        },
+        {
+            "nom_maladie": "Mildiou (Bremia lactucae)",
+            "causes": [
+                "Infection par Bremia lactucae"
+            ],
+            "traitements_specifiques": [
+                "Rotation culturale et fongicides"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "La lutte contre les mauvaises herbes est primordiale.",
+            "description": "Effectuer des rotations culturales pour prévenir les maladies",
             "status": "en cours",
             "categorie": "urgent"
         }

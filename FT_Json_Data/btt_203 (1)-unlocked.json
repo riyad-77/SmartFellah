@@ -1,23 +1,52 @@
 {
     "culture": "Myrtille",
-    "exigences_sol": null,
-    "besoins_hydriques": null,
-    "temp_optimale": {
-        "temp_min": null,
-        "temp_max": null
+    "exigences_sol": "La Myrtille nécessite un sol bien drainé et riche en organiques, avec un pH neutre (5,5-6,5).",
+    "besoins_hydriques": "La Myrtille a besoin d'une irrigation régulière, mais pas en excès. Le sol doit rester humide mais pas trempé.",
+    "bioclimatologie_optimale": {
+        "temp_min": 10,
+        "temp_max": 25,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Inconnue",
-            "causes": [],
-            "traitements_specifiques": []
+            "nom_maladie": "Maladie des feuilles",
+            "causes": [
+                "Infection par des bactéries",
+                "Infection par des virus"
+            ],
+            "traitements_specifiques": [
+                "Application de pesticides",
+                "Traitement avec des herbicides"
+            ]
+        },
+        {
+            "nom_maladie": "Rongeur des racines",
+            "causes": [
+                "Insectes",
+                "Fungus"
+            ],
+            "traitements_specifiques": [
+                "Application de pesticides",
+                "Traitement avec des fungicides"
+            ]
         }
     ],
     "recommandations": [
         {
-            "description": "null",
-            "status": null,
-            "categorie": null
+            "description": "Installer un système d'irrigation autonome pour réguler l'humidité du sol.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Effectuer des analyses de sol régulières pour déterminer les niveaux de pH et de nutriments.",
+            "status": "en cours",
+            "categorie": "urgent"
         }
     ]
 }

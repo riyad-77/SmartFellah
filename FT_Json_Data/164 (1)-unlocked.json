@@ -1,37 +1,52 @@
 {
     "culture": "Canne à sucre",
-    "exigences_sol": "Les sols sableux sont très favorables à la culture de betterave, mais il faut prendre en compte les conditions climatiques et les facteurs de drainage. La charrue à socs ou le chisel sont les principaux outils de préparation du sol.",
-    "besoins_hydriques": "La betterave nécessite une irrigation régulière, mais pas excessive. Le goutte à goutte est un système d'irrigation adapté aux sols sableux et qui a permis des résultats prometteurs.",
-    "temp_optimale": {
-        "temp_min": 16,
-        "temp_max": 26
+    "exigences_sol": "Le climat de la région est de type côtier (hygrométrie élevée; Tmin-Tmax = 16-26 °C en sept-oct, 10-20 °C en nov-déc, 11-22°C en mars-avril et 18-29°C en juin-juillet) avec une pluviométrie annuelle moyenne de 750 mm. Les terrains sont assez profonds, plats à légèrement vallon-nés (pente ≈2-4 %), de texture très sableuse (taux d'argile autour de 3 %, taux de sables autour de 90 %), non calcaires et de pH neutre à alcalin (6,8 à 8,4).",
+    "besoins_hydriques": "La culture a été irriguée au goutte à goutte, ce qui crée une ambiance générale du milieu favorable à la bonne croissance de la plante.",
+    "bioclimatologie_optimale": {
+        "temp_min": 10,
+        "temp_max": 22,
+        "hum_min": 80,
+        "hum_max": 20
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Casside",
+            "nom_maladie": "Nematodes",
             "causes": [
-                "Insectes du sol",
-                "Herbes vivaces"
+                "Présence de nématodes dans le sol"
             ],
             "traitements_specifiques": [
-                "Désherbage, Herbicides"
+                "Application de Lorsban sous forme de granulé au sol"
             ]
         },
         {
-            "nom_maladie": "Nématodes",
+            "nom_maladie": "Casside",
             "causes": [
-                "Insectes du sol"
+                "Présence de casside dans le sol"
             ],
             "traitements_specifiques": [
-                "Tratements de nématodes"
+                "Désherbage manuel ou mécanique"
+            ]
+        },
+        {
+            "nom_maladie": "Pourriture molle des racines",
+            "causes": [
+                "Présence de pourriture molle des racines"
+            ],
+            "traitements_specifiques": [
+                "Pas de traitements spécifiques mentionnés"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "L'entretien régulier est essentiel pour prévenir les maladies et les insectes. Le désherbage doit être fait à la fin de chaque cycle de culture.",
-            "status": "en cours",
-            "categorie": "urgent"
+            "description": "Le système d'irrigation adopté est recommandé pour la culture de canne à sucre dans les sols sableux.",
+            "status": "En cours",
+            "categorie": "Urgent"
         }
     ]
 }

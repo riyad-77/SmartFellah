@@ -1,32 +1,52 @@
 {
-    "culture": "patate douce",
-    "exigences_sol": "La plante est de saison chaude. Elle nécessite des jours courts pour sa tubérisation (formation du rhizome). Elle a les mêmes exigences écologiques que la culture des courges.",
+    "culture": "La patate douce et le navet en Maroc",
+    "exigences_sol": "La plante est de saison chaude, elle nécessite des jours courts pour sa tubérisation. Elle a les mêmes exigences écologiques que la culture des courges.",
     "besoins_hydriques": "Il faut irriguer jusqu'à pleine couverture du sol par la végétation.",
-    "temp_optimale": {
-        "temp_min": "4-5˚C",
-        "temp_max": "27˚C"
+    "bioclimatologie_optimale": {
+        "temp_min": 10,
+        "temp_max": 27,
+        "hum_min": 80,
+        "hum_max": 20
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Inconnue",
+            "nom_maladie": "Thrips",
             "causes": [
-                "Inconnues"
+                "Manque de lumière",
+                "Air sec"
             ],
             "traitements_specifiques": [
-                "Inconnus"
+                "Aérosol de pyrethrine",
+                "Traitement de fumier"
+            ]
+        },
+        {
+            "nom_maladie": "Rouille",
+            "causes": [
+                "Fusarium",
+                "Manque de fertilisation"
+            ],
+            "traitements_specifiques": [
+                "Traitement de fumier",
+                "Application de fungicides"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Choisir un matériel végétal sain, indemne de virus.",
+            "description": "Irrigation régulière et fertilisation",
             "status": "en cours",
             "categorie": "urgent"
         },
         {
-            "description": "Traiter contre les thrips, les vers blancs, la noctuelle et la rouille.",
+            "description": "Éclaircissage et remplacement des manquants",
             "status": "en cours",
-            "categorie": "prioritaire"
+            "categorie": "urgent"
         }
     ]
 }

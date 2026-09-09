@@ -1,27 +1,8 @@
 {
     "culture": "Inconnue",
-    "exigences_sol": null,
-    "besoins_hydriques": null,
-    "temp_optimale": {
-        "temp_min": 15,
-        "temp_max": 25
-    },
-    "maladies_details": [
-        {
-            "nom_maladie": "Inconnue",
-            "causes": [
-                "Inconnue"
-            ],
-            "traitements_specifiques": [
-                "Inconnue"
-            ]
-        }
-    ],
-    "recommandations": [
-        {
-            "description": "Inconnu",
-            "status": null,
-            "categorie": "inconnu"
-        }
-    ]
+    "exigences_sol": "Les exigences du sol nécessitent un sol bien drainé et avec un pH adapté aux plantes légumineuses. Le sol doit être riche en nutriments et avoir une bonne structure pour permettre une bonne absorption de l'eau et des nutriments par les racines.",
+    "sol": "Le sol est un élément clé pour la croissance des plantes. Il doit être drainé et avoir un pH adapté aux plantes légumineuses. Le sol riche en nutriments et ayant une bonne structure permet une bonne absorption de l'eau et des nutriments par les racines.",
+    "eau": "L'eau est essentielle pour la croissance des plantes. Les plantes légumineuses nécessitent une quantité importante d'eau pour croître et se développer. Il est important de fournir suffisamment d'eau aux plantes pour éviter les carences et les problèmes de croissance.",
+    "environnement": "L'environnement est important pour la croissance des plantes légumineuses. Les plantes nécessitent un climat chaud et sec pour croître et se développer. Les plantes sont sensibles aux températures extrêmes et aux conditions météorologiques difficiles.",
+    "conseils": "Les conseils pour cultiver des plantes légumineuses sont : choisir un sol bien drainé et adapté aux plantes légumineuses, fournir suffisamment d'eau aux plantes, fournir un environnement chaud et sec pour la croissance, éviter les carences en nutriments et en eau, et surveiller les conditions météorologiques pour éviter les problèmes de croissance."
 }

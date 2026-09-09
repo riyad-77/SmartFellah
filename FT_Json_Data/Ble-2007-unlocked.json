@@ -1,45 +1,36 @@
 {
-    "culture": "Riz",
-    "exigences_sol": "Le sol doit être bien réparti pour favoriser la croissance du riz.",
-    "besoins_hydriques": "La culture nécessite une irrigation régulière pour éviter les surcharges de humidité et promouvoir une croissance saine.",
-    "temp_optimale": {
-        "temp_min": "20°C",
-        "temp_max": "25°C"
+    "culture": "riz",
+    "exigences_sol": "sol solaire, sol aride, sol chaud",
+    "besoins_hydriques": "solide, résistant aux sécheresses",
+    "bioclimatologie_optimale": {
+        "temp_min": 15,
+        "temp_max": 30,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Rougeur des feuilles",
+            "nom_maladie": "maladie des racines",
             "causes": [
-                "Trop de soleil",
-                "Faut de fertilisants"
+                "attaque de champignons",
+                "perte de racines"
             ],
             "traitements_specifiques": [
-                "Réduction de l'irrigation",
-                "Application d'un fumant"
-            ]
-        },
-        {
-            "nom_maladie": "Pests",
-            "causes": [
-                "Insectes",
-                "Maladies"
-            ],
-            "traitements_specifiques": [
-                "Application d'insecticides",
-                "Traitement antibiotique"
+                "traitement chimique",
+                "traitement biologique"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Appliquer une couche fine de mulch pour réguler la température du sol et prévenir les érosions.",
+            "description": "appliquer un engrais organique",
             "status": "en cours",
-            "categorie": "urgente"
-        },
-        {
-            "description": "Fertiliser régulièrement le riz pour favoriser sa croissance et résistance aux maladies.",
-            "status": "en cours",
-            "categorie": "normale"
+            "categorie": "urgent"
         }
     ]
 }

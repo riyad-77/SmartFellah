@@ -1,3 +1,36 @@
 {
-    "culture": "framboisier"
+    "culture": "framboisier",
+    "exigences_sol": "Les framboisiers nécessitent un sol bien drainé et riches en matière organique",
+    "besoins_hydriques": "Les framboisiers nécessitent une irrigation régulière, en particulier pendant la période de floraison",
+    "bioclimatologie_optimale": {
+        "temp_min": "10",
+        "temp_max": "25",
+        "hum_min": "60",
+        "hum_max": "80"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.3"
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Maladie de la framboise",
+            "causes": [
+                "Plasmopora",
+                "Erysiphe"
+            ],
+            "traitements_specifiques": [
+                "Fumigation, Traitement par les acides",
+                "Désinfection de la plante"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Conserver les plantes en bonnes conditions pour éviter les maladies",
+            "status": "en cours",
+            "categorie": "urgence"
+        }
+    ]
 }

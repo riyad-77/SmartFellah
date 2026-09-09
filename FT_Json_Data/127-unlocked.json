@@ -1,34 +1,36 @@
 {
     "culture": "Agrumes",
-    "exigences_sol": null,
-    "besoins_hydriques": "Les agrumes nécessitent une irrigation régulière, en particulier pendant la période de floraison et de fruits mûrs.",
-    "temp_optimale": {
-        "temp_min": "-7°C",
-        "temp_max": "20°C"
+    "exigences_sol": "Agrumes nécessitent un sol bien drainé et fertile.",
+    "besoins_hydriques": "Les agrumes nécessitent une irrigation régulière, en particulier pendant la période de floraison.",
+    "bioclimatologie_optimale": {
+        "temp_min": null,
+        "temp_max": null,
+        "hum_min": 20,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Dégâts causés par le froid",
+            "nom_maladie": "Gelée",
             "causes": [
                 "Pertes d'énergie par convection",
-                "Vent froid qui intensifie les pertes de chaleur"
+                "Déplacement de l'air des régions plus froides vers des zones moins froides"
             ],
             "traitements_specifiques": [
-                "Acclimatation des arbres au froid avant l'installation du froid",
-                "Utilisation de couvert végétal pour protéger les fruits et les feuilles"
+                "Acclimatation des arbres au froid",
+                "Utilisation de protécolateurs"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "L'acclimatation des arbres aux températures froides est essentielle avant l'installation du froid.",
-            "status": "en cours",
-            "categorie": "urgent"
-        },
-        {
-            "description": "Il est important de surveiller les conditions météorologiques pour prévenir les gelées sévères.",
-            "status": null,
-            "categorie": "non urgent"
+            "description": "Il est recommandé de planter des arbres de 'Maroc late' dans les plaines intérieures du Maroc pour atténuer les effets de la gelée.",
+            "status": "En cours",
+            "categorie": "Urgent"
         }
     ]
 }

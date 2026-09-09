@@ -1,36 +1,77 @@
 {
     "culture": "Pistachier",
-    "exigences_sol": null,
-    "besoins_hydriques": "L'espèce doit être multipliée sur place (semis et greffage dans le verger) pour éviter ces échecs, sinon la multiplication en sachet devient indispensable.",
-    "temp_optimale": {
-        "temp_min": null,
-        "temp_max": 7.2
+    "exigences_sol": "Le pistachier a besoin de sols calcaires et non acides, avec un pH allant entre 6 et 7.",
+    "besoins_hydriques": "Le pistachier nécessite une irrigation régulière, en particulier pendant la période de floraison et de fruitification.",
+    "bioclimatologie_optimale": {
+        "temp_min": "10 °C",
+        "temp_max": "35 °C",
+        "hum_min": "40%",
+        "hum_max": "60%"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
+            "nom_maladie": "Mortalité élevée",
+            "causes": [
+                "Transplantation",
+                "Manque d'irrigation"
+            ],
+            "traitements_specifiques": [
+                "Irrigation régulière",
+                "Gestion des rejets"
+            ]
+        },
+        {
             "nom_maladie": "Disparition du cultivar",
             "causes": [
-                "émergence des rejets issus du porte-greffe",
-                "développement très rapide"
+                "Réjets issus du porte-greffe"
             ],
-            "traitements_specifiques": []
+            "traitements_specifiques": [
+                "Élimination systématique des rejets"
+            ]
+        },
+        {
+            "nom_maladie": "Mise à fruit tardive",
+            "causes": [
+                "Longue période juvénile"
+            ],
+            "traitements_specifiques": [
+                "Optimisation de la conduite culturale"
+            ]
+        },
+        {
+            "nom_maladie": "Faiblesse des rendements",
+            "causes": [
+                "Faites de fructification"
+            ],
+            "traitements_specifiques": [
+                "Optimisation de la fertilisation et de l'irrigation"
+            ]
+        },
+        {
+            "nom_maladie": "Pollinisation",
+            "causes": [
+                "Absence d'arbres mâles issus de pollinisateurs spécifiques"
+            ],
+            "traitements_specifiques": [
+                "Utilisation de pollinisateurs spécifiques"
+            ]
         }
     ],
     "recommandations": [
         {
-            "description": "L'élimination systématiquement des rejets contribue à favoriser la croissance du cultivar.",
-            "status": null,
-            "categorie": null
+            "description": "Optimisation de la conduite culturale et de la gestion des rejets",
+            "status": "En cours",
+            "categorie": "Urgent"
         },
         {
-            "description": "Les taux de production de fruits vides sont élevés et sont le résultat d'une mauvaise pollinisation liée soit à l'absence d'arbres mâles issus de pollinisateurs spécifiques soit à un dispositif inadéquat de répartition des pollinisateurs.",
-            "status": null,
-            "categorie": null
-        },
-        {
-            "description": "Les variétés femelles performantes et leurs pollinisateurs spécifiques, leurs besoins en froid, les techniques de multiplication et de conduite de la culture ne constituent pas aujourd'hui des contraintes comme auparavant.",
-            "status": null,
-            "categorie": null
+            "description": "Extension de la culture du pistachier en zones marginalisées",
+            "status": "En cours",
+            "categorie": "Importante"
         }
     ]
 }

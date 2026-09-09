@@ -34,61 +34,46 @@ MODEL_DIR = "models"
 os.makedirs(MODEL_DIR, exist_ok=True)
 
 def load_and_generate_disease_data():
-    """Génère un dataset basé STRICTEMENT sur les seuils de la base de données."""
-    print("📥 Extraction et ingénierie des données météo/maladies...")
+    """Génère un dataset basé sur les conditions universelles de prolifération fongique."""
+    print("📥 Extraction et ingénierie des données météo...")
     
     with engine.connect() as conn:
-        # 1. Récupération de toute la météo
         df_meteo = pd.read_sql(text("""
             SELECT date_mesure, parcelle_id, temp_moyenne, temp_max, temp_min, humidite_moyenne, precipitations_mm 
             FROM donnees_meteo 
             ORDER BY parcelle_id, date_mesure
         """), conn)
         
-        # 2. Récupération des seuils EXACTS de toutes les maladies
-        df_maladies = pd.read_sql(text("""
-            SELECT temp_min_declenchement, temp_max_declenchement, 
-                   humidite_min_declenchement, precipitations_min_declenchement 
-            FROM maladies 
-            WHERE temp_min_declenchement IS NOT NULL
-        """), conn)
-
     df_meteo['date_mesure'] = pd.to_datetime(df_meteo['date_mesure'])
     df_meteo['hum_moy_3j'] = df_meteo.groupby('parcelle_id')['humidite_moyenne'].transform(lambda x: x.rolling(3, min_periods=1).mean())
     df_meteo['temp_moy_3j'] = df_meteo.groupby('parcelle_id')['temp_moyenne'].transform(lambda x: x.rolling(3, min_periods=1).mean())
     df_meteo['pluie_cumul_3j'] = df_meteo.groupby('parcelle_id')['precipitations_mm'].transform(lambda x: x.rolling(3, min_periods=1).sum())
 
-    # --- ÉVALUATION STRICTE SELON LA BDD ---
-    df_meteo['risque_maladie'] = 0
-
+    # --- RÈGLE AGRONOMIQUE UNIVERSELLE (Risque Fongique Global) ---
+    # Les champignons se développent si : 
+    # 1. Humidité élevée (> 75%) ET Température douce (entre 15°C et 30°C)
+    # OU 2. Fortes pluies récentes (> 5mm cumulés) ET Température > 12°C
     
-    # On vérifie chaque ligne météo par rapport aux seuils réels
-    for _, maladie in df_maladies.iterrows():
-        t_min = maladie['temp_min_declenchement']
-        t_max = maladie['temp_max_declenchement']
-        h_min = maladie['humidite_min_declenchement']
-        p_min = maladie['precipitations_min_declenchement']
-        
-        # 🛡️ FILTRE DE SÉCURITÉ : On ignore les maladies dont les seuils sont manquants ou trop faibles
-        # (ex: on force un minimum de 60% d'humidité et un minimum de pluie > 0)
-        if pd.isnull(h_min) or pd.isnull(p_min) or h_min < 60 or p_min <= 0:
-            continue
-
-        condition = (
-            (df_meteo['temp_moy_3j'] >= t_min) & 
-            (df_meteo['temp_moy_3j'] <= t_max) & 
-            (df_meteo['hum_moy_3j'] >= h_min) & 
-            (df_meteo['pluie_cumul_3j'] >= p_min)
-        )
-        
-        df_meteo.loc[condition, 'risque_maladie'] = 1
+    condition_fongique = (
+        (df_meteo['hum_moy_3j'] >= 75.0) & 
+        (df_meteo['temp_moy_3j'] >= 15.0) & 
+        (df_meteo['temp_moy_3j'] <= 30.0)
+    )
     
-    # Bruit statistique minime (1%) pour éviter un modèle 100% déterministe
+    condition_pluie = (
+        (df_meteo['pluie_cumul_3j'] >= 5.0) & 
+        (df_meteo['temp_moy_3j'] >= 12.0)
+    )
+    
+    df_meteo['risque_maladie'] = np.where(condition_fongique | condition_pluie, 1, 0)
+    
+    # Bruit statistique minime (5%) pour forcer le modèle ML à généraliser 
+    # au lieu d'apprendre cette règle exacte par cœur
     np.random.seed(42)
     bruit = np.random.choice([0, 1], size=len(df_meteo), p=[0.95, 0.05])
     df_meteo['risque_maladie'] = np.abs(df_meteo['risque_maladie'] - bruit)
 
-    print("\n📊 Distribution des classes générées (100% dictées par la BDD) :")
+    print("\n📊 Distribution des classes générées (Risque Fongique Global) :")
     print(df_meteo['risque_maladie'].value_counts(normalize=True).map('{:.2%}'.format))
 
     return df_meteo.dropna().copy()

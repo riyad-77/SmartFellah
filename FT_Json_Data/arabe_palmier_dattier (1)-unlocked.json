@@ -1,23 +1,36 @@
 {
-    "culture": "Blé",
-    "exigences_sol": "",
-    "besoins_hydriques": null,
-    "temp_optimale": {
-        "temp_min": 15,
-        "temp_max": 25
+    "culture": "Inconnue",
+    "exigences_sol": "Des sols bien drainés sont nécessaires.",
+    "besoins_hydriques": "Une irrigation régulière est requise.",
+    "bioclimatologie_optimale": {
+        "temp_min": null,
+        "temp_max": 25,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Inconnue",
-            "causes": [],
-            "traitements_specifiques": []
+            "nom_maladie": "La mousse",
+            "causes": [
+                "Humidité excessive",
+                "Vent chaud"
+            ],
+            "traitements_specifiques": [
+                "Fumigation",
+                "Pesticide"
+            ]
         }
     ],
     "recommandations": [
         {
-            "description": null,
-            "status": null,
-            "categorie": null
+            "description": "Fertiliser les sols avant la culture",
+            "status": "en cours",
+            "categorie": "urgent"
         }
     ]
 }

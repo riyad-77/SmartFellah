@@ -1,0 +1,6 @@
+{
+    "culture": "Caroubier",
+    "ndvi_optimal_max": 2.35,
+    "ndwi_optimal_max": 1.82,
+    "evi_optimal_max": 0.85
+}

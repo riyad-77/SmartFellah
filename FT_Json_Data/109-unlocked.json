@@ -1,27 +1,32 @@
 {
     "culture": "bananier",
-    "exigences_sol": "Un sol profond, fertile et léger est requis.",
-    "besoins_hydriques": "La banane nécessite une hygrométrie élevée et un bon ensoleillement, mais craint les vents et les variations brusques de température.",
-    "temp_optimale": {
-        "temp_min": "20°C",
-        "temp_max": "30°C"
+    "exigences_sol": "La plante exige un sol profond, fertile et léger. Les sols argileux ne conviennent pas du tout à la culture, surtout lorsqu'ils sont mal drainés.",
+    "besoins_hydriques": "La plante est très sensible au déficit hydrique et nécessite des apports fréquents d'eau (une fois par jour).",
+    "bioclimatologie_optimale": {
+        "temp_min": "20",
+        "temp_max": "30",
+        "hum_min": "80",
+        "hum_max": "90"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
         {
-            "nom_maladie": "Maladie du bananier",
+            "nom_maladie": "Viroses",
             "causes": [
-                "Infestation de nématodes",
-                "Infection par les virus"
+                "Transmission par les plantes"
             ],
             "traitements_specifiques": [
-                "Irriguation régulière",
-                "Traitement chimique"
+                "Prévention de la transmission"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "La sélection des pieds mères est cruciale pour la performance de production.",
+            "description": "La sélection des pieds mères et des rejets est importante pour la performance de production.",
             "status": "en cours",
             "categorie": "urgent"
         }

@@ -1,47 +1,49 @@
 {
     "culture": "Epinard",
-    "exigences_sol": "Mêmes exigences que les choux, même rusticité et résistance au froid. Faible exigences en lumière (on peut la cultiver en strate basse, sous une haute culture). En condition de jour long et haute température (supérieure à 25˚C), la plante monte à grain; il faut éliminer la hampe florale qui réduit le rendement en feuilles.",
-    "besoins_hydriques": "La culture est sensible à un déficit hydrique et à l’asphyxie. En sol acide, le rendement est faible. Le sol doit avoir un pH supérieur à 6,5.",
-    "temp_optimale": {
-        "temp_min": "15˚C",
-        "temp_max": "25˚C"
+    "exigences_sol": "L'épinard et l'estragon nécessitent un sol acide avec un pH supérieur à 6,5, tandis que les épinards peuvent tolérer un pH légèrement plus élevé.",
+    "besoins_hydriques": "Les épinards et l'estragon sont très exigeants en eau, nécessitant un à deux sarclages pour aérer le sol et enfouir la fumure de couverture.",
+    "bioclimatologie_optimale": {
+        "temp_min": 15,
+        "temp_max": 25,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": "0",
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Inconnue",
-            "causes": [],
-            "traitements_specifiques": []
-        },
-        {
             "nom_maladie": "Mildiou",
             "causes": [
-                "Humidité excessive",
-                "Évent"
+                "Champignons",
+                "Rhizocottonie"
             ],
             "traitements_specifiques": [
-                "Fumigation",
-                "Traitement par insecticide"
+                "Pulvériser horizon et corbel",
+                "Manébé"
             ]
         }
     ],
     "recommandations": [
         {
+            "description": "Apporter 20 T/ha de fumier + 70 kg/ha de N + 90 kg/ha de P2O5 + 100 kg/ha de K2O au fond, et 20-30 kg/ha de N en couverture",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "La culture est très exigeante en eau",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "La récolte se fait à la faucheuse, à la main et peut être complètement mécanisée",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
             "description": "Couper la plante à partir de 5-10 cm du sol.",
-            "status": "en cours",
-            "categorie": "urgent"
-        },
-        {
-            "description": "Éliminer la hampe florale qui réduit le rendement en feuilles.",
-            "status": "en cours",
-            "categorie": "urgent"
-        },
-        {
-            "description": "Fertiliser au fond, avant la récolte.",
-            "status": "en cours",
-            "categorie": "urgent"
-        },
-        {
-            "description": "Apporter 30 kg/ha de N et 70 kg/ha de P2O5 au fond, ainsi que des sarclages pour aérer le sol.",
             "status": "en cours",
             "categorie": "urgent"
         }

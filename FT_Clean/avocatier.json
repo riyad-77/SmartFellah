@@ -2,9 +2,16 @@
     "culture": "Avocatier",
     "exigences_sol": "Sols sableux ou sablo-argileux, avec pH optimum entre 5,5 et 6,5.",
     "besoins_hydriques": "Les besoins en eau sont de 1000 à 1200 mm. Les apports doivent être bien répartis.",
-    "temp_optimale": {
+    "bioclimatologie_optimale": {
         "temp_min": "-2˚C",
-        "temp_max": "25˚C"
+        "temp_max": "25˚C",
+        "hum_min": "70%",
+        "hum_max": "80%"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": null,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
@@ -26,11 +33,52 @@
             "traitements_specifiques": []
         },
         {
-            "nom_maladie": "Inconnue",
+            "nom_maladie": "Abléssion des feuilles",
             "causes": [
-                "Inconnues"
+                "manque de lumière",
+                "manque d'eau",
+                "attaque de parasites"
             ],
-            "traitements_specifiques": []
+            "traitements_specifiques": [
+                "irrigation, fumigation, applications de pesticides"
+            ]
+        },
+        {
+            "nom_maladie": "Faut de croissance",
+            "causes": [
+                "excess de nutrition",
+                "attaque de parasites"
+            ],
+            "traitements_specifiques": [
+                "réduction de l'apport en fertilisants, applications de pesticides"
+            ]
+        },
+        {
+            "nom_maladie": "Dégâts causés par les dégâts à -4˚C",
+            "causes": [
+                "Exposition à des températures inférieures à -4˚C"
+            ],
+            "traitements_specifiques": [
+                "Protéger les plants contre les vents forts et les fortes insolations"
+            ]
+        },
+        {
+            "nom_maladie": "Dégâts causés par la salinité",
+            "causes": [
+                "Exposition à des sols salins"
+            ],
+            "traitements_specifiques": [
+                "Utiliser des sols bien drainés et éviter l'excès de chlore"
+            ]
+        },
+        {
+            "nom_maladie": "Dégâts des variétés mexicaines en froid",
+            "causes": [
+                "Température inférieure à -4˚C"
+            ],
+            "traitements_specifiques": [
+                "Utiliser des protection des feuilles"
+            ]
         }
     ],
     "recommandations": [
@@ -53,6 +101,31 @@
             "description": "La protection des jeunes plants contre les vents et les fortes insolations est essentielle.",
             "status": "en cours",
             "categorie": "urgent"
+        },
+        {
+            "description": "Mettre des brise-vents individuels pour protéger les jeunes plants des coups de soleil et du vent.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Faire une irrigation régulière et suffisante pour les plantations.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Protéger les plants contre les vents forts et les fortes insolations",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Utiliser des sols bien drainés et éviter l'excès de chlore",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Utiliser des protection des feuilles pour protéger les jeunes plants des vents forts et des fortes insolations.",
+            "status": "en cours",
+            "categorie": "urgence"
         }
     ]
 }

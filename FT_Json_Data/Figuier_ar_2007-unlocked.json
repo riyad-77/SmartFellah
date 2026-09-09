@@ -1,34 +1,36 @@
 {
-    "culture": "Riz",
-    "exigences_sol": "Le sol doit être bien drainé et avoir une bonne structure de porosité pour permettre une bonne absorption d'eau.",
-    "besoins_hydriques": "Le riz a besoin d'une irrigation régulière, mais pas trop abondante. La surface de l'eau doit être suffisamment haute pour que les racines puissent s'étendre, mais pas si haute qu'elle ne submerge le sol.",
-    "temp_optimale": {
-        "temp_min": "15°C",
-        "temp_max": "30°C"
+    "culture": "Arabe",
+    "exigences_sol": "Le sol doit être bien drainé et avoir un pH neutre.",
+    "besoins_hydriques": "La plante nécessite une irrigation régulière, mais pas excessive.",
+    "bioclimatologie_optimale": {
+        "temp_min": 15,
+        "temp_max": 25,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Rougeur des feuilles",
+            "nom_maladie": "Maladie des feuilles",
             "causes": [
-                "Trop d'eau",
-                "Manque d'air"
+                "Manque d'eau",
+                "Temps froid"
             ],
             "traitements_specifiques": [
-                "Amendement du sol",
-                "Prévention de la surirrigation"
+                "Irrigation régulière",
+                "Mulching"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Fertiliser régulièrement le riz pour maintenir une production maximale.",
-            "status": "En cours",
-            "categorie": "Urgent"
-        },
-        {
-            "description": "Éviter de trop arroser le riz, car cela peut entraîner des problèmes de mauvaise santé et de réduction de la productivité.",
-            "status": "En cours",
-            "categorie": "Important"
+            "description": "Irriger les plantes régulièrement, mais pas trop",
+            "status": "en cours",
+            "categorie": "urgent"
         }
     ]
 }

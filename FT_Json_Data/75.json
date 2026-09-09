@@ -1,33 +1,50 @@
 {
-    "culture": "Betterave à sucre monogermes",
-    "exigences_sol": "La structure superficielle doit être fine, avec une structure profonde de 30 cm en profondeur, tout en conservant la structure profonde réalisée par le labour.",
-    "besoins_hydriques": "Des irrigations rapprochées dans les temps pour assurer la germination et une levée homogène.",
-    "temp_optimale": {
-        "temp_min": "-1°C",
-        "temp_max": "35°C"
+    "culture": "betterave à sucre monogerme",
+    "exigences_sol": "La terre est souvent seche et heterogene. Le travail du sol est necessaire pour obtenir une structure superficielle bien aerie et profonde en racine.",
+    "besoins_hydriques": "La betterave à sucre monogerme a besoin d'une irrigation rapprochée dans le temps pour assurer la germination et une levée homogene. La distribution de l'eau est essentielle pour la croissance de la plante.",
+    "bioclimatologie_optimale": {
+        "temp_min": 10,
+        "temp_max": 35,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Maladie des racines",
+            "nom_maladie": "Maladie des feuilles",
             "causes": [
-                "Insectes",
-                "Fongiques"
+                "Infection par des agents pathogenes",
+                "Manque d'eau"
             ],
             "traitements_specifiques": [
-                "Herbicides, Fumigats"
+                "Fumigation, irrigation régulière"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie des racines",
+            "causes": [
+                "Infection par des agents pathogenes",
+                "Manque de nutriments"
+            ],
+            "traitements_specifiques": [
+                "Application de fumigants, fertilisation régulière"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Choisir des semoirs de précision capables de semer sur des billons préalablement confectionnés.",
-            "status": "En cours",
-            "categorie": "Urgent"
+            "description": "Realiser des labourages réguliers et soignés pour obtenir une structure superficielle bien aerie et profonde en racine.",
+            "status": "en cours",
+            "categorie": "urgente"
         },
         {
-            "description": "Réaliser un labour précis et une préparation du sol soignée pour permettre un enracinement profond.",
-            "status": "En cours",
-            "categorie": "Urgent"
+            "description": "Assurer une irrigation régulière et rapprochée pour assurer la germination et une levée homogene.",
+            "status": "en cours",
+            "categorie": "urgente"
         }
     ]
 }

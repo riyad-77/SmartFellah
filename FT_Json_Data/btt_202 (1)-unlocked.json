@@ -1,32 +1,52 @@
 {
-    "culture": "blé tendre",
-    "exigences_sol": null,
-    "besoins_hydriques": "faibles prix de vente sur le marché",
-    "temp_optimale": {
-        "temp_min": "-6°C",
-        "temp_max": "25°C"
+    "culture": "Blé tendre",
+    "exigences_sol": "Le sol doit être propre et bien drainé pour éviter les troubles de l'apport de l'eau. Le sol doit être en bon état de structure pour permettre la bonne aération et le bon écoulement des eaux.",
+    "besoins_hydriques": "Le blé a besoin d'une irrigation régulière, en particulier pendant la période de croissance et de germination. La quantité d'eau nécessaire varie en fonction de la température et de la humidité de l'air.",
+    "bioclimatologie_optimale": {
+        "temp_min": 10,
+        "temp_max": 25,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Chergui",
+            "nom_maladie": "Fusariose",
             "causes": [
-                "sécheresse et Chergui de fin de cycle"
+                "Nuit de froide",
+                "Perte d'eau"
             ],
             "traitements_specifiques": [
-                "irrigation et fertilisation"
+                "Traitement avec des herbicides",
+                "Régulation de l'irrigation"
+            ]
+        },
+        {
+            "nom_maladie": "Mildiou",
+            "causes": [
+                "Humidité excessive",
+                "Perte de qualité du grain"
+            ],
+            "traitements_specifiques": [
+                "Traitement avec des fungicides",
+                "Regulation de l'irrigation"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "choix variétal adapté aux conditions climatiques",
-            "status": "en cours",
-            "categorie": "urgent"
+            "description": "L'irrigation doit être régulière et ciblée pour éviter les problèmes de qualité du grain.",
+            "status": "En cours",
+            "categorie": "Urgent"
         },
         {
-            "description": "préparation du sol et semis en fonction des conditions climatiques",
-            "status": "en cours",
-            "categorie": "urgent"
+            "description": "La gestion de la sécheresse est essentielle pour éviter les pertes de productivité.",
+            "status": "En cours",
+            "categorie": "Urgent"
         }
     ]
 }

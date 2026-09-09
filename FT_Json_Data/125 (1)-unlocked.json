@@ -1,43 +1,80 @@
 {
     "culture": "Pistachier",
-    "exigences_sol": "La culture du pistachier nécessite un sol bien drainé et avec une bonne structure, pour permettre à l'arbre d'établir ses racines profondes.",
-    "besoins_hydriques": "Le pistachier a besoin d'un sol bien drainé et avec une bonne structure, mais également de bons apports en eau. Il est sensible aux sécheresses et aux conditions climatiques extrêmes.",
-    "temp_optimale": {
-        "temp_min": "7.2°C",
-        "temp_max": "22°C"
+    "exigences_sol": "Le pistachier nécessite un sol bien drainé et fertile, avec un pH entre 6,5 et 8,5. Il préfère les sols calcaires ou les sols argileux avec un pH légerment acide. La température idéale est comprise entre 10°C et 30°C. L'arbre peut tolérer les températures extrêmes, mais il est plus sensible aux températures élevées et basses.",
+    "besoins_hydriques": "Le pistachier a besoin d'une irrigation régulière, en particulier pendant la période de croissance. Il préfère l'eau douce et non salée. La quantité d'eau nécessaire varie en fonction de la température et de la humidité de l'air.",
+    "bioclimatologie_optimale": {
+        "temp_min": "10°C",
+        "temp_max": "30°C",
+        "hum_min": "20%",
+        "hum_max": "80%"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
         {
-            "nom_maladie": "Maladie de la transpiration excessive",
+            "nom_maladie": "Fragilité de l'espèce lors de la transplantation",
             "causes": [
-                "Sécheresse",
-                "Soil salin"
+                "manque d'irrigation après la mise en place",
+                "retard dans la transplantation"
             ],
             "traitements_specifiques": [
-                "Irrigation régulière",
-                "Apport en fertilisants"
+                "irrigation régulière",
+                "transplantation à racines nues"
             ]
         },
         {
-            "nom_maladie": "Rougeur des feuilles",
+            "nom_maladie": "Disparition du cultivar",
             "causes": [
-                "Manque de lumière",
-                "Malnutrition du sol"
+                "émergence des rejets issus du porte-greffe"
             ],
             "traitements_specifiques": [
-                "Ajout de luminance",
-                "Apport en nutriments"
+                "élimination systématique des rejets"
+            ]
+        },
+        {
+            "nom_maladie": "Mise à fruit tardive",
+            "causes": [
+                "lenteur de croissance des plants"
+            ],
+            "traitements_specifiques": [
+                "fertilisation régulière",
+                "entretien régulier"
+            ]
+        },
+        {
+            "nom_maladie": "Faiblesse des rendements",
+            "causes": [
+                "manque d'irrigation",
+                "fertilisation insuffisante"
+            ],
+            "traitements_specifiques": [
+                "irrigation régulière",
+                "fertilisation régulière"
+            ]
+        },
+        {
+            "nom_maladie": "Pollinisation",
+            "causes": [
+                "absence d'arbres mâles issus de pollinisateurs spécifiques",
+                "dispositif inadéquat de répartition des pollinisateurs"
+            ],
+            "traitements_specifiques": [
+                "implantation d'arbres mâles",
+                "amélioration du dispositif de répartition des pollinisateurs"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Fertilisation régulière pour améliorer la croissance et les rendements",
+            "description": "L'arbre doit être planté dans un endroit bien aéré avec un sol bien drainé.",
             "status": "en cours",
             "categorie": "urgent"
         },
         {
-            "description": "Irrigation régulière pour prévenir la sécheresse et les maladies",
+            "description": "L'arbre doit être irrigué régulièrement, en particulier pendant la période de croissance.",
             "status": "en cours",
             "categorie": "urgent"
         }

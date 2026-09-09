@@ -1,23 +1,32 @@
 {
-    "culture": "Banane",
-    "exigences_sol": null,
-    "besoins_hydriques": "Une hygrométrie élevée et un bon ensoleillement mais craint les vents et les variations brusques de température.",
-    "temp_optimale": {
-        "temp_min": "15°C",
-        "temp_max": "30°C"
+    "culture": "Bananier",
+    "exigences_sol": "La plante nécessite un sol profond, fertile et léger. Les sols argileux ne conviennent pas du tout à la culture, surtout lorsqu’ils sont mal drainés.",
+    "besoins_hydriques": "La plante est très sensible au déficit hydrique et nécessite une irrigation fréquente, une fois par jour. L'eau d’irrigation doit être de qualité allant jusqu’à 350 mg de chlorures par litre et jusqu’à 1,5 g de sels totaux par litre.",
+    "bioclimatologie_optimale": {
+        "temp_min": 20,
+        "temp_max": 30,
+        "hum_min": 70,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": null,
+            "nom_maladie": "Virose",
             "causes": [
-                "viroses"
+                "Transmission par les plantes"
             ],
-            "traitements_specifiques": []
+            "traitements_specifiques": [
+                "Inoculation de plantes indénsifiées"
+            ]
         }
     ],
     "recommandations": [
         {
-            "description": "Choisir un site avec une bonne ventilation et éviter les zones gélives.",
+            "description": "Choisir un site avec un climat tropical humide et un bon ensoleillement",
             "status": "en cours",
             "categorie": "urgent"
         }

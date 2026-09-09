@@ -2,10 +2,17 @@
     "culture": "Inconnue",
     "exigences_sol": null,
     "besoins_hydriques": null,
-    "temp_optimale": {
+    "bioclimatologie_optimale": {
         "temp_min": null,
-        "temp_max": null
+        "temp_max": null,
+        "hum_min": null,
+        "hum_max": 80
     },
-    "maladies_details": null,
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
+    },
+    "maladies_details": [],
     "recommandations": []
 }

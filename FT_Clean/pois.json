@@ -2,9 +2,16 @@
     "culture": "Pois",
     "exigences_sol": "Le sol devrait être bien exposé pour cette culture.",
     "besoins_hydriques": "La culture doit être arrosée régulièrement.",
-    "temp_optimale": {
+    "bioclimatologie_optimale": {
         "temp_min": 15,
-        "temp_max": 25
+        "temp_max": 25,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": null,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
@@ -17,11 +24,28 @@
                 "Ajuster l'exposition au soleil",
                 "Ajuster la quantité d'eau"
             ]
+        },
+        {
+            "nom_maladie": "Morte de plantes",
+            "causes": [
+                "Manque d'eau",
+                "Trop d'eau",
+                "Maladies végétales"
+            ],
+            "traitements_specifiques": [
+                "Arrosage régulier",
+                "Traitement antimicrobien"
+            ]
         }
     ],
     "recommandations": [
         {
             "description": "Rallier les feuilles régulièrement.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Utiliser un système de drainage pour éviter les excesses d'eau",
             "status": "en cours",
             "categorie": "urgent"
         }

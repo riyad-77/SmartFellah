@@ -1,45 +1,36 @@
 {
-    "culture": "Safran",
-    "exigences_sol": "Les sols à teneurs relativement élevées en calcaire (parfois supérieures à 20%) conviennent au safran.",
-    "besoins_hydriques": "Le safran peut tolérer des sols à teneurs relativement élevées en argile, mais il est préférablement adapté aux sols bien drainants.",
-    "temp_optimale": {
-        "temp_min": "-15°C",
-        "temp_max": "+40°C"
+    "culture": "Crocus sativus L",
+    "exigences_sol": "La culture du safran nécessite des sols profonds et bien drainants, avec une teneur en argile élevée pour éviter l'asphyxie du bulbe.",
+    "besoins_hydriques": "Le safran nécessite une irrigation régulière, avec un apport d'eau moyen de 600 à 700 mm/an, mais qui doit être réparti le long du cycle de la plante.",
+    "bioclimatologie_optimale": {
+        "temp_min": "-10°C",
+        "temp_max": "40°C",
+        "hum_min": "20%",
+        "hum_max": "80%"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
         {
-            "nom_maladie": "La maladie des feuilles jaunes",
+            "nom_maladie": "Maladie des racines",
             "causes": [
-                "Infection par des champignons",
-                "Dégâts causés par les insectes"
+                "Infection par des bactéries",
+                "Infection par des virus"
             ],
             "traitements_specifiques": [
-                "Appliquer des fungicides",
-                "Utiliser des insecticides"
-            ]
-        },
-        {
-            "nom_maladie": "La maladie du bulbe",
-            "causes": [
-                "Infection par des champignons",
-                "Dégâts causés par les insectes"
-            ],
-            "traitements_specifiques": [
-                "Appliquer des fungicides",
-                "Utiliser des insecticides"
+                "Traitement antimicrobien",
+                "Traitement vétérinaire"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "L'épierrage et la construction de terrasses sont des opérations obligatoires dans plusieurs régions productrices du safran.",
+            "description": "Le suivi régulier de la culture est primordial pour éviter les problèmes de santé et de production.",
             "status": "en cours",
-            "categorie": "urgent"
-        },
-        {
-            "description": "Un labour croisé et profond de 30 à 40 cm est nécessaire pour faciliter la préparation du terrain pour la nouvelle plantation.",
-            "status": "en cours",
-            "categorie": "urgent"
+            "categorie": "urgente"
         }
     ]
 }

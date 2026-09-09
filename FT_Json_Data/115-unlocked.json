@@ -1,33 +1,36 @@
 {
     "culture": "Pomme (Malus domestica)",
-    "exigences_sol": "Terroirs bien drainés et sols riches en matières organiques.",
-    "besoins_hydriques": "Une irrigation régulière, en fonction de la période de croissance. L'irrigation est essentielle pendant l'hiver pour garantir une bonne dormance des bourgeons.",
-    "temp_optimale": {
-        "temp_min": "-5°C",
-        "temp_max": "25°C"
+    "exigences_sol": "Conditions climatiques favorables, avec une concentration dans l'hémisphère nord, entre les latitudes 30° et 60°, et une certaine stabilité des températures et des précipitations.",
+    "besoins_hydriques": "Disponibilité en eau, mais pas de sécheresse. La réduction des ressources en eau est une contrainte importante.",
+    "bioclimatologie_optimale": {
+        "temp_min": "5°C",
+        "temp_max": "25°C",
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Maladie des feuilles de pomme",
+            "nom_maladie": "Maladie du pommier",
             "causes": [
-                "Moisi, vent",
-                "Mauvaises pratiques agricoles"
+                "Pluviella salicincola",
+                "Phoma pomorum"
             ],
             "traitements_specifiques": [
-                "Fumigation, traitement de surface"
+                "Agriculture intégrale",
+                "Tratament chimique"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Conseil : effectuer une analyse des sols pour déterminer les meilleures variétés de pomme en fonction du terroir.",
+            "description": "Produire des fruits de qualité avec un rendement moyen qui dépasse les 25 t/ha",
             "status": "en cours",
             "categorie": "urgent"
-        },
-        {
-            "description": "Conseil : utiliser un système d'irrigation automatique pour réduire les risques de sur-ou sous-irrigation.",
-            "status": "en cours",
-            "categorie": "urgence"
         }
     ]
 }

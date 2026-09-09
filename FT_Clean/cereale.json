@@ -2,9 +2,16 @@
     "culture": "Cereale",
     "exigences_sol": "Sol bien drainé, avec un pH neutre à légèrement acide.",
     "besoins_hydriques": "Avec une irrigation régulière, mais pas démesurée. Les cultures doivent être soumises à des périodes de sécheresse pour s'adapter aux conditions climatiques du sud-ouest marocain.",
-    "temp_optimale": {
+    "bioclimatologie_optimale": {
         "temp_min": "20°C",
-        "temp_max": "30°C"
+        "temp_max": "30°C",
+        "hum_min": null,
+        "hum_max": null
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": null,
+        "ndwi_optimal_min": null,
+        "evi_optimal_min": null
     },
     "maladies_details": [
         {

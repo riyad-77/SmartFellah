@@ -1,30 +1,60 @@
 {
-    "culture": "LE MELON",
-    "exigences_sol": "La culture est très exigeante en chaleur et lumière.",
-    "besoins_hydriques": "Les besoins en eau s’élèvent à 300-400 mm selon les régions. L’irrigation commence juste après la plantation et se fait généralement par un système de goutte-à-goutte.",
-    "temp_optimale": {
-        "temp_min": "30-35˚C",
-        "temp_max": "35-40˚C"
+    "culture": "Melon",
+    "exigences_sol": "La culture est très exigeante en chaleur et lumière. Certaines variétés sont indifférentes à la longueur du jour, mais les jours longs conviennent toujours à la culture.",
+    "besoins_hydriques": "Les besoins en eau s’élèvent à 300-400 mm selon les régions.",
+    "bioclimatologie_optimale": {
+        "temp_min": 15,
+        "temp_max": 30,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Fusariose",
+            "nom_maladie": "Fonte de semis",
             "causes": [
-                "atteinte par des chaux de sol"
+                "Nématodes",
+                "Orobanche",
+                "Oïdium",
+                "Fusariose",
+                "Viroses",
+                "Thrips",
+                "Pucerons",
+                "Acariens"
             ],
-            "traitements_specifiques": []
+            "traitements_specifiques": [
+                "Fongicide systémique à base d'Hyméxasol"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie cryptogamique",
+            "causes": [
+                "Maladies cryptogamiques"
+            ],
+            "traitements_specifiques": [
+                "Non spécifiés"
+            ]
+        },
+        {
+            "nom_maladie": "Ravageurs",
+            "causes": [
+                "Rats",
+                "Souris"
+            ],
+            "traitements_specifiques": [
+                "Non spécifiés"
+            ]
         }
     ],
     "recommandations": [
         {
-            "description": "Effectuer régulièrement les traitements phytosanitaires contre les champignons du sol et les parasites",
-            "status": "en cours",
-            "categorie": "urgent"
-        },
-        {
-            "description": "Assurer une fertilisation bien équilibrée, en particulier avec des engrais potassiques",
-            "status": "en cours",
-            "categorie": "urgence moyenne"
+            "description": "Effectuer des traitements phytosanitaires réguliers pour prévenir les maladies et les ravageurs.",
+            "status": "En cours",
+            "categorie": "Urgent"
         }
     ]
 }

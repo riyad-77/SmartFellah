@@ -2,9 +2,16 @@
     "culture": "Amandier",
     "exigences_sol": "sol profond, fertile, bien drainant, léger et humifère",
     "besoins_hydriques": "800 à 850 mm/an avec des apports en mai-juin-juillet",
-    "temp_optimale": {
+    "bioclimatologie_optimale": {
         "temp_min": 7.2,
-        "temp_max": "200 à 400 heures en dessous de 7,2˚C"
+        "temp_max": "200 à 400 heures en dessous de 7,2˚C",
+        "hum_min": "60",
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": null,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
@@ -12,7 +19,9 @@
             "causes": [
                 "virus"
             ],
-            "traitements_specifiques": []
+            "traitements_specifiques": [
+                "traitement contre le virus"
+            ]
         },
         {
             "nom_maladie": "Necrotic ring Spot (maladie à virus)",
@@ -113,11 +122,6 @@
             ]
         },
         {
-            "nom_maladie": "Inconnue",
-            "causes": [],
-            "traitements_specifiques": []
-        },
-        {
             "nom_maladie": "Mouche",
             "causes": [
                 "Insectes",
@@ -126,6 +130,110 @@
             "traitements_specifiques": [
                 "Épandage de insecticides",
                 "Réduction de la humidité"
+            ]
+        },
+        {
+            "nom_maladie": "Fusarium",
+            "causes": [
+                "tasse de feu, les racines sont souvent endommagées"
+            ],
+            "traitements_specifiques": [
+                "traitement avec des produits chimiques"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie des feuilles",
+            "causes": [
+                "Pollinisation insuffisante",
+                "Manque d'entretien",
+                "Gelées"
+            ],
+            "traitements_specifiques": [
+                "Sélection de variétés tolérantes à la sécheresse",
+                "Programme de lutte contre les maladies",
+                "Amélioration de la pollinisation"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie des racines",
+            "causes": [
+                "Sécheresse",
+                "Manque d'irrigation",
+                "Contamination du sol"
+            ],
+            "traitements_specifiques": [
+                "Amélioration de la drainage du sol",
+                "Programme de lutte contre les maladies",
+                "Réduction des doses de pesticides"
+            ]
+        },
+        {
+            "nom_maladie": "Rougeur du noyau",
+            "causes": [
+                "Infections par des bactéries du genre Candidatus phaeobacterium"
+            ],
+            "traitements_specifiques": [
+                "Traitement par des herbicides spécifiques"
+            ]
+        },
+        {
+            "nom_maladie": "Capnodes des ténèbres",
+            "causes": [
+                "Pénértration des larves du capnode noire"
+            ],
+            "traitements_specifiques": [
+                "Matériel végétal rustique"
+            ]
+        },
+        {
+            "nom_maladie": "Lavage",
+            "causes": [
+                "Insectes",
+                "Maladies fongiques"
+            ],
+            "traitements_specifiques": [
+                "Insecticides",
+                "Fongicides"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie du feuilles",
+            "causes": [
+                "Taux d'humidité ambiante trop élevé",
+                "Manque de drainage"
+            ],
+            "traitements_specifiques": [
+                "Réduction du taux d'humidité ambiante",
+                "Amélioration du drainage"
+            ]
+        },
+        {
+            "nom_maladie": "Anneau nécrotique",
+            "causes": [
+                "virus"
+            ],
+            "traitements_specifiques": [
+                "traitement contre le virus"
+            ]
+        },
+        {
+            "nom_maladie": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+            "causes": [
+                "Pénértration des larves du capnode noire"
+            ],
+            "traitements_specifiques": [
+                "Matériel végétal rustique"
+            ]
+        },
+        {
+            "nom_maladie": "Lavage",
+            "causes": [
+                "Insectes",
+                "Maladies fongiques"
+            ],
+            "traitements_specifiques": [
+                "Insecticides",
+                "Fongicides"
             ]
         }
     ],
@@ -212,6 +320,71 @@
         },
         {
             "description": "L'arrosage doit être effectué régulièrement, mais sans inondation.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Il est exigeant en lumière et en chaleur pendant la phase de croissance du fruit.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "La plantation d'amandiers devrait être effectuée en zones avec un climat froid et sec.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Entretenir les vergers avec un désherbage régulier et un traitement de fumure adapté",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Améliorer les conditions de pollinisation et de fertilisation",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Reconversion des plantations traditionnelles vers des plantations semi-intensives et modernes",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Conduire des tests de pollinisation pour améliorer la qualité de la pollinisation",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "Lancer un programme de sélection de variétés tolérantes à la sécheresse",
+            "status": "En cours",
+            "categorie": "Prioritaire"
+        },
+        {
+            "description": "Il est recommandé de pratiquer une irrigation régulière et de vérifier les conditions de sol avant de planter.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Utiliser des porte-greffes sélectionnés pour garantir la production et assurer le développement des arbres dans les régions fragilisées.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "L'amandier amer présente des caractéristiques de rusticité qui apparaissent au niveau de survie dans les sols pauvres, riches en calcaire avec de faibles disponibilités en eau.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Appliquer des pesticides pour contrôler les attaques d'insectes",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Fertiliser régulièrement pour maintenir une santé optimale.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Il est recommandé de réduire le taux d'humidité ambiante pour prévenir la maladie du feuilles.",
             "status": "en cours",
             "categorie": "urgent"
         }

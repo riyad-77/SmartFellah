@@ -1,0 +1,6 @@
+{
+    "culture": "blé dur et blé tendre",
+    "ndvi_optimal_max": 0.75,
+    "ndwi_optimal_max": 0.6,
+    "evi_optimal_max": 0.8
+}

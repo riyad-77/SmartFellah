@@ -1,23 +1,36 @@
 {
     "culture": "Inconnue",
-    "exigences_sol": null,
-    "besoins_hydriques": null,
-    "temp_optimale": {
+    "exigences_sol": "Des sols avec une bonne structure, drainage et porosité sont nécessaires.",
+    "besoins_hydriques": "Une irrigation régulière est nécessaire, en fonction de la disponibilité de l'eau",
+    "bioclimatologie_optimale": {
         "temp_min": null,
-        "temp_max": null
+        "temp_max": null,
+        "hum_min": null,
+        "hum_max": null
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Inconnue",
-            "causes": [],
-            "traitements_specifiques": []
+            "nom_maladie": "Rougeur du sol",
+            "causes": [
+                "Dégâts de tempête",
+                "Surcharge d'arrosage"
+            ],
+            "traitements_specifiques": [
+                "Dégraissage du sol",
+                "Réduction de l'arrosage"
+            ]
         }
     ],
     "recommandations": [
         {
-            "description": null,
-            "status": null,
-            "categorie": null
+            "description": "La stratégie nationale du conseil agricole doit être mise en œuvre pour améliorer la productivité agricole",
+            "status": "en cours",
+            "categorie": "urgent"
         }
     ]
 }

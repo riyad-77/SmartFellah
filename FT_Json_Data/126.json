@@ -1,30 +1,33 @@
 {
     "culture": "Prunier",
-    "exigences_sol": "Terre bien drainée et avec un pH adapté",
-    "besoins_hydriques": "Moins de 600 mm d'eau par an, en fonction du climat",
-    "temp_optimale": {
-        "temp_min": "15°C",
-        "temp_max": "25°C"
+    "exigences_sol": "Le sol doit être bien drainé et avoir un pH acide, entre 5,5 et 6,5.",
+    "besoins_hydriques": "Le prunier a besoin d'une irrigation régulière, mais pas excédentaire. Il est recommandé d'irriguer pendant 30 à 40 jours après la plantation et en fonction des conditions climatiques.",
+    "bioclimatologie_optimale": {
+        "temp_min": "5°C",
+        "temp_max": "25°C",
+        "hum_min": "60%",
+        "hum_max": "80%"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
         {
-            "nom_maladie": "Maladie de la mousse",
+            "nom_maladie": "Maladie de la pourriture des racines",
             "causes": [
-                "Vent, pluies"
+                "Bactéries",
+                "Fungis"
             ],
             "traitements_specifiques": [
-                "Fumage, traitements phyto-sanitaires"
+                "Traitement avec des produits phytosanitaires"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Fertiliser en fonction des besoins de la culture et du sol",
-            "status": "en cours",
-            "categorie": "urgent"
-        },
-        {
-            "description": "Assurez-vous d'un drainage suffisant pour les racines",
+            "description": "Il est recommandé de pratiquer une rotation des cultures pour éviter les maladies répétitives.",
             "status": "en cours",
             "categorie": "urgent"
         }

@@ -1,41 +1,45 @@
 {
     "culture": "Ficus carica",
-    "exigences_sol": "Le sol doit être bien drainé et avoir un pH neutre, entre 6,0 et 7,0.",
-    "besoins_hydriques": "La figue nécessite une humidité moyenne, avec environ 600 mm d'eau par an.",
-    "temp_optimale": {
-        "temp_min": 10,
-        "temp_max": 35
+    "exigences_sol": "Le figuier nécessite un climat chaud et sec, avec des températures moyennes entre 15°C et 30°C. Il préfère des sols bien drainés et avec un pH entre 6 et 7.",
+    "besoins_hydriques": "Le figuier est une plante très hygrométrique, il nécessite une quantité importante d'eau, en particulier pendant la période de germination et de croissance.",
+    "bioclimatologie_optimale": {
+        "temp_min": 15,
+        "temp_max": 30,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Maladie des feuilles",
+            "nom_maladie": "La rouille",
             "causes": [
-                "Oxycelinum strophanthus",
-                "Phytophthora cactorum"
+                "Manuelle",
+                "Infection des feuilles"
             ],
             "traitements_specifiques": [
-                "traitement avec des herbicides, application de protecteurs contre les maladies"
+                "Traitement des infestations avec des produits biologiques",
+                "Traitement des infestations avec des produits chimiques"
             ]
         },
         {
-            "nom_maladie": "Maladie de la racine",
+            "nom_maladie": "La pourriture des racines",
             "causes": [
-                "Fusarium oxysporum",
-                "Phytophthora cactorum"
+                "Manuelle",
+                "Infection des racines"
             ],
             "traitements_specifiques": [
-                "traitement avec des herbicides, application de protecteurs contre les maladies"
+                "Traitement des infestations avec des produits biologiques",
+                "Traitement des infestations avec des produits chimiques"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Appliquer un régime de fertilisation équilibré, composé d'azote, phosphore et potassium.",
-            "status": "en cours",
-            "categorie": "urgent"
-        },
-        {
-            "description": "Assurer une irrigation adéquate, en fonction des conditions climatiques.",
+            "description": "Il est recommandé de faire des cultures régulières et de veiller à ce que les rameaux soient défeuillés régulièrement pour éviter les infestations de rouille.",
             "status": "en cours",
             "categorie": "urgent"
         }

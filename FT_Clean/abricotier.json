@@ -1,10 +1,17 @@
 {
     "culture": "Abricotier",
-    "exigences_sol": "argilo-limoneux bien drainants",
-    "besoins_hydriques": "froid hivernal, moyens à forts hydroréflexions et éviter les printemps pluvieux et humides",
-    "temp_optimale": {
-        "temp_min": "-16˚C à -24˚C (dormants)",
-        "temp_max": "700 à 1000 heures de température froide en dessous de 7,2˚ C"
+    "exigences_sol": "L'abricotier n'est pas très exigeant en matière de sol, pourvu qu'il ne soit pas trop lourd et humide.",
+    "besoins_hydriques": "Les besoins en eau de l'abricotier sont élevés au moment de la croissance du fruit, notamment pendant le durcissement du noyau.",
+    "bioclimatologie_optimale": {
+        "temp_min": null,
+        "temp_max": 25,
+        "hum_min": 50,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": null,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
@@ -23,19 +30,31 @@
             "traitements_specifiques": [
                 "Protection de la fleur, irrigation régulière"
             ]
+        },
+        {
+            "nom_maladie": "Maladie du fruit",
+            "causes": [
+                "Infection par des bactéries"
+            ],
+            "traitements_specifiques": [
+                "Fumigation, traitement avec des produits chimiques"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie des racines",
+            "causes": [
+                "Infection par des champignons"
+            ],
+            "traitements_specifiques": [
+                "Traitement avec des produits chimiques, removal des racines infestées"
+            ]
         }
     ],
     "recommandations": [
         {
-            "description": "Renouveler le bois fruitier sur 3 et 4 ans, maintenir la coursonne assez courte pour faire sortir les bouquets de Mai à proximité de la charpentière.",
-            "status": "en cours",
-            "categorie": "urgent"
-        },
-        {
-            "description": "La protection de la fleur et l'irrigation régulière sont essentielles pour éviter les maladies liées à l'insuffisance en froid.",
-            "status": "en cours",
-            "categorie": "urgent"
+            "description": "Apporter des irrigations régulières et en fonction de la demande du sol et de la croissance du fruit.",
+            "status": "En cours",
+            "categorie": "Urgent"
         }
     ]
 }
-

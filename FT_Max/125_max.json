@@ -1,0 +1,6 @@
+{
+    "culture": "pistachier",
+    "ndvi_optimal_max": 0.7,
+    "ndwi_optimal_max": 0.8,
+    "evi_optimal_max": 0.9
+}

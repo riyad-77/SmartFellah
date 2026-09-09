@@ -1,0 +1,6 @@
+{
+    "culture": "Pêcher",
+    "ndvi_optimal_max": 450,
+    "ndwi_optimal_max": 500,
+    "evi_optimal_max": 900
+}

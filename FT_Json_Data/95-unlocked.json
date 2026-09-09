@@ -1,10 +1,17 @@
 {
     "culture": "Arganier",
-    "exigences_sol": "Conditions de culture précisées dans le document",
-    "besoins_hydriques": "L'arboriculture nécessite un certain niveau de humidité relative de l'air ambiant (65-75%)",
-    "temp_optimale": {
-        "temp_min": "23°C",
-        "temp_max": "25°C"
+    "exigences_sol": "Terreau d'arganier mélangé avec du sable aux proportions égales.",
+    "besoins_hydriques": "Arrosages quotidiens, avec maintien du substrat humide.",
+    "bioclimatologie_optimale": {
+        "temp_min": 20,
+        "temp_max": 35,
+        "hum_min": 65,
+        "hum_max": 75
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
@@ -15,7 +22,7 @@
     ],
     "recommandations": [
         {
-            "description": "Acclimatation des plantules avant de les placer sous conditions naturelles du champ",
+            "description": "Utiliser des plantules produites par semis, avec une acclimatation suffisante avant la transplantation.",
             "status": "en cours",
             "categorie": "urgent"
         }

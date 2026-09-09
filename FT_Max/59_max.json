@@ -1,0 +1,6 @@
+{
+    "culture": "céréaliculture",
+    "ndvi_optimal_max": 3.4,
+    "ndwi_optimal_max": 0.83,
+    "evi_optimal_max": 0.45
+}

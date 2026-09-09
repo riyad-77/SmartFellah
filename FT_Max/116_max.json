@@ -1,0 +1,6 @@
+{
+    "culture": "cerisier",
+    "ndvi_optimal_max": "1500",
+    "ndwi_optimal_max": "7.2",
+    "evi_optimal_max": "80"
+}

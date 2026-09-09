@@ -2,9 +2,16 @@
     "culture": "Rose",
     "exigences_sol": "Terre aéré pauvre en sels de calcium, climat propice avec température et hygrométrie modérées.",
     "besoins_hydriques": "Nourriture régulière, mais pas sous-irrigation.",
-    "temp_optimale": {
+    "bioclimatologie_optimale": {
         "temp_min": 15,
-        "temp_max": 25
+        "temp_max": 25,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
@@ -15,11 +22,6 @@
             "traitements_specifiques": [
                 "Insecticide"
             ]
-        },
-        {
-            "nom_maladie": "Inconnue",
-            "causes": [],
-            "traitements_specifiques": []
         },
         {
             "nom_maladie": "La rouille",
@@ -41,6 +43,40 @@
             "traitements_specifiques": [
                 "Aération de la terrain",
                 "Application de produits phytosanitaires"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie de la rose",
+            "causes": [
+                "Dorticose",
+                "Pests (pucerons, loupes, etc.)"
+            ],
+            "traitements_specifiques": [
+                "Traitement chimique",
+                "Traitement biologique",
+                "Prévention"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie des feuilles",
+            "causes": [
+                "Oxidation des feuilles",
+                "Attaque de parasites"
+            ],
+            "traitements_specifiques": [
+                "Régulation de l'humidité",
+                "Application de pesticides"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie de la floraison",
+            "causes": [
+                "Insuffisance de lumière",
+                "Température excessive"
+            ],
+            "traitements_specifiques": [
+                "Adjustement de la température",
+                "Application de fumigations"
             ]
         }
     ],
@@ -74,6 +110,26 @@
             "description": "Pruning régulière pour encourager les fleurs et prévenir l'usurpation de lumière par les feuilles.",
             "status": "en cours",
             "categorie": "pas urgent"
+        },
+        {
+            "description": "La rose doit être cultivée en terrain aéré pauvre en sels de calcium.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Vérifier régulièrement la température et l'humidité pour éviter les attaques de parasites et les troubles de la floraison.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Ajuster la température et l'humidité pour optimiser la croissance et la floraison des roseaux.",
+            "status": "en cours",
+            "categorie": "prioritaire"
+        },
+        {
+            "description": "Fournir des aides financières aux cultivateurs de roses pour améliorer la qualité et la quantité de production.",
+            "status": "En cours",
+            "categorie": "Prioritaire"
         }
     ]
 }

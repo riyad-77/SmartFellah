@@ -1,45 +1,36 @@
 {
     "culture": "Amandier",
-    "exigences_sol": "Les sols doivent avoir une structure bien drainée et un pH entre 6.0 et 7.0.",
-    "besoins_hydriques": "L'amandier nécessite une irrigation régulière, en particulier pendant la période de floraison.",
-    "temp_optimale": {
-        "temp_min": "10°C",
-        "temp_max": "25°C"
+    "exigences_sol": "La culture d'amandier nécessite un sol bien drainé et fertile, avec un pH entre 6 et 7.",
+    "besoins_hydriques": "L'amandier nécessite une irrigation régulière, notamment pendant la période de floraison et de fructification.",
+    "bioclimatologie_optimale": {
+        "temp_min": 5,
+        "temp_max": 30,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Peste des arbres",
+            "nom_maladie": "Mauvaise pollinisation",
             "causes": [
-                "Infection par le virus du peste des arbres",
-                "Transmission par les insectes"
+                "Manque de diversité génétique",
+                "Pollinisation insuffisante"
             ],
             "traitements_specifiques": [
-                "Traitement avec des pesticides spécifiques",
-                "Réduction de la consommation d'eau"
-            ]
-        },
-        {
-            "nom_maladie": "Rougeur des feuilles",
-            "causes": [
-                "Manque d'azote",
-                "Trop de température"
-            ],
-            "traitements_specifiques": [
-                "Ajustement du régime fertilisé",
-                "Prévention de la sur-irrigation"
+                "Utilisation de pollinisateurs artificiels",
+                "Amélioration de la pollinisation naturelle"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Effectuer une taille de formation et de fructification dans les vergers jeunes pour améliorer les rendements.",
+            "description": "Reconversion des plantations traditionnelles vers des plantations semi-intensives et modernes",
             "status": "En cours",
             "categorie": "Urgent"
-        },
-        {
-            "description": "Diffuser des nouvelles variétés d'amandier pour pallier à la contrainte locale (gelée,...).",
-            "status": "En cours",
-            "categorie": "Importante"
         }
     ]
 }

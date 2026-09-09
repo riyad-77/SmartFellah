@@ -2,15 +2,26 @@
     "culture": "Menthe verte",
     "exigences_sol": "Le sol argileux, fertile, à forte réten- tion en eau, dépourvu de cailloux et les terrains sont plats.",
     "besoins_hydriques": "L'eau est douce, abondante et accessible grâce à des puits qui ont en général 20 à 30 mètres de profon- deur.",
-    "temp_optimale": {
+    "bioclimatologie_optimale": {
         "temp_min": "20°C",
-        "temp_max": "25°C"
+        "temp_max": "25°C",
+        "hum_min": "60%",
+        "hum_max": "80%"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
         {
-            "nom_maladie": "Inconnue",
-            "causes": null,
-            "traitements_specifiques": null
+            "nom_maladie": "Des maladies tels que la mousse",
+            "causes": [
+                "Manuel de lutte biologique"
+            ],
+            "traitements_specifiques": [
+                "Avec des moyens de lutte biologiques"
+            ]
         },
         {
             "nom_maladie": "Périssement des feuilles",
@@ -20,6 +31,22 @@
             "traitements_specifiques": [
                 "traitement chimique avec des produits phytosanitaires"
             ]
+        },
+        {
+            "nom_maladie": "Roty de la menthe",
+            "causes": [
+                "Infection bactérienne",
+                "Contamination par des insectes"
+            ],
+            "traitements_specifiques": [
+                "Application de produits phytosanitaires",
+                "Traitement thermique"
+            ]
+        },
+        {
+            "nom_maladie": "Inconnue",
+            "causes": [],
+            "traitements_specifiques": []
         }
     ],
     "recommandations": [
@@ -47,6 +74,21 @@
             "description": "Il est recommandé de récolter la menthe à la fin de la journée pour éviter les attaques de grillons",
             "status": "en cours",
             "categorie": "urgent"
+        },
+        {
+            "description": "L'implication de la main d'œuvre (familiale ou recrutée) est importante dans toutes les opérations culturales: plantation, irrigation, épandage d’engrais et du fumier, désherbage, traitements phytosanitaires et récolte.",
+            "status": "en cours",
+            "categorie": "urgent"
+        },
+        {
+            "description": "Utiliser des pratiques culturelles durables, tels que la rotation des cultures et l'usage de produits biologiques.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        },
+        {
+            "description": "La production de menthe nécessite un investissement important",
+            "status": "En cours",
+            "categorie": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know."
         }
     ]
 }

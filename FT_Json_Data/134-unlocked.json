@@ -1,36 +1,38 @@
 {
-    "culture": "Arabricotier",
-    "exigences_sol": "L'abricotier n'est pas très exigeant en matière de sol, pourvu qu'il ne soit pas trop lourd et humide.",
-    "besoins_hydriques": "Les besoins en eau de l'abricotier sont élevés au moment de la croissance du fruit, particulièrement pendant le durcissement du noyau.",
-    "temp_optimale": {
-        "temp_min": "-10°C",
-        "temp_max": "15°C"
+    "culture": "Arabie",
+    "exigences_sol": "Le sol ne doit pas être trop lourd et humide. Il craint l'asphyxie et les taux de calcaires trop élevés.",
+    "besoins_hydriques": "Les besoins en eau sont élevés au moment de la croissance du fruit, en particulier pendant le durcissement du noyau. Au Maroc, cette période coïncide avec une période sèche, de là la nécessité de maintenir un rythme soutenu des apports d'eau.",
+    "bioclimatologie_optimale": {
+        "temp_min": 7.2,
+        "temp_max": 22.5,
+        "hum_min": 20,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": 0.0,
+        "evi_optimal_min": 0.3
     },
     "maladies_details": [
         {
-            "nom_maladie": "Gelée",
+            "nom_maladie": "Maladie de la floraison",
             "causes": [
-                "Froid"
+                "Températures trop élevées",
+                "Manque de froid",
+                "Irrigations insuffisantes"
             ],
             "traitements_specifiques": [
-                "Réchauffage"
-            ]
-        },
-        {
-            "nom_maladie": "Pourriture racinaire",
-            "causes": [
-                "Excès d'eau"
-            ],
-            "traitements_specifiques": [
-                "Drainage de l'excès d'eau"
+                "Réduction de l'apport d'eau",
+                "Prévention des gelées",
+                "Utilisation de traitements spécifiques"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Maintenir un rythme soutenu des apports d'eau",
+            "description": "Il est recommandé de maintenir un rythme soutenu des apports d'eau, en particulier pendant la période de croissance du fruit.",
             "status": "en cours",
-            "categorie": "urgente"
+            "categorie": "urgent"
         }
     ]
 }

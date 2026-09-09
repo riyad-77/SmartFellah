@@ -1,29 +1,43 @@
 {
-    "culture": "Safranière",
-    "exigences_sol": "Un sol profond, drainant et riche en matière organique.",
-    "besoins_hydriques": "Des besoins en eau relativement moyens, mais nécessitant une répartition bien répartie le long du cycle de la plante.",
-    "temp_optimale": {
-        "temp_min": "-10°C",
-        "temp_max": "+40°C"
+    "culture": "Crocus sativus L",
+    "exigences_sol": "La culture du safran nécessite des sols profonds et bien drainants, avec une teneur élevée en calcaire (parfois supérieure à 20%) et un pH neutre.",
+    "besoins_hydriques": "Le safran nécessite des apports en eau réguliers, mais les besoins en eau sont relativement moyens (600 à 700 mm/an), les apports en eau doivent être bien répartis le long du cycle de la plante.",
+    "bioclimatologie_optimale": {
+        "temp_min": "10°C",
+        "temp_max": "30°C",
+        "hum_min": "60%",
+        "hum_max": "80%"
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": "0.4",
+        "ndwi_optimal_min": "0.0",
+        "evi_optimal_min": "0.3"
     },
     "maladies_details": [
         {
-            "nom_maladie": "Maladie des racines",
+            "nom_maladie": "La rouxole",
             "causes": [
-                "Enfouissement de mauvaises herbes",
-                "Surpopulation"
+                "Plantes infectées par les rouxoles"
             ],
             "traitements_specifiques": [
-                "Déforestation",
-                "Réduction de la dose d'engrais"
+                "Traitement antimicrobien"
+            ]
+        },
+        {
+            "nom_maladie": "La maladie des racines",
+            "causes": [
+                "Infection des racines par les champignons"
+            ],
+            "traitements_specifiques": [
+                "Traitement antifongique"
             ]
         }
     ],
     "recommandations": [
         {
-            "description": "Le suivi régulier des techniques culturales et les interventions correctives sont essentielles pour éviter les pertes en production.",
-            "status": "en cours",
-            "categorie": "urgence"
+            "description": "L'application régulière d'engrais organiques et minéraux peut aider à améliorer la santé des plantes et à réduire les risques de maladies.",
+            "status": "En cours",
+            "categorie": "Urgent"
         }
     ]
 }

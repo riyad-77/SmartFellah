@@ -1,0 +1,6 @@
+{
+    "culture": "Épinard",
+    "ndvi_optimal_max": "30-35",
+    "ndwi_optimal_max": "10-15",
+    "evi_optimal_max": "30-40"
+}
