@@ -7,7 +7,7 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
 # 1. Connexion DB
-DB_URL = "postgresql://admin:secretpassword@localhost:5432/bifolia_db"
+DB_URL = "postgresql://admin:secretpassword@db_bifolia:5432/bifolia_db"
 engine = create_engine(DB_URL)
 
 # 2. Setup Session

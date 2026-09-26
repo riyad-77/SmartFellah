@@ -1,0 +1,47 @@
+{
+    "culture": "Prunus persica",
+    "exigences_sol": "Le pêcher nécessite un sol bien drainé et à bonne structure pour s'implanter et se développer.",
+    "besoins_hydriques": "Le pêcher a besoin d'une irrigation régulière, mais pas excessive. Il est recommandé d'irriguer les plants 2-3 fois par semaine pendant la période de floraison et 1 fois par semaine pendant la période de croissance.",
+    "bioclimatologie_optimale": {
+        "temp_min": 10,
+        "temp_max": 25,
+        "hum_min": 60,
+        "hum_max": 80
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": 0.4,
+        "ndwi_optimal_min": null,
+        "evi_optimal_min": 0.3
+    },
+    "maladies_details": [
+        {
+            "nom_maladie": "Maladie de la peau",
+            "causes": [
+                "Infection par virus",
+                "Atteinte par insectes"
+            ],
+            "traitements_specifiques": [
+                "Fumigation",
+                "Traitement avec des insecticides"
+            ]
+        },
+        {
+            "nom_maladie": "Maladie du froid",
+            "causes": [
+                "Atteinte par les températures basse",
+                "Atteinte par les gelées"
+            ],
+            "traitements_specifiques": [
+                "Gelée artificielle",
+                "Traitement avec des protecteurs de gelée"
+            ]
+        }
+    ],
+    "recommandations": [
+        {
+            "description": "Il est recommandé de planter des variétés à faible besoin en froid pour éviter les gelées et les dégâts causés par les températures basse.",
+            "status": "En cours",
+            "categorie": "Urgent"
+        }
+    ]
+}

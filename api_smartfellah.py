@@ -19,7 +19,7 @@ disease_model = None
 disease_features = None
 
 # --- CONFIGURATION ---
-DB_URL = "postgresql://admin:secretpassword@localhost:5432/bifolia_db"
+DB_URL = "postgresql://admin:secretpassword@db_bifolia:5432/bifolia_db"
 engine = create_engine(DB_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
@@ -101,6 +101,16 @@ class AssolementCommuneInput(BaseModel):
     nom_commune: str
 
     @field_validator('nom_commune')
+    @classmethod
+    def clean_text(cls, v: str) -> str:
+        return re.sub(r'\s+', ' ', v.strip().lower())
+
+
+
+class CommunesRecommandeesInput(BaseModel):
+    nom_culture: str
+
+    @field_validator('nom_culture')
     @classmethod
     def clean_text(cls, v: str) -> str:
         return re.sub(r'\s+', ' ', v.strip().lower())
@@ -446,6 +456,39 @@ def recommend_crops_by_commune(data: AssolementCommuneInput):
                 "region": region_propre,
                 "source_recommandation": "Ces cultures sont spécifiquement recommandées pour cette région selon les études et fiches techniques officielles du Ministère de l'Agriculture du Maroc.",
                 "cultures_compatibles": recommandations
+            }
+            
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+    
+
+
+
+@app.post("/recommend-communes-by-crop")
+def recommend_communes_by_crop(data: CommunesRecommandeesInput):
+    try:
+        with engine.connect() as conn:
+            # On réutilise ta super fonction de validation
+            culture_corrigee = valider_et_corriger_nom(data.nom_culture, 'culture', conn)
+            if not culture_corrigee:
+                raise HTTPException(status_code=404, detail=f"Culture '{data.nom_culture}' introuvable.")
+
+            # Requête SQL simple avec jointure
+            query = text("""
+                SELECT ccr.nom_commune 
+                FROM culture_communes_recommandees ccr
+                JOIN cultures c ON c.id = ccr.culture_id
+                WHERE c.nom_culture = :culture
+            """)
+            
+            resultats = conn.execute(query, {"culture": culture_corrigee}).fetchall()
+            
+            # Nettoyage et formatage de la liste
+            communes = [nettoyer_mojibake(row.nom_commune).capitalize() for row in resultats]
+
+            return {
+                "culture": culture_corrigee.capitalize(),
+                "communes_recommandees": communes if communes else ["Aucune commune spécifique recommandée dans la base."]
             }
             
     except Exception as e:

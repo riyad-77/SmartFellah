@@ -6,7 +6,7 @@ import pandas as pd
 from sqlalchemy import create_engine, text
 
 API_KEY = "356ec6dc80c0140dd14d9009cf7ce143"
-DB_URL = "postgresql://admin:secretpassword@localhost:5432/bifolia_db"
+DB_URL = "postgresql://admin:secretpassword@db_bifolia:5432/bifolia_db"
 
 def fetch_and_store_forecasts():
     engine = create_engine(DB_URL)

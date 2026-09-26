@@ -1,0 +1,18 @@
+{
+    "culture": "Vicia sativa",
+    "exigences_sol": "Sol chaud et bien drainé, avec un sol profond (50-100 cm) and a pH neutre (7,0-7,5)",
+    "besoins_hydriques": "",
+    "bioclimatologie_optimale": {
+        "temp_min": null,
+        "temp_max": null,
+        "hum_min": null,
+        "hum_max": null
+    },
+    "indices_satellitaires_requis": {
+        "ndvi_optimal_min": null,
+        "ndwi_optimal_min": null,
+        "evi_optimal_min": null
+    },
+    "maladies_details": [],
+    "recommandations": []
+}
