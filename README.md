@@ -51,9 +51,4 @@ L'intelligence du filtrage spatial est entièrement déléguée à la base de do
 | `POST` | `/predict-maladies` | Prédit les risques de maladies selon les prévisions météo. |
 | `DELETE` | `/cultures/{nom_culture}` | Suppression en cascade d'une culture et de ses données associées. |
 
-## ⚙️ Installation et Lancement
 
-1. **Cloner le dépôt :**
-   ```bash
-   git clone [https://github.com/riyad-77/smartfellah-backend.git](https://github.com/riyad-77/smartfellah-backend.git)
-   cd smartfellah-backend
