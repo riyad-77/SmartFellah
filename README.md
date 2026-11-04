@@ -51,4 +51,8 @@ L'intelligence du filtrage spatial est entièrement déléguée à la base de do
 | `POST` | `/predict-maladies` | Prédit les risques de maladies selon les prévisions météo. |
 | `DELETE` | `/cultures/{nom_culture}` | Suppression en cascade d'une culture et de ses données associées. |
 
+## 🗺️ Schéma d'Architecture
 
+Voici la vue d'ensemble de l'architecture du système SmartFellah, détaillant l'Étape 1 (Acquisition et Ingestion) et l'Étape 2 (Processus et Services API) :
+
+![Architecture globale du système SmartFellah](architecture_4.jpeg)
