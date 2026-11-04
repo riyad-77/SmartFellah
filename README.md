@@ -55,4 +55,4 @@ L'intelligence du filtrage spatial est entièrement déléguée à la base de do
 
 Voici la vue d'ensemble de l'architecture du système SmartFellah, détaillant l'Étape 1 (Acquisition et Ingestion) et l'Étape 2 (Processus et Services API) :
 
-![Architecture globale du système SmartFellah](architecture_4.jpeg)
+![Architecture globale du système SmartFellah](architecture.jpeg)
